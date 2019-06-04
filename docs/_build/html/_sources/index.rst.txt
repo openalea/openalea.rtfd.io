@@ -8,18 +8,15 @@ OpenAlea Documentation
 
 Here is centralised all the documentation you can find on OpenAlea
 
-Guide
-=====
-
 .. toctree::
    :maxdepth: 2
 
-    quickstart
-    userguide
-    themes
-    tutorials
-    models
-    development
+   quickstart
+   userguide
+   themes
+   tutorials
+   models
+   development
     
 More information
 ================
