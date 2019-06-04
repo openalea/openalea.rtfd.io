@@ -41,7 +41,7 @@ section
 subsection
 ----------
 
-.. tabularcolumns:: |l|c|p{5cm}|
+tabularcolumns:: |l|c|p{5cm}|
 
 +--------------+---+-----------+
 |  simple text | 2 | 3         |
