@@ -1,4 +1,4 @@
 Tutorials
 =========
 
-Here are some tutorials that can help you in your projects.
+Here are some interactive tutorials that can help you in your projects.
