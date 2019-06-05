@@ -14,10 +14,10 @@ Here is centralised all the documentation you can find on OpenAlea
    quickstart
    userguide
    install
-   areasoffocus
-   tutorials
-   packages
-   development
+   topics/index
+   tutorials/index
+   packages/index
+   development/index
     
 More information
 ================
