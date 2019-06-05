@@ -8,7 +8,7 @@ characterizing how to make OpenAlea package easily available to the community.
 An introduction to OpenAlea
 ---------------------------
 
-Why adapt your tool for OpenAea ?
+Why adapt your tool to OpenAea ?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Developing your package in the openalea framework present a number of benefits. It allows
 
