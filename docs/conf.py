@@ -80,13 +80,7 @@ html_static_path = ['_static']
 # 'searchbox.html']``.
 #
 # html_sidebars = {}
-import sphinx_glpi_theme
-
-html_theme = "glpi"
-
-html_theme_path = sphinx_glpi_theme.get_html_themes_path()
-
-#html_theme = 'sphinx_rtd_theme'
+html_theme = 'sphinx_rtd_theme'
 
 
 # Master doc / toctree
