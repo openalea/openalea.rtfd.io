@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'openaleaDocs'
+project = 'OpenAleaDocs'
 copyright = '2019, bbrument'
 author = 'bbrument'
 
@@ -44,6 +44,23 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 # -- Options for HTML output -------------------------------------------------
 
+# Themes options
+html_theme_options = {
+    'canonical_url': '',
+    'analytics_id': '',  #  Provided by Google in your dashboard
+    'logo_only': False,
+    'display_version': True,
+    'prev_next_buttons_location': 'bottom',
+    'style_external_links': False,
+    'vcs_pageview_mode': '',
+    'style_nav_header_background': 'white',
+    # Toc options
+    'collapse_navigation': True,
+    'sticky_navigation': True,
+    'navigation_depth': 4,
+    'includehidden': True,
+    'titles_only': False,
+
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
@@ -54,4 +71,5 @@ html_theme = 'sphinx_rtd_theme'
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
+# Master doc / toctree
 master_doc = 'index'
