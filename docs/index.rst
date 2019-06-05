@@ -13,9 +13,9 @@ Here is centralised all the documentation you can find on OpenAlea
 
    quickstart
    userguide
-   themes
+   areasoffocus
    tutorials
-   models
+   packages
    development
     
 More information
