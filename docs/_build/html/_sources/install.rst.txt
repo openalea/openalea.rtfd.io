@@ -9,7 +9,7 @@ If you have not yet installed conda on your computer, follow these instructions:
 
 `Conda Installation <https://conda.io/docs/user-guide/install/index.html>`_. Follow instructions for Miniconda.
 
-'Conda Download <https://conda.io/miniconda.html>'_. Use the Python 2.7 based installation.
+`Conda Download <https://conda.io/miniconda.html>`_. Use the Python 2.7 based installation.
 
 OpenAlea Environment Installation
 ---------------------------------
