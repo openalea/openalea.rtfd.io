@@ -7,7 +7,7 @@ Conda Installation
 `Conda <https://conda.io>`_ is a package manager that can be installed on Linux, Windows, and Mac.
 If you have not yet installed conda on your computer, follow these instructions:
 
-`Conda Download <https://conda.io/miniconda.html>`_. Use the Python 2.7 based installation.
+`Conda Installation <https://conda.io/miniconda.html>`_. 
 
 OpenAlea Environment Installation
 ---------------------------------
