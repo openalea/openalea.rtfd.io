@@ -41,20 +41,24 @@ some are on `OpenAlea-Incubator GitHub <https://github.com/openalea-incubator>`_
    account on the GitHub user account. For more details on how to fork a
    repository see `this guide <https://help.github.com/articles/fork-a-repo/>`_.
 
-#. Clone your fork of the *package* repo from your GitHub account to your
+#. Clone your fork of the package repo from your GitHub account to your
    local disk
 
    HTTPS clone::
 	
-       git clone https://github.com/*YourLogin*/*PackageName*.git
+       git clone https://github.com/YourLogin/PackageName.git
 
    SSH clone::
 
-       git clone git@github.com:*YourLogin*/*PackageName*.git
+       git clone git@github.com:YourLogin/PackageName.git
+
+   then change directory::
+
+       cd PackageName
 
 #. Create a branch to hold your development changes::
 
-       git checkout -b *YourNewFeature*
+       git checkout -b YourNewFeature
 
    and start making changes. Always use a ``feature`` branch. It's good practice to
    never work on the ``master`` branch!
@@ -62,35 +66,34 @@ some are on `OpenAlea-Incubator GitHub <https://github.com/openalea-incubator>`_
    .. note::
 
      In the above setup, your ``origin`` remote repository points to
-     ``*YourLogin*/.git``. If you wish to fetch/merge from the main
+     ``YourLogin/.git``. If you wish to fetch/merge from the main
      repository instead of your forked one, you will need to add another remote
      to use instead of ``origin``. It's good practice to choose the name ``upstream`` for it, and the
      command will be::
 
-         git remote add upstream https://github.com/*openalea* or *openalea-incubator*/*PackageName*.git
+         git remote add upstream https://github.com/openalea(-incubator)/PackageName.git
 
      And in order to fetch the new remote and base your work on the latest changes
      of it you can::
 
          git fetch upstream
-         git checkout -b *YourNewFeature* upstream/master
+         git checkout -b YourNewFeature upstream/master
 
 #. Develop the feature on your feature branch on your computer, using Git to do the
    version control. When you're done editing, add changed files using ``git add``
    and then ``git commit`` files::
 
-       git add *ModifiedFiles*
-       git commit -m "*Description of what you've done*"
+       git add ModifiedFiles
+       git commit -m "Description of what you've done"
 
    to record your changes in Git, then push the changes to your GitHub account with::
 
-       $ git push -u origin *YourNewFeature*
+       git push -u origin *YourNewFeature*
 
 #. Once you've finished, you can create a "pull request" on the corresponding GitHub. 
    Follow `these
    <https://help.github.com/articles/creating-a-pull-request-from-a-fork>`_
    instructions to create a pull request from your fork.
-
 
 How to make a proper bug report
 -------------------------------
