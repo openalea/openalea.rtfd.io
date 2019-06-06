@@ -4,6 +4,7 @@
 .. _GitHub: https://github.com
 .. _Fork: https://help.github.com/en/articles/fork-a-repo
 .. _Clone: https://help.github.com/en/articles/cloning-a-repository
+.. _Sphinx: https://www.sphinx-doc.org/en/master/
 
 ===========
 Development
@@ -40,7 +41,7 @@ The main way to contribute is to fork the package repository you are interested 
 .. note:: 
 
   Remember, the packages are found on different GitHub_ pages. The following steps describe a tutorial for an OpenAlea_ package.
-  Make the good changes if you want to use OpenAlea-Incubator packages.
+  Make the good changes if you want to use OpenAlea-Incubator_ packages.
 
 #. `Create an account <https://github.com/join>`_ on GitHub if you do not already have one. 
    You will choose your GitHub_ login <your_login>.
@@ -75,11 +76,9 @@ The main way to contribute is to fork the package repository you are interested 
 
          git remote add upstream https://github.com/openalea/<package_name>.git
 
-     .. note::
+     If the package you chose come from OpenAlea-Incubator, the command will be::
 
-       If the package you chose come from OpenAlea-Incubator, the command will be::
-
-           git remote add upstream https://github.com/openalea_incubator/<package_name>.git
+         git remote add upstream https://github.com/openalea_incubator/<package_name>.git
 
      And in order to fetch the new remote and base your work on the latest changes
      of it you can::
@@ -108,3 +107,27 @@ How to make a proper bug report
 
 Documentation
 -------------
+
+You can also contribute to the documentation. If you find some parts that are not explained enough or uncleared, you can complete or 
+improve the documentation.
+
+Once you have forked the package on your device, you have to install Sphinx_ to generate the HTML output
+::
+
+    pip install sphinx
+
+In each package repository, it must be a ``docs/`` directory in which the reStructuredText documents are. You are pleased 
+to modify or create these and generate the HTML output in the ``docs/`` directory 
+::
+
+    make html 
+
+.. note::
+
+  If you are creating your own package, you can build the Sphinx_ environment directly in the ``docs/`` directory
+  ::
+
+      sphinx-quickstart
+
+Once you are finished, you can add, commit and push what you have done on GitHub_ and then create 
+a **pull request** (see `How to contribute`_).
