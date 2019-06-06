@@ -88,7 +88,7 @@ some are on `OpenAlea-Incubator GitHub <https://github.com/openalea-incubator>`_
 
    to record your changes in Git, then push the changes to your GitHub account with::
 
-       git push -u origin *YourNewFeature*
+       git push -u origin YourNewFeature
 
 #. Once you've finished, you can create a "pull request" on the corresponding GitHub. 
    Follow `these
