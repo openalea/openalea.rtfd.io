@@ -21,3 +21,30 @@ Packages
 +-----------+------------------------------------------------------------------------------+
 |lpy_       |An open source python version of the Lindenmayer Systems                      |
 +-----------+------------------------------------------------------------------------------+
+
+Modeling
+========
+
+Hydroshoot
+----------
+
+Simulation
+==========
+
+Lpy
+---
+
+Phenotyping
+===========
+
+Phenomenal
+----------
+
+Eartrack
+--------
+
+Plant representation and analysis
+=================================
+
+MTG
+---
