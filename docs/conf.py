@@ -17,12 +17,12 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'OpenAleaDocs'
+project = 'OpenAlea'
 copyright = '2019, bbrument'
 author = 'bbrument'
 
 # The full version, including alpha/beta/rc tags
-release = '0.0.1'
+release = '1.0.0a'
 
 
 # -- General configuration ---------------------------------------------------
