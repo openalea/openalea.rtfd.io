@@ -10,7 +10,7 @@ Hydroshoot
 
 Hydroshoot model for 3D hydraulic architecture simulation
 
-.. image:: openalea_web.png
+.. image:: /images/openalea_web.png
    :height: 100px
    :width: 200px
    :alt: alternate text
@@ -19,7 +19,9 @@ Hydroshoot model for 3D hydraulic architecture simulation
 *insert description text*
 
 Doc : `https://hydroshoot.readthedocs.io/en/latest/ <https://hydroshoot.readthedocs.io/en/latest/>`_
+
 Source code : `https://github.com/openalea/hydroshoot <https://github.com/openalea/hydroshoot>`_
+
 
 Simulation
 ==========
@@ -29,7 +31,7 @@ Lpy
 
 An open source python version of the Lindenmayer Systems
 
-.. image:: openalea_web.png
+.. image:: /images/openalea_web.png
    :height: 100px
    :width: 200px
    :alt: alternate text
@@ -44,6 +46,7 @@ in different modeling context, in particular tools from the OpenAlea platform.
 Additionally, it can be integrated as a simple growth simulation module into more complex computational pipelines.
 
 Doc : `https://lpy.readthedocs.io/en/latest/ <https://lpy.readthedocs.io/en/latest/>`_
+
 Source code : `https://github.com/openalea/lpy <https://github.com/openalea/lpy>`_
 
 
@@ -55,7 +58,7 @@ Phenomenal
 
 3D reconstruction from high-throughput plant phenotyping images
 
-.. image:: openalea_web.png
+.. image:: /images/openalea_web.png
    :height: 100px
    :width: 200px
    :alt: alternate text
@@ -68,6 +71,7 @@ It also requires a fluent and versatile interaction between data and continuousl
 that are essential in the analysis of the marker x environment interaction and in the integration of processes for predicting crop performance.
 
 Doc : `https://phenomenal.readthedocs.io/en/latest/ <https://phenomenal.readthedocs.io/en/latest/>`_
+
 Source code : `https://github.com/openalea/phenomenal <https://github.com/openalea/phenomenal>`_
 
 earTrack
@@ -75,7 +79,7 @@ earTrack
 
 An imaging library to detect and track future position of ears on maize plants
 
-.. image:: openalea_web.png
+.. image:: /images/openalea_web.png
    :height: 100px
    :width: 200px
    :alt: alternate text
@@ -84,6 +88,7 @@ An imaging library to detect and track future position of ears on maize plants
 *insert description text*
 
 Doc : `https://eartrack.readthedocs.io/en/latest/ <https://eartrack.readthedocs.io/en/latest/>`_
+
 Source code : `https://github.com/openalea/eartrack <https://github.com/openalea/eartrack>`_
 
 
@@ -95,7 +100,7 @@ MTG
 
 Multiscale Tree Graph datastructure and interfaces
 
-.. image:: openalea_web.png
+.. image:: /images/openalea_web.png
    :height: 100px
    :width: 200px
    :alt: alternate text
@@ -104,7 +109,9 @@ Multiscale Tree Graph datastructure and interfaces
 *insert description text*
 
 Doc : `https://mtg.readthedocs.io/en/latest/ <https://mtg.readthedocs.io/en/latest/>`_
+
 Source code : `https://github.com/openalea/mtg <https://github.com/openalea/mtg>`_
+
 
 Index
 =====
