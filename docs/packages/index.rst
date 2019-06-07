@@ -2,6 +2,27 @@
 Packages
 ========
 
+Plant representation and analysis
+=================================
+
+MTG
+---
+
+**Multiscale Tree Graph datastructure and interfaces**
+
+.. image:: ./images/openalea_web.png
+   :height: 100px
+   :alt: mtg image
+   :align: left
+
+*insert description text*
+
+
+Doc : `https://mtg.readthedocs.io/en/latest/ <https://mtg.readthedocs.io/en/latest/>`_
+
+Source code : `https://github.com/openalea/mtg <https://github.com/openalea/mtg>`_
+
+
 Modeling
 ========
 
@@ -15,12 +36,12 @@ Hydroshoot
    :alt: hydroshoot image
    :align: left
 
-*insert description text*
+HydroShoot provides a grapevine-specific module (architecture) which builds plant shoot structure for potted of trained grapevines.
 
 
-Doc : `https://hydroshoot.readthedocs.io/en/latest/ <https://hydroshoot.readthedocs.io/en/latest/>`_
+`Hydroshoot Documentation <https://hydroshoot.readthedocs.io/en/latest/>`_
 
-Source code : `https://github.com/openalea/hydroshoot <https://github.com/openalea/hydroshoot>`_
+`HydroShoot Source Code <https://github.com/openalea/hydroshoot>`_
 
 
 Simulation
@@ -29,7 +50,7 @@ Simulation
 Lpy
 ---
 
-**An open source python version of the Lindenmayer Systems**
+**Plant simulation using Lindenmayer Systems with Python**
 
 .. image:: ./images/openalea_web.png
    :height: 100px
@@ -83,26 +104,6 @@ Doc : `https://eartrack.readthedocs.io/en/latest/ <https://eartrack.readthedocs.
 
 Source code : `https://github.com/openalea/eartrack <https://github.com/openalea/eartrack>`_
 
-
-Plant representation and analysis
-=================================
-
-MTG
----
-
-**Multiscale Tree Graph datastructure and interfaces**
-
-.. image:: ./images/openalea_web.png
-   :height: 100px
-   :alt: mtg image
-   :align: left
-
-*insert description text*
-
-
-Doc : `https://mtg.readthedocs.io/en/latest/ <https://mtg.readthedocs.io/en/latest/>`_
-
-Source code : `https://github.com/openalea/mtg <https://github.com/openalea/mtg>`_
 
 
 Index
