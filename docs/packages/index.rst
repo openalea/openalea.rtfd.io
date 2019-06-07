@@ -1,3 +1,8 @@
+.. |logo| image:: ./images/openalea_web.png
+   :height: 100px
+   :alt: mtg image
+   :align: left
+
 ========
 Packages
 ========
@@ -10,18 +15,13 @@ MTG
 
 **Multiscale Tree Graph datastructure and interfaces**
 
-.. image:: ./images/openalea_web.png
-   :height: 100px
-   :alt: mtg image
-   :align: left
-
-*insert description text*
-
-
-Doc : `https://mtg.readthedocs.io/en/latest/ <https://mtg.readthedocs.io/en/latest/>`_
-
-Source code : `https://github.com/openalea/mtg <https://github.com/openalea/mtg>`_
-
++--------+--------------------------------------------+
+| |logo| | *insert description text*                  |
++--------+--------------------------------------------+
+|`MTG Documentation <https://mtg.readthedocs.io>`_    |
++-----------------------------------------------------+
+|`MTG Source Code <https://github.com/openalea/mtg>`_ |
++-----------------------------------------------------+
 
 Modeling
 ========
@@ -31,18 +31,13 @@ Hydroshoot
 
 **Hydroshoot model for 3D hydraulic architecture simulation**
 
-.. image:: ./images/openalea_web.png
-   :height: 100px
-   :alt: hydroshoot image
-   :align: left
-
-HydroShoot provides a grapevine-specific module (architecture) which builds plant shoot structure for potted of trained grapevines.
-
-
-`Hydroshoot Documentation <https://hydroshoot.readthedocs.io/en/latest/>`_
-
-`HydroShoot Source Code <https://github.com/openalea/hydroshoot>`_
-
++--------+-----------------------------------------------------------------------------------------------------------------------------------+
+| |logo| | HydroShoot provides a grapevine-specific module (architecture) which builds plant shoot structure for potted of trained grapevines|
++--------+-----------------------------------------------------------------------------------------------------------------------------------+
+|`Hydroshoot Documentation <https://hydroshoot.readthedocs.io/en/latest/>`_                                                                  |
++--------------------------------------------------------------------------------------------------------------------------------------------+
+|`HydroShoot Source Code <https://github.com/openalea/hydroshoot>`_                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------+
 
 Simulation
 ==========

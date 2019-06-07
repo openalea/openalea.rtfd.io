@@ -1,2 +1,2 @@
-Areas of focus
-==============
+Application Domains
+===================
