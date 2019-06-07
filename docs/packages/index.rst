@@ -11,7 +11,7 @@ Hydroshoot
 **Hydroshoot model for 3D hydraulic architecture simulation**
 
 .. image:: ./images/openalea_web.png
-   :width: 200px
+   :height: 100px
    :alt: hydroshoot image
    :align: left
 
@@ -32,7 +32,7 @@ Lpy
 **An open source python version of the Lindenmayer Systems**
 
 .. image:: ./images/openalea_web.png
-   :width: 200px
+   :height: 100px
    :alt: lpy image
    :align: left
 
@@ -54,7 +54,7 @@ Phenomenal
 **3D reconstruction from high-throughput plant phenotyping images**
 
 .. image:: ./images/openalea_web.png
-   :width: 200px
+   :height: 100px
    :alt: phenomenal image
    :align: left
 
@@ -72,7 +72,7 @@ earTrack
 **An imaging library to detect and track future position of ears on maize plants**
 
 .. image:: ./images/openalea_web.png
-   :width: 200px
+   :height: 100px
    :alt: eartrack image
    :align: left
 
@@ -93,7 +93,7 @@ MTG
 **Multiscale Tree Graph datastructure and interfaces**
 
 .. image:: ./images/openalea_web.png
-   :width: 200px
+   :height: 100px
    :alt: mtg image
    :align: left
 
