@@ -1,8 +1,3 @@
-.. image:: ./images/openalea_web.png
-   :height: 100px
-   :alt: mtg image
-   :align: left
-
 ========
 Packages
 ========
