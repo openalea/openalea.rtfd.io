@@ -10,6 +10,20 @@ MTG
 
 **Multiscale Tree Graph datastructure and interfaces**
 
+.. raw:: html
+
+    <div class="clearfix float-my-children">
+    <img src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Balzac.jpg/220px-Balzac.jpg" width=100>
+    <div>some text here</div>
+    </div>
+
+    <div class="clearfix float-my-children"> 
+    <imgsrc="//upload.wikimedia.org/wikipedia/commons/f/fa/Honor%C3%A9_de_Balzac_(Stories_By_Foreign_Authors).png" width=100>
+    <div>some text here</div>
+    </div>
+    
+    <p>A paragraph here</p>    
+
 +--------------------------------------+--------------------------------------------+
 | .. image:: ./images/openalea_web.png | *insert description text*                  |
 +--------------------------------------+--------------------------------------------+
