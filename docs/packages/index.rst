@@ -30,7 +30,10 @@ MTG package aims to define :
   * Read and write MTG files.
   * Export to various graph format.
   * Several algorithms for MTG.
-        
+
+|
+|        
+
 
 Modeling
 ========
@@ -79,13 +82,15 @@ L-Py
 **Plant simulation using Lindenmayer Systems with Python**
 
 .. image:: ./images/openalea_web.png
-   :height: 100px
+   :width: 200px
    :alt: lpy image
    :align: left
 
 L-systems were conceived as a mathematical framework for modeling growth of plants. 
 L-Py is a simulation software that mixes L-systems construction with the Python high-level modeling language. 
 
+|
+|
 
 Phenotyping
 ===========
@@ -123,7 +128,7 @@ Phenomenal
 **3D reconstruction from high-throughput plant phenotyping images**
 
 .. image:: ./images/openalea_web.png
-   :height: 100px
+   :height: 200px
    :alt: phenomenal image
    :align: left
 
@@ -131,6 +136,8 @@ Plant high-throughput phenotyping aims at capturing the genetic variability of p
 factors for thousands of plants, hence identifying heritable traits for genomic selection and 
 predicting the genetic values of allelic combinations in different environments.
 
+|
+|
 
 EarTrack
 --------
@@ -159,12 +166,15 @@ EarTrack
 **An imaging library to detect and track future position of ears on maize plants**
 
 .. image:: ./images/openalea_web.png
-   :height: 100px
+   :width: 200px
    :alt: eartrack image
    :align: left
 
 *insert description text*
 
+|
+|
+|
 
 Index
 =====
