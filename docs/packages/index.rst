@@ -10,12 +10,7 @@ MTG
 
 **Multiscale Tree Graph datastructure and interfaces**
 
-.. raw:: html
-
-    <div class="clearfix float-my-children">
-    <img src="../_images/openalea_web.png">
-    <div>some text here</div>
-    </div>
+*insert text here*
         
 |
 | `MTG Documentation <https://mtg.readthedocs.io>`_
@@ -29,12 +24,8 @@ Hydroshoot
 
 **Hydroshoot model for 3D hydraulic architecture simulation**
 
-.. raw:: html
-
-    <div class="img">
-    <img src="./_images/openalea_web.png">
-    <div>HydroShoot provides a grapevine-specific module (architecture) which builds plant shoot structure for potted of trained grapevines</div>
-    </div>
+HydroShoot provides a grapevine-specific module (architecture) which builds plant shoot structure for potted of 
+trained grapevines
 
 |
 | `Hydroshoot Documentation <https://hydroshoot.readthedocs.io/en/latest/>`_
@@ -43,7 +34,7 @@ Hydroshoot
 Simulation
 ==========
 
-Lpy
+L-Py
 ---
 
 **Plant simulation using Lindenmayer Systems with Python**
@@ -56,10 +47,9 @@ Lpy
 L-systems were conceived as a mathematical framework for modeling growth of plants. 
 L-Py is a simulation software that mixes L-systems construction with the Python high-level modeling language. 
 
-
-Doc : `https://lpy.readthedocs.io/en/latest/ <https://lpy.readthedocs.io/en/latest/>`_
-
-Source code : `https://github.com/openalea/lpy <https://github.com/openalea/lpy>`_
+|
+| `L-Py Documentation <https://lpy.readthedocs.io>`_
+| `L-Py Source Code <https://github.com/openalea/lpy>`_
 
 
 Phenotyping
@@ -79,9 +69,10 @@ Plant high-throughput phenotyping aims at capturing the genetic variability of p
 hence identifying heritable traits for genomic selection and predicting the genetic values of allelic combinations in different environment.
 
 
-Doc : `https://phenomenal.readthedocs.io/en/latest/ <https://phenomenal.readthedocs.io/en/latest/>`_
+|
+| `Phenomenal Documentation <https://phenomenal.readthedocs.io>`_
+| `Phenomenal Source Code <https://github.com/openalea/phenomenal>`_
 
-Source code : `https://github.com/openalea/phenomenal <https://github.com/openalea/phenomenal>`_
 
 earTrack
 --------
@@ -95,11 +86,9 @@ earTrack
 
 *insert description text*
 
-
-Doc : `https://eartrack.readthedocs.io/en/latest/ <https://eartrack.readthedocs.io/en/latest/>`_
-
-Source code : `https://github.com/openalea/eartrack <https://github.com/openalea/eartrack>`_
-
+|
+| `earTrack Documentation <https://eartrack.readthedocs.io>`_
+| `earTrack Source Code <https://github.com/openalea/eartrack>`_
 
 
 Index
