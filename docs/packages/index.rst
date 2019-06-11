@@ -12,25 +12,15 @@ MTG
 
 .. raw:: html
 
-    <div class="clearfix float-my-children">
-    <img src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Balzac.jpg/220px-Balzac.jpg" width=100>
+    <div class="img">
+    <img src="images/openalea_web.png" width=100>
     <div>some text here</div>
     </div>
+        
 
-    <div class="clearfix float-my-children"> 
-    <imgsrc="//upload.wikimedia.org/wikipedia/commons/f/fa/Honor%C3%A9_de_Balzac_(Stories_By_Foreign_Authors).png" width=100>
-    <div>some text here</div>
-    </div>
-    
-    <p>A paragraph here</p>    
+`MTG Documentation <https://mtg.readthedocs.io>`_
 
-+--------------------------------------+--------------------------------------------+
-| .. image:: ./images/openalea_web.png | *insert description text*                  |
-+--------------------------------------+--------------------------------------------+
-|`MTG Documentation <https://mtg.readthedocs.io>`_                                  |
-+-----------------------------------------------------------------------------------+
-|`MTG Source Code <https://github.com/openalea/mtg>`_                               |
-+-----------------------------------------------------------------------------------+
+`MTG Source Code <https://github.com/openalea/mtg>`_
 
 Modeling
 ========
@@ -40,14 +30,17 @@ Hydroshoot
 
 **Hydroshoot model for 3D hydraulic architecture simulation**
 
-+--------------------------------------+---------------------------------------------------------------------+
-| .. image:: ./images/openalea_web.png | HydroShoot provides a grapevine-specific module (architecture)      |
-|                                      | which builds plant shoot structure for potted of trained grapevines |
-+--------------------------------------+---------------------------------------------------------------------+
-|`Hydroshoot Documentation <https://hydroshoot.readthedocs.io/en/latest/>`_                                  |
-+------------------------------------------------------------------------------------------------------------+
-|`HydroShoot Source Code <https://github.com/openalea/hydroshoot>`_                                          |
-+------------------------------------------------------------------------------------------------------------+
+.. raw:: html
+
+    <div class="img">
+    <img src="images/openalea_web.png">
+    <div>HydroShoot provides a grapevine-specific module (architecture) which builds plant shoot structure for potted of trained grapevines</div>
+    </div>
+
+
+`Hydroshoot Documentation <https://hydroshoot.readthedocs.io/en/latest/>`_
+
+`HydroShoot Source Code <https://github.com/openalea/hydroshoot>`_
 
 Simulation
 ==========
