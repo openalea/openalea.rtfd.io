@@ -12,8 +12,8 @@ MTG
 
 .. raw:: html
 
-    <div class="img">
-    <img src="../_images/openalea_web.png" width="100">
+    <div class="clearfix float-my-children">
+    <img src="../_images/openalea_web.png">
     <div>some text here</div>
     </div>
         
