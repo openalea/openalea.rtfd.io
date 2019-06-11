@@ -13,7 +13,7 @@ MTG
 .. raw:: html
 
     <div class="img">
-    <img src="./images/openalea_web.png" width=100>
+    <img src="./_images/openalea_web.png" width=100>
     <div>some text here</div>
     </div>
         
@@ -32,7 +32,7 @@ Hydroshoot
 .. raw:: html
 
     <div class="img">
-    <img src="./images/openalea_web.png">
+    <img src="./_images/openalea_web.png">
     <div>HydroShoot provides a grapevine-specific module (architecture) which builds plant shoot structure for potted of trained grapevines</div>
     </div>
 
