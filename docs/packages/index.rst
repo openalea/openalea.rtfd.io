@@ -13,7 +13,7 @@ MTG
 .. raw:: html
 
     <div class="img">
-    :file: ./images/openalea_web.png
+    <img src="../_images/openalea_web.png" width="100">
     <div>some text here</div>
     </div>
         
