@@ -10,6 +10,11 @@ MTG
 
 **Multiscale Tree Graph datastructure and interfaces**
 
+.. image:: ./images/openalea_web.png
+   :height: 100px
+   :alt: mtg image
+   :align: left
+
 *insert text here*
         
 |
@@ -24,6 +29,11 @@ Hydroshoot
 
 **Hydroshoot model for 3D hydraulic architecture simulation**
 
+.. image:: ./images/openalea_web.png
+   :height: 100px
+   :alt: hydroshoot image
+   :align: left
+
 HydroShoot provides a grapevine-specific module (architecture) which builds plant shoot structure for potted of 
 trained grapevines
 
@@ -35,7 +45,7 @@ Simulation
 ==========
 
 L-Py
----
+----
 
 **Plant simulation using Lindenmayer Systems with Python**
 
@@ -94,16 +104,16 @@ earTrack
 Index
 =====
 
-+-----------+------------------------------------------------------------------------------+
-|Packages   |Description                                                                   |
-+===========+==============================================================================+
-|hydroshoot_|Hydroshoot model for 3D hydraulic architecture simulation                     |
-+-----------+------------------------------------------------------------------------------+
-|mtg_       |Multiscale Tree Graph datastructure and interfaces                            |
-+-----------+------------------------------------------------------------------------------+
-|phenomenal_|3D reconstruction from high-throughput plant phenotyping images               |
-+-----------+------------------------------------------------------------------------------+
-|eartrack_  |An imaging library to detect and track future position of ears on maize plants|
-+-----------+------------------------------------------------------------------------------+
-|lpy_       |An open source python version of the Lindenmayer Systems                      |
-+-----------+------------------------------------------------------------------------------+
++--------------+------------------------------------------------------------------------------+
+|Packages      |Description                                                                   |
++==============+==============================================================================+
+|`Hydroshoot`_ |Hydroshoot model for 3D hydraulic architecture simulation                     |
++--------------+------------------------------------------------------------------------------+
+|`MTG`_        |Multiscale Tree Graph datastructure and interfaces                            |
++--------------+------------------------------------------------------------------------------+
+|`Phenomenal`_ |3D reconstruction from high-throughput plant phenotyping images               |
++--------------+------------------------------------------------------------------------------+
+|`earTrack`_   |An imaging library to detect and track future position of ears on maize plants|
++--------------+------------------------------------------------------------------------------+
+|`L-Py`_       |An open source python version of the Lindenmayer Systems                      |
++--------------+------------------------------------------------------------------------------+
