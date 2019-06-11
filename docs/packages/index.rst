@@ -128,7 +128,7 @@ Phenomenal
 **3D reconstruction from high-throughput plant phenotyping images**
 
 .. image:: ./images/openalea_web.png
-   :height: 200px
+   :width: 200px
    :alt: phenomenal image
    :align: left
 
@@ -172,6 +172,7 @@ EarTrack
 
 *insert description text*
 
+|
 |
 |
 |
