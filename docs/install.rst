@@ -17,7 +17,8 @@ First, create an environment named *openalea*:
 
 | Launch a console or a terminal (See Anaconda Prompt in Start menu on windows).
 | In this console, to install a given openalea package <*package_name*> with its dependencies, 
-  execute this::
+  execute this
+  ::
 
     conda create -n openalea -c openalea openalea.package_name boost=1.66
 
