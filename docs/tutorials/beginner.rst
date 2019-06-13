@@ -240,6 +240,7 @@ Create a composite node by grouping nodes
 
 .. image:: ./images/beginner/step4.3.PNG
    :width: 30%
+
 .. image:: ./images/beginner/step4.4.PNG
    :width: 30%
 
@@ -304,7 +305,7 @@ In this step, we used the same method to build the entire stand
 #. Save this work in your standbuilder package as **plot_stand**
 
 .. image:: ./images/beginner/step6.1.PNG
-   :width: 50%
+   :width: 45%
 .. image:: ./images/beginner/step6.2.PNG
-   :width: 50%
+   :width: 45%
 
