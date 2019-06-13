@@ -200,7 +200,7 @@ Transform simple_tree to a reusable composite node
    * scene - None - PlanGL scene
    
    .. image:: ./images/beginner/step4.1.PNG
-   
+      :width: 40%
 
 #. Click "OK" and the buttons will appear in the workshop
 #. Modify the graph as follow
@@ -215,6 +215,8 @@ Transform simple_tree to a reusable composite node
 
 
 .. image:: ./images/beginner/step4.2.PNG
+   :width: 40%
+
 
 Using the new composite node in a dataflow
 ------------------------------------------
@@ -237,7 +239,7 @@ Create a composite node by grouping nodes
 
 
 .. image:: ./images/beginner/step4.3.PNG
-   :width: 70%
+   :width: 30%
 .. image:: ./images/beginner/step4.4.PNG
    :width: 30%
 
@@ -301,8 +303,8 @@ In this step, we used the same method to build the entire stand
 #. Use a ``openalea.flow control.X`` node and a ``openalea.functional.map`` node
 #. Save this work in your standbuilder package as **plot_stand**
 
-.. image:: ./images/beginner/step5.1.PNG
+.. image:: ./images/beginner/step6.1.PNG
    :width: 50%
-.. image:: ./images/beginner/step5.2.PNG
+.. image:: ./images/beginner/step6.2.PNG
    :width: 50%
 
