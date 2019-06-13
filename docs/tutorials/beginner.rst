@@ -239,10 +239,10 @@ Create a composite node by grouping nodes
 
 
 .. image:: ./images/beginner/step4.3.PNG
-   :width: 30%
+   :width: 70%
 
 .. image:: ./images/beginner/step4.4.PNG
-   :width: 30%
+   :width: 10%
 
 
 Step 5 : Get the spatial distribution of the trees
