@@ -215,7 +215,7 @@ Transform simple_tree to a reusable composite node
 
 
 .. image:: ./images/beginner/step4.2.PNG
-   :width: 40%
+   :width: 70%
 
 
 Using the new composite node in a dataflow
@@ -242,7 +242,7 @@ Create a composite node by grouping nodes
    :width: 70%
 
 .. image:: ./images/beginner/step4.4.PNG
-   :width: 10%
+   :width: 20%
 
 
 Step 5 : Get the spatial distribution of the trees
