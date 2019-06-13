@@ -7,5 +7,5 @@ Here are some interactive tutorials that can help you in your projects.
 .. toctree::
    :maxdepth: 1
    
-   beginner
-   other
+   beginner.rst
+   other.rst
