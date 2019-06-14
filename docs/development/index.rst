@@ -132,3 +132,7 @@ to modify or create these and generate the HTML output in the ``docs/`` director
 
 Once you are finished, you can add, commit and push what you have done on GitHub_ and then create 
 a **pull request** (see `How to contribute`_).
+
+
+Moving from Python 2 to Python 3
+================================
