@@ -1,8 +1,16 @@
-==========================
-Visualea Beginner Tutorial
-==========================
+==============
+Using Visualea
+==============
 
 Here is a tutorial in which you will see how to implement a simple modeling problem in *Visualea*
+
+.. image:: ./images/beginner/intro.gif
+
+Here is what you need for the following tutorial
+::
+    $conda create -n visualea_tuto -c openalea openalea.visualea openalea.components openalea.plantgl boost=1.66 -c openalea/label/unstable
+    $conda activate visualea_tuto
+
 Once you installed and activated the OpenAlea environment (see `Installation <https://openaleadocs.readthedocs.io/en/latest/install.html>`_), execute this 
 ::
 
