@@ -1,7 +1,7 @@
 .. include:: ../README.rst
 
 .. toctree::
-   :caption: OpenAlea Documentation
+   :caption: Documentation
    :maxdepth: 2
 
    quickstart
