@@ -1,14 +1,7 @@
-.. openaleaDocs documentation master file, created by
-   sphinx-quickstart on Tue Jun  4 15:38:24 2019.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
-OpenAlea Documentation
-======================
-
-Here is centralised all the documentation you can find on OpenAlea
+.. include:: ../README.rst
 
 .. toctree::
+   :caption: OpenAlea Documentation
    :maxdepth: 2
 
    quickstart
@@ -18,11 +11,10 @@ Here is centralised all the documentation you can find on OpenAlea
    tutorials/index
    packages/index
    development/index
-    
-More information
-================
+
 
 .. toctree::
+   :caption: Mode Information
    :maxdepth: 2
 
    license
