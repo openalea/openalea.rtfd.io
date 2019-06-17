@@ -18,8 +18,8 @@
 # -- Project information -----------------------------------------------------
 
 project = 'OpenAlea'
-copyright = '2019, bbrument'
-author = 'bbrument'
+copyright = '2007 - 2019, OpenAlea Consortium'
+author = 'OpenAlea Consortium'
 
 # The full version, including alpha/beta/rc tags
 release = '1.0.0a'
@@ -60,7 +60,7 @@ html_theme_options = {
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
-html_logo = "_static/rtfd_logo.svg"
+html_logo = "_static/openalea_web.svg"
 html_show_sourcelink = True
 
 # Custom sidebar templates, must be a dictionary that maps document names
