@@ -135,8 +135,7 @@ to modify or create these and generate the HTML output in the ``docs/`` director
 Once you are finished, you can add, commit and push what you have done on GitHub_ and then create 
 a **pull request** (see `How to contribute`_).
 
-As you can imagine, we want all the documentation to look the same way, in order to do this, 
-configure your Sphinx like us:
+As we want all the documentation to look the same way, configure your Sphinx like us:
 
 #. The theme we are using is the `Read the Docs Sphinx Theme <https://sphinx-rtd-theme.readthedocs.io/en/stable/>`_.
    The theme can be installed like this
@@ -144,7 +143,7 @@ configure your Sphinx like us:
 
        pip install sphinx_rtd_theme
 
-   Once you've installed the theme, write in your `conf.py` file
+   Once you've installed the theme, write in your ``conf.py`` file
    ::
     
        html_theme = "sphinx_rtd_theme"
@@ -152,11 +151,11 @@ configure your Sphinx like us:
    Then write in the same file
    ::
 
-       html_them_options = {
+       html_theme_options = {
 		'logo_only': True
        }
 
-#. Download the OpenAlea logo and put it your `_static` directory and then write in your `conf.py` file
+#. Download the OpenAlea logo and put it your ``_static`` directory and then write in your ``conf.py`` file
    ::
 
        html_static_path = ['_static']
