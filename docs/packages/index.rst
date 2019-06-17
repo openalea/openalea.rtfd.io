@@ -4,6 +4,9 @@
 Packages
 ========
 
+.. contents:: Index
+   :local:
+
 Plant representation and analysis
 =================================
 
@@ -176,23 +179,3 @@ EarTrack
 
 |
 |
-|
-|
-|
-
-Index
-=====
-
-+--------------+------------------------------------------------------------------------------+
-|Packages      |Description                                                                   |
-+==============+==============================================================================+
-|`Hydroshoot`_ |Hydroshoot model for 3D hydraulic architecture simulation                     |
-+--------------+------------------------------------------------------------------------------+
-|`MTG`_        |Multiscale Tree Graph datastructure and interfaces                            |
-+--------------+------------------------------------------------------------------------------+
-|`Phenomenal`_ |3D reconstruction from high-throughput plant phenotyping images               |
-+--------------+------------------------------------------------------------------------------+
-|`EarTrack`_   |An imaging library to detect and track future position of ears on maize plants|
-+--------------+------------------------------------------------------------------------------+
-|`L-Py`_       |An open source python version of the Lindenmayer Systems                      |
-+--------------+------------------------------------------------------------------------------+
