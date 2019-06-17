@@ -11,7 +11,9 @@
 Development
 ===========
 
-.. contents::
+.. contents:: Contents
+   :local:
+
 
 Contributing
 ============
