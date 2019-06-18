@@ -4,9 +4,6 @@
 Packages
 ========
 
-.. contents:: Index
-   :local:
-
 Plant representation and analysis
 =================================
 
@@ -21,8 +18,8 @@ Plant representation and analysis
   .. image:: https://readthedocs.org/projects/mtg/badge/?version=latest
      :target: http://mtg.readthedocs.io/en/latest/
 
-
-  **Multiscale Tree Graph datastructure and interfaces**
+  |
+  | **Multiscale Tree Graph datastructure and interfaces**
 
   .. image:: ./images/openalea_web.png
      :width: 200px
@@ -33,10 +30,7 @@ Plant representation and analysis
     * A share data structure for plant architecture representation.
     * Read and write MTG files.
     * Export to various graph format.
-    * Several algorithms for MTG.
-
-  |
-  |        
+    * Several algorithms for MTG.       
 
 
 Modeling
@@ -48,7 +42,8 @@ Modeling
      :alt: Travis build status
      :target: https://travis-ci.org/openalea/hydroshoot
 
-  **Hydroshoot model for 3D hydraulic architecture simulation**
+  |
+  | **Hydroshoot model for 3D hydraulic architecture simulation**
 
   .. image:: ./images/openalea_web.png
      :width: 200px
@@ -81,7 +76,8 @@ Simulation
   .. image:: https://readthedocs.org/projects/lpy/badge/?version=latest
      :target: http://lpy.readthedocs.io/en/latest/
 
-  **Plant simulation using Lindenmayer Systems with Python**
+  | 
+  | **Plant simulation using Lindenmayer Systems with Python**
 
   .. image:: ./images/openalea_web.png
      :width: 200px
@@ -91,8 +87,6 @@ Simulation
   L-systems were conceived as a mathematical framework for modeling growth of plants. 
   L-Py is a simulation software that mixes L-systems construction with the Python high-level modeling language. 
 
-  |
-  |
 
 Phenotyping
 ===========
@@ -126,7 +120,8 @@ Phenotyping
      :target: https://phenomenal.readthedocs.io/en/latest/?badge=latest
      :alt: Documentation Status
 
-  **3D reconstruction from high-throughput plant phenotyping images**
+  |  
+  | **3D reconstruction from high-throughput plant phenotyping images**
 
   .. image:: ./images/openalea_web.png
      :width: 200px
@@ -137,8 +132,6 @@ Phenotyping
   factors for thousands of plants, hence identifying heritable traits for genomic selection and 
   predicting the genetic values of allelic combinations in different environments.
 
-  |
-  |
 
 * **EarTrack**
 
@@ -163,7 +156,8 @@ Phenotyping
   .. image:: https://anaconda.org/openalea/openalea.eartrack/badges/license.svg
      :target: https://anaconda.org/openalea/openalea.eartrack
 
-  **An imaging library to detect and track future position of ears on maize plants**
+  |
+  | **An imaging library to detect and track future position of ears on maize plants**
 
   .. image:: ./images/openalea_web.png
      :width: 200px
@@ -171,6 +165,3 @@ Phenotyping
      :align: left
 
   *insert description text*
-
-  |
-  |
