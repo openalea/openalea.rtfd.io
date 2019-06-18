@@ -12,7 +12,7 @@ Context
 In OpenAlea_, different tree architectures can be generated procedurally. 
 ``OpenAlea.WeberPenn`` is based on the tree generating algorithm defined by Weber and Penn in 1995.
 
-The model generate a tree structure based on a set of allometric rules.
+The model generates a tree structure based on a set of allometric rules.
 Fundamental parameters are, for instance, the overall appearance of the tree, 
 the size of the lower part of the tree without axes, the max branching order or the curvature of the axes.
 
@@ -31,6 +31,8 @@ Then, execute this
 
 Model Parameters
 ================
+
+Image Courtesy of Wolfram Diestel, developer of the `Arbaro software <http://arbaro.sourceforge.net/>`_.
 
 * | General shape parameters : 
   | **Scale** and **ScaleV** : Global size of the tree 
@@ -63,32 +65,37 @@ Begin with weberpenn
 ====================
 
 Once you've launched Visualea, in the package manager, go in *demo* and double-click on ``demo_WeberPenn``.
-We will see two workflows in the workspace.
+
+.. image:: ./images/weberpenn/package_manager.png
+   :width: 20%
+
+|
+| There will see two workflows in the workspace.
 
 .. image:: ./images/weberpenn/step1_1.PNG
 
 Workflow 1
 ----------
 
-On the left workflow, there are the ``global parameters``, ``trunk``, ``order 1``, ``order 2``, ``tree parameters``, 
-``weber and penn`` and ``plot3D`` nodes.
+On this workflow, there are the ``global parameters``, ``trunk``, ``order 1``, ``order 2``, ``tree parameters``, 
+``weber and penn`` and ``plot3D`` nodes. You can change some parameters by double-clicking on the nodes.
 
-* ``Global parameters`` : you can change global parameters of the tree, like its shape for instance 
+* ``Global parameters`` change main parameters of the tree like its shape 
 
   .. image:: ./images/weberpenn/step1_2.PNG
      :width: 20%
   |
 
-* ``trunk``, ``order 1`` and ``order 2`` : these allow to change parameters of the current order
+* ``trunk``, ``order 1`` and ``order 2`` allow to change parameters of the current order
 
   .. image:: ./images/weberpenn/step1_3.PNG
      :width: 20%
 
   |
 
-* ``tree parameters`` : this node synthesizes all the parameters into a *weberpenn* object
-* ``weber and penn`` : this node creates the scene with all the generated surfaces
-* ``plot3D`` : this node displays a 3D-scene
+* ``tree parameters`` synthesizes all the parameters into a unique *global parameters* object
+* ``weber and penn``computes the scene with all the generated surfaces
+* ``plot3D`` displays a 3D-scene
 
 
 Right click on the ``plot3D`` node and click on "Run". The scene will appear and you'll be able to see the 
@@ -104,7 +111,7 @@ tree architecture corresponding to the inputs you've entered in the parameters n
 Workflow 2
 ---------
 
-On the right workflow, it is the same as the `Workflow 1`_ but you only have to choose the species you want in the 
+On this workflow, it is the same as the `Workflow 1`_ but you only have to choose the species you want in the 
 ``species`` node. There are 3 species that have been preset.
 
 .. image:: ./images/weberpenn/step1_5.gif
