@@ -64,7 +64,7 @@ Image Courtesy of Wolfram Diestel, developer of the `Arbaro software <http://arb
 Begin with weberpenn
 ====================
 
-Once you've launched Visualea, in the package manager, go in *demo* and double-click on ``demo_WeberPenn``.
+Once you've launched Visualea, in the package manager, go in *demo* and **double-click** on ``demo_WeberPenn``.
 
 .. image:: ./images/weberpenn/package_manager.png
    :width: 20%
@@ -78,7 +78,7 @@ Workflow 1
 ----------
 
 On this workflow, there are the ``global parameters``, ``trunk``, ``order 1``, ``order 2``, ``tree parameters``, 
-``weber and penn`` and ``plot3D`` nodes. You can change some parameters by double-clicking on the nodes.
+``weber and penn`` and ``plot3D`` nodes. You can change some parameters by **double-clicking** on the nodes.
 
 * ``Global parameters`` change main parameters of the tree like its shape 
 
@@ -94,7 +94,7 @@ On this workflow, there are the ``global parameters``, ``trunk``, ``order 1``, `
   |
 
 * ``tree parameters`` synthesizes all the parameters into a unique *global parameters* object
-* ``weber and penn``computes the scene with all the generated surfaces
+* ``weber and penn`` computes the scene with all the generated surfaces
 * ``plot3D`` displays a 3D-scene
 
 
