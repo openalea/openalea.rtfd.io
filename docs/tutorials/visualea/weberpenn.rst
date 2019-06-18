@@ -1,7 +1,7 @@
 .. _OpenAlea : https://github.com/openalea
 
 =====================================
-Using Visualea : Werberpenn
+Using Visualea : Weberpenn
 =====================================
 
 .. image:: ./images/weberpenn/intro.gif
@@ -98,12 +98,12 @@ On this workflow, there are the ``global parameters``, ``trunk``, ``order 1``, `
 * ``plot3D`` displays a 3D-scene
 
 
-**Right-click** on the ``plot3D`` node and *click* on "Run". The scene will appear and you'll be able to see the 
+**Right-click** on the ``plot3D`` node and **click** on "Run". The scene will appear and you'll be able to see the 
 tree architecture corresponding to the inputs you've entered in the parameters nodes
 
 .. tip:: 
    You may want to change some parameters and see the impact on the tree architectures in real time. 
-   To do this, right click on the ``plot3D`` node and click on "Mark as User Application" then run the node. 
+   To do this, **right-click** on the ``plot3D`` node and **click** on "Mark as User Application" then run the node. 
    Now, when you change a parameter, the scene updates instantly. Have fun !!!
 
 .. image:: ./images/weberpenn/step1_4.gif
