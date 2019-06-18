@@ -38,25 +38,25 @@ Model Parameters
 
   Each other parameters are defined for each branch level (or **order**) with order0 = trunk
 
-  .. image:: images/weberpenn/werber_param_1.jpg
+  .. image:: ./images/weberpenn/weber_param_1.png
 
 * Branch **length** is specified by the user at each order and 
   is relative to the father branch length and to the overall shape of the tree.
   
-  .. image:: images/weberpenn/werber_param_2.jpg
+  .. image:: ./images/weberpenn/weber_param_2.png
 
 * **rotation** (aka rotationV) define the phyllotaxis angle at each order
 
-  .. image:: images/weberpenn/werber_param_3.jpg
+  .. image:: ./images/weberpenn/weber_param_3.png
 
 * | **curve** parameter defines curvature of branches 
   | **curve back** define inflexion angle
 
-  .. image:: images/weberpenn/werber_param_4.jpg
+  .. image:: ./images/weberpenn/weber_param_4.png
 
 * **down_angle** define the angle of insertion between a branch and its father
 
-  .. image:: images/weberpenn/werber_param_5.jpg
+  .. image:: ./images/weberpenn/weber_param_5.png
 
 
 Begin with weberpenn
@@ -73,16 +73,16 @@ Workflow 1
 On the left workflow, there are the ``global parameters``, ``trunk``, ``order 1``, ``order 2``, ``tree parameters``, 
 ``weber and penn`` and ``plot3D`` nodes.
 
-* ``Global parameters`` : you can change parameters of the tree globally
+* ``Global parameters`` : you can change global parameters of the tree, like its shape for instance 
 
   .. image:: ./images/weberpenn/step1_2.PNG
-     :width: 50%
+     :width: 20%
   |
 
 * ``trunk``, ``order 1`` and ``order 2`` : these allow to change parameters of the current order
 
   .. image:: ./images/weberpenn/step1_3.PNG
-     :width: 50%
+     :width: 20%
 
   |
 
