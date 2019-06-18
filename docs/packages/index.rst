@@ -32,6 +32,8 @@ Plant representation and analysis
     * Export to various graph format.
     * Several algorithms for MTG.       
 
+  |
+  |
 
 Modeling
 ========
@@ -86,7 +88,9 @@ Simulation
 
   L-systems were conceived as a mathematical framework for modeling growth of plants. 
   L-Py is a simulation software that mixes L-systems construction with the Python high-level modeling language. 
-
+ 
+  |
+  |
 
 Phenotyping
 ===========
@@ -132,6 +136,8 @@ Phenotyping
   factors for thousands of plants, hence identifying heritable traits for genomic selection and 
   predicting the genetic values of allelic combinations in different environments.
 
+  |
+  |
 
 * **EarTrack**
 
