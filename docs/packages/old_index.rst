@@ -4,8 +4,8 @@
 Packages
 ========
 
-Modelling with OpenAlea
-=======================
+Plant representation and analysis
+=================================
 
 * **MTG**
 
@@ -32,9 +32,37 @@ Modelling with OpenAlea
     * Export to various graph format.
     * Several algorithms for MTG.       
 
-  `Source Code <https://github.com/openalea/mtg>`_
+  |
+  |
+
+Modeling
+========
+
+* **Hydroshoot**
+
+  .. image:: https://travis-ci.org/openalea/hydroshoot.svg?branch=master
+     :alt: Travis build status
+     :target: https://travis-ci.org/openalea/hydroshoot
 
   |
+  | **Hydroshoot model for 3D hydraulic architecture simulation**
+
+  .. image:: ./images/openalea_web.png
+     :width: 200px
+     :alt: hydroshoot image
+     :align: left
+
+  HydroShoot provides a grapevine-specific module (architecture) which builds plant shoot structure for potted of 
+  trained grapevines.
+
+  Hydroshoot is composed of 3 generic modules used to simulate:
+    * xylem water transport (*hydraulic*)
+    * leaves energy budget (*energy*)
+    * leaves gas exchange fluxes (*exchange*).
+
+
+Simulation
+==========
 
 * **L-Py**
 
@@ -61,134 +89,8 @@ Modelling with OpenAlea
   L-systems were conceived as a mathematical framework for modeling growth of plants. 
   L-Py is a simulation software that mixes L-systems construction with the Python high-level modeling language. 
  
-  `Source Code <https://github.com/openalea/lpy>`_
-
   |
-
-
-* **PlantGL**
-
-  .. image:: ./images/openalea_web.png
-     :width: 200px
-     :alt: plantgl image
-     :align: left
-
-  `Source Code <https://github.com/openalea/plantgl>`_
-
-* **OpenAlea Core**
-
-  .. image:: ./images/openalea_web.png
-     :width: 200px
-     :alt: core image
-     :align: left
-    
-  `Source Code <https://github.com/openalea/core>`_
-
-* **VisuAlea**
-
-  .. image:: ./images/openalea_web.png
-     :width: 200px
-     :alt: visualea image
-     :align: left
-
-  `Source Code <https://github.com/openalea/visualea>`_
-
-Plant Models
-============
-
-* **WeberPenn**
-
-  .. image:: ./images/openalea_web.png
-     :width: 200px
-     :alt: weberpenn image
-     :align: left
-
-  `Source Code <https://github.com/openalea/weberpenn>`_
-
-* **adel**
-
-  .. image:: ./images/openalea_web.png
-     :width: 200px
-     :alt: adel image
-     :align: left
-
-  `Source Code <https://github.com/openalea-incubator/adel>`_
-
-* **MAppleT**
-
-  .. image:: ./images/openalea_web.png
-     :width: 200px
-     :alt: mapplet image
-     :align: left
-
-  `Source Code <https://github.com/openalea-incubator/MAppleT>`_
-
-* **cereals**
-
-  .. image:: ./images/openalea_web.png
-     :width: 200px
-     :alt: cereals image
-     :align: left
-
-* **mango**
-
-  .. image:: ./images/openalea_web.png
-     :width: 200px
-     :alt: mango image
-     :align: left
-
-* **TopVine**
-
-  .. image:: ./images/openalea_web.png
-     :width: 200px
-     :alt: topvine image
-     :align: left
-
-
-Plant Biophysics
-================
-
-* **Hydroshoot**
-
-  .. image:: https://travis-ci.org/openalea/hydroshoot.svg?branch=master
-     :alt: Travis build status
-     :target: https://travis-ci.org/openalea/hydroshoot
-
   |
-  | **Hydroshoot model for 3D hydraulic architecture simulation**
-
-  .. image:: ./images/openalea_web.png
-     :width: 200px
-     :alt: hydroshoot image
-     :align: left
-
-  HydroShoot provides a grapevine-specific module (architecture) which builds plant shoot structure for potted of 
-  trained grapevines.
-
-  Hydroshoot is composed of 3 generic modules used to simulate:
-    * xylem water transport (*hydraulic*)
-    * leaves energy budget (*energy*)
-    * leaves gas exchange fluxes (*exchange*).
-
-  `Source Code <https://github.com/openalea/hydroshoot>`_
-
-* **Caribu**
-
-  .. image:: ./images/openalea_web.png
-     :width: 200px
-     :alt: caribu image
-     :align: left
-
-  `Source Code <https://github.com/openalea-incubator/caribu>`_
-
-* **astk**
-
-  .. image:: ./images/openalea_web.png
-     :width: 200px
-     :alt: astk image
-     :align: left
-
-  `Source Code <https://github.com/openalea-incubator/astk>`_
 
 Phenotyping
 ===========
@@ -234,8 +136,7 @@ Phenotyping
   factors for thousands of plants, hence identifying heritable traits for genomic selection and 
   predicting the genetic values of allelic combinations in different environments.
 
-  `Source Code <https://github.com/openalea/phenomenal/>`_
-
+  |
   |
 
 * **EarTrack**
@@ -270,6 +171,3 @@ Phenotyping
      :align: left
 
   *insert description text*
-  
-  `Source Code <https://github.com/openalea/eartrack>`_
-
