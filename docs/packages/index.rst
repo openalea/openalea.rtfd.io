@@ -1,4 +1,4 @@
-.. _packages:
+$.. _packages:
 
 ========
 Packages
@@ -75,6 +75,13 @@ Modelling with OpenAlea
 
   `Source Code <https://github.com/openalea/plantgl>`_
 
+  |
+  |
+  |
+  |
+  |
+  |
+
 * **OpenAlea Core**
 
   .. image:: ./images/openalea_web.png
@@ -84,6 +91,14 @@ Modelling with OpenAlea
     
   `Source Code <https://github.com/openalea/core>`_
 
+  |
+  |
+  |
+  |
+  |
+  |
+
+
 * **VisuAlea**
 
   .. image:: ./images/openalea_web.png
@@ -92,6 +107,13 @@ Modelling with OpenAlea
      :align: left
 
   `Source Code <https://github.com/openalea/visualea>`_
+
+  |
+  |
+  |
+  |
+  |
+  |
 
 Plant Models
 ============
@@ -105,6 +127,13 @@ Plant Models
 
   `Source Code <https://github.com/openalea/weberpenn>`_
 
+  |
+  |
+  |
+  |
+  |
+  |
+
 * **adel**
 
   .. image:: ./images/openalea_web.png
@@ -113,6 +142,13 @@ Plant Models
      :align: left
 
   `Source Code <https://github.com/openalea-incubator/adel>`_
+
+  |
+  |
+  |
+  |
+  |
+  |
 
 * **MAppleT**
 
@@ -123,12 +159,26 @@ Plant Models
 
   `Source Code <https://github.com/openalea-incubator/MAppleT>`_
 
+  |
+  |
+  |
+  |
+  |
+  |
+
 * **cereals**
 
   .. image:: ./images/openalea_web.png
      :width: 200px
      :alt: cereals image
      :align: left
+
+  |
+  |
+  |
+  |
+  |
+  |
 
 * **mango**
 
@@ -137,6 +187,13 @@ Plant Models
      :alt: mango image
      :align: left
 
+  |
+  |
+  |
+  |
+  |
+  |
+
 * **TopVine**
 
   .. image:: ./images/openalea_web.png
@@ -144,6 +201,12 @@ Plant Models
      :alt: topvine image
      :align: left
 
+  |
+  |
+  |
+  |
+  |
+  |
 
 Plant Biophysics
 ================
@@ -172,6 +235,8 @@ Plant Biophysics
 
   `Source Code <https://github.com/openalea/hydroshoot>`_
 
+  |
+
 * **Caribu**
 
   .. image:: ./images/openalea_web.png
@@ -181,6 +246,13 @@ Plant Biophysics
 
   `Source Code <https://github.com/openalea-incubator/caribu>`_
 
+  |
+  |
+  |
+  |
+  |
+  |
+
 * **astk**
 
   .. image:: ./images/openalea_web.png
@@ -189,6 +261,13 @@ Plant Biophysics
      :align: left
 
   `Source Code <https://github.com/openalea-incubator/astk>`_
+
+  |
+  |
+  |
+  |
+  |
+  |
 
 Phenotyping
 ===========
