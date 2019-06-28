@@ -134,38 +134,6 @@ Plant Models
   |
   |
 
-* **adel**
-
-  .. image:: ./images/openalea_web.png
-     :width: 200px
-     :alt: adel image
-     :align: left
-
-  `Source Code <https://github.com/openalea-incubator/adel>`_
-
-  |
-  |
-  |
-  |
-  |
-  |
-
-* **MAppleT**
-
-  .. image:: ./images/openalea_web.png
-     :width: 200px
-     :alt: mapplet image
-     :align: left
-
-  `Source Code <https://github.com/openalea-incubator/MAppleT>`_
-
-  |
-  |
-  |
-  |
-  |
-  |
-
 * **cereals**
 
   .. image:: ./images/openalea_web.png
@@ -173,6 +141,7 @@ Plant Models
      :alt: cereals image
      :align: left
 
+  |
   |
   |
   |
@@ -193,6 +162,7 @@ Plant Models
   |
   |
   |
+  |
 
 * **TopVine**
 
@@ -201,6 +171,7 @@ Plant Models
      :alt: topvine image
      :align: left
 
+  |
   |
   |
   |
@@ -235,38 +206,6 @@ Plant Biophysics
 
   `Source Code <https://github.com/openalea/hydroshoot>`_
 
-  |
-
-* **Caribu**
-
-  .. image:: ./images/openalea_web.png
-     :width: 200px
-     :alt: caribu image
-     :align: left
-
-  `Source Code <https://github.com/openalea-incubator/caribu>`_
-
-  |
-  |
-  |
-  |
-  |
-  |
-
-* **astk**
-
-  .. image:: ./images/openalea_web.png
-     :width: 200px
-     :alt: astk image
-     :align: left
-
-  `Source Code <https://github.com/openalea-incubator/astk>`_
-
-  |
-  |
-  |
-  |
-  |
   |
 
 Phenotyping
