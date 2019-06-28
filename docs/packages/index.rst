@@ -134,51 +134,6 @@ Plant Models
   |
   |
 
-* **cereals**
-
-  .. image:: ./images/openalea_web.png
-     :width: 200px
-     :alt: cereals image
-     :align: left
-
-  |
-  |
-  |
-  |
-  |
-  |
-  |
-
-* **mango**
-
-  .. image:: ./images/openalea_web.png
-     :width: 200px
-     :alt: mango image
-     :align: left
-
-  |
-  |
-  |
-  |
-  |
-  |
-  |
-
-* **TopVine**
-
-  .. image:: ./images/openalea_web.png
-     :width: 200px
-     :alt: topvine image
-     :align: left
-
-  |
-  |
-  |
-  |
-  |
-  |
-  |
-
 Plant Biophysics
 ================
 
