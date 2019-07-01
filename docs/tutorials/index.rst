@@ -11,3 +11,6 @@ Here are some interactive tutorials that can help you in your projects.
    
    visualea/beginner.rst
    visualea/weberpenn.rst
+
+
+.. include:: ./notebook/gallery.rst
