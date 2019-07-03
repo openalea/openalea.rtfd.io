@@ -2,9 +2,9 @@
 Gallery
 ==========
 
-.. figure:: notebook/images/plantgl_basic.png
+.. figure:: notebook/images/plantgl_objects.png
    :width: 30%
-   :target: https://nbviewer.jupyter.org/github/openalea-incubator/openalea.rtfd.io/blob/development/example/plantgl_basic.ipynb
+   :target: https://nbviewer.jupyter.org/github/openalea-incubator/openalea.rtfd.io/blob/development/example/plantgl_objects.ipynb
   
    3D Geometric Modelling and Visualisation 
 
