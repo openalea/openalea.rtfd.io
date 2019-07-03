@@ -1,4 +1,4 @@
-$.. _packages:
+.. _packages:
 
 ========
 Packages
@@ -26,7 +26,9 @@ Modelling with OpenAlea
     * Export to various graph format.
     * Several algorithms for MTG.       
 
+  
   **Authors**: Christophe Pradal, Christophe Godin
+  
   **Institutes**: Cirad, Inria
   
   `Source Code <https://github.com/openalea/mtg>`_
@@ -50,7 +52,9 @@ Modelling with OpenAlea
   L-Py is a simulation software that mixes L-systems construction with the Python high-level modeling language. 
  
   **Authors**: Frédéric Boudon, Christophe Pradal, Thomas Cokelaer, Przemyslaw Prusinkiewicz, Christophe Godin
+  
   **Institutes**: Cirad, Inria, U. Calgary
+  
   **Citation**: Boudon et al., 2012, https://doi.org/10.3389/fpls.2012.00076
   
   `Source Code <https://github.com/openalea/lpy>`_
@@ -66,7 +70,9 @@ Modelling with OpenAlea
      :align: left
 
   **Authors**: Frédéric Boudon, Christophe Pradal, Christophe Nouguier, Jérôme Chopard, Christophe Godin
+  
   **Institutes**: Cirad, Inria, U. Calgary
+  
   **Citation**: Pradal, Boudon et al., 2009, https://doi.org/10.1016/j.gmod.2008.10.001
   
   `Source Code <https://github.com/openalea/plantgl>`_
@@ -86,7 +92,9 @@ Modelling with OpenAlea
      :align: left
   
   **Authors**: Christophe Pradal, Samuel Dufour-Kowalski, Frédéric Boudon, Christian Fournier, Christophe Godin
+  
   **Institutes**: Cirad, Inria, INRA
+  
   **Citation**: Pradal et al., 2008, https://doi.org/10.1071/FP08084
   
   `Source Code <https://github.com/openalea/core>`_
@@ -207,8 +215,6 @@ Phenotyping
      :width: 200px
      :alt: eartrack image
      :align: left
-
-  *insert description text*
   
   `Source Code <https://github.com/openalea/eartrack>`_
 
