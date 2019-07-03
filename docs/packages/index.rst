@@ -1,4 +1,4 @@
-$.. _packages:
+.. _packages:
 
 ========
 Packages
@@ -9,12 +9,6 @@ Modelling with OpenAlea
 
 * **MTG**
 
-  .. image:: https://travis-ci.org/openalea/mtg.svg?branch=master
-     :target: https://travis-ci.org/openalea/mtg
-
-  .. image:: https://ci.appveyor.com/api/projects/status/wc3p28tg6jbf8t0k/branch/master?svg=true
-     :target: https://ci.appveyor.com/project/fredboudon/mtg
-    
   .. image:: https://readthedocs.org/projects/mtg/badge/?version=latest
      :target: http://mtg.readthedocs.io/en/latest/
 
@@ -32,21 +26,17 @@ Modelling with OpenAlea
     * Export to various graph format.
     * Several algorithms for MTG.       
 
+  
+  **Authors**: Christophe Pradal, Christophe Godin
+  
+  **Institutes**: Cirad, Inria
+  
   `Source Code <https://github.com/openalea/mtg>`_
 
   |
 
 * **L-Py**
-
-  .. image:: https://img.shields.io/badge/License-GPL-blue.svg
-     :target: https://opensource.org/licenses/GPL-3.0
-
-  .. image:: https://travis-ci.org/openalea/lpy.svg?branch=master
-     :target: https://travis-ci.org/openalea/lpy
-
-  .. image:: https://ci.appveyor.com/api/projects/status/88n43wd5kektlwkf/branch/master?svg=true
-     :target: https://ci.appveyor.com/project/fredboudon/lpy
-
+     
   .. image:: https://readthedocs.org/projects/lpy/badge/?version=latest
      :target: http://lpy.readthedocs.io/en/latest/
 
@@ -61,6 +51,12 @@ Modelling with OpenAlea
   L-systems were conceived as a mathematical framework for modeling growth of plants. 
   L-Py is a simulation software that mixes L-systems construction with the Python high-level modeling language. 
  
+  **Authors**: Frédéric Boudon, Christophe Pradal, Thomas Cokelaer, Przemyslaw Prusinkiewicz, Christophe Godin
+  
+  **Institutes**: Cirad, Inria, U. Calgary
+  
+  **Citation**: Boudon et al., 2012, https://doi.org/10.3389/fpls.2012.00076
+  
   `Source Code <https://github.com/openalea/lpy>`_
 
   |
@@ -73,6 +69,12 @@ Modelling with OpenAlea
      :alt: plantgl image
      :align: left
 
+  **Authors**: Frédéric Boudon, Christophe Pradal, Christophe Nouguier, Jérôme Chopard, Christophe Godin
+  
+  **Institutes**: Cirad, Inria, U. Calgary
+  
+  **Citation**: Pradal, Boudon et al., 2009, https://doi.org/10.1016/j.gmod.2008.10.001
+  
   `Source Code <https://github.com/openalea/plantgl>`_
 
   |
@@ -82,13 +84,19 @@ Modelling with OpenAlea
   |
   |
 
-* **OpenAlea Core**
+* **OpenAlea Framework**
 
   .. image:: ./images/openalea_web.png
      :width: 200px
      :alt: core image
      :align: left
-    
+  
+  **Authors**: Christophe Pradal, Samuel Dufour-Kowalski, Frédéric Boudon, Christian Fournier, Christophe Godin
+  
+  **Institutes**: Cirad, Inria, INRA
+  
+  **Citation**: Pradal et al., 2008, https://doi.org/10.1071/FP08084
+  
   `Source Code <https://github.com/openalea/core>`_
 
   |
@@ -171,26 +179,6 @@ Phenotyping
   .. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.1436634.svg
      :target: https://doi.org/10.5281/zenodo.1436634
 
-  .. image:: https://anaconda.org/openalea/openalea.phenomenal/badges/license.svg
-     :target: http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html
-     :alt: Licence Status
-
-  .. image:: https://anaconda.org/openalea/openalea.phenomenal/badges/platforms.svg
-     :target: https://anaconda.org/OpenAlea/openalea.phenomenal/files
-     :alt: Platform supported Status
-
-  .. image:: https://anaconda.org/openalea/openalea.phenomenal/badges/version.svg
-     :target: https://anaconda.org/OpenAlea/openalea.phenomenal
-     :alt: The last version
-
-  .. image:: https://travis-ci.org/openalea/phenomenal.svg?branch=master
-     :target: https://travis-ci.org/openalea/phenomenal
-     :alt: Travis Status
-
-  .. image::  https://ci.appveyor.com/api/projects/status/k7up7iy2ur2wmipx/branch/master?svg=true
-     :target: https://ci.appveyor.com/project/artzet-s/phenomenal
-     :alt: Appveyor Status
-
   .. image:: https://readthedocs.org/projects/phenomenal/badge/?version=latest
      :target: https://phenomenal.readthedocs.io/en/latest/?badge=latest
      :alt: Documentation Status
@@ -198,7 +186,7 @@ Phenotyping
   |  
   | **3D reconstruction from high-throughput plant phenotyping images**
 
-  .. image:: ./images/openalea_web.png
+  .. image:: ./images/phenomenal.png
      :width: 200px
      :alt: phenomenal image
      :align: left
@@ -217,32 +205,16 @@ Phenotyping
      :target: http://eartrack.readthedocs.io/en/latest/?badge=latest
      :alt: Documentation Status
 
-  .. image:: https://travis-ci.org/openalea/eartrack.svg?branch=master
-     :target: https://travis-ci.org/openalea/eartrack
-     :alt: Travis build status (osx and linux)
-
-  .. image:: https://ci.appveyor.com/api/projects/status/bpbmurhqv10pcy0j/branch/master?svg=true
-     :target: https://ci.appveyor.com/project/artzet-s/eartrack-xo7du
-     :alt: Appveyor build status (Windows x86 and x64)
-    
-  .. image:: https://anaconda.org/openalea/openalea.eartrack/badges/version.svg   
-     :target: https://anaconda.org/openalea/openalea.eartrack
-
   .. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.1002155.svg
      :target: https://doi.org/10.5281/zenodo.1002155
 
-  .. image:: https://anaconda.org/openalea/openalea.eartrack/badges/license.svg
-     :target: https://anaconda.org/openalea/openalea.eartrack
-
   |
-  | **An imaging library to detect and track future position of ears on maize plants**
+  | **EarTrack is nn imaging library to detect and track future position of ears on maize plants**
 
-  .. image:: ./images/openalea_web.png
+  .. image:: ./images/eartrack.png
      :width: 200px
      :alt: eartrack image
      :align: left
-
-  *insert description text*
   
   `Source Code <https://github.com/openalea/eartrack>`_
 
