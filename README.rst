@@ -8,4 +8,4 @@ OpenAlea Documentation
    :target: https://openalea.readthedocs.io/en/latest/?badge=latest
    :alt: Documentation Status
 
-Here is all the documentation of the OpenAlea platform.
+OpenAlea is an open source project primarily aimed at the plant research community. It is a distributed collaborative effort to develop Python libraries and tools that address the needs of current and future works in Plant Architecture modeling. OpenAlea includes modules to analyse, visualize and model the functioning and growth of plant architecture. 
