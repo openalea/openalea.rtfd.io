@@ -2,26 +2,26 @@
 Gallery
 ==========
 
-.. figure:: notebook/images/sphere.png
+.. figure:: notebook/images/plantgl_basic.png
    :width: 30%
-   :target: https://nbviewer.jupyter.org/github/openalea-incubator/openalea.rtfd.io/blob/development/example/sphere.ipynb
+   :target: https://nbviewer.jupyter.org/github/openalea-incubator/openalea.rtfd.io/blob/development/example/plantgl_basic.ipynb
   
-   3D-Visualisation of a Sphere
+   Geometric Modelling and 3D-Visualisation 
 
-.. figure:: notebook/images/plantframe.png
+.. figure:: notebook/images/mtg_plantframe.png
    :width: 30%
-   :target: https://nbviewer.jupyter.org/github/openalea-incubator/openalea.rtfd.io/blob/development/example/plantframe.ipynb
+   :target: https://nbviewer.jupyter.org/github/openalea-incubator/openalea.rtfd.io/blob/development/example/mtg_plantframe.ipynb
  
-   PlantFrame (3D MTG)
+   3D Reconstruction of Plant Architecture
 
-.. figure:: notebook/images/lpymagic.png
+.. figure:: notebook/images/lpy_lpymagic.png
    :width: 30%
-   :target: https://nbviewer.jupyter.org/github/openalea-incubator/openalea.rtfd.io/blob/development/example/lpymagic.ipynb
+   :target: https://nbviewer.jupyter.org/github/openalea-incubator/openalea.rtfd.io/blob/development/example/lpy_lpymagic.ipynb
 
-   LPy Magic
+   L-Systems Simulation
 
-.. figure:: notebook/images/hydroshoot.png
+.. figure:: notebook/images/hydroshoot_grapevine.png
    :width: 30%
-   :target: https://nbviewer.jupyter.org/github/openalea-incubator/openalea.rtfd.io/blob/development/example/hydroshoot.ipynb
+   :target: https://nbviewer.jupyter.org/github/openalea-incubator/openalea.rtfd.io/blob/development/example/hydroshoot_grapevine.ipynb
    
-   3D-Visualisation of a Grapevine
+   3D-Visualisation and Simulation of a Grapevine Shoot
