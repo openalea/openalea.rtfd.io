@@ -33,6 +33,7 @@ Modelling with OpenAlea
   
   `Source Code <https://github.com/openalea/mtg>`_
 
+  |
 
 * **L-Py**
      
@@ -58,6 +59,7 @@ Modelling with OpenAlea
   
   `Source Code <https://github.com/openalea/lpy>`_
 
+  |
 
 * **PlantGL**
 
