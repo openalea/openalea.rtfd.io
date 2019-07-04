@@ -6,24 +6,23 @@ Conda Installation
 
 `Conda <https://conda.io>`_ is a package manager that can be installed on Linux, Windows, and Mac.
 If you have not yet installed conda on your computer, follow these instructions:
+    * `Conda Installation <https://conda.io/miniconda.html>`_. 
 
-`Conda Installation <https://conda.io/miniconda.html>`_. 
-
-OpenAlea Environment Installation
+OpenAlea Installation
 ---------------------------------
 
-Create an environment named *openalea*:
-Launch a console (See Anaconda Prompt in Start menu on windows)
+The *recommended* way to install OpenAlea is to create a new conda environment.
 
-At first, if tou need all the OpenAlea environment, execute this::
+First, create an environment named *openalea*:
 
-    conda create -n openalea -c openalea boost=1.66
-
-Let's say you need a package <*package_name*> in particuliar, you can execute this::
+| Launch a console or a terminal (See Anaconda Prompt in Start menu on windows).
+| In this console, to install a given openalea package <*package_name*> with its dependencies, 
+  execute this
+  ::
 
     conda create -n openalea -c openalea openalea.package_name boost=1.66
 
-Here is an example if you want only *plantgl*, *lpy*, *mtg* and *caribu*::
+Here is an example if you want only *PlantGL*, *lpy*, *MTG* and *Caribu*::
     
     conda create -n openalea -c openalea openalea.plantgl openalea.lpy openalea.mtg alinea.caribu boost=1.66 
 
@@ -31,12 +30,10 @@ Activate the *openalea* environment::
 
     conda activate openalea
 
-source should be written only on linux and macos.
-Install the different packages
-::
+In this environment, you may also want to install other Scientific Python packages::
 
-    conda install notebook=5.4 matplotlib pandas nbformat git
+    conda install notebook=5.4 matplotlib pandas
 
-    conda install -c openalea -c conda-forge pvlib-python alinea.astk
+In the documentation of each package, a installation procedure is described.
 
 
