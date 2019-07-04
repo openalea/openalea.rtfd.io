@@ -114,6 +114,8 @@ Modelling with OpenAlea
   |
   |
   |
+  |
+  |
 
 Plant Models
 ============
@@ -127,6 +129,8 @@ Plant Models
 
   `Source Code <https://github.com/openalea/weberpenn>`_
 
+  |
+  |
   |
   |
   |
