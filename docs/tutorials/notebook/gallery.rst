@@ -2,11 +2,11 @@
 Gallery
 ==========
 
-.. figure:: notebook/images/plantgl_basic.png
+.. figure:: notebook/images/plantgl_objects.png
    :width: 30%
-   :target: https://nbviewer.jupyter.org/github/openalea-incubator/openalea.rtfd.io/blob/development/example/plantgl_basic.ipynb
+   :target: https://nbviewer.jupyter.org/github/openalea-incubator/openalea.rtfd.io/blob/development/example/plantgl_objects.ipynb
   
-   Geometric Modelling and 3D-Visualisation 
+   3D Geometric Modelling and Visualisation 
 
 .. figure:: notebook/images/mtg_plantframe.png
    :width: 30%
@@ -24,4 +24,4 @@ Gallery
    :width: 30%
    :target: https://nbviewer.jupyter.org/github/openalea-incubator/openalea.rtfd.io/blob/development/example/hydroshoot_grapevine.ipynb
    
-   3D-Visualisation and Simulation of a Grapevine Shoot
+   Reconstructuion and Ecophysiology of Grapevine
