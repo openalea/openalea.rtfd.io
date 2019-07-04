@@ -1,11 +1,5 @@
 .. openalea.rtfd.io:
 
-.. image:: ./docs/packages/images/weberpenn_treegraph.png
-   :width: 30%
-.. image:: ./docs/packages/images/hydroshoot_grapevine.png
-   :width: 30%
-.. image:: ./docs/packages/images/mtg_plantframe.png
-   :width: 30%
 
 ======================
 OpenAlea Documentation

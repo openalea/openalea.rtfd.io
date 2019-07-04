@@ -1,3 +1,10 @@
+.. image:: ./packages/images/weberpenn_treegraph.png
+   :width: 30%
+.. image:: ./packages/images/hydroshoot_grapevine.png
+   :width: 30%
+.. image:: ./packages/images/mtg_plantframe.png
+   :width: 30%
+
 .. include:: ../README.rst
 
 .. toctree::
