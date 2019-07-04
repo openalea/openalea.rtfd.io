@@ -15,7 +15,7 @@ Modelling with OpenAlea
   |
   | **Multiscale Tree Graph datastructure and interfaces**
 
-  .. image:: ./images/openalea_web.png
+  .. image:: ./images/mtg_plantframe.png
      :width: 200px
      :alt: mtg image
      :align: left
@@ -33,7 +33,6 @@ Modelling with OpenAlea
   
   `Source Code <https://github.com/openalea/mtg>`_
 
-  |
 
 * **L-Py**
      
@@ -43,7 +42,7 @@ Modelling with OpenAlea
   | 
   | **Plant simulation using Lindenmayer Systems with Python**
 
-  .. image:: ./images/openalea_web.png
+  .. image:: ./images/lpy_lpymagic.png
      :width: 200px
      :alt: lpy image
      :align: left
@@ -59,12 +58,10 @@ Modelling with OpenAlea
   
   `Source Code <https://github.com/openalea/lpy>`_
 
-  |
-
 
 * **PlantGL**
 
-  .. image:: ./images/openalea_web.png
+  .. image:: ./images/plantgl_objects.png
      :width: 200px
      :alt: plantgl image
      :align: left
@@ -77,10 +74,6 @@ Modelling with OpenAlea
   
   `Source Code <https://github.com/openalea/plantgl>`_
 
-  |
-  |
-  |
-  |
   |
   |
 
@@ -102,14 +95,11 @@ Modelling with OpenAlea
   |
   |
   |
-  |
-  |
-  |
 
 
 * **VisuAlea**
 
-  .. image:: ./images/openalea_web.png
+  .. image:: ./images/visualea_workflow.png
      :width: 200px
      :alt: visualea image
      :align: left
@@ -128,7 +118,7 @@ Plant Models
 
 * **WeberPenn**
 
-  .. image:: ./images/openalea_web.png
+  .. image:: ./images/weberpenn_treegraph.png
      :width: 200px
      :alt: weberpenn image
      :align: left
@@ -154,7 +144,7 @@ Plant Biophysics
   |
   | **Hydroshoot model for 3D hydraulic architecture simulation**
 
-  .. image:: ./images/openalea_web.png
+  .. image:: ./images/hydroshoot_grapevine.png
      :width: 200px
      :alt: hydroshoot image
      :align: left
@@ -186,7 +176,7 @@ Phenotyping
   |  
   | **3D reconstruction from high-throughput plant phenotyping images**
 
-  .. image:: ./images/phenomenal.png
+  .. image:: ./images/openalea_web.png
      :width: 200px
      :alt: phenomenal image
      :align: left
@@ -211,7 +201,7 @@ Phenotyping
   |
   | **EarTrack is nn imaging library to detect and track future position of ears on maize plants**
 
-  .. image:: ./images/eartrack.png
+  .. image:: ./images/openalea_web.png
      :width: 200px
      :alt: eartrack image
      :align: left
