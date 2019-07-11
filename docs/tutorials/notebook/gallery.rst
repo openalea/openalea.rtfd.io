@@ -24,4 +24,16 @@ Gallery
    :width: 30%
    :target: https://nbviewer.jupyter.org/github/openalea/openalea.rtfd.io/blob/master/example/hydroshoot_grapevine.ipynb
    
-   Reconstructuion and Ecophysiology of Grapevine
+   Reconstruction and Ecophysiology of Grapevine
+
+.. figure:: notebook/images/caribu_crops.png
+   :width: 30%
+   :target: https://nbviewer.jupyter.org/github/openalea/openalea.rtfd.io/blob/master/example/caribu_crops.ipynb
+
+   Light Interception
+
+.. figure:: notebook/images/mtg_analysis.png
+   :width: 30%
+   :target: https://nbviewer.jupyter.org/github/openalea/openalea.rtfd.io/blob/master/example/mtg_analysis.ipynb
+
+   MTG Visualisation and Data Extraction
