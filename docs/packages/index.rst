@@ -19,10 +19,11 @@ MTG
  :align: left
 
 MTG package aims to define :
-* A share data structure for plant architecture representation.
-* Read and write MTG files.
-* Export to various graph format.
-* Several algorithms for MTG.       
+
+  * A share data structure for plant architecture representation.
+  * Read and write MTG files.
+  * Export to various graph format.
+  * Several algorithms for MTG.       
 
 
 **Authors** : Christophe Pradal, Christophe Godin
