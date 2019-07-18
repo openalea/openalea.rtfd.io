@@ -60,11 +60,14 @@ L-Py is a simulation software that mixes L-systems construction with the Python 
 PlantGL
 -------
 
+.. image:: https://readthedocs.org/projects/plantgl-cpl/badge/?version=latest
+  :target: https://plantgl-cpl.readthedocs.io/en/latest/?badge=latest
+
 **An open-source graphic toolkit for the creation, simulation and analysis of 3D virtual plants**
 
 .. image:: ./images/plantgl.png
  :width: 200px
- :target: https://github.com/openalea/plantgl
+ :target: https://plantgl-cpl.readthedocs.io/en/latest/
  :align: left
 
 **Authors**: Frédéric Boudon, Christophe Pradal, Christophe Nouguier, Jérôme Chopard, Christophe Godin
