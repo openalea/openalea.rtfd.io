@@ -11,8 +11,7 @@ MTG
 .. image:: https://readthedocs.org/projects/mtg/badge/?version=latest
  :target: http://mtg.readthedocs.io/en/latest/
 
-|
-| **Multiscale Tree Graph datastructure and interfaces**
+**Multiscale Tree Graph datastructure and interfaces**
 
 .. image:: ./images/mtg_plantframe.png
  :width: 200px
@@ -32,7 +31,6 @@ MTG package aims to define :
 
 **Source Code** : `Github <https://github.com/openalea/mtg>`_
 
-|
 
 L-Py
 ----
@@ -40,8 +38,7 @@ L-Py
 .. image:: https://readthedocs.org/projects/lpy/badge/?version=latest
  :target: http://lpy.readthedocs.io/en/latest/
 
-| 
-| **Plant simulation using Lindenmayer Systems with Python**
+**Plant simulation using Lindenmayer Systems with Python**
 
 .. image:: ./images/lpy_lpymagic.png
  :width: 200px
@@ -59,13 +56,11 @@ L-Py is a simulation software that mixes L-systems construction with the Python 
 
 **Source Code** : `Github <https://github.com/openalea/lpy>`_
 
-|
 
 PlantGL
 -------
 
-| 
-| **An open-source graphic toolkit for the creation, simulation and analysis of 3D virtual plants**
+**An open-source graphic toolkit for the creation, simulation and analysis of 3D virtual plants**
 
 .. image:: ./images/plantgl.png
  :width: 200px
@@ -80,7 +75,6 @@ PlantGL
 
 **Source Code** : `Github <https://github.com/openalea/plantgl>`_
 
-|
 
 OpenAlea Framework
 ------------------
@@ -125,6 +119,8 @@ VisuAlea
 
 **Source Code** : `Github <https://github.com/openalea/visualea>`_
 
+|
+|
 |
 
 Plant Models
