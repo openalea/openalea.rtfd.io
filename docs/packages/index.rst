@@ -83,8 +83,7 @@ OpenAlea Framework
     :alt: Documentation status
     :target: https://openalea-core.readthedocs.io/en/latest/?badge=latest
 
-| 
-| **OpenAlea Framework is able to discover and manage packages and logical components, build and evaluate dataflows and Generate final applications**
+**OpenAlea Framework is able to discover and manage packages and logical components, build and evaluate dataflows and Generate final applications**
 
 .. image:: ./images/openalea_web.png
  :width: 200px
@@ -99,14 +98,12 @@ OpenAlea Framework
 
 **Source Code** : `Github <https://github.com/openalea/core>`_
 
-|
 
 
 VisuAlea
 --------
 
-| 
-| **An application that allows to use OpenAlea packages and to build dataflow graphically**
+**An application that allows to use OpenAlea packages and to build dataflow graphically**
 
 .. image:: ./images/visualea_workflow.png
  :width: 200px
@@ -129,8 +126,7 @@ Plant Models
 WeberPenn
 ---------
 
-| 
-| **An extension of the Weber & Penn model for OpenAlea**
+**An extension of the Weber & Penn model for OpenAlea**
 
 .. image:: ./images/weberpenn_treegraph.png
  :width: 200px
@@ -156,8 +152,7 @@ Hydroshoot
 .. image:: https://readthedocs.org/projects/hydroshoot/badge/?version=latest
    :target: https://hydroshoot.readthedocs.io/en/latest/?badge=latest
 
-|
-| **Hydroshoot model for 3D hydraulic architecture simulation**
+**Hydroshoot model for 3D hydraulic architecture simulation**
 
 .. image:: ./images/hydroshoot_grapevine.png
  :width: 200px
@@ -174,7 +169,6 @@ HydroShoot is a functional-structural plant modelling package taking into accoun
 
 **Source Code** : `Github <https://github.com/openalea/hydroshoot>`_
 
-|
 
 Phenotyping
 ===========
@@ -189,8 +183,7 @@ Phenomenal
 .. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.1436634.svg
  :target: https://doi.org/10.5281/zenodo.1436634
 
-|  
-| **3D reconstruction from high-throughput plant phenotyping images**
+**3D reconstruction from high-throughput plant phenotyping images**
 
 .. image:: ./images/phenomenal.png
  :width: 200px
@@ -205,7 +198,6 @@ Plant high-throughput phenotyping aims at capturing the genetic variability of p
 
 **Source Code** : `Github <https://github.com/openalea/phenomenal/>`_
 
-|
 
 EarTrack
 --------
@@ -217,8 +209,7 @@ EarTrack
 .. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.1002155.svg
  :target: https://doi.org/10.5281/zenodo.1002155
 
-|
-| **EarTrack is an imaging library to detect and track future position of ears on maize plants**
+**EarTrack is an imaging library to detect and track future position of ears on maize plants**
 
 .. image:: ./images/eartrack.png
  :width: 200px
@@ -232,4 +223,3 @@ EarTrack
 **Citation** : Brichet et al., 2017, https://doi.org/10.1186/s13007-017-0246-7
 
 **Source Code** : `Github <https://github.com/openalea/eartrack>`_
-
