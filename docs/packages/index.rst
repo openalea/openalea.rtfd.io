@@ -72,7 +72,7 @@ PlantGL
 
 **Authors**: Frédéric Boudon, Christophe Pradal, Christophe Nouguier, Jérôme Chopard, Christophe Godin
 
-**Institutes** : Cirad, Inria, U. Calgary
+**Institutes** : Cirad, Inria
 
 **Citation** : Pradal, Boudon et al., 2009, https://doi.org/10.1016/j.gmod.2008.10.001
 
