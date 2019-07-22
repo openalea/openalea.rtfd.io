@@ -1,0 +1,287 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>User Guide &mdash; OpenAlea 1.0.0a documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Installation" href="install.html" />
+    <link rel="prev" title="Quick Start" href="quickstart.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> OpenAlea
+          
+
+          
+            
+            <img src="_static/openalea_web.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick Start</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">User Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#visual-programming">Visual Programming</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#python-scripting">Python Scripting</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#using-python">Using Python</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#importing-openalea-modules">Importing OpenAlea Modules</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="topics/index.html">Application Domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/index.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/index.html#gallery">Gallery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="packages/index.html">Packages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development/index.html">Development</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Mode Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="help.html">Help</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">OpenAlea</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>User Guide</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/userguide.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="user-guide">
+<h1>User Guide<a class="headerlink" href="#user-guide" title="Permalink to this headline">¶</a></h1>
+<p>Models under OpenAlea are in the form of components that could be used as such,
+or combined together to build user-customised applications. OpenAlea provides two
+different ways to interacts with components:</p>
+<ul class="simple">
+<li>by visual programming, using Visualea</li>
+<li>by writing scripts, using a standard python development environment</li>
+</ul>
+<p>Both methods allows you to save your application and run it routinely in batch mode.
+Visual programming is easier to start with, and it allows you to rapidly discover
+components of a package. Python scripting allows for programming more complex tasks,
+and provides an access to additional functionalities of models, by importing python
+modules that compose them.</p>
+<div class="section" id="visual-programming">
+<h2>Visual Programming<a class="headerlink" href="#visual-programming" title="Permalink to this headline">¶</a></h2>
+<p>OpenAlea provides an high level visual programming interface Visualea.</p>
+<p>The main documentation is on
+<a class="reference external" href="https://openalea.readthedocs.io/en/latest/packages/index.html">Packages</a> at Visualea.</p>
+<p>Tutorials have been made on Visualea. You can find them on
+<a class="reference external" href="https://openalea.readthedocs.io/en/latest/tutorials/index.html">Tutorials</a>.</p>
+</div>
+<div class="section" id="python-scripting">
+<h2>Python Scripting<a class="headerlink" href="#python-scripting" title="Permalink to this headline">¶</a></h2>
+<p>OpenAlea packages are available under the python scripting language. This allows to use the
+components of packages (as in visualea), but also to directly import python modules and get
+access to all functionalities documented in package’s API.</p>
+<div class="section" id="using-python">
+<h3>Using Python<a class="headerlink" href="#using-python" title="Permalink to this headline">¶</a></h3>
+<p>Python is a scripting language widely spread in the scientific community.
+It has a lot of advantages :</p>
+<ul class="simple">
+<li>It is easy to learn, even for non programmers.</li>
+<li>It is an high level language, based on the object paradigm</li>
+<li>It is extensible with external libraries</li>
+<li>Multi-platform (Linux, Windows, Mac)</li>
+</ul>
+<p>You can learn the basics with the <a class="reference external" href="http://docs.python.org/tut/">Official Tutorial</a></p>
+<p>Python scripts could be launched by invoking python from a command line:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">myScript</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+<p>You can also launch a Python interpreter and run or test your script step by step.</p>
+<p>The default interpreter could be launch by typing python in a terminal (Linux, Mac) or
+in a DOS windows. Under Windows, you may also use one of the following method:</p>
+<ul class="simple">
+<li>Use Start Menu -&gt; openalea -&gt; python shell</li>
+<li>You can use the default python interpreter GUI : IDLE (start menu -&gt; Python 2.4 -&gt; IDLE)</li>
+</ul>
+<p>You can also use more ergonomic user interface, like ipython, that provides usefull
+functionalities (completion, coloration, execution of block of lines,…)</p>
+</div>
+<div class="section" id="importing-openalea-modules">
+<h3>Importing OpenAlea Modules<a class="headerlink" href="#importing-openalea-modules" title="Permalink to this headline">¶</a></h3>
+<p>The magic line which will make available all openalea modules is:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">openalea</span>
+</pre></div>
+</div>
+<p>All OpenAlea modules are available in the openalea namespace. Refer to the modules documentation
+to learn how to use them.</p>
+<p>You can also write simple python scripts in order to execute the same code several times.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="install.html" class="btn btn-neutral float-right" title="Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="quickstart.html" class="btn btn-neutral float-left" title="Quick Start" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2007 - 2019, OpenAlea Consortium
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

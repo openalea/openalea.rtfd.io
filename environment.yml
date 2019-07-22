@@ -1,0 +1,15 @@
+name: openalea.rtfd.io
+channels:
+  - conda-forge
+dependencies:
+  - flake8
+  - jinja2
+  - m2r
+  - markdown
+  - pyviz::nbsite
+  - pyviz::nbsmoke
+  - pyviz::pyctdev
+  - pytest
+  - pyyaml
+  - requests
+  - tornado<6
