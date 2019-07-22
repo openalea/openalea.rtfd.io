@@ -2,46 +2,46 @@
   packages:
 
     - repo: openalea/core
-      conda_package: openalea
-      site: https://openalea-core.readthedocs.io/en/latest/
-      badges: conda, site
+      conda_channel: openalea
+      rtd_name: openalea-core
+      badges: conda, rtd, pypi
 
     - repo: openalea/eartrack
-      conda_package: openalea
-      site: https://eartrack.readthedocs.io/en/latest/
-      badges: conda, site
+      conda_channel: openalea
+      rtd_name: eartrack
+      badges: conda, rtd, pypi
 
     - repo: openalea/hydroshoot
-      conda_package: openalea
-      site: https://hydroshoot.readthedocs.io/en/latest/
-      badges: conda, site
+      conda_channel: openalea
+      rtd_name: hydroshoot
+      badges: conda, rtd, pypi
 
     - repo: openalea/lpy
-      conda_package: openalea
-      site: https://lpy.readthedocs.io/en/latest/
-      badges: conda, site
+      conda_channel: openalea
+      rtd_name: lpy
+      badges: conda, rtd, pypi
 
     - repo: openalea/mtg
-      conda_package: openalea
-      site: https://mtg.readthedocs.io/en/latest/
-      badges: conda, site
+      conda_channel: openalea
+      rtd_name: mtg
+      badges: conda, rtd, pypi
 
     - repo: openalea/phenomenal
-      conda_package: openalea
-      site: https://phenomenal.readthedocs.io/en/latest/
-      badges: conda, site
+      conda_channel: openalea
+      rtd_name: phenomenal
+      badges: conda, rtd, pypi
 
     - repo: openalea/plantgl
-      conda_package: openalea
-      site: https://plantgl-cpl.readthedocs.io/en/latest/
-      badges: conda, site
+      conda_channel: openalea
+      rtd_name: plantgl-cp
+      badges: conda, rtd, pypi
 
     - repo: openalea/visualea
-      conda_package: openalea
+      conda_channel: openalea
       site: https://github.com/openalea/visualea/blob/master/README.txt
-      badges: conda, site
+      badges: conda, site, pypi
 
     - repo: openalea/weberpenn
-      conda_package: openalea
+      conda_channel: openalea
       site: https://github.com/openalea/weberpenn/blob/master/README.rst
-      badges: conda, site
+      badges: conda, site, pypi

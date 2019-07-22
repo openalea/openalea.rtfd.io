@@ -1,8 +1,3 @@
-All Tools
-=========
-
-.. mdinclude:: tools.md
-
 .. raw:: html
 
     <div id="tools-wrapper">
