@@ -7,239 +7,8 @@ All Tools
 
     <div id="tools-wrapper">
     
-    <h3 id="core">Core</h3>
-    <p>Python libraries on which multiple higher-level libraries are built.</p>
-    <table>
-      <tr>
-        <th>Name</th>
-        <th></th>
-        <th>Stars</th>
-        <th>Contributors</th>
-        <th>Downloads</th>
-        <th></th>
-        <th>License</th>
-        <th>Docs</th>
-        <th>PyPI</th>
-        <th>Conda</th>
-        <th>Sponsors</th>
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/matplotlib/matplotlib">matplotlib</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/matplotlib/matplotlib/stargazers">
-            <img src="_static/cache/matplotlib_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/matplotlib/matplotlib/graphs/contributors">
-            <img src="_static/cache/matplotlib_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/matplotlib_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='left'>
-            <img src="_static/cache/matplotlib_conda_downloads_badge.svg">
-          </td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/matplotlib_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="https://matplotlib.org">
-              <img src="https://img.shields.io/website-up-down-green-red/https/matplotlib.org.svg">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/matplotlib">
-              <img src="https://img.shields.io/pypi/v/matplotlib.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://anaconda.org/anaconda/matplotlib">
-              <img src="https://img.shields.io/conda/vn/anaconda/matplotlib.svg?style=flat">
-            </a>
-          </td>
-          
-          
-            <td align='left'>
-            
-              
-                <a href="https://numfocus.org">
-                
-                  <img class='sponsor-logo' src="_static/badges/numfocus.png" title="NumFocus">
-                
-                </a>
-              
-            
-            </td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/plotly/plotly.py">plotly.py</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/plotly/plotly.py/stargazers">
-            <img src="_static/cache/plotly.py_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/plotly/plotly.py/graphs/contributors">
-            <img src="_static/cache/plotly.py_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/plotly.py_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='left'>
-            <img src="_static/cache/plotly.py_conda_downloads_badge.svg">
-          </td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/plotly.py_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="https://plot.ly">
-              <img src="https://img.shields.io/website-up-down-green-red/https/plot.ly.svg">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/plotly">
-              <img src="https://img.shields.io/pypi/v/plotly.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://anaconda.org/anaconda/plotly">
-              <img src="https://img.shields.io/conda/vn/anaconda/plotly.svg?style=flat">
-            </a>
-          </td>
-          
-          
-            <td align='left'>
-            
-              
-                <a href="https://plot.ly">
-                
-                  <img class='sponsor-logo' src="_static/badges/plotly.png" title="Plot.ly">
-                
-                </a>
-              
-            
-            </td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/bokeh/bokeh">bokeh</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/bokeh/bokeh/stargazers">
-            <img src="_static/cache/bokeh_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/bokeh/bokeh/graphs/contributors">
-            <img src="_static/cache/bokeh_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/bokeh_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='left'>
-            <img src="_static/cache/bokeh_conda_downloads_badge.svg">
-          </td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/bokeh_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="https://bokeh.org">
-              <img src="https://img.shields.io/website-up-down-green-red/https/bokeh.org.svg">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/bokeh">
-              <img src="https://img.shields.io/pypi/v/bokeh.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://anaconda.org/anaconda/bokeh">
-              <img src="https://img.shields.io/conda/vn/anaconda/bokeh.svg?style=flat">
-            </a>
-          </td>
-          
-          
-            <td align='left'>
-            
-              
-                <a href="https://numfocus.org">
-                
-                  <img class='sponsor-logo' src="_static/badges/numfocus.png" title="NumFocus">
-                
-                </a>
-              
-            
-              
-                <a href="https://www.anaconda.com">
-                
-                  <img class='sponsor-logo' src="_static/badges/anaconda.png" title="Anaconda">
-                
-                </a>
-              
-            
-            </td>
-          
-      </tr>
-      
-    </table>
+    <h3 id="index">Index</h3>
     
-    <h3 id="high-level-shared-api">High-Level Shared API</h3>
-    <p>Libraries sharing the Pandas .plot() API, built upon the core Python or JS libraries.</p>
     <table>
       <tr>
         <th>Name</th>
@@ -257,3347 +26,96 @@ All Tools
       
       <tr>
         <td align='left'>
-          <a href="http://github.com/pandas-dev/pandas">pandas</a>
+          <a href="http://github.com/openalea/core">core</a>
         </td>
         <td align='left'>
           
         </td>
         <td align='left'>
-          <a href="https://github.com/pandas-dev/pandas/stargazers">
-            <img src="_static/cache/pandas_stars_badge.svg">
+          <a href="https://github.com/openalea/core/stargazers">
+            <img src="_static/cache/core_stars_badge.svg">
           </a>
         </td>
         <td align='left'>
-          <a href="https://github.com/pandas-dev/pandas/graphs/contributors">
-            <img src="_static/cache/pandas_contributors_badge.svg">
+          <a href="https://github.com/openalea/core/graphs/contributors">
+            <img src="_static/cache/core_contributors_badge.svg">
           </a>
         </td>
           
-          <td align='left'>
-            <img src="_static/cache/pandas_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='left'>
-            <img src="_static/cache/pandas_conda_downloads_badge.svg">
-          </td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/pandas_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="https://pandas.pydata.org">
-              <img src="https://img.shields.io/website-up-down-green-red/https/pandas.pydata.org.svg">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/pandas">
-              <img src="https://img.shields.io/pypi/v/pandas.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://anaconda.org/anaconda/pandas">
-              <img src="https://img.shields.io/conda/vn/anaconda/pandas.svg?style=flat">
-            </a>
-          </td>
-          
-          
-            <td align='left'>
-            
-              
-                <a href="https://numfocus.org">
-                
-                  <img class='sponsor-logo' src="_static/badges/numfocus.png" title="NumFocus">
-                
-                </a>
-              
-            
-            </td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/pydata/xarray">xarray</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/pydata/xarray/stargazers">
-            <img src="_static/cache/xarray_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/pydata/xarray/graphs/contributors">
-            <img src="_static/cache/xarray_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/xarray_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='left'>
-            <img src="_static/cache/xarray_conda_downloads_badge.svg">
-          </td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/xarray_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="https://xarray.pydata.org">
-              <img src="https://img.shields.io/website-up-down-green-red/https/xarray.pydata.org.svg">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/xarray">
-              <img src="https://img.shields.io/pypi/v/xarray.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://anaconda.org/anaconda/xarray">
-              <img src="https://img.shields.io/conda/vn/anaconda/xarray.svg?style=flat">
-            </a>
-          </td>
-          
-          
-            <td align='left'>
-            
-              
-                <a href="https://numfocus.org">
-                
-                  <img class='sponsor-logo' src="_static/badges/numfocus.png" title="NumFocus">
-                
-                </a>
-              
-            
-            </td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/santosjorge/cufflinks">cufflinks</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/santosjorge/cufflinks/stargazers">
-            <img src="_static/cache/cufflinks_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/santosjorge/cufflinks/graphs/contributors">
-            <img src="_static/cache/cufflinks_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/cufflinks_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/cufflinks_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="https://github.com/santosjorge/cufflinks/blob/master/README.md">
-              <img src="https://img.shields.io/website-up-down-green-red/https/github.com/santosjorge/cufflinks/blob/master/README.md.svg">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/cufflinks">
-              <img src="https://img.shields.io/pypi/v/cufflinks.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/pyviz/hvplot">hvplot</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/pyviz/hvplot/stargazers">
-            <img src="_static/cache/hvplot_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/pyviz/hvplot/graphs/contributors">
-            <img src="_static/cache/hvplot_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/hvplot_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='left'>
-            <img src="_static/cache/hvplot_conda_downloads_badge.svg">
-          </td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/hvplot_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="https://hvplot.pyviz.org">
-              <img src="https://img.shields.io/website-up-down-green-red/https/hvplot.pyviz.org.svg">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/hvplot">
-              <img src="https://img.shields.io/pypi/v/hvplot.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://anaconda.org/anaconda/hvplot">
-              <img src="https://img.shields.io/conda/vn/anaconda/hvplot.svg?style=flat">
-            </a>
-          </td>
-          
-          
-            <td align='left'>
-            
-              
-                <a href="https://www.anaconda.com">
-                
-                  <img class='sponsor-logo' src="_static/badges/anaconda.png" title="Anaconda">
-                
-                </a>
-              
-            
-            </td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/PatrikHlobil/Pandas-Bokeh">Pandas-Bokeh</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/PatrikHlobil/Pandas-Bokeh/stargazers">
-            <img src="_static/cache/Pandas-Bokeh_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/PatrikHlobil/Pandas-Bokeh/graphs/contributors">
-            <img src="_static/cache/Pandas-Bokeh_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/Pandas-Bokeh_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/Pandas-Bokeh_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="https://github.com/PatrikHlobil/Pandas-Bokeh/blob/master/README.md">
-              <img src="https://img.shields.io/website-up-down-green-red/https/github.com/PatrikHlobil/Pandas-Bokeh/blob/master/README.md.svg">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/Pandas-Bokeh">
-              <img src="https://img.shields.io/pypi/v/Pandas-Bokeh.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/altair-viz/pdvega">pdvega</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/altair-viz/pdvega/stargazers">
-            <img src="_static/cache/pdvega_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/altair-viz/pdvega/graphs/contributors">
-            <img src="_static/cache/pdvega_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/pdvega_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/pdvega_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="https://altair-viz.github.io/pdvega">
-              <img src="https://img.shields.io/website-up-down-green-red/https/altair-viz.github.io/pdvega.svg">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/pdvega">
-              <img src="https://img.shields.io/pypi/v/pdvega.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-      </tr>
-      
-    </table>
-    
-    <h3 id="high-level">High-Level</h3>
-    <p>InfoVis Libraries focusing on high-level operations for working with data visually, built upon the core Python or JS libraries.</p>
-    <table>
-      <tr>
-        <th>Name</th>
-        <th></th>
-        <th>Stars</th>
-        <th>Contributors</th>
-        <th>Downloads</th>
-        <th></th>
-        <th>License</th>
-        <th>Docs</th>
-        <th>PyPI</th>
-        <th>Conda</th>
-        <th>Sponsors</th>
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/mwaskom/seaborn">seaborn</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/mwaskom/seaborn/stargazers">
-            <img src="_static/cache/seaborn_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/mwaskom/seaborn/graphs/contributors">
-            <img src="_static/cache/seaborn_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/seaborn_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='left'>
-            <img src="_static/cache/seaborn_conda_downloads_badge.svg">
-          </td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/seaborn_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="https://seaborn.pydata.org">
-              <img src="https://img.shields.io/website-up-down-green-red/https/seaborn.pydata.org.svg">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/seaborn">
-              <img src="https://img.shields.io/pypi/v/seaborn.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://anaconda.org/anaconda/seaborn">
-              <img src="https://img.shields.io/conda/vn/anaconda/seaborn.svg?style=flat">
-            </a>
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/altair-viz/altair">altair</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/altair-viz/altair/stargazers">
-            <img src="_static/cache/altair_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/altair-viz/altair/graphs/contributors">
-            <img src="_static/cache/altair_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/altair_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='left'>
-            <img src="_static/cache/altair_conda_downloads_badge.svg">
-          </td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/altair_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="https://altair-viz.github.io">
-              <img src="https://img.shields.io/website-up-down-green-red/https/altair-viz.github.io.svg">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/altair">
-              <img src="https://img.shields.io/pypi/v/altair.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://anaconda.org/conda-forge/altair">
-              <img src="https://img.shields.io/conda/vn/conda-forge/altair.svg?style=flat">
-            </a>
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/pyviz/holoviews">holoviews</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/pyviz/holoviews/stargazers">
-            <img src="_static/cache/holoviews_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/pyviz/holoviews/graphs/contributors">
-            <img src="_static/cache/holoviews_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/holoviews_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='left'>
-            <img src="_static/cache/holoviews_conda_downloads_badge.svg">
-          </td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/holoviews_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="https://holoviews.org">
-              <img src="https://img.shields.io/website-up-down-green-red/https/holoviews.org.svg">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/holoviews">
-              <img src="https://img.shields.io/pypi/v/holoviews.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://anaconda.org/anaconda/holoviews">
-              <img src="https://img.shields.io/conda/vn/anaconda/holoviews.svg?style=flat">
-            </a>
-          </td>
-          
-          
-            <td align='left'>
-            
-              
-                <a href="https://www.anaconda.com">
-                
-                  <img class='sponsor-logo' src="_static/badges/anaconda.png" title="Anaconda">
-                
-                </a>
-              
-            
-            </td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/plotly/plotly_express">plotly_express</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/plotly/plotly_express/stargazers">
-            <img src="_static/cache/plotly_express_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/plotly/plotly_express/graphs/contributors">
-            <img src="_static/cache/plotly_express_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/plotly_express_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/plotly_express_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="https://plotly.express">
-              <img src="https://img.shields.io/website-up-down-green-red/https/plotly.express.svg">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/plotly_express">
-              <img src="https://img.shields.io/pypi/v/plotly_express.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-          
-            <td align='left'>
-            
-              
-                <a href="https://plot.ly">
-                
-                  <img class='sponsor-logo' src="_static/badges/plotly.png" title="Plot.ly">
-                
-                </a>
-              
-            
-            </td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/spotify/chartify">chartify</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/spotify/chartify/stargazers">
-            <img src="_static/cache/chartify_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/spotify/chartify/graphs/contributors">
-            <img src="_static/cache/chartify_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/chartify_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='left'>
-            <img src="_static/cache/chartify_conda_downloads_badge.svg">
-          </td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/chartify_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="https://github.com/spotify/chartify/blob/master/README.rst">
-              <img src="https://img.shields.io/website-up-down-green-red/https/github.com/spotify/chartify/blob/master/README.rst.svg">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/chartify">
-              <img src="https://img.shields.io/pypi/v/chartify.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://anaconda.org/conda-forge/chartify">
-              <img src="https://img.shields.io/conda/vn/conda-forge/chartify.svg?style=flat">
-            </a>
-          </td>
-          
-          
-            <td align='left'>
-            
-              
-                <a href="https://www.spotify.com">
-                
-                  <img class='sponsor-logo' src="_static/badges/spotify.png" title="Spotify">
-                
-                </a>
-              
-            
-            </td>
-          
-      </tr>
-      
-    </table>
-    
-    <h3 id="native-gui">Native-GUI</h3>
-    <p>InfoVis Libraries targetting native-desktop GUI interfaces for interactive plots (also see Matplotlib in core above).</p>
-    <table>
-      <tr>
-        <th>Name</th>
-        <th></th>
-        <th>Stars</th>
-        <th>Contributors</th>
-        <th>Downloads</th>
-        <th></th>
-        <th>License</th>
-        <th>Docs</th>
-        <th>PyPI</th>
-        <th>Conda</th>
-        <th>Sponsors</th>
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/pyqtgraph/pyqtgraph">pyqtgraph</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/pyqtgraph/pyqtgraph/stargazers">
-            <img src="_static/cache/pyqtgraph_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/pyqtgraph/pyqtgraph/graphs/contributors">
-            <img src="_static/cache/pyqtgraph_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/pyqtgraph_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='left'>
-            <img src="_static/cache/pyqtgraph_conda_downloads_badge.svg">
-          </td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/pyqtgraph_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="http://www.pyqtgraph.org">
-              <img src="https://img.shields.io/website-up-down-green-red/http/www.pyqtgraph.org.svg">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/pyqtgraph">
-              <img src="https://img.shields.io/pypi/v/pyqtgraph.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://anaconda.org/anaconda/pyqtgraph">
-              <img src="https://img.shields.io/conda/vn/anaconda/pyqtgraph.svg?style=flat">
-            </a>
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/glue-viz/glue">glue</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/glue-viz/glue/stargazers">
-            <img src="_static/cache/glue_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/glue-viz/glue/graphs/contributors">
-            <img src="_static/cache/glue_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/glue_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/glue_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="http://docs.glueviz.org">
-              <img src="https://img.shields.io/website-up-down-green-red/http/docs.glueviz.org.svg">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/glue">
-              <img src="https://img.shields.io/pypi/v/glue.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/enthought/chaco">chaco</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/enthought/chaco/stargazers">
-            <img src="_static/cache/chaco_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/enthought/chaco/graphs/contributors">
-            <img src="_static/cache/chaco_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/chaco_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/chaco_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="https://docs.enthought.com/chaco">
-              <img src="https://img.shields.io/website-up-down-green-red/https/docs.enthought.com/chaco.svg">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/chaco">
-              <img src="https://img.shields.io/pypi/v/chaco.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-          
-            <td align='left'>
-            
-              
-                <a href="https://www.enthought.com">
-                
-                  <img class='sponsor-logo' src="_static/badges/enthought.svg" title="Enthought">
-                
-                </a>
-              
-            
-            </td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/veusz/veusz">veusz</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/veusz/veusz/stargazers">
-            <img src="_static/cache/veusz_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/veusz/veusz/graphs/contributors">
-            <img src="_static/cache/veusz_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/veusz_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='left'>
-            <img src="_static/cache/veusz_conda_downloads_badge.svg">
-          </td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/veusz_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="https://veusz.github.io">
-              <img src="https://img.shields.io/website-up-down-green-red/https/veusz.github.io.svg">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/veusz">
-              <img src="https://img.shields.io/pypi/v/veusz.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://anaconda.org/conda-forge/veusz">
-              <img src="https://img.shields.io/conda/vn/conda-forge/veusz.svg?style=flat">
-            </a>
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/sciapp/gr">gr</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/sciapp/gr/stargazers">
-            <img src="_static/cache/gr_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/sciapp/gr/graphs/contributors">
-            <img src="_static/cache/gr_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/gr_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/gr_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="https://gr-framework.org/python.html">
-              <img src="https://img.shields.io/website-up-down-green-red/https/gr-framework.org/python.html.svg">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/gr">
-              <img src="https://img.shields.io/pypi/v/gr.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-      </tr>
-      
-    </table>
-    
-    <h3 id="other-infovis">Other InfoVis</h3>
-    <p>InfoVis plotting libraries not fitting into other categories above.</p>
-    <table>
-      <tr>
-        <th>Name</th>
-        <th></th>
-        <th>Stars</th>
-        <th>Contributors</th>
-        <th>Downloads</th>
-        <th></th>
-        <th>License</th>
-        <th>Docs</th>
-        <th>PyPI</th>
-        <th>Conda</th>
-        <th>Sponsors</th>
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/Kozea/pygal">pygal</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/Kozea/pygal/stargazers">
-            <img src="_static/cache/pygal_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/Kozea/pygal/graphs/contributors">
-            <img src="_static/cache/pygal_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/pygal_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='left'>
-            <img src="_static/cache/pygal_conda_downloads_badge.svg">
-          </td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/pygal_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="http://pygal.org">
-              <img src="https://img.shields.io/website-up-down-green-red/http/pygal.org.svg">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/pygal">
-              <img src="https://img.shields.io/pypi/v/pygal.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://anaconda.org/conda-forge/pygal">
-              <img src="https://img.shields.io/conda/vn/conda-forge/pygal.svg?style=flat">
-            </a>
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/has2k1/plotnine">plotnine</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/has2k1/plotnine/stargazers">
-            <img src="_static/cache/plotnine_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/has2k1/plotnine/graphs/contributors">
-            <img src="_static/cache/plotnine_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/plotnine_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='left'>
-            <img src="_static/cache/plotnine_conda_downloads_badge.svg">
-          </td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/plotnine_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="https://plotnine.readthedocs.io">
-              <img src="https://readthedocs.org/projects/plotnine/badge/?version=latest">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/plotnine">
-              <img src="https://img.shields.io/pypi/v/plotnine.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://anaconda.org/conda-forge/plotnine">
-              <img src="https://img.shields.io/conda/vn/conda-forge/plotnine.svg?style=flat">
-            </a>
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/bloomberg/bqplot">bqplot</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/bloomberg/bqplot/stargazers">
-            <img src="_static/cache/bqplot_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/bloomberg/bqplot/graphs/contributors">
-            <img src="_static/cache/bqplot_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/bqplot_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='left'>
-            <img src="_static/cache/bqplot_conda_downloads_badge.svg">
-          </td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/bqplot_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="https://bqplot.readthedocs.io">
-              <img src="https://readthedocs.org/projects/bqplot/badge/?version=latest">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/bqplot">
-              <img src="https://img.shields.io/pypi/v/bqplot.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://anaconda.org/conda-forge/bqplot">
-              <img src="https://img.shields.io/conda/vn/conda-forge/bqplot.svg?style=flat">
-            </a>
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/sandialabs/toyplot">toyplot</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/sandialabs/toyplot/stargazers">
-            <img src="_static/cache/toyplot_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/sandialabs/toyplot/graphs/contributors">
-            <img src="_static/cache/toyplot_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/toyplot_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/toyplot_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="https://toyplot.readthedocs.io">
-              <img src="https://readthedocs.org/projects/toyplot/badge/?version=latest">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/toyplot">
-              <img src="https://img.shields.io/pypi/v/toyplot.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-          
-            <td align='left'>
-            
-              
-                <a href="https://www.sandia.gov">
-                
-                  <img class='sponsor-logo' src="_static/badges/sandia.png" title="Sandia">
-                
-                </a>
-              
-            
-            </td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/biggles-plot/biggles">biggles</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/biggles-plot/biggles/stargazers">
-            <img src="_static/cache/biggles_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/biggles-plot/biggles/graphs/contributors">
-            <img src="_static/cache/biggles_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/biggles_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/biggles_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="https://biggles-plot.github.io">
-              <img src="https://img.shields.io/website-up-down-green-red/https/biggles-plot.github.io.svg">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/biggles">
-              <img src="https://img.shields.io/pypi/v/biggles.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-      </tr>
-      
-    </table>
-    
-    <h3 id="scivis">SciVis</h3>
-    <p>Libraries for visualizing scientific data situated in real-world coordinates, typically using OpenGL or WebGL.</p>
-    <table>
-      <tr>
-        <th>Name</th>
-        <th></th>
-        <th>Stars</th>
-        <th>Contributors</th>
-        <th>Downloads</th>
-        <th></th>
-        <th>License</th>
-        <th>Docs</th>
-        <th>PyPI</th>
-        <th>Conda</th>
-        <th>Sponsors</th>
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/Kitware/VTK">VTK</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/Kitware/VTK/stargazers">
-            <img src="_static/cache/VTK_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/Kitware/VTK/graphs/contributors">
-            <img src="_static/cache/VTK_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/VTK_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='left'>
-            <img src="_static/cache/VTK_conda_downloads_badge.svg">
-          </td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/VTK_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="https://vtk.org">
-              <img src="https://img.shields.io/website-up-down-green-red/https/vtk.org.svg">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/VTK">
-              <img src="https://img.shields.io/pypi/v/VTK.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://anaconda.org/conda-forge/VTK">
-              <img src="https://img.shields.io/conda/vn/conda-forge/VTK.svg?style=flat">
-            </a>
-          </td>
-          
-          
-            <td align='left'>
-            
-              
-                <a href="https://www.kitware.com">
-                
-                  <img class='sponsor-logo' src="_static/badges/kitware.svg" title="Kitware">
-                
-                </a>
-              
-            
-            </td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/vispy/vispy">vispy</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/vispy/vispy/stargazers">
-            <img src="_static/cache/vispy_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/vispy/vispy/graphs/contributors">
-            <img src="_static/cache/vispy_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/vispy_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='left'>
-            <img src="_static/cache/vispy_conda_downloads_badge.svg">
-          </td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/vispy_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="http://vispy.org">
-              <img src="https://img.shields.io/website-up-down-green-red/http/vispy.org.svg">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/vispy">
-              <img src="https://img.shields.io/pypi/v/vispy.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://anaconda.org/conda-forge/vispy">
-              <img src="https://img.shields.io/conda/vn/conda-forge/vispy.svg?style=flat">
-            </a>
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/pyvista/pyvista">pyvista</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/pyvista/pyvista/stargazers">
-            <img src="_static/cache/pyvista_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/pyvista/pyvista/graphs/contributors">
-            <img src="_static/cache/pyvista_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/pyvista_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='left'>
-            <img src="_static/cache/pyvista_conda_downloads_badge.svg">
-          </td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/pyvista_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="https://docs.pyvista.org">
-              <img src="https://img.shields.io/website-up-down-green-red/https/docs.pyvista.org.svg">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/pyvista">
-              <img src="https://img.shields.io/pypi/v/pyvista.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://anaconda.org/conda-forge/pyvista">
-              <img src="https://img.shields.io/conda/vn/conda-forge/pyvista.svg?style=flat">
-            </a>
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/enthought/mayavi">mayavi</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/enthought/mayavi/stargazers">
-            <img src="_static/cache/mayavi_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/enthought/mayavi/graphs/contributors">
-            <img src="_static/cache/mayavi_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/mayavi_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='left'>
-            <img src="_static/cache/mayavi_conda_downloads_badge.svg">
-          </td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/mayavi_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="https://docs.enthought.com/mayavi/mayavi">
-              <img src="https://img.shields.io/website-up-down-green-red/https/docs.enthought.com/mayavi/mayavi.svg">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/mayavi">
-              <img src="https://img.shields.io/pypi/v/mayavi.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://anaconda.org/anaconda/mayavi">
-              <img src="https://img.shields.io/conda/vn/anaconda/mayavi.svg?style=flat">
-            </a>
-          </td>
-          
-          
-            <td align='left'>
-            
-              
-                <a href="https://www.enthought.com">
-                
-                  <img class='sponsor-logo' src="_static/badges/enthought.svg" title="Enthought">
-                
-                </a>
-              
-            
-            </td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/maartenbreddels/ipyvolume">ipyvolume</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/maartenbreddels/ipyvolume/stargazers">
-            <img src="_static/cache/ipyvolume_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/maartenbreddels/ipyvolume/graphs/contributors">
-            <img src="_static/cache/ipyvolume_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/ipyvolume_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='left'>
-            <img src="_static/cache/ipyvolume_conda_downloads_badge.svg">
-          </td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/ipyvolume_license_badge.svg">
-            </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/ipyvolume">
-              <img src="https://img.shields.io/pypi/v/ipyvolume.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://anaconda.org/conda-forge/ipyvolume">
-              <img src="https://img.shields.io/conda/vn/conda-forge/ipyvolume.svg?style=flat">
-            </a>
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/glumpy/glumpy">glumpy</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/glumpy/glumpy/stargazers">
-            <img src="_static/cache/glumpy_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/glumpy/glumpy/graphs/contributors">
-            <img src="_static/cache/glumpy_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/glumpy_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/glumpy_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="https://glumpy.readthedocs.io">
-              <img src="https://readthedocs.org/projects/glumpy/badge/?version=latest">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/glumpy">
-              <img src="https://img.shields.io/pypi/v/glumpy.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/InsightSoftwareConsortium/itk-jupyter-widgets">itk-jupyter-widgets</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/InsightSoftwareConsortium/itk-jupyter-widgets/stargazers">
-            <img src="_static/cache/itk-jupyter-widgets_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/InsightSoftwareConsortium/itk-jupyter-widgets/graphs/contributors">
-            <img src="_static/cache/itk-jupyter-widgets_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/itk-jupyter-widgets_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='left'>
-            <img src="_static/cache/itk-jupyter-widgets_conda_downloads_badge.svg">
-          </td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/itk-jupyter-widgets_license_badge.svg">
-            </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/itkwidgets">
-              <img src="https://img.shields.io/pypi/v/itkwidgets.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://anaconda.org/conda-forge/itkwidgets">
-              <img src="https://img.shields.io/conda/vn/conda-forge/itkwidgets.svg?style=flat">
-            </a>
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-      </tr>
-      
-    </table>
-    
-    <h3 id="geospatial">Geospatial</h3>
-    <p>Tools for working with data in geographic coordinates.</p>
-    <table>
-      <tr>
-        <th>Name</th>
-        <th></th>
-        <th>Stars</th>
-        <th>Contributors</th>
-        <th>Downloads</th>
-        <th></th>
-        <th>License</th>
-        <th>Docs</th>
-        <th>PyPI</th>
-        <th>Conda</th>
-        <th>Sponsors</th>
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/geopandas/geopandas">geopandas</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/geopandas/geopandas/stargazers">
-            <img src="_static/cache/geopandas_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/geopandas/geopandas/graphs/contributors">
-            <img src="_static/cache/geopandas_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/geopandas_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='left'>
-            <img src="_static/cache/geopandas_conda_downloads_badge.svg">
-          </td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/geopandas_license_badge.svg">
-            </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/geopandas">
-              <img src="https://img.shields.io/pypi/v/geopandas.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://anaconda.org/anaconda/geopandas">
-              <img src="https://img.shields.io/conda/vn/anaconda/geopandas.svg?style=flat">
-            </a>
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/python-visualization/folium">folium</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/python-visualization/folium/stargazers">
-            <img src="_static/cache/folium_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/python-visualization/folium/graphs/contributors">
-            <img src="_static/cache/folium_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/folium_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='left'>
-            <img src="_static/cache/folium_conda_downloads_badge.svg">
-          </td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/folium_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="https://python-visualization.github.io/folium">
-              <img src="https://img.shields.io/website-up-down-green-red/https/python-visualization.github.io/folium.svg">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/folium">
-              <img src="https://img.shields.io/pypi/v/folium.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://anaconda.org/conda-forge/folium">
-              <img src="https://img.shields.io/conda/vn/conda-forge/folium.svg?style=flat">
-            </a>
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/SciTools/cartopy">cartopy</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/SciTools/cartopy/stargazers">
-            <img src="_static/cache/cartopy_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/SciTools/cartopy/graphs/contributors">
-            <img src="_static/cache/cartopy_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/cartopy_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='left'>
-            <img src="_static/cache/cartopy_conda_downloads_badge.svg">
-          </td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/cartopy_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="https://scitools.org.uk/cartopy">
-              <img src="https://img.shields.io/website-up-down-green-red/https/scitools.org.uk/cartopy.svg">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/cartopy">
-              <img src="https://img.shields.io/pypi/v/cartopy.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://anaconda.org/anaconda/cartopy">
-              <img src="https://img.shields.io/conda/vn/anaconda/cartopy.svg?style=flat">
-            </a>
-          </td>
-          
-          
-            <td align='left'>
-            
-              
-                <a href="https://www.metoffice.gov.uk">
-                
-                  <img class='sponsor-logo' src="_static/badges/metoffice.png" title="Met Office">
-                
-                </a>
-              
-            
-            </td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/vgm64/gmplot">gmplot</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/vgm64/gmplot/stargazers">
-            <img src="_static/cache/gmplot_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/vgm64/gmplot/graphs/contributors">
-            <img src="_static/cache/gmplot_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/gmplot_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/gmplot_license_badge.svg">
-            </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/gmplot">
-              <img src="https://img.shields.io/pypi/v/gmplot.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/jupyter-widgets/ipyleaflet">ipyleaflet</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/jupyter-widgets/ipyleaflet/stargazers">
-            <img src="_static/cache/ipyleaflet_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/jupyter-widgets/ipyleaflet/graphs/contributors">
-            <img src="_static/cache/ipyleaflet_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/ipyleaflet_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='left'>
-            <img src="_static/cache/ipyleaflet_conda_downloads_badge.svg">
-          </td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/ipyleaflet_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="https://ipyleaflet.readthedocs.io">
-              <img src="https://readthedocs.org/projects/ipyleaflet/badge/?version=latest">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/ipyleaflet">
-              <img src="https://img.shields.io/pypi/v/ipyleaflet.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://anaconda.org/conda-forge/ipyleaflet">
-              <img src="https://img.shields.io/conda/vn/conda-forge/ipyleaflet.svg?style=flat">
-            </a>
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/pyviz/geoviews">geoviews</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/pyviz/geoviews/stargazers">
-            <img src="_static/cache/geoviews_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/pyviz/geoviews/graphs/contributors">
-            <img src="_static/cache/geoviews_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/geoviews_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='left'>
-            <img src="_static/cache/geoviews_conda_downloads_badge.svg">
-          </td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/geoviews_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="http://geoviews.org">
-              <img src="https://img.shields.io/website-up-down-green-red/http/geoviews.org.svg">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/geoviews">
-              <img src="https://img.shields.io/pypi/v/geoviews.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://anaconda.org/anaconda/geoviews">
-              <img src="https://img.shields.io/conda/vn/anaconda/geoviews.svg?style=flat">
-            </a>
-          </td>
-          
-          
-            <td align='left'>
-            
-              
-                <a href="https://www.anaconda.com">
-                
-                  <img class='sponsor-logo' src="_static/badges/anaconda.png" title="Anaconda">
-                
-                </a>
-              
-            
-            </td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/andrea-cuttone/geoplotlib">geoplotlib</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/andrea-cuttone/geoplotlib/stargazers">
-            <img src="_static/cache/geoplotlib_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/andrea-cuttone/geoplotlib/graphs/contributors">
-            <img src="_static/cache/geoplotlib_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/geoplotlib_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/geoplotlib_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="https://github.com/andrea-cuttone/geoplotlib/wiki/User-Guide">
-              <img src="https://img.shields.io/website-up-down-green-red/https/github.com/andrea-cuttone/geoplotlib/wiki/User-Guide.svg">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/geoplotlib">
-              <img src="https://img.shields.io/pypi/v/geoplotlib.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/ResidentMario/geoplot">geoplot</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/ResidentMario/geoplot/stargazers">
-            <img src="_static/cache/geoplot_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/ResidentMario/geoplot/graphs/contributors">
-            <img src="_static/cache/geoplot_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/geoplot_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='left'>
-            <img src="_static/cache/geoplot_conda_downloads_badge.svg">
-          </td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/geoplot_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="https://residentmario.github.io/geoplot">
-              <img src="https://img.shields.io/website-up-down-green-red/https/residentmario.github.io/geoplot.svg">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/geoplot">
-              <img src="https://img.shields.io/pypi/v/geoplot.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://anaconda.org/conda-forge/geoplot">
-              <img src="https://img.shields.io/conda/vn/conda-forge/geoplot.svg?style=flat">
-            </a>
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-      </tr>
-      
-    </table>
-    
-    <h3 id="other-domain-specific">Other domain-specific</h3>
-    <p>Tools focused on specific research or application areas other than those above.</p>
-    <table>
-      <tr>
-        <th>Name</th>
-        <th></th>
-        <th>Stars</th>
-        <th>Contributors</th>
-        <th>Downloads</th>
-        <th></th>
-        <th>License</th>
-        <th>Docs</th>
-        <th>PyPI</th>
-        <th>Conda</th>
-        <th>Sponsors</th>
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/networkx/networkx">networkx</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/networkx/networkx/stargazers">
-            <img src="_static/cache/networkx_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/networkx/networkx/graphs/contributors">
-            <img src="_static/cache/networkx_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/networkx_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='left'>
-            <img src="_static/cache/networkx_conda_downloads_badge.svg">
-          </td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/networkx_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="https://networkx.github.io">
-              <img src="https://img.shields.io/website-up-down-green-red/https/networkx.github.io.svg">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/networkx">
-              <img src="https://img.shields.io/pypi/v/networkx.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://anaconda.org/anaconda/networkx">
-              <img src="https://img.shields.io/conda/vn/anaconda/networkx.svg?style=flat">
-            </a>
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/scikit-image/scikit-image">scikit-image</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/scikit-image/scikit-image/stargazers">
-            <img src="_static/cache/scikit-image_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/scikit-image/scikit-image/graphs/contributors">
-            <img src="_static/cache/scikit-image_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/scikit-image_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='left'>
-            <img src="_static/cache/scikit-image_conda_downloads_badge.svg">
-          </td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/scikit-image_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="https://scikit-image.org">
-              <img src="https://img.shields.io/website-up-down-green-red/https/scikit-image.org.svg">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/scikit-image">
-              <img src="https://img.shields.io/pypi/v/scikit-image.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://anaconda.org/anaconda/scikit-image">
-              <img src="https://img.shields.io/conda/vn/anaconda/scikit-image.svg?style=flat">
-            </a>
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/ResidentMario/missingno">missingno</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/ResidentMario/missingno/stargazers">
-            <img src="_static/cache/missingno_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/ResidentMario/missingno/graphs/contributors">
-            <img src="_static/cache/missingno_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/missingno_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='left'>
-            <img src="_static/cache/missingno_conda_downloads_badge.svg">
-          </td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/missingno_license_badge.svg">
-            </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/missingno">
-              <img src="https://img.shields.io/pypi/v/missingno.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://anaconda.org/conda-forge/missingno">
-              <img src="https://img.shields.io/conda/vn/conda-forge/missingno.svg?style=flat">
-            </a>
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/DistrictDataLabs/yellowbrick">yellowbrick</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/DistrictDataLabs/yellowbrick/stargazers">
-            <img src="_static/cache/yellowbrick_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/DistrictDataLabs/yellowbrick/graphs/contributors">
-            <img src="_static/cache/yellowbrick_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/yellowbrick_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='left'>
-            <img src="_static/cache/yellowbrick_conda_downloads_badge.svg">
-          </td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/yellowbrick_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="https://www.scikit-yb.org">
-              <img src="https://img.shields.io/website-up-down-green-red/https/www.scikit-yb.org.svg">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/yellowbrick">
-              <img src="https://img.shields.io/pypi/v/yellowbrick.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://anaconda.org/DistrictDataLabs/yellowbrick">
-              <img src="https://img.shields.io/conda/vn/DistrictDataLabs/yellowbrick.svg?style=flat">
-            </a>
-          </td>
-          
-          
-            <td align='left'>
-            
-              
-                <a href="https://numfocus.org">
-                
-                  <img class='sponsor-logo' src="_static/badges/numfocus.png" title="NumFocus">
-                
-                </a>
-              
-            
-            </td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/yt-project/yt">yt</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/yt-project/yt/stargazers">
-            <img src="_static/cache/yt_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/yt-project/yt/graphs/contributors">
-            <img src="_static/cache/yt_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/yt_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='left'>
-            <img src="_static/cache/yt_conda_downloads_badge.svg">
-          </td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/yt_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="https://yt-project.org">
-              <img src="https://img.shields.io/website-up-down-green-red/https/yt-project.org.svg">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/yt">
-              <img src="https://img.shields.io/pypi/v/yt.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://anaconda.org/anaconda/yt">
-              <img src="https://img.shields.io/conda/vn/anaconda/yt.svg?style=flat">
-            </a>
-          </td>
-          
-          
-            <td align='left'>
-            
-              
-                <a href="https://numfocus.org">
-                
-                  <img class='sponsor-logo' src="_static/badges/numfocus.png" title="NumFocus">
-                
-                </a>
-              
-            
-            </td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/ContextLab/hypertools">hypertools</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/ContextLab/hypertools/stargazers">
-            <img src="_static/cache/hypertools_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/ContextLab/hypertools/graphs/contributors">
-            <img src="_static/cache/hypertools_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/hypertools_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/hypertools_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="https://hypertools.readthedocs.io">
-              <img src="https://readthedocs.org/projects/hypertools/badge/?version=latest">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/hypertools">
-              <img src="https://img.shields.io/pypi/v/hypertools.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/reiinakano/scikit-plot">scikit-plot</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/reiinakano/scikit-plot/stargazers">
-            <img src="_static/cache/scikit-plot_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/reiinakano/scikit-plot/graphs/contributors">
-            <img src="_static/cache/scikit-plot_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/scikit-plot_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='left'>
-            <img src="_static/cache/scikit-plot_conda_downloads_badge.svg">
-          </td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/scikit-plot_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="https://github.com/reiinakano/scikit-plot">
-              <img src="https://img.shields.io/website-up-down-green-red/https/github.com/reiinakano/scikit-plot.svg">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/scikit-plot">
-              <img src="https://img.shields.io/pypi/v/scikit-plot.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://anaconda.org/conda-forge/scikit-plot">
-              <img src="https://img.shields.io/conda/vn/conda-forge/scikit-plot.svg?style=flat">
-            </a>
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/ismms-himc/clustergrammer2">clustergrammer2</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/ismms-himc/clustergrammer2/stargazers">
-            <img src="_static/cache/clustergrammer2_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/ismms-himc/clustergrammer2/graphs/contributors">
-            <img src="_static/cache/clustergrammer2_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/clustergrammer2_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/clustergrammer2_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="https://clustergrammer.readthedocs.io">
-              <img src="https://img.shields.io/website-up-down-green-red/https/clustergrammer.readthedocs.io.svg">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/clustergrammer2">
-              <img src="https://img.shields.io/pypi/v/clustergrammer2.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/arviz-devs/arviz">arviz</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/arviz-devs/arviz/stargazers">
-            <img src="_static/cache/arviz_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/arviz-devs/arviz/graphs/contributors">
-            <img src="_static/cache/arviz_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/arviz_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='left'>
-            <img src="_static/cache/arviz_conda_downloads_badge.svg">
-          </td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/arviz_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="https://arviz-devs.github.io/arviz">
-              <img src="https://img.shields.io/website-up-down-green-red/https/arviz-devs.github.io/arviz.svg">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/arviz">
-              <img src="https://img.shields.io/pypi/v/arviz.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://anaconda.org/conda-forge/arviz">
-              <img src="https://img.shields.io/conda/vn/conda-forge/arviz.svg?style=flat">
-            </a>
-          </td>
-          
-          
-            <td align='left'>
-            
-              
-                <a href="https://numfocus.org">
-                
-                  <img class='sponsor-logo' src="_static/badges/numfocus.png" title="NumFocus">
-                
-                </a>
-              
-            
-            </td>
-          
-      </tr>
-      
-    </table>
-    
-    <h3 id="large-data-rendering">Large-data rendering</h3>
-    <p>Tools for server-side rasterizing/aggregating data before visualization.</p>
-    <table>
-      <tr>
-        <th>Name</th>
-        <th></th>
-        <th>Stars</th>
-        <th>Contributors</th>
-        <th>Downloads</th>
-        <th></th>
-        <th>License</th>
-        <th>Docs</th>
-        <th>PyPI</th>
-        <th>Conda</th>
-        <th>Sponsors</th>
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/pyviz/datashader">datashader</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/pyviz/datashader/stargazers">
-            <img src="_static/cache/datashader_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/pyviz/datashader/graphs/contributors">
-            <img src="_static/cache/datashader_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/datashader_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='left'>
-            <img src="_static/cache/datashader_conda_downloads_badge.svg">
-          </td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/datashader_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="http://datashader.org">
-              <img src="https://img.shields.io/website-up-down-green-red/http/datashader.org.svg">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/datashader">
-              <img src="https://img.shields.io/pypi/v/datashader.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://anaconda.org/anaconda/datashader">
-              <img src="https://img.shields.io/conda/vn/anaconda/datashader.svg?style=flat">
-            </a>
-          </td>
-          
-          
-            <td align='left'>
-            
-              
-                <a href="https://www.anaconda.com">
-                
-                  <img class='sponsor-logo' src="_static/badges/anaconda.png" title="Anaconda">
-                
-                </a>
-              
-            
-            </td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/vaexio/vaex">vaex</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/vaexio/vaex/stargazers">
-            <img src="_static/cache/vaex_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/vaexio/vaex/graphs/contributors">
-            <img src="_static/cache/vaex_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/vaex_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='left'>
-            <img src="_static/cache/vaex_conda_downloads_badge.svg">
-          </td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/vaex_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="https://vaex.io">
-              <img src="https://img.shields.io/website-up-down-green-red/https/vaex.io.svg">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/vaex">
-              <img src="https://img.shields.io/pypi/v/vaex.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://anaconda.org/conda-forge/vaex">
-              <img src="https://img.shields.io/conda/vn/conda-forge/vaex.svg?style=flat">
-            </a>
-          </td>
-          
-          
-            <td align='left'>
-            
-              
-                <a href="https://vaex.io">
-                
-                  <img class='sponsor-logo' src="_static/badges/vaexio.png" title="vaex.io">
-                
-                </a>
-              
-            
-            </td>
-          
-      </tr>
-      
-    </table>
-    
-    <h3 id="dashboarding">Dashboarding</h3>
-    <p>Libraries for creating live Python-backed web applications or dashboards that a user can interact with to explore or analyze data.</p>
-    <table>
-      <tr>
-        <th>Name</th>
-        <th></th>
-        <th>Stars</th>
-        <th>Contributors</th>
-        <th>Downloads</th>
-        <th></th>
-        <th>License</th>
-        <th>Docs</th>
-        <th>PyPI</th>
-        <th>Conda</th>
-        <th>Sponsors</th>
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/plotly/dash">dash</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/plotly/dash/stargazers">
-            <img src="_static/cache/dash_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/plotly/dash/graphs/contributors">
-            <img src="_static/cache/dash_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/dash_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='left'>
-            <img src="_static/cache/dash_conda_downloads_badge.svg">
-          </td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/dash_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="https://dash.plot.ly">
-              <img src="https://img.shields.io/website-up-down-green-red/https/dash.plot.ly.svg">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/dash">
-              <img src="https://img.shields.io/pypi/v/dash.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://anaconda.org/conda-forge/dash">
-              <img src="https://img.shields.io/conda/vn/conda-forge/dash.svg?style=flat">
-            </a>
-          </td>
-          
-          
-            <td align='left'>
-            
-              
-                <a href="https://plot.ly">
-                
-                  <img class='sponsor-logo' src="_static/badges/plotly.png" title="Plot.ly">
-                
-                </a>
-              
-            
-            </td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/pyviz/panel">panel</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/pyviz/panel/stargazers">
-            <img src="_static/cache/panel_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/pyviz/panel/graphs/contributors">
-            <img src="_static/cache/panel_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/panel_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='left'>
-            <img src="_static/cache/panel_conda_downloads_badge.svg">
-          </td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/panel_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="https://panel.pyviz.org">
-              <img src="https://img.shields.io/website-up-down-green-red/https/panel.pyviz.org.svg">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/panel">
-              <img src="https://img.shields.io/pypi/v/panel.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://anaconda.org/anaconda/panel">
-              <img src="https://img.shields.io/conda/vn/anaconda/panel.svg?style=flat">
-            </a>
-          </td>
-          
-          
-            <td align='left'>
-            
-              
-                <a href="https://www.anaconda.com">
-                
-                  <img class='sponsor-logo' src="_static/badges/anaconda.png" title="Anaconda">
-                
-                </a>
-              
-            
-            </td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/QuantStack/voila">voila</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/QuantStack/voila/stargazers">
-            <img src="_static/cache/voila_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/QuantStack/voila/graphs/contributors">
-            <img src="_static/cache/voila_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/voila_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='left'>
-            <img src="_static/cache/voila_conda_downloads_badge.svg">
-          </td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/voila_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="https://voila.readthedocs.io">
-              <img src="https://readthedocs.org/projects/voila/badge/?version=latest">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/voila">
-              <img src="https://img.shields.io/pypi/v/voila.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://anaconda.org/conda-forge/voila">
-              <img src="https://img.shields.io/conda/vn/conda-forge/voila.svg?style=flat">
-            </a>
-          </td>
-          
-          
-            <td align='left'>
-            
-              
-                <a href="http://quantstack.net">
-                
-                  <img class='sponsor-logo' src="_static/badges/quantstack.svg" title="QuantStack">
-                
-                </a>
-              
-            
-            </td>
-          
-      </tr>
-      
-    </table>
-    
-    <h3 id="colormapping">Colormapping</h3>
-    <p>Collections of colormaps and tools for generating new colormaps.</p>
-    <table>
-      <tr>
-        <th>Name</th>
-        <th></th>
-        <th>Stars</th>
-        <th>Contributors</th>
-        <th>Downloads</th>
-        <th></th>
-        <th>License</th>
-        <th>Docs</th>
-        <th>PyPI</th>
-        <th>Conda</th>
-        <th>Sponsors</th>
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/jiffyclub/palettable">palettable</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/jiffyclub/palettable/stargazers">
-            <img src="_static/cache/palettable_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/jiffyclub/palettable/graphs/contributors">
-            <img src="_static/cache/palettable_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/palettable_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='left'>
-            <img src="_static/cache/palettable_conda_downloads_badge.svg">
-          </td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/palettable_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="https://jiffyclub.github.io/palettable">
-              <img src="https://img.shields.io/website-up-down-green-red/https/jiffyclub.github.io/palettable.svg">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/palettable">
-              <img src="https://img.shields.io/pypi/v/palettable.svg?label">
-            </a>
-          </td>
-          
-          
-          <td align='left'>
-            <a href="https://anaconda.org/anaconda/palettable">
-              <img src="https://img.shields.io/conda/vn/anaconda/palettable.svg?style=flat">
-            </a>
-          </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/pyviz/colorcet">colorcet</a>
-        </td>
-        <td align='left'>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/pyviz/colorcet/stargazers">
-            <img src="_static/cache/colorcet_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/pyviz/colorcet/graphs/contributors">
-            <img src="_static/cache/colorcet_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/colorcet_pypi_downloads_badge.svg">
-          </td>
+          <td align='center' class='empty-cell'>-</td>
           
           
           <td align='left'>
-            <img src="_static/cache/colorcet_conda_downloads_badge.svg">
+            <img src="_static/cache/core_conda_downloads_badge.svg">
           </td>
           
           
-            <td align='left'>
-              <img src="_static/cache/colorcet_license_badge.svg">
-            </td>
+          <td align='center' class='empty-cell'>-</td>
           
           
           <td align='left'>
-            <a href="https://colorcet.pyviz.org">
-              <img src="https://img.shields.io/website-up-down-green-red/https/colorcet.pyviz.org.svg">
+            <a href="https://openalea-core.readthedocs.io/en/latest">
+              <img src="https://img.shields.io/website-up-down-green-red/https/openalea-core.readthedocs.io/en/latest.svg">
             </a>
           </td>
           
           
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/colorcet">
-              <img src="https://img.shields.io/pypi/v/colorcet.svg?label">
-            </a>
-          </td>
+          <td align='center' class='empty-cell'>-</td>
           
           
           <td align='left'>
-            <a href="https://anaconda.org/anaconda/colorcet">
-              <img src="https://img.shields.io/conda/vn/anaconda/colorcet.svg?style=flat">
+            <a href="https://anaconda.org/anaconda/openalea">
+              <img src="https://img.shields.io/conda/vn/anaconda/openalea.svg?style=flat">
             </a>
           </td>
           
           
-            <td align='left'>
-            
-              
-                <a href="https://www.anaconda.com">
-                
-                  <img class='sponsor-logo' src="_static/badges/anaconda.png" title="Anaconda">
-                
-                </a>
-              
-            
-            </td>
+          <td align='center' class='empty-cell'>-</td>
           
       </tr>
       
       <tr>
         <td align='left'>
-          <a href="http://github.com/matplotlib/cmocean">cmocean</a>
+          <a href="http://github.com/openalea/eartrack">eartrack</a>
         </td>
         <td align='left'>
           
         </td>
         <td align='left'>
-          <a href="https://github.com/matplotlib/cmocean/stargazers">
-            <img src="_static/cache/cmocean_stars_badge.svg">
+          <a href="https://github.com/openalea/eartrack/stargazers">
+            <img src="_static/cache/eartrack_stars_badge.svg">
           </a>
         </td>
         <td align='left'>
-          <a href="https://github.com/matplotlib/cmocean/graphs/contributors">
-            <img src="_static/cache/cmocean_contributors_badge.svg">
+          <a href="https://github.com/openalea/eartrack/graphs/contributors">
+            <img src="_static/cache/eartrack_contributors_badge.svg">
           </a>
         </td>
           
-          <td align='left'>
-            <img src="_static/cache/cmocean_pypi_downloads_badge.svg">
-          </td>
+          <td align='center' class='empty-cell'>-</td>
           
           
           <td align='left'>
-            <img src="_static/cache/cmocean_conda_downloads_badge.svg">
+            <img src="_static/cache/eartrack_conda_downloads_badge.svg">
           </td>
           
           
-            <td align='left'>
-              <img src="_static/cache/cmocean_license_badge.svg">
-            </td>
+          <td align='center' class='empty-cell'>-</td>
           
           
           <td align='left'>
-            <a href="https://matplotlib.org/cmocean">
-              <img src="https://img.shields.io/website-up-down-green-red/https/matplotlib.org/cmocean.svg">
+            <a href="https://eartrack.readthedocs.io/en/latest">
+              <img src="https://img.shields.io/website-up-down-green-red/https/eartrack.readthedocs.io/en/latest.svg">
             </a>
           </td>
           
           
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/cmocean">
-              <img src="https://img.shields.io/pypi/v/cmocean.svg?label">
-            </a>
-          </td>
+          <td align='center' class='empty-cell'>-</td>
           
           
           <td align='left'>
-            <a href="https://anaconda.org/conda-forge/cmocean">
-              <img src="https://img.shields.io/conda/vn/conda-forge/cmocean.svg?style=flat">
+            <a href="https://anaconda.org/anaconda/openalea">
+              <img src="https://img.shields.io/conda/vn/anaconda/openalea.svg?style=flat">
             </a>
           </td>
           
@@ -3608,131 +126,46 @@ All Tools
       
       <tr>
         <td align='left'>
-          <a href="http://github.com/matplotlib/viscm">viscm</a>
+          <a href="http://github.com/openalea/hydroshoot">hydroshoot</a>
         </td>
         <td align='left'>
           
         </td>
         <td align='left'>
-          <a href="https://github.com/matplotlib/viscm/stargazers">
-            <img src="_static/cache/viscm_stars_badge.svg">
+          <a href="https://github.com/openalea/hydroshoot/stargazers">
+            <img src="_static/cache/hydroshoot_stars_badge.svg">
           </a>
         </td>
         <td align='left'>
-          <a href="https://github.com/matplotlib/viscm/graphs/contributors">
-            <img src="_static/cache/viscm_contributors_badge.svg">
+          <a href="https://github.com/openalea/hydroshoot/graphs/contributors">
+            <img src="_static/cache/hydroshoot_contributors_badge.svg">
           </a>
         </td>
-          
-          <td align='left'>
-            <img src="_static/cache/viscm_pypi_downloads_badge.svg">
-          </td>
-          
           
-          <td align='left'>
-            <img src="_static/cache/viscm_conda_downloads_badge.svg">
-          </td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/viscm_license_badge.svg">
-            </td>
-          
-          
           <td align='center' class='empty-cell'>-</td>
-          
-          
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/viscm">
-              <img src="https://img.shields.io/pypi/v/viscm.svg?label">
-            </a>
-          </td>
           
           
           <td align='left'>
-            <a href="https://anaconda.org/conda-forge/viscm">
-              <img src="https://img.shields.io/conda/vn/conda-forge/viscm.svg?style=flat">
-            </a>
+            <img src="_static/cache/hydroshoot_conda_downloads_badge.svg">
           </td>
           
           
           <td align='center' class='empty-cell'>-</td>
-          
-      </tr>
-      
-    </table>
-    
-    <h3 id="dormant-projects">Dormant projects</h3>
-    <p>Tools no longer developed or endorsed by the authors.</p>
-    <table>
-      <tr>
-        <th>Name</th>
-        <th></th>
-        <th>Stars</th>
-        <th>Contributors</th>
-        <th>Downloads</th>
-        <th></th>
-        <th>License</th>
-        <th>Docs</th>
-        <th>PyPI</th>
-        <th>Conda</th>
-        <th>Sponsors</th>
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/matplotlib/basemap">basemap</a>
-        </td>
-        <td align='left'>
-          
-            <a href="https://matplotlib.org/basemap/users/intro.html#cartopy-new-management-and-eol-announcement">
-              <img src="_static/dormant.svg">
-            </a>
-          
-        </td>
-        <td align='left'>
-          <a href="https://github.com/matplotlib/basemap/stargazers">
-            <img src="_static/cache/basemap_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/matplotlib/basemap/graphs/contributors">
-            <img src="_static/cache/basemap_contributors_badge.svg">
-          </a>
-        </td>
-          
-          <td align='left'>
-            <img src="_static/cache/basemap_pypi_downloads_badge.svg">
-          </td>
-          
-          
-          <td align='left'>
-            <img src="_static/cache/basemap_conda_downloads_badge.svg">
-          </td>
-          
           
-            <td align='left'>
-              <img src="_static/cache/basemap_license_badge.svg">
-            </td>
           
-          
           <td align='left'>
-            <a href="https://matplotlib.org/basemap">
-              <img src="https://img.shields.io/website-up-down-green-red/https/matplotlib.org/basemap.svg">
+            <a href="https://hydroshoot.readthedocs.io/en/latest">
+              <img src="https://img.shields.io/website-up-down-green-red/https/hydroshoot.readthedocs.io/en/latest.svg">
             </a>
           </td>
           
           
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/basemap">
-              <img src="https://img.shields.io/pypi/v/basemap.svg?label">
-            </a>
-          </td>
+          <td align='center' class='empty-cell'>-</td>
           
           
           <td align='left'>
-            <a href="https://anaconda.org/anaconda/basemap">
-              <img src="https://img.shields.io/conda/vn/anaconda/basemap.svg?style=flat">
+            <a href="https://anaconda.org/anaconda/openalea">
+              <img src="https://img.shields.io/conda/vn/anaconda/openalea.svg?style=flat">
             </a>
           </td>
           
@@ -3743,98 +176,48 @@ All Tools
       
       <tr>
         <td align='left'>
-          <a href="http://github.com/adrn/d3po">d3po</a>
+          <a href="http://github.com/openalea/lpy">lpy</a>
         </td>
         <td align='left'>
-          
-            <a href="https://github.com/adrn/d3po/graphs/contributors">
-              <img src="_static/dormant.svg">
-            </a>
           
         </td>
         <td align='left'>
-          <a href="https://github.com/adrn/d3po/stargazers">
-            <img src="_static/cache/d3po_stars_badge.svg">
+          <a href="https://github.com/openalea/lpy/stargazers">
+            <img src="_static/cache/lpy_stars_badge.svg">
           </a>
         </td>
         <td align='left'>
-          <a href="https://github.com/adrn/d3po/graphs/contributors">
-            <img src="_static/cache/d3po_contributors_badge.svg">
+          <a href="https://github.com/openalea/lpy/graphs/contributors">
+            <img src="_static/cache/lpy_contributors_badge.svg">
           </a>
         </td>
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
           
-          
           <td align='center' class='empty-cell'>-</td>
           
           
           <td align='left'>
-            <a href="https://d3po.org">
-              <img src="https://img.shields.io/website-up-down-green-red/https/d3po.org.svg">
-            </a>
+            <img src="_static/cache/lpy_conda_downloads_badge.svg">
           </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
           
           
           <td align='center' class='empty-cell'>-</td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/rossant/galry">galry</a>
-        </td>
-        <td align='left'>
-          
-            <a href="https://github.com/rossant/galry/blob/master/README.md">
-              <img src="_static/dormant.svg">
-            </a>
           
-        </td>
-        <td align='left'>
-          <a href="https://github.com/rossant/galry/stargazers">
-            <img src="_static/cache/galry_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/rossant/galry/graphs/contributors">
-            <img src="_static/cache/galry_contributors_badge.svg">
-          </a>
-        </td>
           
           <td align='left'>
-            <img src="_static/cache/galry_pypi_downloads_badge.svg">
+            <a href="https://lpy.readthedocs.io/en/latest">
+              <img src="https://img.shields.io/website-up-down-green-red/https/lpy.readthedocs.io/en/latest.svg">
+            </a>
           </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
           
           
-            <td align='left'>
-              <img src="_static/cache/galry_license_badge.svg">
-            </td>
-          
-          
           <td align='center' class='empty-cell'>-</td>
           
           
           <td align='left'>
-            <a href="https://pypi.python.org/pypi/galry">
-              <img src="https://img.shields.io/pypi/v/galry.svg?label">
+            <a href="https://anaconda.org/anaconda/openalea">
+              <img src="https://img.shields.io/conda/vn/anaconda/openalea.svg?style=flat">
             </a>
           </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
           
           
           <td align='center' class='empty-cell'>-</td>
@@ -3843,278 +226,146 @@ All Tools
       
       <tr>
         <td align='left'>
-          <a href="http://github.com/yhat/ggpy">ggpy</a>
+          <a href="http://github.com/openalea/mtg">mtg</a>
         </td>
         <td align='left'>
-          
-            <a href="https://github.com/yhat/ggpy/graphs/contributors">
-              <img src="_static/dormant.svg">
-            </a>
           
         </td>
         <td align='left'>
-          <a href="https://github.com/yhat/ggpy/stargazers">
-            <img src="_static/cache/ggpy_stars_badge.svg">
+          <a href="https://github.com/openalea/mtg/stargazers">
+            <img src="_static/cache/mtg_stars_badge.svg">
           </a>
         </td>
         <td align='left'>
-          <a href="https://github.com/yhat/ggpy/graphs/contributors">
-            <img src="_static/cache/ggpy_contributors_badge.svg">
+          <a href="https://github.com/openalea/mtg/graphs/contributors">
+            <img src="_static/cache/mtg_contributors_badge.svg">
           </a>
         </td>
-          
-          <td align='left'>
-            <img src="_static/cache/ggpy_pypi_downloads_badge.svg">
-          </td>
           
-          
           <td align='center' class='empty-cell'>-</td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/ggpy_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="http://ggplot.yhathq.com">
-              <img src="https://img.shields.io/website-up-down-green-red/http/ggplot.yhathq.com.svg">
-            </a>
-          </td>
           
           
           <td align='left'>
-            <a href="https://pypi.python.org/pypi/ggpy">
-              <img src="https://img.shields.io/pypi/v/ggpy.svg?label">
-            </a>
+            <img src="_static/cache/mtg_conda_downloads_badge.svg">
           </td>
-          
           
-          <td align='center' class='empty-cell'>-</td>
-          
           
           <td align='center' class='empty-cell'>-</td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/dgrtwo/gleam">gleam</a>
-        </td>
-        <td align='left'>
-          
-            <a href="https://github.com/dgrtwo/gleam/graphs/contributors">
-              <img src="_static/dormant.svg">
-            </a>
           
-        </td>
-        <td align='left'>
-          <a href="https://github.com/dgrtwo/gleam/stargazers">
-            <img src="_static/cache/gleam_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/dgrtwo/gleam/graphs/contributors">
-            <img src="_static/cache/gleam_contributors_badge.svg">
-          </a>
-        </td>
           
           <td align='left'>
-            <img src="_static/cache/gleam_pypi_downloads_badge.svg">
+            <a href="https://mtg.readthedocs.io/en/latest">
+              <img src="https://img.shields.io/website-up-down-green-red/https/mtg.readthedocs.io/en/latest.svg">
+            </a>
           </td>
-          
           
-          <td align='center' class='empty-cell'>-</td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/gleam_license_badge.svg">
-            </td>
-          
           
           <td align='center' class='empty-cell'>-</td>
           
           
           <td align='left'>
-            <a href="https://pypi.python.org/pypi/gleam">
-              <img src="https://img.shields.io/pypi/v/gleam.svg?label">
+            <a href="https://anaconda.org/anaconda/openalea">
+              <img src="https://img.shields.io/conda/vn/anaconda/openalea.svg?style=flat">
             </a>
           </td>
           
           
           <td align='center' class='empty-cell'>-</td>
           
-          
-          <td align='center' class='empty-cell'>-</td>
-          
       </tr>
       
       <tr>
         <td align='left'>
-          <a href="http://github.com/wireservice/leather">leather</a>
+          <a href="http://github.com/openalea/phenomenal">phenomenal</a>
         </td>
         <td align='left'>
-          
-            <a href="https://github.com/wireservice/leather/graphs/contributors">
-              <img src="_static/dormant.svg">
-            </a>
           
         </td>
         <td align='left'>
-          <a href="https://github.com/wireservice/leather/stargazers">
-            <img src="_static/cache/leather_stars_badge.svg">
+          <a href="https://github.com/openalea/phenomenal/stargazers">
+            <img src="_static/cache/phenomenal_stars_badge.svg">
           </a>
         </td>
         <td align='left'>
-          <a href="https://github.com/wireservice/leather/graphs/contributors">
-            <img src="_static/cache/leather_contributors_badge.svg">
+          <a href="https://github.com/openalea/phenomenal/graphs/contributors">
+            <img src="_static/cache/phenomenal_contributors_badge.svg">
           </a>
         </td>
-          
-          <td align='left'>
-            <img src="_static/cache/leather_pypi_downloads_badge.svg">
-          </td>
           
-          
           <td align='center' class='empty-cell'>-</td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/leather_license_badge.svg">
-            </td>
-          
           
-          <td align='left'>
-            <a href="https://leather.readthedocs.io">
-              <img src="https://readthedocs.org/projects/leather/badge/?version=latest">
-            </a>
-          </td>
-          
           
           <td align='left'>
-            <a href="https://pypi.python.org/pypi/leather">
-              <img src="https://img.shields.io/pypi/v/leather.svg?label">
-            </a>
+            <img src="_static/cache/phenomenal_conda_downloads_badge.svg">
           </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
           
           
           <td align='center' class='empty-cell'>-</td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/lightning-viz/lightning">lightning</a>
-        </td>
-        <td align='left'>
-          
-            <a href="https://gitter.im/lightning-viz/lightning">
-              <img src="_static/dormant.svg">
-            </a>
           
-        </td>
-        <td align='left'>
-          <a href="https://github.com/lightning-viz/lightning/stargazers">
-            <img src="_static/cache/lightning_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/lightning-viz/lightning/graphs/contributors">
-            <img src="_static/cache/lightning_contributors_badge.svg">
-          </a>
-        </td>
           
           <td align='left'>
-            <img src="_static/cache/lightning_pypi_downloads_badge.svg">
+            <a href="https://phenomenal.readthedocs.io/en/latest">
+              <img src="https://img.shields.io/website-up-down-green-red/https/phenomenal.readthedocs.io/en/latest.svg">
+            </a>
           </td>
           
           
           <td align='center' class='empty-cell'>-</td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/lightning_license_badge.svg">
-            </td>
-          
-          
-          <td align='left'>
-            <a href="http://lightning-viz.org">
-              <img src="https://img.shields.io/website-up-down-green-red/http/lightning-viz.org.svg">
-            </a>
-          </td>
           
           
           <td align='left'>
-            <a href="https://pypi.python.org/pypi/lightning">
-              <img src="https://img.shields.io/pypi/v/lightning.svg?label">
+            <a href="https://anaconda.org/anaconda/openalea">
+              <img src="https://img.shields.io/conda/vn/anaconda/openalea.svg?style=flat">
             </a>
           </td>
           
           
           <td align='center' class='empty-cell'>-</td>
           
-          
-          <td align='center' class='empty-cell'>-</td>
-          
       </tr>
       
       <tr>
         <td align='left'>
-          <a href="http://github.com/mpld3/mpld3">mpld3</a>
+          <a href="http://github.com/openalea/plantgl">plantgl</a>
         </td>
         <td align='left'>
-          
-            <a href="http://www.xavierdupre.fr/app/pymyinstall/helpsphinx/blog/2017/2017-09-02_mpld3.html">
-              <img src="_static/dormant.svg">
-            </a>
           
         </td>
         <td align='left'>
-          <a href="https://github.com/mpld3/mpld3/stargazers">
-            <img src="_static/cache/mpld3_stars_badge.svg">
+          <a href="https://github.com/openalea/plantgl/stargazers">
+            <img src="_static/cache/plantgl_stars_badge.svg">
           </a>
         </td>
         <td align='left'>
-          <a href="https://github.com/mpld3/mpld3/graphs/contributors">
-            <img src="_static/cache/mpld3_contributors_badge.svg">
+          <a href="https://github.com/openalea/plantgl/graphs/contributors">
+            <img src="_static/cache/plantgl_contributors_badge.svg">
           </a>
         </td>
           
-          <td align='left'>
-            <img src="_static/cache/mpld3_pypi_downloads_badge.svg">
-          </td>
+          <td align='center' class='empty-cell'>-</td>
           
           
           <td align='left'>
-            <img src="_static/cache/mpld3_conda_downloads_badge.svg">
+            <img src="_static/cache/plantgl_conda_downloads_badge.svg">
           </td>
           
           
-            <td align='left'>
-              <img src="_static/cache/mpld3_license_badge.svg">
-            </td>
+          <td align='center' class='empty-cell'>-</td>
           
           
           <td align='left'>
-            <a href="https://mpld3.github.io">
-              <img src="https://img.shields.io/website-up-down-green-red/https/mpld3.github.io.svg">
+            <a href="https://plantgl-cpl.readthedocs.io/en/latest">
+              <img src="https://img.shields.io/website-up-down-green-red/https/plantgl-cpl.readthedocs.io/en/latest.svg">
             </a>
           </td>
           
           
-          <td align='left'>
-            <a href="https://pypi.python.org/pypi/mpld3">
-              <img src="https://img.shields.io/pypi/v/mpld3.svg?label">
-            </a>
-          </td>
+          <td align='center' class='empty-cell'>-</td>
           
           
           <td align='left'>
-            <a href="https://anaconda.org/anaconda/mpld3">
-              <img src="https://img.shields.io/conda/vn/anaconda/mpld3.svg?style=flat">
+            <a href="https://anaconda.org/anaconda/openalea">
+              <img src="https://img.shields.io/conda/vn/anaconda/openalea.svg?style=flat">
             </a>
           </td>
           
@@ -4125,158 +376,96 @@ All Tools
       
       <tr>
         <td align='left'>
-          <a href="http://github.com/PyQwt/PyQwt">PyQwt</a>
+          <a href="http://github.com/openalea/visualea">visualea</a>
         </td>
         <td align='left'>
-          
-            <a href="https://github.com/PyQwt">
-              <img src="_static/dormant.svg">
-            </a>
           
         </td>
         <td align='left'>
-          <a href="https://github.com/PyQwt/PyQwt/stargazers">
-            <img src="_static/cache/PyQwt_stars_badge.svg">
+          <a href="https://github.com/openalea/visualea/stargazers">
+            <img src="_static/cache/visualea_stars_badge.svg">
           </a>
         </td>
         <td align='left'>
-          <a href="https://github.com/PyQwt/PyQwt/graphs/contributors">
-            <img src="_static/cache/PyQwt_contributors_badge.svg">
+          <a href="https://github.com/openalea/visualea/graphs/contributors">
+            <img src="_static/cache/visualea_contributors_badge.svg">
           </a>
         </td>
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
           
-          
           <td align='center' class='empty-cell'>-</td>
           
           
           <td align='left'>
-            <a href="http://www.pyqtgraph.org">
-              <img src="https://img.shields.io/website-up-down-green-red/http/www.pyqtgraph.org.svg">
-            </a>
+            <img src="_static/cache/visualea_conda_downloads_badge.svg">
           </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
           
           
           <td align='center' class='empty-cell'>-</td>
-          
-      </tr>
-      
-      <tr>
-        <td align='left'>
-          <a href="http://github.com/wrobstory/vincent">vincent</a>
-        </td>
-        <td align='left'>
-          
-            <a href="https://github.com/wrobstory/vincent/graphs/contributors">
-              <img src="_static/dormant.svg">
-            </a>
           
-        </td>
-        <td align='left'>
-          <a href="https://github.com/wrobstory/vincent/stargazers">
-            <img src="_static/cache/vincent_stars_badge.svg">
-          </a>
-        </td>
-        <td align='left'>
-          <a href="https://github.com/wrobstory/vincent/graphs/contributors">
-            <img src="_static/cache/vincent_contributors_badge.svg">
-          </a>
-        </td>
           
           <td align='left'>
-            <img src="_static/cache/vincent_pypi_downloads_badge.svg">
+            <a href="https://github.com/openalea/visualea/blob/master/README.txt">
+              <img src="https://img.shields.io/website-up-down-green-red/https/github.com/openalea/visualea/blob/master/README.txt.svg">
+            </a>
           </td>
           
           
           <td align='center' class='empty-cell'>-</td>
-          
-          
-            <td align='left'>
-              <img src="_static/cache/vincent_license_badge.svg">
-            </td>
-          
           
-          <td align='left'>
-            <a href="https://vincent.readthedocs.io">
-              <img src="https://readthedocs.org/projects/vincent/badge/?version=latest">
-            </a>
-          </td>
-          
           
           <td align='left'>
-            <a href="https://pypi.python.org/pypi/vincent">
-              <img src="https://img.shields.io/pypi/v/vincent.svg?label">
+            <a href="https://anaconda.org/anaconda/openalea">
+              <img src="https://img.shields.io/conda/vn/anaconda/openalea.svg?style=flat">
             </a>
           </td>
           
           
           <td align='center' class='empty-cell'>-</td>
           
-          
-          <td align='center' class='empty-cell'>-</td>
-          
       </tr>
       
       <tr>
         <td align='left'>
-          <a href="http://github.com/almarklein/visvis">visvis</a>
+          <a href="http://github.com/openalea/weberpenn">weberpenn</a>
         </td>
         <td align='left'>
-          
-            <a href="https://github.com/almarklein/visvis#status">
-              <img src="_static/dormant.svg">
-            </a>
           
         </td>
         <td align='left'>
-          <a href="https://github.com/almarklein/visvis/stargazers">
-            <img src="_static/cache/visvis_stars_badge.svg">
+          <a href="https://github.com/openalea/weberpenn/stargazers">
+            <img src="_static/cache/weberpenn_stars_badge.svg">
           </a>
         </td>
         <td align='left'>
-          <a href="https://github.com/almarklein/visvis/graphs/contributors">
-            <img src="_static/cache/visvis_contributors_badge.svg">
+          <a href="https://github.com/openalea/weberpenn/graphs/contributors">
+            <img src="_static/cache/weberpenn_contributors_badge.svg">
           </a>
         </td>
           
-          <td align='left'>
-            <img src="_static/cache/visvis_pypi_downloads_badge.svg">
-          </td>
+          <td align='center' class='empty-cell'>-</td>
           
           
           <td align='left'>
-            <img src="_static/cache/visvis_conda_downloads_badge.svg">
+            <img src="_static/cache/weberpenn_conda_downloads_badge.svg">
           </td>
           
           
-            <td align='left'>
-              <img src="_static/cache/visvis_license_badge.svg">
-            </td>
-          
-          
           <td align='center' class='empty-cell'>-</td>
           
           
           <td align='left'>
-            <a href="https://pypi.python.org/pypi/visvis">
-              <img src="https://img.shields.io/pypi/v/visvis.svg?label">
+            <a href="https://github.com/openalea/weberpenn/blob/master/README.rst">
+              <img src="https://img.shields.io/website-up-down-green-red/https/github.com/openalea/weberpenn/blob/master/README.rst.svg">
             </a>
           </td>
+          
+          
+          <td align='center' class='empty-cell'>-</td>
           
           
           <td align='left'>
-            <a href="https://anaconda.org/anaconda/visvis">
-              <img src="https://img.shields.io/conda/vn/anaconda/visvis.svg?style=flat">
+            <a href="https://anaconda.org/anaconda/openalea">
+              <img src="https://img.shields.io/conda/vn/anaconda/openalea.svg?style=flat">
             </a>
           </td>
           
