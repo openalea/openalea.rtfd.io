@@ -53,7 +53,7 @@ master_doc = 'index'
 #
 html_theme = 'sphinx_rtd_theme'
 html_theme_options = {
-    'logo_only': True
+    'logo_only': False
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,

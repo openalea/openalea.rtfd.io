@@ -1,5 +1,3 @@
-.. _packages:
-
 ========
 Packages
 ========
@@ -7,210 +5,225 @@ Packages
 Modelling with OpenAlea
 =======================
 
-* **MTG**
+MTG
+---
 
-  .. image:: https://readthedocs.org/projects/mtg/badge/?version=latest
-     :target: http://mtg.readthedocs.io/en/latest/
+.. image:: https://readthedocs.org/projects/mtg/badge/?version=latest
+ :target: http://mtg.readthedocs.io/en/latest/
 
-  |
-  | **Multiscale Tree Graph datastructure and interfaces**
+**Multiscale Tree Graph datastructure and interfaces**
 
-  .. image:: ./images/mtg_plantframe.png
-     :width: 200px
-     :alt: mtg image
-     :align: left
+.. image:: ./images/mtg_plantframe.png
+ :width: 200px
+ :target: http://mtg.readthedocs.io/en/latest/
+ :align: left
 
-  MTG package aims to define :
-    * A share data structure for plant architecture representation.
-    * Read and write MTG files.
-    * Export to various graph format.
-    * Several algorithms for MTG.       
+MTG package aims to define :
 
-  
-  **Authors**: Christophe Pradal, Christophe Godin
-  
-  **Institutes**: Cirad, Inria
-  
-  `Source Code <https://github.com/openalea/mtg>`_
+  * A share data structure for plant architecture representation.
+  * Read and write MTG files.
+  * Export to various graph format.
+  * Several algorithms for MTG.       
 
-  |
 
-* **L-Py**
+**Authors** : Christophe Pradal, Christophe Godin
+
+**Institutes** : Cirad, Inria
+
+**Source Code** : `Github <https://github.com/openalea/mtg>`_
+
+
+L-Py
+----
      
-  .. image:: https://readthedocs.org/projects/lpy/badge/?version=latest
-     :target: http://lpy.readthedocs.io/en/latest/
+.. image:: https://readthedocs.org/projects/lpy/badge/?version=latest
+ :target: http://lpy.readthedocs.io/en/latest/
 
-  | 
-  | **Plant simulation using Lindenmayer Systems with Python**
+**Plant simulation using Lindenmayer Systems with Python**
 
-  .. image:: ./images/lpy_lpymagic.png
-     :width: 200px
-     :alt: lpy image
-     :align: left
+.. image:: ./images/lpy_lpymagic.png
+ :width: 200px
+ :target: http://lpy.readthedocs.io/en/latest/
+ :align: left
 
-  L-systems were conceived as a mathematical framework for modeling growth of plants. 
-  L-Py is a simulation software that mixes L-systems construction with the Python high-level modeling language. 
- 
-  **Authors**: Frédéric Boudon, Christophe Pradal, Thomas Cokelaer, Przemyslaw Prusinkiewicz, Christophe Godin
-  
-  **Institutes**: Cirad, Inria, U. Calgary
-  
-  **Citation**: Boudon et al., 2012, https://doi.org/10.3389/fpls.2012.00076
-  
-  `Source Code <https://github.com/openalea/lpy>`_
+L-systems were conceived as a mathematical framework for modeling growth of plants. 
+L-Py is a simulation software that mixes L-systems construction with the Python high-level modeling language. 
 
-  |
+**Authors** : Frédéric Boudon, Christophe Pradal, Thomas Cokelaer, Przemyslaw Prusinkiewicz, Christophe Godin
 
-* **PlantGL**
+**Institutes** : Cirad, Inria, U. Calgary
 
-  .. image:: ./images/plantgl_objects.png
-     :width: 200px
-     :alt: plantgl image
-     :align: left
+**Citation** : Boudon et al., 2012, https://doi.org/10.3389/fpls.2012.00076
 
-  **Authors**: Frédéric Boudon, Christophe Pradal, Christophe Nouguier, Jérôme Chopard, Christophe Godin
-  
-  **Institutes**: Cirad, Inria, U. Calgary
-  
-  **Citation**: Pradal, Boudon et al., 2009, https://doi.org/10.1016/j.gmod.2008.10.001
-  
-  `Source Code <https://github.com/openalea/plantgl>`_
-
-  |
-  |
-
-* **OpenAlea Framework**
-
-  .. image:: ./images/openalea_web.png
-     :width: 200px
-     :alt: core image
-     :align: left
-  
-  **Authors**: Christophe Pradal, Samuel Dufour-Kowalski, Frédéric Boudon, Christian Fournier, Christophe Godin
-  
-  **Institutes**: Cirad, Inria, INRA
-  
-  **Citation**: Pradal et al., 2008, https://doi.org/10.1071/FP08084
-  
-  `Source Code <https://github.com/openalea/core>`_
-
-  |
-  |
-  |
+**Source Code** : `Github <https://github.com/openalea/lpy>`_
 
 
-* **VisuAlea**
+PlantGL
+-------
 
-  .. image:: ./images/visualea_workflow.png
-     :width: 200px
-     :alt: visualea image
-     :align: left
+.. image:: https://readthedocs.org/projects/plantgl-cpl/badge/?version=latest
+  :target: https://plantgl-cpl.readthedocs.io/en/latest/?badge=latest
 
-  `Source Code <https://github.com/openalea/visualea>`_
+**An open-source graphic toolkit for the creation, simulation and analysis of 3D virtual plants**
 
-  |
-  |
-  |
-  |
-  |
-  |
-  |
-  |
+.. image:: ./images/plantgl.png
+ :width: 200px
+ :target: https://plantgl-cpl.readthedocs.io/en/latest/
+ :align: left
+
+**Authors**: Frédéric Boudon, Christophe Pradal, Christophe Nouguier, Jérôme Chopard, Christophe Godin
+
+**Institutes** : Cirad, Inria
+
+**Citation** : Pradal, Boudon et al., 2009, https://doi.org/10.1016/j.gmod.2008.10.001
+
+**Source Code** : `Github <https://github.com/openalea/plantgl>`_
+
+
+OpenAlea Framework
+------------------
+
+.. image:: https://readthedocs.org/projects/openalea-core/badge/?version=latest
+    :alt: Documentation status
+    :target: https://openalea-core.readthedocs.io/en/latest/?badge=latest
+
+**OpenAlea Framework is able to discover and manage packages and logical components, build and evaluate dataflows and Generate final applications**
+
+.. image:: ./images/openalea_web.png
+ :width: 200px
+ :target: https://openalea-core.readthedocs.io/en/latest/
+ :align: left
+
+**Authors** : Christophe Pradal, Samuel Dufour-Kowalski, Frédéric Boudon, Christian Fournier, Christophe Godin
+
+**Institutes** : Cirad, Inria, INRA
+
+**Citation** : Pradal et al., 2008, https://doi.org/10.1071/FP08084
+
+**Source Code** : `Github <https://github.com/openalea/core>`_
+
+
+
+VisuAlea
+--------
+
+**An application that allows to use OpenAlea packages and to build dataflow graphically**
+
+.. image:: ./images/visualea_workflow.png
+ :width: 200px
+ :target: https://github.com/openalea/visualea
+ :align: left
+
+**Authors** : Christophe Pradal, Samuel  
+
+**Institutes** : Cirad, Inria
+
+**Source Code** : `Github <https://github.com/openalea/visualea>`_
+
+|
+|
+|
 
 Plant Models
 ============
 
-* **WeberPenn**
+WeberPenn
+---------
 
-  .. image:: ./images/weberpenn_treegraph.png
-     :width: 200px
-     :alt: weberpenn image
-     :align: left
+**An extension of the Weber & Penn model for OpenAlea**
 
-  `Source Code <https://github.com/openalea/weberpenn>`_
+.. image:: ./images/weberpenn_treegraph.png
+ :width: 200px
+ :target: https://github.com/openalea/weberpenn
+ :align: left
 
-  |
-  |
-  |
-  |
-  |
-  |
-  |
-  |
+**Authors** : Christophe Pradal
+
+**Institutes** : Cirad
+
+**Original Article** : http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.380.2046
+
+**Source Code** : `Github <https://github.com/openalea/weberpenn>`_
+
+|
 
 Plant Biophysics
 ================
 
-* **Hydroshoot**
+Hydroshoot
+----------
 
-  .. image:: https://travis-ci.org/openalea/hydroshoot.svg?branch=master
-     :alt: Travis build status
-     :target: https://travis-ci.org/openalea/hydroshoot
+.. image:: https://readthedocs.org/projects/hydroshoot/badge/?version=latest
+   :target: https://hydroshoot.readthedocs.io/en/latest/?badge=latest
 
-  |
-  | **Hydroshoot model for 3D hydraulic architecture simulation**
+**Hydroshoot model for 3D hydraulic architecture simulation**
 
-  .. image:: ./images/hydroshoot_grapevine.png
-     :width: 200px
-     :alt: hydroshoot image
-     :align: left
+.. image:: ./images/hydroshoot_grapevine.png
+ :width: 200px
+ :target: https://hydroshoot.readthedocs.io/en/latest/
+ :align: left
 
-  HydroShoot provides a grapevine-specific module (architecture) which builds plant shoot structure for potted of 
-  trained grapevines.
+HydroShoot is a functional-structural plant modelling package taking into account hydraulic architecture and leaves energy budget and gas exchange.
 
-  Hydroshoot is composed of 3 generic modules used to simulate:
-    * xylem water transport (*hydraulic*)
-    * leaves energy budget (*energy*)
-    * leaves gas exchange fluxes (*exchange*).
+**Authors** : Rami Albasha, Christian Fournier, Christophe Pradal
 
-  `Source Code <https://github.com/openalea/hydroshoot>`_
+**Institutes** : INRA, Cirad 
 
-  |
+**Citation** : Albasha et al., 2019, https://doi.org/10.1093/insilicoplants/diz007
+
+**Source Code** : `Github <https://github.com/openalea/hydroshoot>`_
+
 
 Phenotyping
 ===========
 
-* **Phenomenal**
+Phenomenal
+----------
 
-  .. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.1436634.svg
-     :target: https://doi.org/10.5281/zenodo.1436634
+.. image:: https://readthedocs.org/projects/phenomenal/badge/?version=latest
+ :target: https://phenomenal.readthedocs.io/en/latest/?badge=latest
+ :alt: Documentation Status
 
-  .. image:: https://readthedocs.org/projects/phenomenal/badge/?version=latest
-     :target: https://phenomenal.readthedocs.io/en/latest/?badge=latest
-     :alt: Documentation Status
+.. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.1436634.svg
+ :target: https://doi.org/10.5281/zenodo.1436634
 
-  |  
-  | **3D reconstruction from high-throughput plant phenotyping images**
+**3D reconstruction from high-throughput plant phenotyping images**
 
-  .. image:: ./images/openalea_web.png
-     :width: 200px
-     :alt: phenomenal image
-     :align: left
+.. image:: ./images/phenomenal.png
+ :width: 200px
+ :target: https://phenomenal.readthedocs.io/en/latest/
+ :align: left
 
-  Plant high-throughput phenotyping aims at capturing the genetic variability of plant response to environmental 
-  factors for thousands of plants, hence identifying heritable traits for genomic selection and 
-  predicting the genetic values of allelic combinations in different environments.
+Plant high-throughput phenotyping aims at capturing the genetic variability of plant response to environmental factors for thousands of plants, hence identifying heritable traits for genomic selection and predicting the genetic values of allelic combinations in different environments.
 
-  `Source Code <https://github.com/openalea/phenomenal/>`_
+**Authors** : Simon Artzet, Christian Fournier, Christophe Pradal, Nicolas Brichet, Jerome Chopard, Michael Mielewczik
 
-  |
+**Institutes** : INRA, Cirad
 
-* **EarTrack**
+**Source Code** : `Github <https://github.com/openalea/phenomenal/>`_
 
-  .. image:: https://readthedocs.org/projects/eartrack/badge/?version=latest
-     :target: http://eartrack.readthedocs.io/en/latest/?badge=latest
-     :alt: Documentation Status
 
-  .. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.1002155.svg
-     :target: https://doi.org/10.5281/zenodo.1002155
+EarTrack
+--------
 
-  |
-  | **EarTrack is nn imaging library to detect and track future position of ears on maize plants**
+.. image:: https://readthedocs.org/projects/eartrack/badge/?version=latest
+ :target: http://eartrack.readthedocs.io/en/latest/?badge=latest
+ :alt: Documentation Status
 
-  .. image:: ./images/openalea_web.png
-     :width: 200px
-     :alt: eartrack image
-     :align: left
-  
-  `Source Code <https://github.com/openalea/eartrack>`_
+.. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.1002155.svg
+ :target: https://doi.org/10.5281/zenodo.1002155
 
+**EarTrack is an imaging library to detect and track future position of ears on maize plants**
+
+.. image:: ./images/eartrack.png
+ :width: 200px
+ :target: http://eartrack.readthedocs.io/en/latest/
+ :align: left
+
+**Authors** : Nicolas Brichet, Christian Fournier, Simon Artzet, Christophe Pradal, 
+
+**Institutes** : INRA, Cirad 
+
+**Citation** : Brichet et al., 2017, https://doi.org/10.1186/s13007-017-0246-7
+
+**Source Code** : `Github <https://github.com/openalea/eartrack>`_
