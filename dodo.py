@@ -28,19 +28,19 @@ def task_env_create():
 def task_build_cache():
     """Build cache"""
     return {'actions': [
-        "python tools\\conda_downloads.py",
-        "BADGE=stars python tools\\build_cache.py",
-        "BADGE=contributors python tools\\build_cache.py",
-        "BADGE=license python tools\\build_cache.py",
-        "BADGE=pypi_downloads python tools\\build_cache.py",
+        "python tools/conda_downloads.py",
+        "BADGE=stars python tools/build_cache.py",
+        "BADGE=contributors python tools/build_cache.py",
+        "BADGE=license python tools/build_cache.py",
+        "BADGE=pypi_downloads python tools/build_cache.py",
      ]}
 
 
 def task_build_website():
     """Build website using nbsite"""
     return {'actions': [
-        "python tools\\build.py",
-        "move tools\\index.rst doc\\packages\\tools.rst",
+        "python tools/build.py",
+        "mv tools/index.rst doc/packages/tools.rst",
         "nbsite generate-rst --org pyviz --project-name pyviz --examples notebooks",  # noqa
         "nbsite build --what=html --output=builtdocs",
     ]}

@@ -217,46 +217,46 @@
 <h2>The Goal<a class="headerlink" href="#the-goal" title="Permalink to this headline">¶</a></h2>
 <p>We measured some tree data and saved these in a tabbed editor (like Excel). The data has been exported in a CSV file. We want to have a simple 3D representation  of the measured tree.</p>
 <p>Here is the data :</p>
-<table border="1" class="colwidths-given docutils">
+<table class="colwidths-given docutils align-default">
 <colgroup>
-<col width="17%" />
-<col width="17%" />
-<col width="22%" />
-<col width="22%" />
-<col width="22%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 22%" />
+<col style="width: 22%" />
+<col style="width: 22%" />
 </colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">X</th>
-<th class="head">Y</th>
-<th class="head">crown_up</th>
-<th class="head">crown_bot</th>
-<th class="head">trunk_diameter</th>
+<thead>
+<tr class="row-odd"><th class="head"><p>X</p></th>
+<th class="head"><p>Y</p></th>
+<th class="head"><p>crown_up</p></th>
+<th class="head"><p>crown_bot</p></th>
+<th class="head"><p>trunk_diameter</p></th>
 </tr>
 </thead>
-<tbody valign="top">
-<tr class="row-even"><td>0</td>
-<td>0</td>
-<td>10</td>
-<td>20</td>
-<td>2</td>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>10</p></td>
+<td><p>20</p></td>
+<td><p>2</p></td>
 </tr>
-<tr class="row-odd"><td>10</td>
-<td>12</td>
-<td>12</td>
-<td>18</td>
-<td>3</td>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p>12</p></td>
+<td><p>12</p></td>
+<td><p>18</p></td>
+<td><p>3</p></td>
 </tr>
-<tr class="row-even"><td>20</td>
-<td>22</td>
-<td>8</td>
-<td>23</td>
-<td>3.4</td>
+<tr class="row-even"><td><p>20</p></td>
+<td><p>22</p></td>
+<td><p>8</p></td>
+<td><p>23</p></td>
+<td><p>3.4</p></td>
 </tr>
-<tr class="row-odd"><td>0</td>
-<td>18</td>
-<td>14</td>
-<td>22</td>
-<td>2.5</td>
+<tr class="row-odd"><td><p>0</p></td>
+<td><p>18</p></td>
+<td><p>14</p></td>
+<td><p>22</p></td>
+<td><p>2.5</p></td>
 </tr>
 </tbody>
 </table>
@@ -268,25 +268,26 @@
 <div class="section" id="create-a-package">
 <h3>Create a package<a class="headerlink" href="#create-a-package" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
-<li>Select <strong>Package Manager</strong> -&gt; <strong>Add</strong> -&gt; <strong>Package</strong></li>
-<li>Fill the form :<ul>
-<li><strong>Name</strong> : standbuilder</li>
-<li><strong>Description</strong> : build stand representation from measured data</li>
-<li><strong>Version</strong> : 0.1</li>
-<li><strong>License</strong> : Cecill-C</li>
-<li><strong>Authors</strong> : All collaborators and package writer</li>
-<li><strong>Institutes</strong> : …</li>
-<li><strong>URL</strong> : …</li>
-<li><strong>Path</strong> : /home/myhome/openalea_pkg (could be anywhere you want)</li>
+<li><p>Select <strong>Package Manager</strong> -&gt; <strong>Add</strong> -&gt; <strong>Package</strong></p></li>
+<li><p>Fill the form :</p>
+<ul class="simple">
+<li><p><strong>Name</strong> : standbuilder</p></li>
+<li><p><strong>Description</strong> : build stand representation from measured data</p></li>
+<li><p><strong>Version</strong> : 0.1</p></li>
+<li><p><strong>License</strong> : Cecill-C</p></li>
+<li><p><strong>Authors</strong> : All collaborators and package writer</p></li>
+<li><p><strong>Institutes</strong> : …</p></li>
+<li><p><strong>URL</strong> : …</p></li>
+<li><p><strong>Path</strong> : /home/myhome/openalea_pkg (could be anywhere you want)</p></li>
 </ul>
 </li>
-<li>Click “OK”</li>
+<li><p>Click “OK”</p></li>
 </ol>
 <img alt="../../_images/step1.gif" src="../../_images/step1.gif" />
 <p>Your new package should appear in the package manager.</p>
 <div class="admonition tip">
-<p class="first admonition-title">Tip</p>
-<p class="last">The path corresponds to the directory where the python file will be written.
+<p class="admonition-title">Tip</p>
+<p>The path corresponds to the directory where the python file will be written.
 Choose it carefully in order to be able to find it later.</p>
 </div>
 </div>
@@ -296,70 +297,67 @@ Choose it carefully in order to be able to find it later.</p>
 <div class="section" id="create-a-dataflow-to-read-and-view-a-file">
 <h3>Create a dataflow to read and view a file<a class="headerlink" href="#create-a-dataflow-to-read-and-view-a-file" title="Permalink to this headline">¶</a></h3>
 <div class="admonition tip">
-<p class="first admonition-title">Tip</p>
-<p class="last">Leaving the cursor on any item in the Package Manager, or on nodes or ports in
+<p class="admonition-title">Tip</p>
+<p>Leaving the cursor on any item in the Package Manager, or on nodes or ports in
 the dataflow view brings up a tooltip. Clicking on them also shows some documentation
 in the “Help” tab (bottom-left-hand corner).</p>
 </div>
 <ol class="arabic">
-<li><p class="first">In the Package Manager tab (left column), open the <em>openalea.file</em> folder. You should
+<li><p>In the Package Manager tab (left column), open the <em>openalea.file</em> folder. You should
 see a list of nodes.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">You can search for a particuliar node in the Search tab.</p>
+<p class="admonition-title">Note</p>
+<p>You can search for a particuliar node in the Search tab.</p>
 </div>
 </li>
-<li><p class="first">In the Package Manager tab, drag the <code class="docutils literal notranslate"><span class="pre">read</span></code> node from the <em>openalea.file</em> package to the
-workshop. It should now appear on the canvas.</p>
-</li>
-<li><p class="first">In the workspace, right click on the <code class="docutils literal notranslate"><span class="pre">read</span></code> node and choose “Open Widget”.
+<li><p>In the Package Manager tab, drag the <code class="docutils literal notranslate"><span class="pre">read</span></code> node from the <em>openalea.file</em> package to the
+workshop. It should now appear on the canvas.</p></li>
+<li><p>In the workspace, right click on the <code class="docutils literal notranslate"><span class="pre">read</span></code> node and choose “Open Widget”.
 Then browse for the “stand.csv” file (no need to validate anything,
-changes are automatically taken into account so you can simply close the window).</p>
-</li>
-<li><p class="first">Drag the <code class="docutils literal notranslate"><span class="pre">text</span></code> node from the <em>openalea.data structure.string</em> folder onto the workspace.</p>
-</li>
-<li><p class="first">Connect the output of the <code class="docutils literal notranslate"><span class="pre">read</span></code> node to the input of the <code class="docutils literal notranslate"><span class="pre">text</span></code> node.</p>
-</li>
+changes are automatically taken into account so you can simply close the window).</p></li>
+<li><p>Drag the <code class="docutils literal notranslate"><span class="pre">text</span></code> node from the <em>openalea.data structure.string</em> folder onto the workspace.</p></li>
+<li><p>Connect the output of the <code class="docutils literal notranslate"><span class="pre">read</span></code> node to the input of the <code class="docutils literal notranslate"><span class="pre">text</span></code> node.</p></li>
 </ol>
 <img alt="../../_images/step2.1.gif" src="../../_images/step2.1.gif" />
 </div>
 <div class="section" id="view-the-file-contents">
 <h3>View the file contents<a class="headerlink" href="#view-the-file-contents" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
-<li>Right click on the <code class="docutils literal notranslate"><span class="pre">text</span></code> node and select “Run”</li>
-<li>Right click on the <code class="docutils literal notranslate"><span class="pre">text</span></code> node and select “Open Widget”</li>
+<li><p>Right click on the <code class="docutils literal notranslate"><span class="pre">text</span></code> node and select “Run”</p></li>
+<li><p>Right click on the <code class="docutils literal notranslate"><span class="pre">text</span></code> node and select “Open Widget”</p></li>
 </ol>
 </div>
 <div class="section" id="build-a-csv-object">
 <h3>Build a CSV object<a class="headerlink" href="#build-a-csv-object" title="Permalink to this headline">¶</a></h3>
 <p>In order to manipulate the CSV data, we are going to build a CSV object.</p>
 <ol class="arabic simple">
-<li>Select the search tab in the package manager</li>
-<li>Type CSV</li>
-<li>Drag the <code class="docutils literal notranslate"><span class="pre">read</span> <span class="pre">csv</span></code> node on the workspace</li>
-<li>Do the same to create a <code class="docutils literal notranslate"><span class="pre">getitem</span></code> node (<code class="docutils literal notranslate"><span class="pre">openalea.python</span> <span class="pre">method.getitem</span></code>)</li>
-<li>Connect <code class="docutils literal notranslate"><span class="pre">read</span></code>’s output to <code class="docutils literal notranslate"><span class="pre">read</span> <span class="pre">csv</span></code>’s input</li>
-<li>Connect <code class="docutils literal notranslate"><span class="pre">read</span> <span class="pre">csv</span></code>’s first output to <code class="docutils literal notranslate"><span class="pre">getitem</span></code>’s first input</li>
-<li>Add an <code class="docutils literal notranslate"><span class="pre">int</span></code> node on the workspace, and connect its output to the second input of <code class="docutils literal notranslate"><span class="pre">getitem</span></code></li>
-<li>Execute the graph by selecting “Run” in the context menu of the <code class="docutils literal notranslate"><span class="pre">getitem</span></code> node</li>
-<li>Print the output in the shell : Right click on the output port, and select “Print”</li>
+<li><p>Select the search tab in the package manager</p></li>
+<li><p>Type CSV</p></li>
+<li><p>Drag the <code class="docutils literal notranslate"><span class="pre">read</span> <span class="pre">csv</span></code> node on the workspace</p></li>
+<li><p>Do the same to create a <code class="docutils literal notranslate"><span class="pre">getitem</span></code> node (<code class="docutils literal notranslate"><span class="pre">openalea.python</span> <span class="pre">method.getitem</span></code>)</p></li>
+<li><p>Connect <code class="docutils literal notranslate"><span class="pre">read</span></code>’s output to <code class="docutils literal notranslate"><span class="pre">read</span> <span class="pre">csv</span></code>’s input</p></li>
+<li><p>Connect <code class="docutils literal notranslate"><span class="pre">read</span> <span class="pre">csv</span></code>’s first output to <code class="docutils literal notranslate"><span class="pre">getitem</span></code>’s first input</p></li>
+<li><p>Add an <code class="docutils literal notranslate"><span class="pre">int</span></code> node on the workspace, and connect its output to the second input of <code class="docutils literal notranslate"><span class="pre">getitem</span></code></p></li>
+<li><p>Execute the graph by selecting “Run” in the context menu of the <code class="docutils literal notranslate"><span class="pre">getitem</span></code> node</p></li>
+<li><p>Print the output in the shell : Right click on the output port, and select “Print”</p></li>
 </ol>
 <img alt="../../_images/step2.2.gif" src="../../_images/step2.2.gif" />
 </div>
 <div class="section" id="save-your-work">
 <h3>Save your work<a class="headerlink" href="#save-your-work" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
-<li>Select <strong>File</strong> -&gt; <strong>Save as composite node</strong> (CTRL + S)</li>
-<li>In the selector dialog, click “New” Button</li>
-<li>In the new dialog<ul>
-<li>Select the standbuilder package in the combo box</li>
-<li>Enter the name : <em>readcsv_1</em></li>
-<li>Add a description : <em>Read data file</em></li>
-<li>Click “Ok”</li>
+<li><p>Select <strong>File</strong> -&gt; <strong>Save as composite node</strong> (CTRL + S)</p></li>
+<li><p>In the selector dialog, click “New” Button</p></li>
+<li><p>In the new dialog</p>
+<ul class="simple">
+<li><p>Select the standbuilder package in the combo box</p></li>
+<li><p>Enter the name : <em>readcsv_1</em></p></li>
+<li><p>Add a description : <em>Read data file</em></p></li>
+<li><p>Click “Ok”</p></li>
 </ul>
 </li>
-<li>In the selector, click “Ok” button</li>
-<li>The new graph should appear in the standbuilder package.</li>
+<li><p>In the selector, click “Ok” button</p></li>
+<li><p>The new graph should appear in the standbuilder package.</p></li>
 </ol>
 <img alt="../../_images/step2.3.gif" src="../../_images/step2.3.gif" />
 </div>
@@ -373,13 +371,14 @@ sphere for the crown and a cylinder for the trunk.</p>
 <h3>Create a 3D object<a class="headerlink" href="#create-a-3d-object" title="Permalink to this headline">¶</a></h3>
 <p>This simple dataflow shows how to display a scene object.</p>
 <ol class="arabic simple">
-<li>First step, we create a new workspace : Select <strong>File</strong> -&gt; <strong>New Empty Workspace</strong> (CTRL+T)</li>
-<li>Create the following dataflow by using PlantGL nodes<ul>
-<li><code class="docutils literal notranslate"><span class="pre">vplants.plantgl.objects.cylinder</span></code> creates a cylinder</li>
-<li><code class="docutils literal notranslate"><span class="pre">vplants.plantgl.objects.translated</span></code> moves the input object</li>
-<li><code class="docutils literal notranslate"><span class="pre">openalea.data</span> <span class="pre">structure.tuple.tuple3</span></code> to set the translation vector</li>
-<li><code class="docutils literal notranslate"><span class="pre">vplants.plantgl.visualization.plot3d</span></code> to view the result</li>
-<li><code class="docutils literal notranslate"><span class="pre">openalea.data</span> <span class="pre">structure.float</span></code> to set the parameters of the tuple3 node</li>
+<li><p>First step, we create a new workspace : Select <strong>File</strong> -&gt; <strong>New Empty Workspace</strong> (CTRL+T)</p></li>
+<li><p>Create the following dataflow by using PlantGL nodes</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">vplants.plantgl.objects.cylinder</span></code> creates a cylinder</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">vplants.plantgl.objects.translated</span></code> moves the input object</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">openalea.data</span> <span class="pre">structure.tuple.tuple3</span></code> to set the translation vector</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">vplants.plantgl.visualization.plot3d</span></code> to view the result</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">openalea.data</span> <span class="pre">structure.float</span></code> to set the parameters of the tuple3 node</p></li>
 </ul>
 </li>
 </ol>
@@ -389,14 +388,15 @@ sphere for the crown and a cylinder for the trunk.</p>
 <h3>Create a simple tree<a class="headerlink" href="#create-a-simple-tree" title="Permalink to this headline">¶</a></h3>
 <p>To build our tree, we must construct a PlantGL scene containing a cylinder and a sphere.</p>
 <ol class="arabic simple">
-<li>Modify the previous dataflow as follow:<ul>
-<li>Add a <code class="docutils literal notranslate"><span class="pre">vplants.plantgl.objects.sphere</span></code> object</li>
-<li>Add a <code class="docutils literal notranslate"><span class="pre">vplants.plantgl.objects.translated</span></code> object</li>
-<li>Add a <code class="docutils literal notranslate"><span class="pre">vplants.plantgl.objects.scene</span></code> object</li>
-<li>Connect the 2 translated objects to a <code class="docutils literal notranslate"><span class="pre">vplants.plantgl.objects.scene</span></code> object</li>
+<li><p>Modify the previous dataflow as follow:</p>
+<ul class="simple">
+<li><p>Add a <code class="docutils literal notranslate"><span class="pre">vplants.plantgl.objects.sphere</span></code> object</p></li>
+<li><p>Add a <code class="docutils literal notranslate"><span class="pre">vplants.plantgl.objects.translated</span></code> object</p></li>
+<li><p>Add a <code class="docutils literal notranslate"><span class="pre">vplants.plantgl.objects.scene</span></code> object</p></li>
+<li><p>Connect the 2 translated objects to a <code class="docutils literal notranslate"><span class="pre">vplants.plantgl.objects.scene</span></code> object</p></li>
 </ul>
 </li>
-<li>Save this dataflow in your standbuilder package as <strong>simple_tree</strong></li>
+<li><p>Save this dataflow in your standbuilder package as <strong>simple_tree</strong></p></li>
 </ol>
 <img alt="../../_images/step3.2.PNG" src="../../_images/step3.2.PNG" />
 </div>
@@ -409,61 +409,57 @@ For that we are going to embed the previous dataflow in a <em>composite node</em
 <div class="section" id="transform-simple-tree-to-a-reusable-composite-node">
 <h3>Transform simple_tree to a reusable composite node<a class="headerlink" href="#transform-simple-tree-to-a-reusable-composite-node" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic">
-<li><p class="first">Select <strong>simple_tree</strong> in the package manager</p>
-</li>
-<li><p class="first">Right click on the <strong>simple_tree</strong> graph, select “Properties” and click on the “Inputs / Outputs”
-button</p>
-</li>
-<li><p class="first">Add 5 inputs with the + button :</p>
+<li><p>Select <strong>simple_tree</strong> in the package manager</p></li>
+<li><p>Right click on the <strong>simple_tree</strong> graph, select “Properties” and click on the “Inputs / Outputs”
+button</p></li>
+<li><p>Add 5 inputs with the + button :</p>
 <ul class="simple">
-<li>X - IInt - 0 - X position</li>
-<li>Y - IInt - 0 - Y position</li>
-<li>crown_up - IFloat - 16.0 - Top of the crown</li>
-<li>crown_bot - IFloat - 8.0 - Bottom of the crown</li>
-<li>trunk_dia - IFloat - 3.0 - Trunk diameter</li>
+<li><p>X - IInt - 0 - X position</p></li>
+<li><p>Y - IInt - 0 - Y position</p></li>
+<li><p>crown_up - IFloat - 16.0 - Top of the crown</p></li>
+<li><p>crown_bot - IFloat - 8.0 - Bottom of the crown</p></li>
+<li><p>trunk_dia - IFloat - 3.0 - Trunk diameter</p></li>
 </ul>
 </li>
-<li><p class="first">Add 1 output with the + button</p>
+<li><p>Add 1 output with the + button</p>
 <ul class="simple">
-<li>scene - None - PlanGL scene</li>
+<li><p>scene - None - PlanGL scene</p></li>
 </ul>
 <a class="reference internal image-reference" href="../../_images/step4.1.PNG"><img alt="../../_images/step4.1.PNG" src="../../_images/step4.1.PNG" style="width: 40%;" /></a>
 </li>
-<li><p class="first">Click “OK” and the buttons will appear in the workshop</p>
-</li>
-<li><p class="first">Modify the graph as follow</p>
+<li><p>Click “OK” and the buttons will appear in the workshop</p></li>
+<li><p>Modify the graph as follow</p>
 <ul class="simple">
-<li>Connect input 0 and 1 to the X and Y nodes</li>
-<li>Connect input 2 and 3 to a minus node <code class="docutils literal notranslate"><span class="pre">openalea.math.-</span></code>, and connect the result
-to the crown radius</li>
-<li>Connect input 5 to the trunk radius</li>
-<li>Connect input 3 to the crown bottom</li>
+<li><p>Connect input 0 and 1 to the X and Y nodes</p></li>
+<li><p>Connect input 2 and 3 to a minus node <code class="docutils literal notranslate"><span class="pre">openalea.math.-</span></code>, and connect the result
+to the crown radius</p></li>
+<li><p>Connect input 5 to the trunk radius</p></li>
+<li><p>Connect input 3 to the crown bottom</p></li>
 </ul>
 </li>
-<li><p class="first">Save your work as a new composite node in standbuilder named <strong>tree_scene</strong></p>
-</li>
+<li><p>Save your work as a new composite node in standbuilder named <strong>tree_scene</strong></p></li>
 </ol>
 <a class="reference internal image-reference" href="../../_images/step4.2.PNG"><img alt="../../_images/step4.2.PNG" src="../../_images/step4.2.PNG" style="width: 70%;" /></a>
 </div>
 <div class="section" id="using-the-new-composite-node-in-a-dataflow">
 <h3>Using the new composite node in a dataflow<a class="headerlink" href="#using-the-new-composite-node-in-a-dataflow" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
-<li>Open our first dataflow <strong>readcsv_1</strong> in the standbuilder package (doubleclick)</li>
-<li>Drag the node <code class="docutils literal notranslate"><span class="pre">standbuilder.tree_scene</span></code> on the new workspace</li>
-<li>Add 5x <code class="docutils literal notranslate"><span class="pre">getitem</span></code> and 5x <code class="docutils literal notranslate"><span class="pre">string</span></code> object</li>
-<li>Connect the nodes as the picture in order to retrieve to different object properties</li>
-<li>Add a <code class="docutils literal notranslate"><span class="pre">plangl.visualization.plot3D</span></code> object and connect it to the output of <code class="docutils literal notranslate"><span class="pre">tree_scene</span></code></li>
-<li>Run the dataflow several times and change the value of the first <code class="docutils literal notranslate"><span class="pre">getitem</span></code> (object index)</li>
-<li>Save the dataflow in the standbuilder package as <strong>readcsv_2</strong></li>
+<li><p>Open our first dataflow <strong>readcsv_1</strong> in the standbuilder package (doubleclick)</p></li>
+<li><p>Drag the node <code class="docutils literal notranslate"><span class="pre">standbuilder.tree_scene</span></code> on the new workspace</p></li>
+<li><p>Add 5x <code class="docutils literal notranslate"><span class="pre">getitem</span></code> and 5x <code class="docutils literal notranslate"><span class="pre">string</span></code> object</p></li>
+<li><p>Connect the nodes as the picture in order to retrieve to different object properties</p></li>
+<li><p>Add a <code class="docutils literal notranslate"><span class="pre">plangl.visualization.plot3D</span></code> object and connect it to the output of <code class="docutils literal notranslate"><span class="pre">tree_scene</span></code></p></li>
+<li><p>Run the dataflow several times and change the value of the first <code class="docutils literal notranslate"><span class="pre">getitem</span></code> (object index)</p></li>
+<li><p>Save the dataflow in the standbuilder package as <strong>readcsv_2</strong></p></li>
 </ol>
 </div>
 <div class="section" id="create-a-composite-node-by-grouping-nodes">
 <h3>Create a composite node by grouping nodes<a class="headerlink" href="#create-a-composite-node-by-grouping-nodes" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
-<li>Select the 5 <code class="docutils literal notranslate"><span class="pre">getitem</span></code> and their associated <code class="docutils literal notranslate"><span class="pre">string</span></code> object</li>
-<li>Click on Menu <strong>Workspace</strong> -&gt; <strong>group</strong> (CTRL+G)</li>
-<li>Run the dataflow</li>
-<li>Save it in the standbuilder package as <strong>readcsv_3</strong></li>
+<li><p>Select the 5 <code class="docutils literal notranslate"><span class="pre">getitem</span></code> and their associated <code class="docutils literal notranslate"><span class="pre">string</span></code> object</p></li>
+<li><p>Click on Menu <strong>Workspace</strong> -&gt; <strong>group</strong> (CTRL+G)</p></li>
+<li><p>Run the dataflow</p></li>
+<li><p>Save it in the standbuilder package as <strong>readcsv_3</strong></p></li>
 </ol>
 <a class="reference internal image-reference" href="../../_images/step4.3.PNG"><img alt="../../_images/step4.3.PNG" src="../../_images/step4.3.PNG" style="width: 70%;" /></a>
 <a class="reference internal image-reference" href="../../_images/step4.4.PNG"><img alt="../../_images/step4.4.PNG" src="../../_images/step4.4.PNG" style="width: 20%;" /></a>
@@ -475,15 +471,15 @@ to the crown radius</li>
 <div class="section" id="extract-data">
 <h3>Extract data<a class="headerlink" href="#extract-data" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
-<li>Create a new workspace (CTRL+T)</li>
-<li>Add a <code class="docutils literal notranslate"><span class="pre">read</span></code> node and a <code class="docutils literal notranslate"><span class="pre">read</span> <span class="pre">csv</span></code> node to read a csv file</li>
-<li>Set the file to read by opening the <code class="docutils literal notranslate"><span class="pre">read</span></code> widget (<em>Open Widget</em>)</li>
-<li>Run and display the output (output port context menu -&gt; <em>Print</em> or <em>Tooltip</em>) : it’s a list of obj</li>
-<li>Add a <code class="docutils literal notranslate"><span class="pre">getitem</span></code> node and an <code class="docutils literal notranslate"><span class="pre">int</span></code> node to select an object in the list</li>
-<li>Add an <code class="docutils literal notranslate"><span class="pre">extract</span></code> node and 2 <code class="docutils literal notranslate"><span class="pre">string</span></code> nodes to select properties in a particular object</li>
-<li>Set the 2 <code class="docutils literal notranslate"><span class="pre">string</span></code> objects to X and Y</li>
-<li>Run and display the output (output port context menu -&gt; <em>print</em> or <em>tooltip</em>) : it’s a
-list containing the X and the Y properties of the selected object.</li>
+<li><p>Create a new workspace (CTRL+T)</p></li>
+<li><p>Add a <code class="docutils literal notranslate"><span class="pre">read</span></code> node and a <code class="docutils literal notranslate"><span class="pre">read</span> <span class="pre">csv</span></code> node to read a csv file</p></li>
+<li><p>Set the file to read by opening the <code class="docutils literal notranslate"><span class="pre">read</span></code> widget (<em>Open Widget</em>)</p></li>
+<li><p>Run and display the output (output port context menu -&gt; <em>Print</em> or <em>Tooltip</em>) : it’s a list of obj</p></li>
+<li><p>Add a <code class="docutils literal notranslate"><span class="pre">getitem</span></code> node and an <code class="docutils literal notranslate"><span class="pre">int</span></code> node to select an object in the list</p></li>
+<li><p>Add an <code class="docutils literal notranslate"><span class="pre">extract</span></code> node and 2 <code class="docutils literal notranslate"><span class="pre">string</span></code> nodes to select properties in a particular object</p></li>
+<li><p>Set the 2 <code class="docutils literal notranslate"><span class="pre">string</span></code> objects to X and Y</p></li>
+<li><p>Run and display the output (output port context menu -&gt; <em>print</em> or <em>tooltip</em>) : it’s a
+list containing the X and the Y properties of the selected object.</p></li>
 </ol>
 <img alt="../../_images/step5.1.PNG" src="../../_images/step5.1.PNG" />
 </div>
@@ -491,27 +487,27 @@ list containing the X and the Y properties of the selected object.</li>
 <h3>Implement iterative process<a class="headerlink" href="#implement-iterative-process" title="Permalink to this headline">¶</a></h3>
 <p>We want to do the same thing, but for all the CSV objects contained in the file.</p>
 <ol class="arabic simple">
-<li>Remove the <code class="docutils literal notranslate"><span class="pre">getitem</span></code> and the <code class="docutils literal notranslate"><span class="pre">int</span></code> nodes (with suppr)</li>
-<li>Add an <code class="docutils literal notranslate"><span class="pre">openalea.function</span> <span class="pre">operator.map</span></code></li>
-<li>Connect the output of <code class="docutils literal notranslate"><span class="pre">extract</span></code> to the first input of <code class="docutils literal notranslate"><span class="pre">map</span></code></li>
-<li>Connect the output of <code class="docutils literal notranslate"><span class="pre">read</span> <span class="pre">csv</span></code> to the second input of <code class="docutils literal notranslate"><span class="pre">map</span></code></li>
-<li>Add an <code class="docutils literal notranslate"><span class="pre">openalea.flow</span> <span class="pre">control.X</span></code> node and connect its output the first input of <code class="docutils literal notranslate"><span class="pre">extract</span></code></li>
-<li>Run the <code class="docutils literal notranslate"><span class="pre">map</span></code> object and display the result</li>
+<li><p>Remove the <code class="docutils literal notranslate"><span class="pre">getitem</span></code> and the <code class="docutils literal notranslate"><span class="pre">int</span></code> nodes (with suppr)</p></li>
+<li><p>Add an <code class="docutils literal notranslate"><span class="pre">openalea.function</span> <span class="pre">operator.map</span></code></p></li>
+<li><p>Connect the output of <code class="docutils literal notranslate"><span class="pre">extract</span></code> to the first input of <code class="docutils literal notranslate"><span class="pre">map</span></code></p></li>
+<li><p>Connect the output of <code class="docutils literal notranslate"><span class="pre">read</span> <span class="pre">csv</span></code> to the second input of <code class="docutils literal notranslate"><span class="pre">map</span></code></p></li>
+<li><p>Add an <code class="docutils literal notranslate"><span class="pre">openalea.flow</span> <span class="pre">control.X</span></code> node and connect its output the first input of <code class="docutils literal notranslate"><span class="pre">extract</span></code></p></li>
+<li><p>Run the <code class="docutils literal notranslate"><span class="pre">map</span></code> object and display the result</p></li>
 </ol>
 <img alt="../../_images/step5.2.PNG" src="../../_images/step5.2.PNG" />
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">The X object represents a function variable. The map apply a
+<p class="admonition-title">Note</p>
+<p>The X object represents a function variable. The map apply a
 function to each element received in its second input.</p>
 </div>
 </div>
 <div class="section" id="plot-2d">
 <h3>Plot 2D<a class="headerlink" href="#plot-2d" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
-<li>Add the nodes <code class="docutils literal notranslate"><span class="pre">openalea.plottools.VS</span> <span class="pre">Plot</span></code> and <code class="docutils literal notranslate"><span class="pre">openalea.plottools.tuples2seq</span></code> on the workspace</li>
-<li>Connect the <code class="docutils literal notranslate"><span class="pre">map</span></code> output the input of <code class="docutils literal notranslate"><span class="pre">tuples2seq</span></code> and the last output the <code class="docutils literal notranslate"><span class="pre">VS</span> <span class="pre">Plot</span></code> node.</li>
-<li>Run the dataflow</li>
-<li>Save it in the standbuilder package as <strong>plot_csv</strong></li>
+<li><p>Add the nodes <code class="docutils literal notranslate"><span class="pre">openalea.plottools.VS</span> <span class="pre">Plot</span></code> and <code class="docutils literal notranslate"><span class="pre">openalea.plottools.tuples2seq</span></code> on the workspace</p></li>
+<li><p>Connect the <code class="docutils literal notranslate"><span class="pre">map</span></code> output the input of <code class="docutils literal notranslate"><span class="pre">tuples2seq</span></code> and the last output the <code class="docutils literal notranslate"><span class="pre">VS</span> <span class="pre">Plot</span></code> node.</p></li>
+<li><p>Run the dataflow</p></li>
+<li><p>Save it in the standbuilder package as <strong>plot_csv</strong></p></li>
 </ol>
 </div>
 </div>
@@ -519,10 +515,10 @@ function to each element received in its second input.</p>
 <h2>Step 6 : Apply the process to multiple trees<a class="headerlink" href="#step-6-apply-the-process-to-multiple-trees" title="Permalink to this headline">¶</a></h2>
 <p>In this step, we used the same method to build the entire stand</p>
 <ol class="arabic simple">
-<li>Open the <code class="docutils literal notranslate"><span class="pre">readcsv_3</span></code> dataflow</li>
-<li>Modify it in order to plot in 3D all the tree contained in the file and not only one</li>
-<li>Use a <code class="docutils literal notranslate"><span class="pre">openalea.flow</span> <span class="pre">control.X</span></code> node and a <code class="docutils literal notranslate"><span class="pre">openalea.functional.map</span></code> node</li>
-<li>Save this work in your standbuilder package as <strong>plot_stand</strong></li>
+<li><p>Open the <code class="docutils literal notranslate"><span class="pre">readcsv_3</span></code> dataflow</p></li>
+<li><p>Modify it in order to plot in 3D all the tree contained in the file and not only one</p></li>
+<li><p>Use a <code class="docutils literal notranslate"><span class="pre">openalea.flow</span> <span class="pre">control.X</span></code> node and a <code class="docutils literal notranslate"><span class="pre">openalea.functional.map</span></code> node</p></li>
+<li><p>Save this work in your standbuilder package as <strong>plot_stand</strong></p></li>
 </ol>
 <a class="reference internal image-reference" href="../../_images/step6.1.PNG"><img alt="../../_images/step6.1.PNG" src="../../_images/step6.1.PNG" style="width: 45%;" /></a>
 <a class="reference internal image-reference" href="../../_images/step6.2.PNG"><img alt="../../_images/step6.2.PNG" src="../../_images/step6.2.PNG" style="width: 45%;" /></a>
