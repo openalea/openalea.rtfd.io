@@ -33,7 +33,7 @@
 
     - repo: openalea/plantgl
       conda_channel: openalea
-      rtd_name: plantgl-cp
+      rtd_name: plantgl-cpl
       badges: conda, rtd, pypi
 
     - repo: openalea/visualea
