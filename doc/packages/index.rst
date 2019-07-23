@@ -2,6 +2,10 @@
 Packages
 ========
 
+.. include:: tools.rst
+
+|
+
 Modelling with OpenAlea
 =======================
 
