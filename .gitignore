@@ -21,10 +21,7 @@ dist
 build
 build-scons
 _build
-<<<<<<< HEAD
-=======
 builtdocs
->>>>>>> test
 eggs
 parts
 bin
@@ -67,16 +64,9 @@ nosetests.xml
 # svn
 .svn
 
-<<<<<<< HEAD
 # temporary files
 *._icon.png
 
 # temporary dirs for Mac OS X
 .DS_Store
-=======
-# temporary files
-*._icon.png
 
-# temporary dirs for Mac OS X
-.DS_Store
->>>>>>> test
