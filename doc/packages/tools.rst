@@ -37,35 +37,28 @@
           </a>
         </td>
           
-          <td align='center' class='empty-cell'>-</td>
-          
-          
           <td align='left'>
             <img src="_static/cache/core_conda_downloads_badge.svg">
           </td>
           
           
-          <td align='center' class='empty-cell'>-</td>
+            <td align='left'>
+              <img src="_static/cache/core_license_badge.svg">
+            </td>
           
           
           <td align='left'>
-            <a href="https://openalea-core.readthedocs.io/en/latest">
-              <img src="https://img.shields.io/website-up-down-green-red/https/openalea-core.readthedocs.io/en/latest.svg">
+            <a href="https://openalea-core.readthedocs.io">
+              <img src="https://readthedocs.org/projects/openalea-core/badge/?version=latest">
             </a>
           </td>
           
           
-          <td align='center' class='empty-cell'>-</td>
-          
-          
           <td align='left'>
-            <a href="https://anaconda.org/anaconda/openalea">
-              <img src="https://img.shields.io/conda/vn/anaconda/openalea.svg?style=flat">
+            <a href="https://anaconda.org/openalea/core">
+              <img src="https://img.shields.io/conda/vn/openalea/core.svg?style=flat">
             </a>
           </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
           
       </tr>
       
@@ -87,35 +80,28 @@
           </a>
         </td>
           
-          <td align='center' class='empty-cell'>-</td>
-          
-          
           <td align='left'>
             <img src="_static/cache/eartrack_conda_downloads_badge.svg">
           </td>
           
           
-          <td align='center' class='empty-cell'>-</td>
+            <td align='left'>
+              <img src="_static/cache/eartrack_license_badge.svg">
+            </td>
           
           
           <td align='left'>
-            <a href="https://eartrack.readthedocs.io/en/latest">
-              <img src="https://img.shields.io/website-up-down-green-red/https/eartrack.readthedocs.io/en/latest.svg">
+            <a href="https://eartrack.readthedocs.io">
+              <img src="https://readthedocs.org/projects/eartrack/badge/?version=latest">
             </a>
           </td>
           
           
-          <td align='center' class='empty-cell'>-</td>
-          
-          
           <td align='left'>
-            <a href="https://anaconda.org/anaconda/openalea">
-              <img src="https://img.shields.io/conda/vn/anaconda/openalea.svg?style=flat">
+            <a href="https://anaconda.org/openalea/eartrack">
+              <img src="https://img.shields.io/conda/vn/openalea/eartrack.svg?style=flat">
             </a>
           </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
           
       </tr>
       
@@ -137,35 +123,28 @@
           </a>
         </td>
           
-          <td align='center' class='empty-cell'>-</td>
-          
-          
           <td align='left'>
             <img src="_static/cache/hydroshoot_conda_downloads_badge.svg">
           </td>
           
           
-          <td align='center' class='empty-cell'>-</td>
+            <td align='left'>
+              <img src="_static/cache/hydroshoot_license_badge.svg">
+            </td>
           
           
           <td align='left'>
-            <a href="https://hydroshoot.readthedocs.io/en/latest">
-              <img src="https://img.shields.io/website-up-down-green-red/https/hydroshoot.readthedocs.io/en/latest.svg">
+            <a href="https://hydroshoot.readthedocs.io">
+              <img src="https://readthedocs.org/projects/hydroshoot/badge/?version=latest">
             </a>
           </td>
           
           
-          <td align='center' class='empty-cell'>-</td>
-          
-          
           <td align='left'>
-            <a href="https://anaconda.org/anaconda/openalea">
-              <img src="https://img.shields.io/conda/vn/anaconda/openalea.svg?style=flat">
+            <a href="https://anaconda.org/openalea/hydroshoot">
+              <img src="https://img.shields.io/conda/vn/openalea/hydroshoot.svg?style=flat">
             </a>
           </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
           
       </tr>
       
@@ -187,35 +166,28 @@
           </a>
         </td>
           
-          <td align='center' class='empty-cell'>-</td>
-          
-          
           <td align='left'>
             <img src="_static/cache/lpy_conda_downloads_badge.svg">
           </td>
           
           
-          <td align='center' class='empty-cell'>-</td>
+            <td align='left'>
+              <img src="_static/cache/lpy_license_badge.svg">
+            </td>
           
           
           <td align='left'>
-            <a href="https://lpy.readthedocs.io/en/latest">
-              <img src="https://img.shields.io/website-up-down-green-red/https/lpy.readthedocs.io/en/latest.svg">
+            <a href="https://lpy.readthedocs.io">
+              <img src="https://readthedocs.org/projects/lpy/badge/?version=latest">
             </a>
           </td>
           
           
-          <td align='center' class='empty-cell'>-</td>
-          
-          
           <td align='left'>
-            <a href="https://anaconda.org/anaconda/openalea">
-              <img src="https://img.shields.io/conda/vn/anaconda/openalea.svg?style=flat">
+            <a href="https://anaconda.org/openalea/lpy">
+              <img src="https://img.shields.io/conda/vn/openalea/lpy.svg?style=flat">
             </a>
           </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
           
       </tr>
       
@@ -237,35 +209,28 @@
           </a>
         </td>
           
-          <td align='center' class='empty-cell'>-</td>
-          
-          
           <td align='left'>
             <img src="_static/cache/mtg_conda_downloads_badge.svg">
           </td>
           
           
-          <td align='center' class='empty-cell'>-</td>
+            <td align='left'>
+              <img src="_static/cache/mtg_license_badge.svg">
+            </td>
           
           
           <td align='left'>
-            <a href="https://mtg.readthedocs.io/en/latest">
-              <img src="https://img.shields.io/website-up-down-green-red/https/mtg.readthedocs.io/en/latest.svg">
+            <a href="https://mtg.readthedocs.io">
+              <img src="https://readthedocs.org/projects/mtg/badge/?version=latest">
             </a>
           </td>
           
           
-          <td align='center' class='empty-cell'>-</td>
-          
-          
           <td align='left'>
-            <a href="https://anaconda.org/anaconda/openalea">
-              <img src="https://img.shields.io/conda/vn/anaconda/openalea.svg?style=flat">
+            <a href="https://anaconda.org/openalea/mtg">
+              <img src="https://img.shields.io/conda/vn/openalea/mtg.svg?style=flat">
             </a>
           </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
           
       </tr>
       
@@ -287,35 +252,28 @@
           </a>
         </td>
           
-          <td align='center' class='empty-cell'>-</td>
-          
-          
           <td align='left'>
             <img src="_static/cache/phenomenal_conda_downloads_badge.svg">
           </td>
           
           
-          <td align='center' class='empty-cell'>-</td>
+            <td align='left'>
+              <img src="_static/cache/phenomenal_license_badge.svg">
+            </td>
           
           
           <td align='left'>
-            <a href="https://phenomenal.readthedocs.io/en/latest">
-              <img src="https://img.shields.io/website-up-down-green-red/https/phenomenal.readthedocs.io/en/latest.svg">
+            <a href="https://phenomenal.readthedocs.io">
+              <img src="https://readthedocs.org/projects/phenomenal/badge/?version=latest">
             </a>
           </td>
           
           
-          <td align='center' class='empty-cell'>-</td>
-          
-          
           <td align='left'>
-            <a href="https://anaconda.org/anaconda/openalea">
-              <img src="https://img.shields.io/conda/vn/anaconda/openalea.svg?style=flat">
+            <a href="https://anaconda.org/openalea/phenomenal">
+              <img src="https://img.shields.io/conda/vn/openalea/phenomenal.svg?style=flat">
             </a>
           </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
           
       </tr>
       
@@ -337,35 +295,28 @@
           </a>
         </td>
           
-          <td align='center' class='empty-cell'>-</td>
-          
-          
           <td align='left'>
             <img src="_static/cache/plantgl_conda_downloads_badge.svg">
           </td>
           
           
-          <td align='center' class='empty-cell'>-</td>
+            <td align='left'>
+              <img src="_static/cache/plantgl_license_badge.svg">
+            </td>
           
           
           <td align='left'>
-            <a href="https://plantgl-cpl.readthedocs.io/en/latest">
-              <img src="https://img.shields.io/website-up-down-green-red/https/plantgl-cpl.readthedocs.io/en/latest.svg">
+            <a href="https://plantgl-cpl.readthedocs.io">
+              <img src="https://readthedocs.org/projects/plantgl-cpl/badge/?version=latest">
             </a>
           </td>
           
           
-          <td align='center' class='empty-cell'>-</td>
-          
-          
           <td align='left'>
-            <a href="https://anaconda.org/anaconda/openalea">
-              <img src="https://img.shields.io/conda/vn/anaconda/openalea.svg?style=flat">
+            <a href="https://anaconda.org/openalea/plantgl">
+              <img src="https://img.shields.io/conda/vn/openalea/plantgl.svg?style=flat">
             </a>
           </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
           
       </tr>
       
@@ -387,15 +338,14 @@
           </a>
         </td>
           
-          <td align='center' class='empty-cell'>-</td>
-          
-          
           <td align='left'>
             <img src="_static/cache/visualea_conda_downloads_badge.svg">
           </td>
           
           
-          <td align='center' class='empty-cell'>-</td>
+            <td align='left'>
+              <img src="_static/cache/visualea_license_badge.svg">
+            </td>
           
           
           <td align='left'>
@@ -405,17 +355,11 @@
           </td>
           
           
-          <td align='center' class='empty-cell'>-</td>
-          
-          
           <td align='left'>
-            <a href="https://anaconda.org/anaconda/openalea">
-              <img src="https://img.shields.io/conda/vn/anaconda/openalea.svg?style=flat">
+            <a href="https://anaconda.org/openalea/visualea">
+              <img src="https://img.shields.io/conda/vn/openalea/visualea.svg?style=flat">
             </a>
           </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
           
       </tr>
       
@@ -437,15 +381,14 @@
           </a>
         </td>
           
-          <td align='center' class='empty-cell'>-</td>
-          
-          
           <td align='left'>
             <img src="_static/cache/weberpenn_conda_downloads_badge.svg">
           </td>
           
           
-          <td align='center' class='empty-cell'>-</td>
+            <td align='left'>
+              <img src="_static/cache/weberpenn_license_badge.svg">
+            </td>
           
           
           <td align='left'>
@@ -455,17 +398,11 @@
           </td>
           
           
-          <td align='center' class='empty-cell'>-</td>
-          
-          
           <td align='left'>
-            <a href="https://anaconda.org/anaconda/openalea">
-              <img src="https://img.shields.io/conda/vn/anaconda/openalea.svg?style=flat">
+            <a href="https://anaconda.org/openalea/weberpenn">
+              <img src="https://img.shields.io/conda/vn/openalea/weberpenn.svg?style=flat">
             </a>
           </td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
           
       </tr>
       
