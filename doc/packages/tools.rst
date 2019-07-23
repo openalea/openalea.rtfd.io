@@ -14,9 +14,7 @@
         <th></th>
         <th>License</th>
         <th>Docs</th>
-        <th>PyPI</th>
         <th>Conda</th>
-        <th>Sponsors</th>
       </tr>
       
       <tr>
@@ -55,8 +53,8 @@
           
           
           <td align='left'>
-            <a href="https://anaconda.org/openalea/core">
-              <img src="https://img.shields.io/conda/vn/openalea/core.svg?style=flat">
+            <a href="https://anaconda.org/openalea/openalea.core">
+              <img src="https://img.shields.io/conda/vn/openalea/openalea.core.svg?style=flat">
             </a>
           </td>
           
@@ -98,8 +96,8 @@
           
           
           <td align='left'>
-            <a href="https://anaconda.org/openalea/eartrack">
-              <img src="https://img.shields.io/conda/vn/openalea/eartrack.svg?style=flat">
+            <a href="https://anaconda.org/openalea/openalea.eartrack">
+              <img src="https://img.shields.io/conda/vn/openalea/openalea.eartrack.svg?style=flat">
             </a>
           </td>
           
@@ -141,8 +139,8 @@
           
           
           <td align='left'>
-            <a href="https://anaconda.org/openalea/hydroshoot">
-              <img src="https://img.shields.io/conda/vn/openalea/hydroshoot.svg?style=flat">
+            <a href="https://anaconda.org/openalea/label/linux-x86_64_release/hydroshoot">
+              <img src="https://img.shields.io/conda/vn/openalea/label/linux-x86_64_release/hydroshoot.svg?style=flat">
             </a>
           </td>
           
@@ -184,8 +182,8 @@
           
           
           <td align='left'>
-            <a href="https://anaconda.org/openalea/lpy">
-              <img src="https://img.shields.io/conda/vn/openalea/lpy.svg?style=flat">
+            <a href="https://anaconda.org/openalea/openalea.lpy">
+              <img src="https://img.shields.io/conda/vn/openalea/openalea.lpy.svg?style=flat">
             </a>
           </td>
           
@@ -227,8 +225,8 @@
           
           
           <td align='left'>
-            <a href="https://anaconda.org/openalea/mtg">
-              <img src="https://img.shields.io/conda/vn/openalea/mtg.svg?style=flat">
+            <a href="https://anaconda.org/openalea/openalea.mtg">
+              <img src="https://img.shields.io/conda/vn/openalea/openalea.mtg.svg?style=flat">
             </a>
           </td>
           
@@ -270,8 +268,8 @@
           
           
           <td align='left'>
-            <a href="https://anaconda.org/openalea/phenomenal">
-              <img src="https://img.shields.io/conda/vn/openalea/phenomenal.svg?style=flat">
+            <a href="https://anaconda.org/openalea/openalea.phenomenal">
+              <img src="https://img.shields.io/conda/vn/openalea/openalea.phenomenal.svg?style=flat">
             </a>
           </td>
           
@@ -313,8 +311,8 @@
           
           
           <td align='left'>
-            <a href="https://anaconda.org/openalea/plantgl">
-              <img src="https://img.shields.io/conda/vn/openalea/plantgl.svg?style=flat">
+            <a href="https://anaconda.org/openalea/openalea.plantgl">
+              <img src="https://img.shields.io/conda/vn/openalea/openalea.plantgl.svg?style=flat">
             </a>
           </td>
           
@@ -356,8 +354,8 @@
           
           
           <td align='left'>
-            <a href="https://anaconda.org/openalea/visualea">
-              <img src="https://img.shields.io/conda/vn/openalea/visualea.svg?style=flat">
+            <a href="https://anaconda.org/openalea/openalea.visualea">
+              <img src="https://img.shields.io/conda/vn/openalea/openalea.visualea.svg?style=flat">
             </a>
           </td>
           
@@ -399,8 +397,8 @@
           
           
           <td align='left'>
-            <a href="https://anaconda.org/openalea/weberpenn">
-              <img src="https://img.shields.io/conda/vn/openalea/weberpenn.svg?style=flat">
+            <a href="https://anaconda.org/openalea/openalea.weberpenn">
+              <img src="https://img.shields.io/conda/vn/openalea/openalea.weberpenn.svg?style=flat">
             </a>
           </td>
           
