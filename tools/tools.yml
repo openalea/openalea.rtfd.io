@@ -11,13 +11,13 @@
       conda_channel: openalea
       conda_package: openalea.eartrack
       rtd_name: eartrack
-      badges: conda, rtd, pypi
+      badges: conda, rtd
 
     - repo: openalea/hydroshoot
       conda_channel: openalea/label/linux-x86_64_release
       conda_package: hydroshoot
       rtd_name: hydroshoot
-      badges: conda, rtd, pypi
+      badges: conda, rtd
 
     - repo: openalea/lpy
       conda_channel: openalea
@@ -35,22 +35,22 @@
       conda_channel: openalea
       conda_package: openalea.phenomenal
       rtd_name: phenomenal
-      badges: conda, rtd, pypi
+      badges: conda, rtd
 
     - repo: openalea/plantgl
       conda_channel: openalea
       conda_package: openalea.plantgl
       rtd_name: plantgl-cpl
-      badges: conda, rtd, pypi
+      badges: conda, rtd
 
     - repo: openalea/visualea
       conda_channel: openalea
       conda_package: openalea.visualea
       site: https://github.com/openalea/visualea/blob/master/README.txt
-      badges: conda, site, pypi
+      badges: conda, site
 
     - repo: openalea/weberpenn
       conda_channel: openalea
       conda_package: openalea.weberpenn
       site: https://github.com/openalea/weberpenn/blob/master/README.rst
-      badges: conda, site, pypi
+      badges: conda, site
