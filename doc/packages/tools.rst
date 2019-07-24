@@ -36,14 +36,14 @@
           
           <td align='left'>
             <a href="https://anaconda.org/openalea/openalea.core">
-              <img src="https://anaconda.org/openalea//badges/downloads.svg">
+              <img src="https://anaconda.org/openalea/openalea.core/badges/downloads.svg">
             </a>
           </td>
           
           
             <td align='left'>
               <a href="https://anaconda.org/openalea/openalea.core">
-                <img src="https://anaconda.org/openalea//badges/license.svg">
+                <img src="https://anaconda.org/openalea/openalea.core/badges/license.svg">
               </a>
             </td>
           
@@ -83,14 +83,14 @@
           
           <td align='left'>
             <a href="https://anaconda.org/openalea/openalea.eartrack">
-              <img src="https://anaconda.org/openalea//badges/downloads.svg">
+              <img src="https://anaconda.org/openalea/openalea.eartrack/badges/downloads.svg">
             </a>
           </td>
           
           
             <td align='left'>
               <a href="https://anaconda.org/openalea/openalea.eartrack">
-                <img src="https://anaconda.org/openalea//badges/license.svg">
+                <img src="https://anaconda.org/openalea/openalea.eartrack/badges/license.svg">
               </a>
             </td>
           
@@ -130,14 +130,14 @@
           
           <td align='left'>
             <a href="https://anaconda.org/openalea/hydroshoot">
-              <img src="https://anaconda.org/openalea//badges/downloads.svg">
+              <img src="https://anaconda.org/openalea/hydroshoot/badges/downloads.svg">
             </a>
           </td>
           
           
             <td align='left'>
               <a href="https://anaconda.org/openalea/hydroshoot">
-                <img src="https://anaconda.org/openalea//badges/license.svg">
+                <img src="https://anaconda.org/openalea/hydroshoot/badges/license.svg">
               </a>
             </td>
           
@@ -177,14 +177,14 @@
           
           <td align='left'>
             <a href="https://anaconda.org/openalea/openalea.lpy">
-              <img src="https://anaconda.org/openalea//badges/downloads.svg">
+              <img src="https://anaconda.org/openalea/openalea.lpy/badges/downloads.svg">
             </a>
           </td>
           
           
             <td align='left'>
               <a href="https://anaconda.org/openalea/openalea.lpy">
-                <img src="https://anaconda.org/openalea//badges/license.svg">
+                <img src="https://anaconda.org/openalea/openalea.lpy/badges/license.svg">
               </a>
             </td>
           
@@ -224,14 +224,14 @@
           
           <td align='left'>
             <a href="https://anaconda.org/openalea/openalea.mtg">
-              <img src="https://anaconda.org/openalea//badges/downloads.svg">
+              <img src="https://anaconda.org/openalea/openalea.mtg/badges/downloads.svg">
             </a>
           </td>
           
           
             <td align='left'>
               <a href="https://anaconda.org/openalea/openalea.mtg">
-                <img src="https://anaconda.org/openalea//badges/license.svg">
+                <img src="https://anaconda.org/openalea/openalea.mtg/badges/license.svg">
               </a>
             </td>
           
@@ -271,14 +271,14 @@
           
           <td align='left'>
             <a href="https://anaconda.org/openalea/openalea.phenomenal">
-              <img src="https://anaconda.org/openalea//badges/downloads.svg">
+              <img src="https://anaconda.org/openalea/openalea.phenomenal/badges/downloads.svg">
             </a>
           </td>
           
           
             <td align='left'>
               <a href="https://anaconda.org/openalea/openalea.phenomenal">
-                <img src="https://anaconda.org/openalea//badges/license.svg">
+                <img src="https://anaconda.org/openalea/openalea.phenomenal/badges/license.svg">
               </a>
             </td>
           
@@ -318,14 +318,14 @@
           
           <td align='left'>
             <a href="https://anaconda.org/openalea/openalea.plantgl">
-              <img src="https://anaconda.org/openalea//badges/downloads.svg">
+              <img src="https://anaconda.org/openalea/openalea.plantgl/badges/downloads.svg">
             </a>
           </td>
           
           
             <td align='left'>
               <a href="https://anaconda.org/openalea/openalea.plantgl">
-                <img src="https://anaconda.org/openalea//badges/license.svg">
+                <img src="https://anaconda.org/openalea/openalea.plantgl/badges/license.svg">
               </a>
             </td>
           
@@ -365,14 +365,14 @@
           
           <td align='left'>
             <a href="https://anaconda.org/openalea/openalea.visualea">
-              <img src="https://anaconda.org/openalea//badges/downloads.svg">
+              <img src="https://anaconda.org/openalea/openalea.visualea/badges/downloads.svg">
             </a>
           </td>
           
           
             <td align='left'>
               <a href="https://anaconda.org/openalea/openalea.visualea">
-                <img src="https://anaconda.org/openalea//badges/license.svg">
+                <img src="https://anaconda.org/openalea/openalea.visualea/badges/license.svg">
               </a>
             </td>
           
@@ -412,14 +412,14 @@
           
           <td align='left'>
             <a href="https://anaconda.org/openalea/openalea.weberpenn">
-              <img src="https://anaconda.org/openalea//badges/downloads.svg">
+              <img src="https://anaconda.org/openalea/openalea.weberpenn/badges/downloads.svg">
             </a>
           </td>
           
           
             <td align='left'>
               <a href="https://anaconda.org/openalea/openalea.weberpenn">
-                <img src="https://anaconda.org/openalea//badges/license.svg">
+                <img src="https://anaconda.org/openalea/openalea.weberpenn/badges/license.svg">
               </a>
             </td>
           
