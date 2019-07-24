@@ -5,7 +5,7 @@
       conda_channel: openalea
       conda_package: openalea.core
       rtd_name: openalea-core
-      badges: conda, rtd, pypi
+      badges: conda, rtd
 
     - repo: openalea/eartrack
       conda_channel: openalea
@@ -23,13 +23,13 @@
       conda_channel: openalea
       conda_package: openalea.lpy
       rtd_name: lpy
-      badges: conda, rtd, pypi
+      badges: conda, rtd
 
     - repo: openalea/mtg
       conda_channel: openalea
       conda_package: openalea.mtg
       rtd_name: mtg
-      badges: conda, rtd, pypi
+      badges: conda, rtd
 
     - repo: openalea/phenomenal
       conda_channel: openalea

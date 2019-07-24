@@ -37,14 +37,18 @@
         </td>
           {% if 'conda' in package.badges %}
           <td align='left'>
-            <img src="_static/cache/{{ package.name }}_conda_downloads_badge.svg">
+            <a href="https://anaconda.org/{{ package.conda_channel }}/{{ package.conda_package}}">
+              <img src="https://anaconda.org/{{ package.conda_channel }}/{{ conda_package }}/badges/downloads.svg">
+            </a>
           </td>
           {% else %}
           <td align='center' class='empty-cell'>-</td>
           {% endif %}
-          {% if 'pypi' in package.badges %}
+          {% if 'conda' in package.badges %}
             <td align='left'>
-              <img src="_static/cache/{{ package.name }}_license_badge.svg">
+              <a href="https://anaconda.org/{{ package.conda_channel }}/{{ package.conda_package}}">
+                <img src="https://anaconda.org/{{ package.conda_channel }}/{{ conda_package }}/badges/license.svg">
+              </a>
             </td>
           {% else %}
           <td align='center' class='empty-cell'>-</td>
@@ -67,7 +71,7 @@
           {% if 'conda' in package.badges %}
           <td align='left'>
             <a href="https://anaconda.org/{{ package.conda_channel }}/{{ package.conda_package }}">
-              <img src="https://img.shields.io/conda/vn/{{ package.conda_channel }}/{{ package.conda_package }}.svg?style=flat">
+              <img src="https://anaconda.org/{{ package.conda_channel }}/{{ package.conda_package }}/badges/version.svg">
             </a>
           </td>
           {% else %}
