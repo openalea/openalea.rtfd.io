@@ -14,7 +14,7 @@
       badges: conda, rtd
 
     - repo: openalea/hydroshoot
-      conda_channel: openalea/label/linux-x86_64_release
+      conda_channel: openalea
       conda_package: hydroshoot
       rtd_name: hydroshoot
       badges: conda, rtd

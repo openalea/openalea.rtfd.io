@@ -25,22 +25,26 @@
         </td>
         <td align='left'>
           <a href="https://github.com/openalea/core/stargazers">
-            <img src="../_static/cache/core_stars_badge.svg">
+            <img src="_static/cache/core_stars_badge.svg">
           </a>
         </td>
         <td align='left'>
           <a href="https://github.com/openalea/core/graphs/contributors">
-            <img src="../_static/cache/core_contributors_badge.svg">
+            <img src="_static/cache/core_contributors_badge.svg">
           </a>
         </td>
           
           <td align='left'>
-            <img src="../_static/cache/core_conda_downloads_badge.svg">
+            <a href="https://anaconda.org/openalea/openalea.core">
+              <img src="https://anaconda.org/openalea//badges/downloads.svg">
+            </a>
           </td>
           
           
             <td align='left'>
-              <img src="../_static/cache/core_license_badge.svg">
+              <a href="https://anaconda.org/openalea/openalea.core">
+                <img src="https://anaconda.org/openalea//badges/license.svg">
+              </a>
             </td>
           
           
@@ -53,7 +57,7 @@
           
           <td align='left'>
             <a href="https://anaconda.org/openalea/openalea.core">
-              <img src="https://img.shields.io/conda/vn/openalea/openalea.core.svg?style=flat">
+              <img src="https://anaconda.org/openalea/openalea.core/badges/version.svg">
             </a>
           </td>
           
@@ -68,21 +72,27 @@
         </td>
         <td align='left'>
           <a href="https://github.com/openalea/eartrack/stargazers">
-            <img src="../_static/cache/eartrack_stars_badge.svg">
+            <img src="_static/cache/eartrack_stars_badge.svg">
           </a>
         </td>
         <td align='left'>
           <a href="https://github.com/openalea/eartrack/graphs/contributors">
-            <img src="../_static/cache/eartrack_contributors_badge.svg">
+            <img src="_static/cache/eartrack_contributors_badge.svg">
           </a>
         </td>
           
           <td align='left'>
-            <img src="../_static/cache/eartrack_conda_downloads_badge.svg">
+            <a href="https://anaconda.org/openalea/openalea.eartrack">
+              <img src="https://anaconda.org/openalea//badges/downloads.svg">
+            </a>
           </td>
           
           
-          <td align='center' class='empty-cell'>-</td>
+            <td align='left'>
+              <a href="https://anaconda.org/openalea/openalea.eartrack">
+                <img src="https://anaconda.org/openalea//badges/license.svg">
+              </a>
+            </td>
           
           
           <td align='left'>
@@ -94,7 +104,7 @@
           
           <td align='left'>
             <a href="https://anaconda.org/openalea/openalea.eartrack">
-              <img src="https://img.shields.io/conda/vn/openalea/openalea.eartrack.svg?style=flat">
+              <img src="https://anaconda.org/openalea/openalea.eartrack/badges/version.svg">
             </a>
           </td>
           
@@ -109,21 +119,27 @@
         </td>
         <td align='left'>
           <a href="https://github.com/openalea/hydroshoot/stargazers">
-            <img src="../_static/cache/hydroshoot_stars_badge.svg">
+            <img src="_static/cache/hydroshoot_stars_badge.svg">
           </a>
         </td>
         <td align='left'>
           <a href="https://github.com/openalea/hydroshoot/graphs/contributors">
-            <img src="../_static/cache/hydroshoot_contributors_badge.svg">
+            <img src="_static/cache/hydroshoot_contributors_badge.svg">
           </a>
         </td>
           
           <td align='left'>
-            <img src="../_static/cache/hydroshoot_conda_downloads_badge.svg">
+            <a href="https://anaconda.org/openalea/hydroshoot">
+              <img src="https://anaconda.org/openalea//badges/downloads.svg">
+            </a>
           </td>
           
           
-          <td align='center' class='empty-cell'>-</td>
+            <td align='left'>
+              <a href="https://anaconda.org/openalea/hydroshoot">
+                <img src="https://anaconda.org/openalea//badges/license.svg">
+              </a>
+            </td>
           
           
           <td align='left'>
@@ -134,8 +150,8 @@
           
           
           <td align='left'>
-            <a href="https://anaconda.org/openalea/label/linux-x86_64_release/hydroshoot">
-              <img src="https://img.shields.io/conda/vn/openalea/label/linux-x86_64_release/hydroshoot.svg?style=flat">
+            <a href="https://anaconda.org/openalea/hydroshoot">
+              <img src="https://anaconda.org/openalea/hydroshoot/badges/version.svg">
             </a>
           </td>
           
@@ -150,22 +166,26 @@
         </td>
         <td align='left'>
           <a href="https://github.com/openalea/lpy/stargazers">
-            <img src="../_static/cache/lpy_stars_badge.svg">
+            <img src="_static/cache/lpy_stars_badge.svg">
           </a>
         </td>
         <td align='left'>
           <a href="https://github.com/openalea/lpy/graphs/contributors">
-            <img src="../_static/cache/lpy_contributors_badge.svg">
+            <img src="_static/cache/lpy_contributors_badge.svg">
           </a>
         </td>
           
           <td align='left'>
-            <img src="../_static/cache/lpy_conda_downloads_badge.svg">
+            <a href="https://anaconda.org/openalea/openalea.lpy">
+              <img src="https://anaconda.org/openalea//badges/downloads.svg">
+            </a>
           </td>
           
           
             <td align='left'>
-              <img src="../_static/cache/lpy_license_badge.svg">
+              <a href="https://anaconda.org/openalea/openalea.lpy">
+                <img src="https://anaconda.org/openalea//badges/license.svg">
+              </a>
             </td>
           
           
@@ -178,7 +198,7 @@
           
           <td align='left'>
             <a href="https://anaconda.org/openalea/openalea.lpy">
-              <img src="https://img.shields.io/conda/vn/openalea/openalea.lpy.svg?style=flat">
+              <img src="https://anaconda.org/openalea/openalea.lpy/badges/version.svg">
             </a>
           </td>
           
@@ -193,22 +213,26 @@
         </td>
         <td align='left'>
           <a href="https://github.com/openalea/mtg/stargazers">
-            <img src="../_static/cache/mtg_stars_badge.svg">
+            <img src="_static/cache/mtg_stars_badge.svg">
           </a>
         </td>
         <td align='left'>
           <a href="https://github.com/openalea/mtg/graphs/contributors">
-            <img src="../_static/cache/mtg_contributors_badge.svg">
+            <img src="_static/cache/mtg_contributors_badge.svg">
           </a>
         </td>
           
           <td align='left'>
-            <img src="../_static/cache/mtg_conda_downloads_badge.svg">
+            <a href="https://anaconda.org/openalea/openalea.mtg">
+              <img src="https://anaconda.org/openalea//badges/downloads.svg">
+            </a>
           </td>
           
           
             <td align='left'>
-              <img src="../_static/cache/mtg_license_badge.svg">
+              <a href="https://anaconda.org/openalea/openalea.mtg">
+                <img src="https://anaconda.org/openalea//badges/license.svg">
+              </a>
             </td>
           
           
@@ -221,7 +245,7 @@
           
           <td align='left'>
             <a href="https://anaconda.org/openalea/openalea.mtg">
-              <img src="https://img.shields.io/conda/vn/openalea/openalea.mtg.svg?style=flat">
+              <img src="https://anaconda.org/openalea/openalea.mtg/badges/version.svg">
             </a>
           </td>
           
@@ -236,21 +260,27 @@
         </td>
         <td align='left'>
           <a href="https://github.com/openalea/phenomenal/stargazers">
-            <img src="../_static/cache/phenomenal_stars_badge.svg">
+            <img src="_static/cache/phenomenal_stars_badge.svg">
           </a>
         </td>
         <td align='left'>
           <a href="https://github.com/openalea/phenomenal/graphs/contributors">
-            <img src="../_static/cache/phenomenal_contributors_badge.svg">
+            <img src="_static/cache/phenomenal_contributors_badge.svg">
           </a>
         </td>
           
           <td align='left'>
-            <img src="../_static/cache/phenomenal_conda_downloads_badge.svg">
+            <a href="https://anaconda.org/openalea/openalea.phenomenal">
+              <img src="https://anaconda.org/openalea//badges/downloads.svg">
+            </a>
           </td>
           
           
-          <td align='center' class='empty-cell'>-</td>
+            <td align='left'>
+              <a href="https://anaconda.org/openalea/openalea.phenomenal">
+                <img src="https://anaconda.org/openalea//badges/license.svg">
+              </a>
+            </td>
           
           
           <td align='left'>
@@ -262,7 +292,7 @@
           
           <td align='left'>
             <a href="https://anaconda.org/openalea/openalea.phenomenal">
-              <img src="https://img.shields.io/conda/vn/openalea/openalea.phenomenal.svg?style=flat">
+              <img src="https://anaconda.org/openalea/openalea.phenomenal/badges/version.svg">
             </a>
           </td>
           
@@ -277,21 +307,27 @@
         </td>
         <td align='left'>
           <a href="https://github.com/openalea/plantgl/stargazers">
-            <img src="../_static/cache/plantgl_stars_badge.svg">
+            <img src="_static/cache/plantgl_stars_badge.svg">
           </a>
         </td>
         <td align='left'>
           <a href="https://github.com/openalea/plantgl/graphs/contributors">
-            <img src="../_static/cache/plantgl_contributors_badge.svg">
+            <img src="_static/cache/plantgl_contributors_badge.svg">
           </a>
         </td>
           
           <td align='left'>
-            <img src="../_static/cache/plantgl_conda_downloads_badge.svg">
+            <a href="https://anaconda.org/openalea/openalea.plantgl">
+              <img src="https://anaconda.org/openalea//badges/downloads.svg">
+            </a>
           </td>
           
           
-          <td align='center' class='empty-cell'>-</td>
+            <td align='left'>
+              <a href="https://anaconda.org/openalea/openalea.plantgl">
+                <img src="https://anaconda.org/openalea//badges/license.svg">
+              </a>
+            </td>
           
           
           <td align='left'>
@@ -303,7 +339,7 @@
           
           <td align='left'>
             <a href="https://anaconda.org/openalea/openalea.plantgl">
-              <img src="https://img.shields.io/conda/vn/openalea/openalea.plantgl.svg?style=flat">
+              <img src="https://anaconda.org/openalea/openalea.plantgl/badges/version.svg">
             </a>
           </td>
           
@@ -318,21 +354,27 @@
         </td>
         <td align='left'>
           <a href="https://github.com/openalea/visualea/stargazers">
-            <img src="../_static/cache/visualea_stars_badge.svg">
+            <img src="_static/cache/visualea_stars_badge.svg">
           </a>
         </td>
         <td align='left'>
           <a href="https://github.com/openalea/visualea/graphs/contributors">
-            <img src="../_static/cache/visualea_contributors_badge.svg">
+            <img src="_static/cache/visualea_contributors_badge.svg">
           </a>
         </td>
           
           <td align='left'>
-            <img src="../_static/cache/visualea_conda_downloads_badge.svg">
+            <a href="https://anaconda.org/openalea/openalea.visualea">
+              <img src="https://anaconda.org/openalea//badges/downloads.svg">
+            </a>
           </td>
           
           
-          <td align='center' class='empty-cell'>-</td>
+            <td align='left'>
+              <a href="https://anaconda.org/openalea/openalea.visualea">
+                <img src="https://anaconda.org/openalea//badges/license.svg">
+              </a>
+            </td>
           
           
           <td align='left'>
@@ -344,7 +386,7 @@
           
           <td align='left'>
             <a href="https://anaconda.org/openalea/openalea.visualea">
-              <img src="https://img.shields.io/conda/vn/openalea/openalea.visualea.svg?style=flat">
+              <img src="https://anaconda.org/openalea/openalea.visualea/badges/version.svg">
             </a>
           </td>
           
@@ -359,21 +401,27 @@
         </td>
         <td align='left'>
           <a href="https://github.com/openalea/weberpenn/stargazers">
-            <img src="../_static/cache/weberpenn_stars_badge.svg">
+            <img src="_static/cache/weberpenn_stars_badge.svg">
           </a>
         </td>
         <td align='left'>
           <a href="https://github.com/openalea/weberpenn/graphs/contributors">
-            <img src="../_static/cache/weberpenn_contributors_badge.svg">
+            <img src="_static/cache/weberpenn_contributors_badge.svg">
           </a>
         </td>
           
           <td align='left'>
-            <img src="../_static/cache/weberpenn_conda_downloads_badge.svg">
+            <a href="https://anaconda.org/openalea/openalea.weberpenn">
+              <img src="https://anaconda.org/openalea//badges/downloads.svg">
+            </a>
           </td>
           
           
-          <td align='center' class='empty-cell'>-</td>
+            <td align='left'>
+              <a href="https://anaconda.org/openalea/openalea.weberpenn">
+                <img src="https://anaconda.org/openalea//badges/license.svg">
+              </a>
+            </td>
           
           
           <td align='left'>
@@ -385,7 +433,7 @@
           
           <td align='left'>
             <a href="https://anaconda.org/openalea/openalea.weberpenn">
-              <img src="https://img.shields.io/conda/vn/openalea/openalea.weberpenn.svg?style=flat">
+              <img src="https://anaconda.org/openalea/openalea.weberpenn/badges/version.svg">
             </a>
           </td>
           
