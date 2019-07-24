@@ -2,7 +2,9 @@
 Packages
 ========
 
-.. mdinclude:: tools.md
+.. include:: tools.rst
+
+|
 
 Modelling with OpenAlea
 =======================

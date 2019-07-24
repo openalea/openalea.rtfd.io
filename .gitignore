@@ -21,6 +21,7 @@ dist
 build
 build-scons
 _build
+builtdocs
 eggs
 parts
 bin
@@ -68,3 +69,4 @@ nosetests.xml
 
 # temporary dirs for Mac OS X
 .DS_Store
+

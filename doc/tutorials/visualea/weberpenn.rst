@@ -84,7 +84,6 @@ On this workflow, there are the ``global parameters``, ``trunk``, ``order 1``, `
 
   .. image:: ./images/weberpenn/step1_2.PNG
      :width: 20%
-
   |
 
 * ``trunk``, ``order 1`` and ``order 2`` allow to change parameters of the current order
@@ -110,7 +109,7 @@ tree architecture corresponding to the inputs you've entered in the parameters n
 .. image:: ./images/weberpenn/step1_4.gif
 
 Workflow 2
-----------
+---------
 
 On this workflow, it is the same as the `Workflow 1`_ but you only have to choose the species you want in the 
 ``species`` node. There are 3 species that have been preset.

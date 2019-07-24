@@ -8,7 +8,6 @@ Here is a tutorial in which you will see how to implement a simple modeling prob
 
 Here is what you need for the following tutorial
 ::
-
     conda create -n visualea_tuto -c openalea openalea.visualea openalea.components openalea.plantgl boost=1.66 -c openalea/label/unstable
     conda activate visualea_tuto
 
