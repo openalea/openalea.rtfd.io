@@ -54,3 +54,9 @@
       conda_package: openalea.weberpenn
       site: https://github.com/openalea/weberpenn/blob/master/README.rst
       badges: conda, site
+      
+    - repo: openalea-incubator/strawberry
+      #conda_channel: openalea
+      #conda_package: openalea.strawberry
+      site: https://github.com/openalea-incubator/strawberry/blob/master/README.md
+      badges: site
