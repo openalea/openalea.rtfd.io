@@ -119,8 +119,7 @@ Once you have forked the package on your device, you have to install Sphinx_ to 
 
     pip install sphinx
 
-In each package repository, it must be a ``docs/`` directory in which the reStructuredText documents are. You are pleased 
-to modify or create these and generate the HTML output in the ``docs/`` directory 
+In each package repository, it must be a ``docs/`` directory in which the reStructuredText documents are. You can modify or create these and generate the HTML output in the ``docs/`` directory 
 ::
 
     make html 
