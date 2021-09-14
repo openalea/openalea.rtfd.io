@@ -455,7 +455,7 @@
 
         <td align='left'>
           <a href="https://github.com/openalea/strawberry/graphs/contributors">
-            <img src="https://img.shields.io/github/contributors/openalea/strawberry.svg?style=social&label=Contributors&maxAge=2592000">
+            <img src="https://img.shields.io/github/contributors/openalea/strawberry.svg?style=social&label=Contributors&maxAge=2592000&logo=GitHub">
           </a>
         </td>
           
