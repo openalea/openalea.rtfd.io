@@ -25,12 +25,12 @@
         </td>
         <td align='left'>
           <a href="https://github.com/openalea/core/stargazers">
-            <img src="../_static/cache/core_stars_badge.svg">
+            <img src="https://img.shields.io/github/stars/openalea/core.svg?style=social&label=Stars&maxAge=2592000">
           </a>
         </td>
         <td align='left'>
           <a href="https://github.com/openalea/core/graphs/contributors">
-            <img src="../_static/cache/core_contributors_badge.svg">
+            <img src="https://img.shields.io/github/contributors/openalea/core.svg?style=social&label=Contributors&maxAge=2592000&logo=GitHub">
           </a>
         </td>
           
@@ -72,12 +72,12 @@
         </td>
         <td align='left'>
           <a href="https://github.com/openalea/eartrack/stargazers">
-            <img src="../_static/cache/eartrack_stars_badge.svg">
+            <img src="https://img.shields.io/github/stars/openalea/eartrack.svg?style=social&label=Stars&maxAge=2592000">
           </a>
         </td>
         <td align='left'>
           <a href="https://github.com/openalea/eartrack/graphs/contributors">
-            <img src="../_static/cache/eartrack_contributors_badge.svg">
+            <img src="https://img.shields.io/github/contributors/openalea/eartrack.svg?style=social&label=Contributors&maxAge=2592000&logo=GitHub">
           </a>
         </td>
           
@@ -119,12 +119,12 @@
         </td>
         <td align='left'>
           <a href="https://github.com/openalea/hydroshoot/stargazers">
-            <img src="../_static/cache/hydroshoot_stars_badge.svg">
+            <img src="https://img.shields.io/github/stars/openalea/hydroshoot.svg?style=social&label=Stars&maxAge=2592000">
           </a>
         </td>
         <td align='left'>
           <a href="https://github.com/openalea/hydroshoot/graphs/contributors">
-            <img src="../_static/cache/hydroshoot_contributors_badge.svg">
+            <img src="https://img.shields.io/github/contributors/openalea/hydroshoot.svg?style=social&label=Contributors&maxAge=2592000&logo=GitHub">
           </a>
         </td>
           
@@ -166,12 +166,12 @@
         </td>
         <td align='left'>
           <a href="https://github.com/openalea/lpy/stargazers">
-            <img src="../_static/cache/lpy_stars_badge.svg">
+            <img src="https://img.shields.io/github/stars/openalea/lpy.svg?style=social&label=Stars&maxAge=2592000">
           </a>
         </td>
         <td align='left'>
           <a href="https://github.com/openalea/lpy/graphs/contributors">
-            <img src="../_static/cache/lpy_contributors_badge.svg">
+            <img src="https://img.shields.io/github/contributors/openalea/lpy.svg?style=social&label=Contributors&maxAge=2592000&logo=GitHub">
           </a>
         </td>
           
@@ -213,12 +213,12 @@
         </td>
         <td align='left'>
           <a href="https://github.com/openalea/mtg/stargazers">
-            <img src="../_static/cache/mtg_stars_badge.svg">
+            <img src="https://img.shields.io/github/stars/openalea/mtg.svg?style=social&label=Stars&maxAge=2592000">
           </a>
         </td>
         <td align='left'>
           <a href="https://github.com/openalea/mtg/graphs/contributors">
-            <img src="../_static/cache/mtg_contributors_badge.svg">
+            <img src="https://img.shields.io/github/contributors/openalea/mtg.svg?style=social&label=Contributors&maxAge=2592000&logo=GitHub">
           </a>
         </td>
           
@@ -260,12 +260,12 @@
         </td>
         <td align='left'>
           <a href="https://github.com/openalea/phenomenal/stargazers">
-            <img src="../_static/cache/phenomenal_stars_badge.svg">
+            <img src="https://img.shields.io/github/stars/openalea/phenomenal.svg?style=social&label=Stars&maxAge=2592000">
           </a>
         </td>
         <td align='left'>
           <a href="https://github.com/openalea/phenomenal/graphs/contributors">
-            <img src="../_static/cache/phenomenal_contributors_badge.svg">
+            <img src="https://img.shields.io/github/contributors/openalea/phenomenal.svg?style=social&label=Contributors&maxAge=2592000&logo=GitHub">
           </a>
         </td>
           
@@ -307,12 +307,12 @@
         </td>
         <td align='left'>
           <a href="https://github.com/openalea/plantgl/stargazers">
-            <img src="../_static/cache/plantgl_stars_badge.svg">
+            <img src="https://img.shields.io/github/stars/openalea/plantgl.svg?style=social&label=Stars&maxAge=2592000">
           </a>
         </td>
         <td align='left'>
           <a href="https://github.com/openalea/plantgl/graphs/contributors">
-            <img src="../_static/cache/plantgl_contributors_badge.svg">
+            <img src="https://img.shields.io/github/contributors/openalea/plantgl.svg?style=social&label=Contributors&maxAge=2592000&logo=GitHub">
           </a>
         </td>
           
@@ -354,12 +354,12 @@
         </td>
         <td align='left'>
           <a href="https://github.com/openalea/visualea/stargazers">
-            <img src="../_static/cache/visualea_stars_badge.svg">
+            <img src="https://img.shields.io/github/stars/openalea/visualea.svg?style=social&label=Stars&maxAge=2592000">
           </a>
         </td>
         <td align='left'>
           <a href="https://github.com/openalea/visualea/graphs/contributors">
-            <img src="../_static/cache/visualea_contributors_badge.svg">
+            <img src="https://img.shields.io/github/contributors/openalea/visualea.svg?style=social&label=Contributors&maxAge=2592000&logo=GitHub">
           </a>
         </td>
           
@@ -401,12 +401,12 @@
         </td>
         <td align='left'>
           <a href="https://github.com/openalea/weberpenn/stargazers">
-            <img src="../_static/cache/weberpenn_stars_badge.svg">
+            <img src="https://img.shields.io/github/stars/openalea/weberpenn.svg?style=social&label=Stars&maxAge=2592000">
           </a>
         </td>
         <td align='left'>
           <a href="https://github.com/openalea/weberpenn/graphs/contributors">
-            <img src="../_static/cache/weberpenn_contributors_badge.svg">
+            <img src="https://img.shields.io/github/contributors/openalea/weberpenn.svg?style=social&label=Contributors&maxAge=2592000&logo=GitHub">
           </a>
         </td>
           
@@ -435,6 +435,51 @@
             <a href="https://anaconda.org/openalea/openalea.weberpenn">
               <img src="https://anaconda.org/openalea/openalea.weberpenn/badges/version.svg">
             </a>
+          </td>
+          
+      </tr>
+
+
+      <tr>
+        <td align='left'>
+          <a href="http://github.com/openalea/strawberry">strawberry</a>
+        </td>
+        <td align='left'>
+          
+        </td>
+        <td align='left'>
+          <a href="https://github.com/openalea/strawberry/stargazers">
+            <img src="https://img.shields.io/github/stars/openalea/strawberry.svg?style=social&label=Stars&maxAge=2592000">
+          </a>
+        </td>
+
+        <td align='left'>
+          <a href="https://github.com/openalea/strawberry/graphs/contributors">
+            <img src="https://img.shields.io/github/contributors/openalea/strawberry.svg?style=social&label=Contributors&maxAge=2592000&logo=GitHub">
+          </a>
+        </td>
+          
+          <td align='left'>
+            Not on conda
+          </td>
+          
+          
+            <td align='left'>
+              <a href="https://raw.githubusercontent.com/openalea/strawberry/master/LICENSE.txt">
+                <img src="https://img.shields.io/badge/License-CeCILL_C-black.svg">
+              </a>
+            </td>
+          
+          
+          <td align='left'>
+            <a href="https://strawberry.readthedocs.io">
+              <img src="https://readthedocs.org/projects/strawberry/badge/?version=latest">
+            </a>
+          </td>
+          
+          
+          <td align='left'>
+            Not on conda
           </td>
           
       </tr>

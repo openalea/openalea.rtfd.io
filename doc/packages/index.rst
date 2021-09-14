@@ -231,3 +231,30 @@ EarTrack
 **Citation** : Brichet et al., 2017, https://doi.org/10.1186/s13007-017-0246-7
 
 **Source Code** : `Github <https://github.com/openalea/eartrack>`_
+
+
+Strawberry
+----------
+
+.. image:: https://readthedocs.org/projects/strawberry/badge/?version=latest
+ :target: https://strawberry.readthedocs.io
+
+**Strawberry architecture and visualization**
+
+.. image:: ./images/strawberry.png
+ :width: 200px
+ :target: https://strawberry.readthedocs.io/en/latest/
+ :align: left
+
+Strawberry package enables :
+
+  * Analyses on strawberry architecture at several levels.
+  * Modelize strawberry in 2 or 3d.
+ 
+
+
+**Authors** : Marc Labadie, Christophe Pradal, Gaetan Heidsieck
+
+**Institutes** : Cirad, Inria
+
+**Source Code** : `Github <https://github.com/openalea/strawberry>`_
