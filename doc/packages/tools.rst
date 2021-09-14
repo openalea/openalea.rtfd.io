@@ -449,13 +449,13 @@
         </td>
         <td align='left'>
           <a href="https://github.com/openalea/strawberry/stargazers">
-            <img src="https://img.shields.io/github/stars/openalea/strawberry.svg?style=social&label=Star&maxAge=2592000">
+            <img src="https://img.shields.io/github/stars/openalea/strawberry.svg?style=social&label=Stars&maxAge=2592000">
           </a>
         </td>
 
         <td align='left'>
           <a href="https://github.com/openalea/strawberry/graphs/contributors">
-            <img src="https://img.shields.io/github/contributors/openalea/strawberry.svg?style=social&label=Star&maxAge=2592000">
+            <img src="https://img.shields.io/github/contributors/openalea/strawberry.svg?style=social&label=Contributors&maxAge=2592000">
           </a>
         </td>
           
