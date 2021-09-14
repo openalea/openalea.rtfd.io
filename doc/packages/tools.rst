@@ -466,7 +466,7 @@
           
             <td align='left'>
               <a href="https://raw.githubusercontent.com/openalea/strawberry/master/LICENSE.txt">
-                <img src="https://img.shields.io/badge/License-CeCILL-C.svg">
+                <img src="https://img.shields.io/badge/License-CeCILL_C-black.svg">
               </a>
             </td>
           
