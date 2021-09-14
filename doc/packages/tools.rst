@@ -438,6 +438,51 @@
           </td>
           
       </tr>
+
+
+      <tr>
+        <td align='left'>
+          <a href="http://github.com/openalea/strawberry">strawberry</a>
+        </td>
+        <td align='left'>
+          
+        </td>
+        <td align='left'>
+          <a href="https://github.com/openalea/strawberry/stargazers">
+            <img src="https://img.shields.io/github/stars/openalea/strawberry.svg?style=social&label=Star&maxAge=2592000">
+          </a>
+        </td>
+
+        <td align='left'>
+          <a href="https://github.com/openalea/strawberry/graphs/contributors">
+            <img src="https://img.shields.io/github/contributors/openalea/strawberry.svg?style=social&label=Star&maxAge=2592000">
+          </a>
+        </td>
+          
+          <td align='left'>
+            Not on conda
+          </td>
+          
+          
+            <td align='left'>
+              <a href="https://raw.githubusercontent.com/openalea/strawberry/master/LICENSE.txt">
+                <img src="https://img.shields.io/badge/License-CeCILL-C.svg">
+              </a>
+            </td>
+          
+          
+          <td align='left'>
+            <a href="https://strawberry.readthedocs.io">
+              <img src="https://readthedocs.org/projects/strawberry/badge/?version=latest">
+            </a>
+          </td>
+          
+          
+          <td align='left'>
+            Not on conda
+          </td>
+          
+      </tr>
       
     </table>
     
