@@ -129,15 +129,15 @@
         </td>
           
           <td align='left'>
-            <a href="https://anaconda.org/openalea3/hydroshoot">
-              <img src="https://anaconda.org/openalea3/hydroshoot/badges/downloads.svg">
+            <a href="https://anaconda.org/openalea3/openalea.hydroshoot">
+              <img src="https://anaconda.org/openalea3/openalea.hydroshoot/badges/downloads.svg">
             </a>
           </td>
           
           
             <td align='left'>
-              <a href="https://anaconda.org/openalea3/hydroshoot">
-                <img src="https://anaconda.org/openalea3/hydroshoot/badges/license.svg">
+              <a href="https://anaconda.org/openalea3/openalea.hydroshoot">
+                <img src="https://anaconda.org/openalea3/openalea.hydroshoot/badges/license.svg">
               </a>
             </td>
           
