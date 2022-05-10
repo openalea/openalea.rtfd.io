@@ -21,7 +21,7 @@ In this console, to install a given openalea package <*package_name*> with its d
 
 Here is an example if you want only *PlantGL*, *lpy*, *MTG* and *Caribu*::
     
-    conda create -n openalea -c openalea -c anaconda openalea.plantgl openalea.lpy openalea.mtg alinea.caribu boost=1.66 
+    conda create -n openalea -c openalea3 -c conda-forge openalea.plantgl openalea.lpy openalea.mtg alinea.caribu 
 
 Activate the *openalea* environment::
 
@@ -29,6 +29,6 @@ Activate the *openalea* environment::
 
 In this environment, you may also want to install other Scientific Python packages::
 
-    conda install notebook=5.4 matplotlib pandas
+    conda install notebook matplotlib pandas
 
 In the documentation of each package, a installation procedure is described.
