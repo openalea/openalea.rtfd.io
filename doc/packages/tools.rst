@@ -150,8 +150,8 @@
           
           
           <td align='left'>
-            <a href="https://anaconda.org/openalea3/hydroshoot">
-              <img src="https://anaconda.org/openalea3/hydroshoot/badges/version.svg">
+            <a href="https://anaconda.org/openalea3/openalea.hydroshoot">
+              <img src="https://anaconda.org/openalea3/openalea.hydroshoot/badges/version.svg">
             </a>
           </td>
           
