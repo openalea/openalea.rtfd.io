@@ -32,8 +32,8 @@ Gallery
 
    Light Interception
 
-.. figure:: notebook/images/mtg_analysis.png
-   :width: 30%
-   :target: https://nbviewer.jupyter.org/github/openalea/openalea.rtfd.io/blob/master/example/mtg_analysis.ipynb
+.. figure:: notebook/images/strawberry.png
+   :width: 100%
+   :target: https://nbviewer.org/github/openalea/strawberry/blob/master/example/application/Strawberry_Application_demonstration.ipynb
 
-   MTG Visualisation and Data Extraction
+   Strawberry architectural analysis construction & vizualisation of 2D/3D architecture.
