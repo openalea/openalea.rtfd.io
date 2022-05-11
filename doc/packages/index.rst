@@ -238,6 +238,7 @@ Strawberry
 
 .. image:: https://readthedocs.org/projects/strawberry/badge/?version=latest
  :target: https://strawberry.readthedocs.io
+  :alt: Documentation Status
 
 **Strawberry architecture and visualization**
 
