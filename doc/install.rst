@@ -17,7 +17,7 @@ First, create an environment named *openalea*:
 Launch a console or a terminal (See Anaconda Prompt in Start menu on windows).
 In this console, to install a given openalea package <*package_name*> with its dependencies, execute this::
 
-    conda create -n openalea -c openalea -c anaconda openalea.<*package_name*>
+    conda create -n openalea -c openalea3 -c conda-forge openalea.<*package_name*>
 
 Here is an example if you want only *PlantGL*, *lpy*, *MTG* and *Caribu*::
     
