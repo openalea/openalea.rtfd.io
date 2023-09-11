@@ -9,18 +9,11 @@ OpenAlea Documentation
    :target: https://openalea.readthedocs.io/en/latest/?badge=latest
    :alt: Documentation Status
 
-Information about the package
-=============================
 
-Authors
--------
-- Christophe Pradal
-- Baptiste Brument
+Institutes
+----------
 
-With contributions of Thibault Pradal
-
-Institute
----------
+OpenAlea is developped by 3 institutes : CIRAD, inria and INRAE.
 
 License
 -------
@@ -44,7 +37,7 @@ You will need conda to install OpenAlea. Instruction for installing it can be fo
 
 Then you will need a consoelor a terminal to install the packages you want to use ::
 
-    conda create -n openalea -c openalea -c anaconda openalea.[package_name]
+    conda create -n openalea -c openalea3 -c conda-forge openalea.[package_name]
 
 Usage
 =====
