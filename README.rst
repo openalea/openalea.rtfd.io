@@ -44,7 +44,7 @@ Usage
 Tutorials to use the differents features of OpenAlea can be found in the `documentation <https://openalea.readthedocs.io/en/latest/tutorials/index.html>`_.
 
 Sponsors
-=======
+========
 OpenAlea is mainly funded by three research institutes : CIRAD, INRAE and inria.
 
 Contribution
