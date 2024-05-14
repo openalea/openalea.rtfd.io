@@ -31,13 +31,24 @@ This repository contains all the documentation publish in the `official document
 
 Information about OpenAlea can also be found in the wiki: https://github.com/openalea/openalea.rtfd.io/wiki
 
-Installation
+Windows Installation
 ============
-You will need conda to install OpenAlea. Instruction for installing it can be found in the `miniconda website <https://conda.io/miniconda.html>`_.
 
-Then you will need a consoelor a terminal to install the packages you want to use ::
+.. 1 - Install Micromamba (Package Manager)
+The simplest way to install OpenaAlea and all its depencies is to use Miniforge 3:
+`Install Miniforge 3 <https://github.com/conda-forge/miniforge>`_
 
-    conda create -n openalea -c openalea3 -c conda-forge openalea.[package_name]
+
+.. 2 - Run Miniforge Prompt 
+Once you have installed Miniforge, you will have access to Miniforge Prompt. 
+
+Type this in your Miniforge Prompt:
+    
+    mamba create -n openalea -c openalea3 openalea.plantgl openalea.lpy openalea.visualea openalea.mtg notebook -y
+
+    mamba activate openalea
+
+Now you should be in your "openalea" environment ! Well Done !
 
 Usage
 =====
@@ -50,3 +61,4 @@ OpenAlea is mainly funded by three research institutes : CIRAD, INRAE and inria.
 Contribution
 ============
 You can contribute to the OpenAlea project by participating in the `Git Workflow <http://virtualplants.github.io/contribute/devel/git-workflow.html>`_, or by opening an issue or a pull request to adress a problem or a fix.
+ss
