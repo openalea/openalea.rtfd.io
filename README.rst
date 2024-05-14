@@ -31,24 +31,61 @@ This repository contains all the documentation publish in the `official document
 
 Information about OpenAlea can also be found in the wiki: https://github.com/openalea/openalea.rtfd.io/wiki
 
-Windows Installation
-============
+Mac / Linux Installation
+------------------------
 
-.. 1 - Install Micromamba (Package Manager)
+Install Micromamba
+==================
+
+Althought you can use any Conda distribution you like, we recommend you to use Micromamba to avoid most of the depedencies problems you could encounter.
+
+`Install Micromamba <https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html>`_
+
+Create OpenAlea environment:
+
+**Start a console and type:**
+
+.. code-block:: javascript
+
+	micromamba create -n openalea -c openalea3 openalea.plantgl openalea.lpy openalea.visualea openalea.mtg notebook -y
+
+
+
+.. code-block:: javascript
+
+    micromamba activate openalea
+
+You should now be in your "openalea" environment ! Well Done !
+
+Windows Installation
+--------------------
+
+Install Miniforge 3 
+===================
+
 The simplest way to install OpenaAlea and all its depencies is to use Miniforge 3:
 `Install Miniforge 3 <https://github.com/conda-forge/miniforge>`_
 
+Create OpenaAlea environment: 
+=============================
 
-.. 2 - Run Miniforge Prompt 
+**Run Miniforge Prompt**
+
 Once you have installed Miniforge, you will have access to Miniforge Prompt. 
 
-Type this in your Miniforge Prompt:
-    
-    mamba create -n openalea -c openalea3 openalea.plantgl openalea.lpy openalea.visualea openalea.mtg notebook -y
+**Type this in your Miniforge Prompt:**
+
+.. code-block:: javascript
+
+	mamba create -n openalea -c openalea3 openalea.plantgl openalea.lpy openalea.visualea openalea.mtg notebook -y
+
+
+
+.. code-block:: javascript
 
     mamba activate openalea
 
-Now you should be in your "openalea" environment ! Well Done !
+You should now be in your "openalea" environment ! Well Done !
 
 Usage
 =====
