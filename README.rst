@@ -119,9 +119,7 @@ Updating OpenAlea
 How to Update OpenAlea
 ~~~~~~~~~~~~~~~~~~~~~~
 
-**Description**: Updating OpenAlea to the latest version.
-
-**Solution**: To update OpenAlea and its dependencies, activate your OpenAlea environment and run:
+To update OpenAlea and its dependencies, activate your OpenAlea environment and run:
 
 .. code-block:: bash
 
@@ -133,9 +131,7 @@ Contribution
 How to Contribute to OpenAlea
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Description**: Ways to contribute to the OpenAlea project.
-
-**Solution**: You can contribute by participating in the `Git Workflow <http://virtualplants.github.io/contribute/devel/git-workflow.html>`_, or by opening an issue or a pull request on the OpenAlea GitHub repository.
+You can contribute by participating in the `Git Workflow <http://virtualplants.github.io/contribute/devel/git-workflow.html>`_, or by opening an issue or a pull request on the OpenAlea GitHub repository.
 
 Additional Resources
 --------------------
