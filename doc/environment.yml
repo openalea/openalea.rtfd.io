@@ -1,0 +1,12 @@
+name: openalea
+channels:
+  - openalea3
+  - conda-forge
+
+dependencies:
+  - python
+  - sphinx_rtd_theme
+  - openalea.plantgl
+  - openalea.core
+  - openalea.mtg
+  - sphinxcontrib-napoleon
