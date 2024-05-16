@@ -37,12 +37,13 @@ Install Miniforge 3
 ===================
 
 The simplest way to install OpenAlea and all its dependencies is to use Miniforge 3:
+
 `Install Miniforge 3 <https://github.com/conda-forge/miniforge>`_
 
 Create OpenAlea environment:
 =============================
 
-Once you have installed Miniforge, you will have access to Miniforge Prompt (Windows) or a terminal (Mac/Linux).
+Once you have installed Miniforge, you will have access to Miniforge Prompt (Windows) or from a terminal (Mac/Linux).
 
 **Open Miniforge Prompt (Windows) or a terminal (Mac/Linux) and type:**
 
@@ -139,12 +140,11 @@ How to Contribute to OpenAlea
 Additional Resources
 --------------------
 
-Where to Find Tutorials and Examples
+Tutorials and Examples
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Description**: Locating more tutorials and examples.
 
-**Solution**: More tutorials and examples can be found in the `official documentation <https://openalea.readthedocs.io/en/latest/tutorials/index.html>`_.
+More tutorials and examples can be found in the `official documentation <https://openalea.readthedocs.io/en/latest/tutorials/index.html>`_.
 
 
 Contact
