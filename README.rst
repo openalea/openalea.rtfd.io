@@ -6,10 +6,10 @@ OpenAlea Documentation
    :target: https://openalea.readthedocs.io/en/latest/?badge=latest
    :alt: Documentation Status
 
-Institutes
-----------
+Institutes (Sponsors)
+---------------------
 
-OpenAlea is developed by three institutes: CIRAD, INRIA, and INRAE.
+OpenAlea is developed, maintainted and mainly funded by three institutes: CIRAD, INRIA, and INRAE.
 
 License
 -------
@@ -61,11 +61,6 @@ Usage
 
 Tutorials to use the different features of OpenAlea can be found in the `documentation <https://openalea.readthedocs.io/en/latest/tutorials/index.html>`_.
 
-Sponsors
-========
-
-OpenAlea is mainly funded by three research institutes: CIRAD, INRAE, and INRIA.
-
 Contribution
 ============
 
@@ -92,6 +87,7 @@ Then, try creating the environment again.
 **Problem**: "mamba" command not found.
 
 **Solution**: Make sure Miniforge is correctly installed and added to your system's PATH. You might need to restart your terminal or Miniforge Prompt.
+
 **Problem**: OpenAlea modules not found when importing in a Jupyter notebook.
 
 **Solution**: Ensure that you have activated the OpenAlea environment before starting the Jupyter notebook. You can activate the environment with:
