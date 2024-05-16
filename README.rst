@@ -69,12 +69,13 @@ You can contribute to the OpenAlea project by participating in the `Git Workflow
 Troubleshooting
 ===============
 
-- **Common Issues**: List of common issues and solutions.
+Installation Issues
+-------------------
 
-Common Issues
--------------
+Dependency Errors
+~~~~~~~~~~~~~~~~~
 
-**Problem**: Installation fails with dependency errors.
+**Description**: Installation fails with dependency errors.
 
 **Solution**: Ensure that you are using the latest version of Miniforge and that your environment is clean before installing OpenAlea. You can remove an existing environment with:
 
@@ -84,11 +85,20 @@ Common Issues
 
 Then, try creating the environment again.
 
-**Problem**: "mamba" command not found.
+Command Not Found
+~~~~~~~~~~~~~~~~~
+
+**Description**: "mamba" command not found.
 
 **Solution**: Make sure Miniforge is correctly installed and added to your system's PATH. You might need to restart your terminal or Miniforge Prompt.
 
-**Problem**: OpenAlea modules not found when importing in a Jupyter notebook.
+Module Import Issues
+--------------------
+
+Modules Not Found in Jupyter Notebook
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**Description**: OpenAlea modules not found when importing in a Jupyter notebook.
 
 **Solution**: Ensure that you have activated the OpenAlea environment before starting the Jupyter notebook. You can activate the environment with:
 
@@ -102,25 +112,39 @@ If the issue persists, try installing the Jupyter notebook within the OpenAlea e
 
    mamba install notebook
 
+Updating OpenAlea
+-----------------
 
-- **FAQs**: Frequently asked questions and answers.
+How to Update OpenAlea
+~~~~~~~~~~~~~~~~~~~~~~
 
-**Question**: How do I update OpenAlea to the latest version?
+**Description**: Updating OpenAlea to the latest version.
 
-**Answer**: To update OpenAlea and its dependencies, activate your OpenAlea environment and run:
+**Solution**: To update OpenAlea and its dependencies, activate your OpenAlea environment and run:
 
 .. code-block:: bash
 
    mamba update -c openalea3 openalea.plantgl openalea.lpy openalea.visualea openalea.mtg
 
-**Question**: How do I contribute to the OpenAlea project?
+Contribution
+------------
 
-**Answer**: You can contribute by participating in the `Git Workflow <http://virtualplants.github.io/contribute/devel/git-workflow.html>`_, or by opening an issue or a pull request on the OpenAlea GitHub repository.
+How to Contribute to OpenAlea
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Question**: Where can I find more tutorials and examples?
+**Description**: Ways to contribute to the OpenAlea project.
 
-**Answer**: More tutorials and examples can be found in the `official documentation <https://openalea.readthedocs.io/en/latest/tutorials/index.html>`_.
+**Solution**: You can contribute by participating in the `Git Workflow <http://virtualplants.github.io/contribute/devel/git-workflow.html>`_, or by opening an issue or a pull request on the OpenAlea GitHub repository.
 
+Additional Resources
+--------------------
+
+Where to Find Tutorials and Examples
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**Description**: Locating more tutorials and examples.
+
+**Solution**: More tutorials and examples can be found in the `official documentation <https://openalea.readthedocs.io/en/latest/tutorials/index.html>`_.
 
 
 Contact
