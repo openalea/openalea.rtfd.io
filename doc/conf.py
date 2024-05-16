@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'OpenAlea'
-copyright = '2007 - 2021, OpenAlea Consortium'
+copyright = '2007 - 2024, OpenAlea Consortium'
 author = 'OpenAlea Consortium'
 
 # The full version, including alpha/beta/rc tags
@@ -34,8 +34,17 @@ import sphinx_rtd_theme
 
 extensions = [
     'sphinx.ext.autodoc',
+    'sphinx.ext.autosummary',
+    'sphinx.ext.doctest',
+    'sphinx.ext.graphviz',
+    'sphinx.ext.ifconfig',
+    'sphinx.ext.inheritance_diagram',
+    'sphinx.ext.intersphinx',
+    'sphinx.ext.mathjax',
     'sphinx.ext.napoleon',
-    'sphinx_rtd_theme',
+    'sphinx.ext.todo',
+    'sphinx.ext.viewcode'
+
 ]
 
 # Add any paths that contain templates here, relative to this directory.
