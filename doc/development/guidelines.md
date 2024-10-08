@@ -1,5 +1,7 @@
 # OpenAlea devlopment guidelines
 
+> [!IMPORTANT]
+>
 > ___Definition___: Coding rules, or good practices, or coding conventions, aiming at  uniforming source code in a project.
 
 ## Why guidelines ?
@@ -162,11 +164,14 @@ The package should be installable using the the [`conda` package manager](https:
 mamba install -c openalea3 conda-forge openalea.pkg_name openalea.plantgl numpy
 ```
 
+> [!NOTE]
+> We strongly recommand to use `mamba` instead of `conda` as it much faster and less error prone to versions conflicts.
+
 Implications are that:
 
 - all dependances should also be available from a conda channel or via `pip`.
 - package should be built and uploaded to the `openalea3` conda channel. A [dedicated CI/CD pipeline](#ci-cd) can be used for this purpose.
-- no `git clone + pip install .` should be required to install the package.
+- no `git clone + pip install .` should be required to install the package. However, it is still possible to install the package from the source code and use the `pip` develop mode with the `pip install -e .` command.
 
 ## CI-CD
 
@@ -198,8 +203,9 @@ jobs:
       anaconda_token: ${{ secrets.ANACONDA_TOKEN }}
 ```
 
-This action will build on a mtrix of operating systems (`[ubuntu-latest , macos-latest , windows-latest]`) and Python versions (`[3.8, 3.9, 3.10, 3.11, 3.12]`) the package every time a new commit is pushed to the repository.
-Also, it will deploy the package to the `openalea3` conda channel every time a new tag starting with `v` (typicaly when you tag a new version of the package, like `v.1.0.0`) is pushed to the repository.
+This action will build the package on a matrix of operating systems (`[ubuntu-latest , macos-latest , windows-latest]`) and Python versions (`[3.8, 3.9, 3.10, 3.11, 3.12]`) every time a new commit is pushed to the repository.
+
+Also, it will deploy the package to the `openalea3` conda channel every time a new tag starting with `v` (typicaly when you tag a new version of the package, like `v.1.0.0`) is pushed to the repository. This means that the developer needs to explicitely tag the version of the package to deploy it.
 
 ## Documentation
 
