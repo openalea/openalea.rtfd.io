@@ -30,7 +30,7 @@ release = '1.0.0a'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-import sphinx_rtd_theme
+import pydata_sphinx_theme
 
 extensions = [
     'sphinx.ext.autodoc',
@@ -44,7 +44,8 @@ extensions = [
     'sphinx.ext.napoleon',
     'sphinx.ext.todo',
     'sphinx.ext.viewcode',
-    "myst_parser"
+    "myst_parser",
+    "sphinx_favicon",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -68,16 +69,32 @@ master_doc = 'index'
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'pydata_sphinx_theme'
 html_theme_options = {
-    'logo_only': False
-}
+    "header_links_before_dropdown": 6,
+    "sidebarwidth": 200,
+    "icon_links": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/openalea/openalea.rtfd.io",
+            "icon": "fa-brands fa-github",
+        },
+    ],
+    "show_version_warning_banner": True,
+    "footer_start": ["copyright"],
+    "footer_center": ["sphinx-version"],
+    "secondary_sidebar_items": {
+        "**/*": ["page-toc", "edit-this-page", "sourcelink"],
+        "examples/no-sidebar": [],
+    },
+    }
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 html_logo = "_static/openalea_web.svg"
+html_favicon = "_static/openalea_web.svg"
 html_show_sourcelink = True
 
 # Custom sidebar templates, must be a dictionary that maps document names

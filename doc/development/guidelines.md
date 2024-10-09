@@ -236,6 +236,8 @@ The documentation should be written in the `docs` folder of the package and shou
 import sys
 import os
 
+import pydata_sphinx_theme # Pydata theme: https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html
+
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
@@ -257,7 +259,7 @@ extensions = [
     'sphinx.ext.coverage',  # includes doc coverage stats in the documentation
     'sphinx.ext.todo',      # support for todo items
     'sphinx.ext.napoleon',  # support for numpy and google style docstrings
-    'sphinx_rtd_theme',  # read the docs theme
+    "sphinx_favicon",      # support for favicon
     "nbsphinx",     # for integrating jupyter notebooks
     "myst_parser"   # for parsing .md files
 ]
@@ -299,17 +301,37 @@ todo_include_todos = False
 # -- Options for HTML output ----------------------------------------------
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'pydata_sphinx_theme'
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-html_theme_options = {"sticky_navigation": "false",
-                      "collapse_navigation": "false",
-                      "display_version": "true"}
+html_theme_options = {
+  "header_links_before_dropdown": 6,
+  "sidebarwidth": 200,
+  "sticky_navigation": "false",
+  "collapse_navigation": "false",
+  "display_version": "true"
+  "icon_links": [
+    {
+        "name": "GitHub",
+        "url": "https://github.com/openalea/openalea.rtfd.io",
+        "icon": "fa-brands fa-github",
+    },
+    ],
+    "show_version_warning_banner": True,
+    "footer_start": ["copyright"],
+    "footer_center": ["sphinx-version"],
+    "secondary_sidebar_items": {
+        "**/*": ["page-toc", "edit-this-page", "sourcelink"],
+        "examples/no-sidebar": [],
+    },
+  }
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+html_logo = "_static/openalea_web.svg"
+html_favicon = "_static/openalea_web.svg"
 # If false, no module index is generated.
 html_domain_indices = True
 # If false, no index is generated.

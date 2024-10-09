@@ -5,9 +5,11 @@ channels:
 
 dependencies:
   - python
-  - sphinx_rtd_theme
   - openalea.plantgl
   - openalea.core
   - openalea.mtg
   - sphinxcontrib-napoleon
   - myst-parser
+  - pip:
+    - pydata-sphinx-theme
+    - sphinx_favicon

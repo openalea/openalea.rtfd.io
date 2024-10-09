@@ -14,10 +14,10 @@
    quickstart
    userguide
    install
-   topics/index
    tutorials/index
    packages/index
    development/index
+   topics/index
 
 
 .. toctree::
