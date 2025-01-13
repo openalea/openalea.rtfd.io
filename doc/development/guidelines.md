@@ -51,12 +51,12 @@ pkg_name
 ├── CHANGELOG.md               ┐
 ├── CODE_OF_CONDUCT.md         │
 ├── CONTRIBUTING.md            │
-├── docs                       │ Package documentation
-│   └── index.md              │
-│   └── ...                   │
-│   └── examples              ┐
-│   └──── notebook1.ipynb    │      Package examples
-│   └──── ...                ┘
+├── doc                        │ Package documentation
+│   └── index.md               │
+│   └── ...                    │
+│   └── examples               ┐
+│   └──── notebook1.ipynb      │      Package examples
+│   └──── ...                  ┘
 ├── LICENSE                    │
 ├── README.md                  ┘
 ├── pyproject.toml             ] Package metadata and build configuration
@@ -65,9 +65,50 @@ pkg_name
 │       ├── __init__.py        │ Package source code
 │       ├── moduleA.py         │
 │       └── moduleB.py         ┘
-└── tests                      ┐
+└── test                       ┐
    └── ...                     ┘ Package tests
 ```
+
+Some mandatory files should be included at the root of the project.
+
+### README.md
+
+This is a very important file as it is the landing page of the project's code repository (`Github`) or on repository sites such as [PyPI](https://pypi.org/) or [Anaconda](https://anaconda.org/).
+
+The README file should include the following information:
+
+- the name of the project / package with a short and easy-to-understand description of what it does.
+- badges to show the status of the project, *e.g.*:
+  - documentation status: [![Docs](https://readthedocs.org/projects/mtg/badge/?version=latest)](https://mtg.readthedocs.io/)
+  - CI/CD status: [![Build Status](https://github.com/openalea/mtg/actions/workflows/conda-package-build.yml/badge.svg?branch=master)](https://github.com/openalea/mtg/actions/workflows/conda-package-build.yml?query=branch%3Amaster)
+  - Compatible `Python` version: [![Python Version](https://img.shields.io/badge/python-3.8%20%7C%203.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-blue)](https://www.python.org/downloads/)
+  - License: [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+  - Version of the package on Anaconda: [![Anaconda-Server Badge](https://anaconda.org/openalea3/mtg/badges/version.svg)](https://anaconda.org/openalea3/mtg)
+- installation instructions: how to install the package using `conda` or `pip`.
+- usage instructions: how to use the package, with a brief and simple example.
+- links to the documentation, the license, the code of conduct, the contributing guidelines, and the changelog.
+- Citation information: how to cite the package in a scientific publication.
+
+### LICENSE
+
+This file should include the license of the project. Most common licenses used in open source projects are:
+
+- the [MIT License](https://choosealicense.com/licenses/mit/) : a permissive license that is short and to the point. It lets people do anything they want with the code as long as they provide attribution back to the original author and don’t hold the author liable.
+- the [CNU GPLv3 License](https://choosealicense.com/licenses/gpl-3.0/) : a copyleft license that requires anyone who distributes the code or a derivative work to make the source available under the same terms. It is often used for libraries and applications that are intended to be shared and improved by the community.
+
+Other options are available, and you can use the [Choose a License](https://choosealicense.com/) website to help you choose the right license for your project.
+
+### CONTRIBUTING.md
+
+This file shoud include information on how to contribute to the project: how to report bugs, how to request new features, how to ask questions and how to submit code changes.
+
+### CODE_OF_CONDUCT.md
+
+This document will help building a community around your package. It sets what you expect from the users and contributors of the project, in terms of behavior and communication. You can check examples on the web, such as [scikit-learn](https://github.com/scikit-learn/scikit-learn/blob/main/CODE_OF_CONDUCT.md).
+
+### CHANGELOG.md
+
+This file should be a ressource for developers anf users to know what has changed in the project over time. It should include a list of changes for each version of the project.
 
 ## pyproject.toml
 
@@ -156,6 +197,91 @@ Discussions = "https://github.com/openalea/pkg_name/discussions"
 Changelog = "https://github.com/openalea/pkg_name/releases"
 ```
 
+## Data organization
+
+You might want to include data files in your package, wether you need it to test your package or provide it to users. However, there is no standard / nice way to include data files in a Python package. Here are some recommandations depending on your data.
+
+### Small data files and not relevant for users
+
+if the data is small and only relevant for testing purpose or reproducing examples, you can place it directly in the `src` folder of the package, _e.g._:
+
+```bash
+pkg_name
+├── ...
+├── src                          ┐
+│   └── openalea/pkg_name        │
+│       ├── __init__.py          │ Package source code
+│       ├── moduleA.py           │
+│       └── moduleB.py           ┘
+|   └── openalea/pgk_name_data   ┐
+|       ├── __init__.py          │ Data files
+|       ├── data_fileA.csv       |
+|       └── data_fileB.csv       ┘
+```
+
+In this case, `pgk_name_data` can be accessed as a namespace package. Although scanning namespace packages is the default behaviour of `setuptools`, you set it explicitely by adding the following to the `pyproject.toml` file :
+
+```toml
+[tool.setuptools]
+# ...
+# By default, include-package-data is true in pyproject.toml, so you do NOT have to specify this line.
+include-package-data = true
+
+[tool.setuptools.packages.find]
+# scanning for namespace packages is true by default in pyproject.toml, so you need NOT include this configuration.
+namespaces = true
+where = ["src"]
+```
+
+The [`setuptools` documentation](https://setuptools.pypa.io/en/latest/userguide/datafiles.html#accessing-data-files-at-runtime) then recommands to access the data files at the runtime using the `importlib_resources` module (only for Python 3.10 and above).
+
+```python
+from importlib_resources import files
+
+data1 = files('openalea/pkg_name_data').joinpath('data_fileA.csv.txt').read_text()
+```
+
+OpenAlea [`gafam`](https://github.com/openalea/gafam) package provides gives an example of this organization at `https://github.com/openalea/gafam/blob/main/src/gafam/data/__init__.py`
+
+### Small data files relevant for users
+
+If the data is small but relevant for users, _i.e._ if you want to provide the data files to the users, you can include them in the `share/data` folder of the package, _e.g._:
+
+```bash
+pkg_name
+├── ...
+|── share/data                   ┐
+|       ├── __init__.py          │ Data files
+|       ├── data_fileA.csv       |
+|       └── data_fileB.csv       ┘
+├── src                          ┐
+│   └── openalea/pkg_name        │
+│       ├── __init__.py          │ Package source code
+│       ├── moduleA.py           │
+│       └── moduleB.py           ┘
+```
+
+You can then access the data files at runtime using [`openalea.deploy`](https://github.com/openalea/deploy).
+
+with `src/openalea/pkg_name/data.py`:
+
+```python
+from openalea.deploy.shared_data import shared_data
+import openalea.pkg_name
+
+data_dir = shared_data(openalea.pkg_name, share_path='../../../share/data')
+```
+
+and then access the data files using the `data_dir` variable from the `openalea.pkg_name.data` module.
+
+One example can be found in [`openalea.rose` package](https://github.com/openalea-incubator/rose/blob/paper/src/openalea/rose/data.py)
+
+### Large data files
+
+Large data files should not be included in the package, so as to keep your repository lightweight and functional. Instead, they should be stored in a separate place and be accessed via [Pooch](https://www.fatiando.org/pooch/latest/).
+
+We don't have any example in OpenAlea yet, but please contact us if you think you need to include this solution in your package.
+
 ## Building the package
 
 The package should be installable using the the [`conda` package manager](https://docs.conda.io/projects/conda/en/latest/index.html) and `conda / mamba` commands, from the [`openalea3` conda channel](https://anaconda.org/openalea3), e.g.:
@@ -227,7 +353,7 @@ conda:
 
 This file will tell ReadTheDocs to build the documentation using the environment describe in the the `doc/environment.yml` file and to setup the environment using `mambaforge`.
 
-The documentation should be written in the `docs` folder of the package and should contain the following files:
+The documentation should be written in the `doc` folder of the package and should contain the following files:
 
 - `conf.py`: the configuration file of the documentation, and how to build it. e.g.:
 
@@ -378,10 +504,10 @@ intersphinx_mapping = {'python': ('https://docs.python.org/', None)}
 
 - `index.rst`: the main page of the documentation.
 
-Also, the documentation should include notebook examples that illustrate the usage of the package. These notebooks should be stored in the `docs/notebooks` folder of the package.
+Also, the documentation should include notebook examples that illustrate the usage of the package. These notebooks should be stored in the `doc/notebooks` folder of the package.
 
 ## Testing
 
 All packages should include tests to ensure that the code is working as expected. The tests should be stored in the `tests` folder of the package, and should be written using the `pytest` framework.
 
-Also, all notebooks in the `docs/notebooks` folder should be tested using the `nbsphinx` framework and be functional.
+Also, all notebooks in the `doc/notebooks` folder should be tested using the `nbsphinx` framework and be functional.
