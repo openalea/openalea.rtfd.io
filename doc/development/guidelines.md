@@ -214,8 +214,7 @@ pkg_name
 │       ├── moduleA.py           │
 │       └── moduleB.py           ┘
 |   └── openalea/pgk_name_data   ┐
-|       ├── __init__.py          │ Data files
-|       ├── data_fileA.csv       |
+|       ├── data_fileA.csv       | Data files
 |       └── data_fileB.csv       ┘
 ```
 
@@ -233,7 +232,7 @@ namespaces = true
 where = ["src"]
 ```
 
-The [`setuptools` documentation](https://setuptools.pypa.io/en/latest/userguide/datafiles.html#accessing-data-files-at-runtime) then recommands to access the data files at the runtime using the `importlib_resources` module (only for Python 3.10 and above).
+The [`setuptools` documentation](https://setuptools.pypa.io/en/latest/userguide/datafiles.html#accessing-data-files-at-runtime) then recommands to access the data files at the runtime using the `importlib_resources` backport module (for Python 3.7 and above, as importlib.resources only works for python 3.10 and above).
 
 ```python
 from importlib_resources import files
