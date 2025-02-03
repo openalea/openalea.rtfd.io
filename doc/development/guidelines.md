@@ -197,13 +197,14 @@ Discussions = "https://github.com/openalea/pkg_name/discussions"
 Changelog = "https://github.com/openalea/pkg_name/releases"
 ```
 
-## Data organization
+## Data files
 
-You might want to include data files in your package, wether you need it to test your package or provide it to users. However, there is no standard / nice way to include data files in a Python package. Here are some recommandations depending on your data.
+You might want to include data files in your package, wether you need it to test your package or provide it to users. Typically, existing programs manipulate a package’s __file__ attribute in order to find the location of data files. However, this manipulation isn’t compatible with PEP 302-based import hooks, including importing from zip files and Python Eggs. It is strongly recommended that, if you are using data files, you should use importlib.resources to access them. You could also rely on the shared_data functionality provided by openalea.deploy Both approaches are detailed below.
 
-### Small data files and not relevant for users
+### importlib.ressources approach
 
-if the data is small and only relevant for testing purpose or reproducing examples, you can place it directly in the `src` folder of the package, _e.g._:
+This approach is detailed in [`setuptools` documentation](https://setuptools.pypa.io/en/latest/userguide/datafiles.html#accessing-data-files-at-runtime). As pointed there, it is currently recommended to use `importlib_resources` backport module for Python 3.7 and above, as importlib.resources only works for python 3.10 and above. The only diffference is to replace the underscore by a point in the following examples. 
+You can place a data directly in the `src` folder of the package, _e.g._:
 
 ```bash
 pkg_name
@@ -232,19 +233,28 @@ namespaces = true
 where = ["src"]
 ```
 
-The [`setuptools` documentation](https://setuptools.pypa.io/en/latest/userguide/datafiles.html#accessing-data-files-at-runtime) then recommands to access the data files at the runtime using the `importlib_resources` backport module (for Python 3.7 and above, as importlib.resources only works for python 3.10 and above).
+It is important to note that this libray manipulates data files and data directories contents as resources, that are dir-like and file-like objects but that do not always refer to persistent file paths.
+Ressources contents can bead read by binary or text reader provided by the module, or by any other reader using a 'with' block:
 
 ```python
-from importlib_resources import files
+from importlib_resources import files, path
 
-data1 = files('openalea/pkg_name_data').joinpath('data_fileA.csv.txt').read_text()
+# return the list of files present in the data dir:
+data = list(files('openalea/pkg_name_data').iterdir())
+
+# return the content of the ressource named 'data_fileA.csv':
+data1 = files('openalea/pkg_name_data').joinpath('data_fileA.csv').read_text()
+
+# return the content using pandas read_csv reader
+import pandas
+with path('openalea/pkg_name_data').joinpath('data_fileA.csv') as p:
+   data1 = pandas.read_csv(p)
 ```
 
-OpenAlea [`gafam`](https://github.com/openalea/gafam) package provides gives an example of this organization at `https://github.com/openalea/gafam/blob/main/src/gafam/data/__init__.py`
+### openalea.deploy.shared_data approach
 
-### Small data files relevant for users
-
-If the data is small but relevant for users, _i.e._ if you want to provide the data files to the users, you can include them in the `share/data` folder of the package, _e.g._:
+This approach allows you to retrieve a path object pointing to the shared data dir. 
+First you create a `share/data` folder of the package, _e.g._:
 
 ```bash
 pkg_name
@@ -260,18 +270,16 @@ pkg_name
 │       └── moduleB.py           ┘
 ```
 
-You can then access the data files at runtime using [`openalea.deploy`](https://github.com/openalea/deploy).
-
-with `src/openalea/pkg_name/data.py`:
+You can then access the data files at runtime using [`openalea.deploy`](https://github.com/openalea/deploy).:
 
 ```python
 from openalea.deploy.shared_data import shared_data
 import openalea.pkg_name
 
-data_dir = shared_data(openalea.pkg_name, share_path='../../../share/data')
+data_dir = shared_data(openalea.pkg_name)
 ```
 
-and then access the data files using the `data_dir` variable from the `openalea.pkg_name.data` module.
+and then access the data files using the `data_dir` '/' method.
 
 One example can be found in [`openalea.rose` package](https://github.com/openalea-incubator/rose/blob/paper/src/openalea/rose/data.py)
 
