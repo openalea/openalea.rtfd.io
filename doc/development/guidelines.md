@@ -285,7 +285,7 @@ One example can be found in [`openalea.rose` package](https://github.com/openale
 
 ### Large data files
 
-Large data files should not be included in the package, so as to keep your repository lightweight and functional. Instead, they should be stored in a separate place and be accessed via [Pooch](https://www.fatiando.org/pooch/latest/).
+Large data files should not be included in the package, so as to keep your repository lightweight and functional. Instead, they should be stored in a separate place and be accessed via [Pooch](https://www.fatiando.org/pooch).
 
 We don't have any example in OpenAlea yet, but please contact us if you think you need to include this solution in your package.
 
@@ -294,11 +294,11 @@ We don't have any example in OpenAlea yet, but please contact us if you think yo
 The package should be installable using the the [`conda` package manager](https://docs.conda.io/projects/conda/en/latest/index.html) and `conda / mamba` commands, from the [`openalea3` conda channel](https://anaconda.org/openalea3), e.g.:
 
 ```bash
-mamba install -c openalea3 conda-forge openalea.pkg_name openalea.plantgl numpy
+mamba install -c openalea3 -c conda-forge openalea.pkg_name openalea.plantgl numpy
 ```
 
 > [!NOTE]
-> We strongly recommand to use `mamba` instead of `conda` as it much faster and less error prone to versions conflicts.
+> We strongly recommend to use `mamba` instead of `conda` as it much faster and less error prone to versions conflicts.
 
 Implications are that:
 
