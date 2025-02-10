@@ -206,7 +206,7 @@ You might want to include data files in your package, wether you need it to test
 
 This approach is detailed in [`setuptools` documentation](https://setuptools.pypa.io/en/latest/userguide/datafiles.html#accessing-data-files-at-runtime). This approach should be prefered to a direct manipulation of the package’s \_\_file\_\_ attribute, as the later can fail if your data are ditributed via zip, egg or wheels. 
 
-The recommended way of organising your data is to add a data folder in your package source folder, and add a generic MANIFEST.in file in the root of the package:
+The recommended way of organising your data is to add a data folder in your package source folder, and add a generic MANIFEST.in file at the root of the package:
 
 ```bash
 pkg_name
@@ -224,13 +224,14 @@ pkg_name
 |            └──data_fileC.csv      ┘
 ```
 
-MANIFEST.in should declare what files sould be included. It could be as simple and generic as :
+MANIFEST.in should declare what files are to be included. It could be as simple and generic as :
 
 ```bash
 recursive-include src/openalea/pkg_name/data *
 ```
 
-Using this layout, no further modification should be brought to if you are using a toml file (include-package-data and find namespace are both set to true by default). If you are using a setup.py file, you should manualy set these two options to true.
+Using this layout, no further modification should be brought to your layout, provided you are using a toml file.
+If you are using a setup.py file, you should manualy set include-package-data option to true and use find_namespace_package to scan src.
 
 You can then access data using importlib.ressources. It is currently recommended to use `importlib_resources` backport module for Python 3.7 and above, as importlib.resources only works for python 3.10 and above. The only diffference is to replace the underscore by a point in the following examples.: 
 
@@ -252,8 +253,9 @@ with path(datadir) / 'data_fileA.csv' as p:
 
 ### Openalea alternative: using openalea.deploy.shared_data approach
 
-This approach is working for openalea packages, as openalea currently warrants unzipped source code distribution. However, this constraint can be released in the future, and the above method should be prefered. 
-First you create a `share/data` folder of the package, _e.g._:
+This approach is working for openalea packages relying of setup.py, as openalea currently warrants unzipped source code distribution in this case. However, the above method should now be prefered, as this constraint can be released in the future.
+
+In this case your layout will look like:
 
 ```bash
 pkg_name
