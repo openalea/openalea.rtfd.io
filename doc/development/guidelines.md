@@ -230,7 +230,7 @@ MANIFEST.in should declare what files are to be included. It could be as simple 
 recursive-include src/openalea/pkg_name/data *
 ```
 
-Using this layout, no further modification should be brought to your layout, provided you are using a toml file.
+Using this layout, no further modification should be brought to your package, provided you are using a toml file.
 If you are using a setup.py file, you should manualy set include-package-data option to true and use find_namespace_package to scan src.
 
 You can then access data using importlib.ressources. It is currently recommended to use `importlib_resources` backport module for Python 3.7 and above, as importlib.resources only works for python 3.10 and above. The only diffference is to replace the underscore by a point in the following examples.: 
