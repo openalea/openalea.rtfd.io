@@ -36,30 +36,31 @@ Although OpenAlea guidelines are limited to ensure that scientific developers ca
 - [Packaging Python](https://packaging.python.org/en/latest/) : collection of tutorials and references to help you distribute and install Python packages with modern tools.
 - [Learn Scientific Python](https://learn.scientific-python.org/development/) : guide for writting maintainable, reusable, and shareable Python package for scientific computing.
 
-## File organization and namespaces
+## Package layout and namespace
 
-- For all [OpenAlea](https://github.com/openalea) and [OpenAlea-incubator](https://github.com/openalea-incubator) projects, import of the packages should be done via the `openalea` namespace.
+- All [OpenAlea](https://github.com/openalea) and [OpenAlea-incubator](https://github.com/openalea-incubator) projects should use 'openalea' as a global namespace, to manifest their belonging to openalea initiative. Importing an openalea package will therefore always look like:
 
 ```python
 from openalea.pkg_name import module_name
 ```
 
-- Also, we recommand to use the `src` layout for the source code of the project.
+- Also, we recommand to use the [src-layout](https://setuptools.pypa.io/en/latest/userguide/package_discovery.html#src-layout) for the source code of the project.
+  That yield the following basic layout for your package: 
 
 ```bash
 pkg_name
 ├── CHANGELOG.md               ┐
 ├── CODE_OF_CONDUCT.md         │
 ├── CONTRIBUTING.md            │
+├── README.md                  |
 ├── doc                        │ Package documentation
 │   └── index.md               │
-│   └── ...                    │
+│   └── ...                    ┘
 │   └── examples               ┐
-│   └──── notebook1.ipynb      │      Package examples
+│   └──── notebook1.ipynb      │ Package examples
 │   └──── ...                  ┘
-├── LICENSE                    │
-├── README.md                  ┘
-├── pyproject.toml             ] Package metadata and build configuration
+├── LICENSE                    ┐ Package metadata and build configuration
+├── pyproject.toml             ┘ 
 ├── src                        ┐
 │   └── openalea/pkg_name      │
 │       ├── __init__.py        │ Package source code
@@ -199,61 +200,59 @@ Changelog = "https://github.com/openalea/pkg_name/releases"
 
 ## Data files
 
-You might want to include data files in your package, wether you need it to test your package or provide it to users. Typically, existing programs manipulate a package’s __file__ attribute in order to find the location of data files. However, this manipulation isn’t compatible with PEP 302-based import hooks, including importing from zip files and Python Eggs. It is strongly recommended that, if you are using data files, you should use importlib.resources to access them. You could also rely on the shared_data functionality provided by openalea.deploy Both approaches are detailed below.
+You might want to include data files in your package, wether you need it to test your package, or allows user to run tutorials without downloading the sources via git. For most cases, we recomend hosting the data directly in the pkg source directory. However, if the size of data files becomes large (eg for realistic images or databases) they will bloat your source directory and slow down the installation and/or CI workflow. In such cases, we recommend storing you data on public spaces (github or xenodo), and provide an access in a dedicated module using [Pooch](https://www.fatiando.org/pooch).Both approaches are detailed below.
 
-### importlib.ressources approach
+### Distributing data with the package sources
 
-This approach is detailed in [`setuptools` documentation](https://setuptools.pypa.io/en/latest/userguide/datafiles.html#accessing-data-files-at-runtime). As pointed there, it is currently recommended to use `importlib_resources` backport module for Python 3.7 and above, as importlib.resources only works for python 3.10 and above. The only diffference is to replace the underscore by a point in the following examples. 
-You can place a data directly in the `src` folder of the package, _e.g._:
+This approach is detailed in [`setuptools` documentation](https://setuptools.pypa.io/en/latest/userguide/datafiles.html#accessing-data-files-at-runtime). This approach should be prefered to a direct manipulation of the package’s \_\_file\_\_ attribute, as the later can fail if your data are ditributed via zip, egg or wheels. 
+
+The recommended way of organising your data is to add a data folder in your package source folder, and add a generic MANIFEST.in file in the root of the package:
 
 ```bash
 pkg_name
 ├── ...
+├── MANIFEST.in                  ] declaration of package data
 ├── src                          ┐
 │   └── openalea/pkg_name        │
 │       ├── __init__.py          │ Package source code
 │       ├── moduleA.py           │
 │       └── moduleB.py           ┘
-|   └── openalea/pgk_name_data   ┐
-|       ├── data_fileA.csv       | Data files
-|       └── data_fileB.csv       ┘
+|       └── data                    ┐
+|          ├── data_fileA.csv       | 
+|          └── data_fileB.csv       | Data files
+|          └── data_subdir          |
+|            └──data_fileC.csv      ┘
 ```
 
-In this case, `pgk_name_data` can be accessed as a namespace package. Although scanning namespace packages is the default behaviour of `setuptools`, you set it explicitely by adding the following to the `pyproject.toml` file :
+MANIFEST.in should declare what files sould be included. It could be as simple and generic as :
 
-```toml
-[tool.setuptools]
-# ...
-# By default, include-package-data is true in pyproject.toml, so you do NOT have to specify this line.
-include-package-data = true
-
-[tool.setuptools.packages.find]
-# scanning for namespace packages is true by default in pyproject.toml, so you need NOT include this configuration.
-namespaces = true
-where = ["src"]
+```bash
+recursive-include src/openalea/pkg_name/data *
 ```
 
-It is important to note that this libray manipulates data files and data directories contents as resources, that are dir-like and file-like objects but that do not always refer to persistent file paths.
-Ressources contents can bead read by binary or text reader provided by the module, or by any other reader using a 'with' block:
+Using this layout, no further modification should be brought to if you are using a toml file (include-package-data and find namespace are both set to true by default). If you are using a setup.py file, you should manualy set these two options to true.
+
+You can then access data using importlib.ressources. It is currently recommended to use `importlib_resources` backport module for Python 3.7 and above, as importlib.resources only works for python 3.10 and above. The only diffference is to replace the underscore by a point in the following examples.: 
 
 ```python
 from importlib_resources import files, path
 
+datadir = 'openalea/pkg_name/data'
 # return the list of files present in the data dir:
-data = list(files('openalea/pkg_name_data').iterdir())
+data = list(files(datadir).iterdir())
 
 # return the content of the ressource named 'data_fileA.csv':
-data1 = files('openalea/pkg_name_data').joinpath('data_fileA.csv').read_text()
+data1 = (files(datadir) / 'data_fileA.csv').read_text()
 
-# return the content using pandas read_csv reader
+# read the content using pandas read_csv reader
 import pandas
-with path('openalea/pkg_name_data').joinpath('data_fileA.csv') as p:
+with path(datadir) / 'data_fileA.csv' as p:
    data1 = pandas.read_csv(p)
 ```
 
-### openalea.deploy.shared_data approach
+### Openalea alternative: using openalea.deploy.shared_data approach
 
-This approach allows you to retrieve a path object pointing to the shared data dir. 
+This approach is working for openalea packages, as openalea currently warrants unzipped source code distribution. However, this constraint can be released in the future, and the above method should be prefered. 
 First you create a `share/data` folder of the package, _e.g._:
 
 ```bash
@@ -287,7 +286,7 @@ One example can be found in [`openalea.rose` package](https://github.com/openale
 
 Large data files should not be included in the package, so as to keep your repository lightweight and functional. Instead, they should be stored in a separate place and be accessed via [Pooch](https://www.fatiando.org/pooch).
 
-We don't have any example in OpenAlea yet, but please contact us if you think you need to include this solution in your package.
+We don't have any example in OpenAlea yet, but we plan to follow a similar strategy as the one used for [x-array data](https://github.com/pydata/xarray-data)
 
 ## Building the package
 
