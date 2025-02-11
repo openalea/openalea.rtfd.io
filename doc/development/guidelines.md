@@ -298,9 +298,9 @@ The package should be installable using the [`conda` package manager](https://do
 mamba install -c openalea3 -c conda-forge openalea.pkg_name openalea.plantgl numpy
 ```
 
-> [!NOTE]
-> We strongly recommend to use `mamba` instead of `conda` as it is much faster and less error-prone to versions conflicts.
-
+```{Note}
+We strongly recommend to use `mamba` instead of `conda` as it is much faster and less error-prone to versions conflicts.
+```
 Implications are that:
 
 - all dependence should also be available from a conda channel or via `pip`.
