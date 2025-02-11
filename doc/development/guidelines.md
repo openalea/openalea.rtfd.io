@@ -1,9 +1,7 @@
-# OpenAlea devlopment guidelines
-
-> [!IMPORTANT]
->
-> ___Definition___: Coding rules, or good practices, or coding conventions, aiming at  uniforming source code in a project.
-
+# OpenAlea development guidelines
+```{Important}
+___Definition___: Coding rules, or good practices, or coding conventions, aiming at  uniforming source code in a project.
+```
 ## Why guidelines ?
 
 __Quality__:
@@ -32,9 +30,9 @@ Same guidelines should be applied to all OpenAlea projects and are detailed belo
 Although OpenAlea guidelines are limited to ensure that scientific developers can easily contribute to the project, we encourage developers to follow more general guidelines. Very good examples can be found in:
 
 - [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html) : set of rules for writing clear and readable Python code used at Google.
-- [Python package guide](https://www.pyopensci.org/python-package-guide/index.html) : guide for developing Python packages for open science. Best practices and recommandations for developing Python packages.
+- [Python package guide](https://www.pyopensci.org/python-package-guide/index.html) : guide for developing Python packages for open science. Best practices and recommendations for developing Python packages.
 - [Packaging Python](https://packaging.python.org/en/latest/) : collection of tutorials and references to help you distribute and install Python packages with modern tools.
-- [Learn Scientific Python](https://learn.scientific-python.org/development/) : guide for writting maintainable, reusable, and shareable Python package for scientific computing.
+- [Learn Scientific Python](https://learn.scientific-python.org/development/) : guide for writing maintainable, reusable, and shareable Python package for scientific computing.
 
 ## Package layout and namespace
 
@@ -44,7 +42,7 @@ Although OpenAlea guidelines are limited to ensure that scientific developers ca
 from openalea.pkg_name import module_name
 ```
 
-- Also, we recommand to use the [src-layout](https://setuptools.pypa.io/en/latest/userguide/package_discovery.html#src-layout) for the source code of the project.
+- Also, we recommend to use the [src-layout](https://setuptools.pypa.io/en/latest/userguide/package_discovery.html#src-layout) for the source code of the project.
   That yield the following basic layout for your package: 
 
 ```bash
@@ -101,7 +99,7 @@ Other options are available, and you can use the [Choose a License](https://choo
 
 ### CONTRIBUTING.md
 
-This file shoud include information on how to contribute to the project: how to report bugs, how to request new features, how to ask questions and how to submit code changes.
+This file should include information on how to contribute to the project: how to report bugs, how to request new features, how to ask questions and how to submit code changes.
 
 ### CODE_OF_CONDUCT.md
 
@@ -109,7 +107,7 @@ This document will help building a community around your package. It sets what y
 
 ### CHANGELOG.md
 
-This file should be a ressource for developers anf users to know what has changed in the project over time. It should include a list of changes for each version of the project.
+This file should be a resource for developers anf users to know what has changed in the project over time. It should include a list of changes for each version of the project.
 
 ## pyproject.toml
 
@@ -166,7 +164,7 @@ dependencies = [
 ]
 ```
 
-- Additionaly you can define the optional dependencies for development mode and test mode in the [`[project.optional-dependencies]` section](https://setuptools.pypa.io/en/latest/userguide/dependency_management.html#optional-dependencies).
+- Additionally, you can define the optional dependencies for development mode and test mode in the [`[project.optional-dependencies]` section](https://setuptools.pypa.io/en/latest/userguide/dependency_management.html#optional-dependencies).
 
 ```toml
 [project.optional-dependencies]
@@ -200,11 +198,13 @@ Changelog = "https://github.com/openalea/pkg_name/releases"
 
 ## Data files
 
-You might want to include data files in your package, wether you need it to test your package, or allows user to run tutorials without downloading the sources via git. For most cases, we recomend hosting the data directly in the pkg source directory. However, if the size of data files becomes large (eg for realistic images or databases) they will bloat your source directory and slow down the installation and/or CI workflow. In such cases, we recommend storing you data on public spaces (github or xenodo), and provide an access in a dedicated module using [Pooch](https://www.fatiando.org/pooch).Both approaches are detailed below.
+You might want to include data files in your package, whether you need it to test your package, or allows user to run tutorials without downloading the sources via git. 
+For most cases, we recommend hosting the data directly in the pkg source directory. However, if the size of data files becomes large (e.g. for realistic images or databases) they will bloat your source directory and slow down the installation and/or CI workflow. 
+In such cases, we recommend storing you data on public spaces ([GitHub](https://github.com) or [Zenodo](https://zenodo.org/)), and provide access in a dedicated module using [Pooch](https://www.fatiando.org/pooch). Both approaches are detailed below.
 
 ### Distributing data with the package sources
 
-This approach is detailed in [`setuptools` documentation](https://setuptools.pypa.io/en/latest/userguide/datafiles.html#accessing-data-files-at-runtime). This approach should be prefered to a direct manipulation of the package’s \_\_file\_\_ attribute, as the later can fail if your data are ditributed via zip, egg or wheels. 
+This approach is detailed in [`setuptools` documentation](https://setuptools.pypa.io/en/latest/userguide/datafiles.html#accessing-data-files-at-runtime). This approach should be preferred to a direct manipulation of the package’s \_\_file\_\_ attribute, as the later can fail if your data are distributed via zip, egg or wheels. 
 
 The recommended way of organising your data is to add a data folder in your package source folder, and add a generic MANIFEST.in file at the root of the package:
 
@@ -231,9 +231,9 @@ recursive-include src/openalea/pkg_name/data *
 ```
 
 Using this layout, no further modification should be brought to your package, provided you are using a toml file.
-If you are using a setup.py file, you should manualy set include-package-data option to true and use find_namespace_package to scan src.
+If you are using a setup.py file, you should manually set include-package-data option to true and use find_namespace_package to scan src.
 
-You can then access data using importlib.ressources. It is currently recommended to use `importlib_resources` backport module for Python 3.7 and above, as importlib.resources only works for python 3.10 and above. The only diffference is to replace the underscore by a point in the following examples.: 
+You can then access data using importlib.resources. It is currently recommended to use `importlib_resources` backport module for Python 3.7 and above, as importlib.resources only works for python 3.10 and above. The only difference is to replace the underscore by a point in the following examples.: 
 
 ```python
 from importlib_resources import files, path
@@ -242,7 +242,7 @@ datadir = 'openalea/pkg_name/data'
 # return the list of files present in the data dir:
 data = list(files(datadir).iterdir())
 
-# return the content of the ressource named 'data_fileA.csv':
+# return the content of the resource named 'data_fileA.csv':
 data1 = (files(datadir) / 'data_fileA.csv').read_text()
 
 # read the content using pandas read_csv reader
@@ -253,7 +253,7 @@ with path(datadir) / 'data_fileA.csv' as p:
 
 ### Openalea alternative: using openalea.deploy.shared_data approach
 
-This approach is working for openalea packages relying of setup.py, as openalea currently warrants unzipped source code distribution in this case. However, the above method should now be prefered, as this constraint can be released in the future.
+This approach is working for openalea packages relying on a setup.py, as openalea currently warrants unzipped source code distribution in this case. However, the above method should now be preferred, as this constraint can be released in the future.
 
 In this case your layout will look like:
 
@@ -286,24 +286,24 @@ One example can be found in [`openalea.rose` package](https://github.com/openale
 
 ### Large data files
 
-Large data files should not be included in the package, so as to keep your repository lightweight and functional. Instead, they should be stored in a separate place and be accessed via [Pooch](https://www.fatiando.org/pooch).
+Large data files should not be included in the package, to keep your repository lightweight and functional. Instead, they should be stored in a separate place and be accessed via [Pooch](https://www.fatiando.org/pooch).
 
 We don't have any example in OpenAlea yet, but we plan to follow a similar strategy as the one used for [x-array data](https://github.com/pydata/xarray-data)
 
 ## Building the package
 
-The package should be installable using the the [`conda` package manager](https://docs.conda.io/projects/conda/en/latest/index.html) and `conda / mamba` commands, from the [`openalea3` conda channel](https://anaconda.org/openalea3), e.g.:
+The package should be installable using the [`conda` package manager](https://docs.conda.io/projects/conda/en/latest/index.html) and `conda / mamba` commands, from the [`openalea3` conda channel](https://anaconda.org/openalea3), e.g.:
 
 ```bash
 mamba install -c openalea3 -c conda-forge openalea.pkg_name openalea.plantgl numpy
 ```
 
 > [!NOTE]
-> We strongly recommend to use `mamba` instead of `conda` as it much faster and less error prone to versions conflicts.
+> We strongly recommend to use `mamba` instead of `conda` as it is much faster and less error-prone to versions conflicts.
 
 Implications are that:
 
-- all dependances should also be available from a conda channel or via `pip`.
+- all dependence should also be available from a conda channel or via `pip`.
 - package should be built and uploaded to the `openalea3` conda channel. A [dedicated CI/CD pipeline](#ci-cd) can be used for this purpose.
 - no `git clone + pip install .` should be required to install the package. However, it is still possible to install the package from the source code and use the `pip` develop mode with the `pip install -e .` command.
 
@@ -312,7 +312,7 @@ Implications are that:
 CI/CD stands for Continuous Integration / Continuous Deployment. It is a set of practices and tools that allow to automate the building, testing, and deployment of the software.
 It is a key practice for ensuring the quality of the software and the reliability of the deployment process.
 
-Within the OpenAlea community, we use a custom made [GitHub Actions](https://github.com/openalea/github-action-conda-build) to build and deploy the packages to the `openalea3` conda channel.
+Within the OpenAlea community, we use a custom-made [GitHub Actions](https://github.com/openalea/github-action-conda-build) to build and deploy the packages to the `openalea3` conda channel.
 
 The only thing you need to do is to add a `.github/workflows/conda-build.yml` file to your project with the following content:
 
@@ -339,13 +339,13 @@ jobs:
 
 This action will build the package on a matrix of operating systems (`[ubuntu-latest , macos-latest , windows-latest]`) and Python versions (`[3.8, 3.9, 3.10, 3.11, 3.12]`) every time a new commit is pushed to the repository.
 
-Also, it will deploy the package to the `openalea3` conda channel every time a new tag starting with `v` (typicaly when you tag a new version of the package, like `v.1.0.0`) is pushed to the repository. This means that the developer needs to explicitely tag the version of the package to deploy it.
+Also, it will deploy the package to the `openalea3` conda channel every time a new tag starting with `v` (typically when you tag a new version of the package, like `v.1.0.0`) is pushed to the repository. This means that the developer needs to explicitly tag the version of the package to deploy it.
 
 ## Documentation
 
 The documentation of the package should be written using the [Sphinx](https://www.sphinx-doc.org/en/master/) documentation generator and hosted on the [ReadTheDocs](https://readthedocs.org/) platform.
 
-To setup the ReadTheDocs documentation, you need to add a `.readthedocs.yml` file to the root of your project with the following content:
+To set up the ReadTheDocs documentation, you need to add a `.readthedocs.yml` file to the root of your project with the following content:
 
 ```yaml
 version: 2
@@ -359,7 +359,7 @@ conda:
   environment: doc/environment.yml
 ```
 
-This file will tell ReadTheDocs to build the documentation using the environment describe in the the `doc/environment.yml` file and to setup the environment using `mambaforge`.
+This file will tell ReadTheDocs to build the documentation using the environment describe in the `doc/environment.yml` file and to set up the environment using `mambaforge`.
 
 The documentation should be written in the `doc` folder of the package and should contain the following files:
 
