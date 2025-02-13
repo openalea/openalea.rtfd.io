@@ -22,12 +22,12 @@ __Diffusion__:
 
 ## Guidelines in OpenAlea
 
-Within OpenAlea, we have defined a set of minimal and limited guidelines that are mandatory for all developers.
+Within OpenAlea, we have defined a set of minimal and limited guidelines that are important to improve homogeneity and quality between packages. These guidelines are **highly** recommended for all developers, and in particular, new ones.
 
-These guidelines are used to ensure the quality of the code and to facilitate the deployment and diffusion of the software, but also to help global OpenAlea support and maintenance.
+These guidelines are used to ensure the quality of the code and to facilitate the deployment and diffusion of the software. It also simplify global OpenAlea support and maintenance.
 Same guidelines should be applied to all OpenAlea projects and are detailed below.
 
-Although OpenAlea guidelines are limited to ensure that scientific developers can easily contribute to the project, we encourage developers to follow more general guidelines. Very good examples can be found in:
+Although OpenAlea guidelines are limited to ensure that scientific developers can easily contribute to the project, we encourage developers to follow more general guidelines, when OpenAlea guidelines are missing. This allow to get in sync with the Scientific Python Community. Very good examples can be found in:
 
 - [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html) : set of rules for writing clear and readable Python code used at Google.
 - [Python package guide](https://www.pyopensci.org/python-package-guide/index.html) : guide for developing Python packages for open science. Best practices and recommendations for developing Python packages.
@@ -81,7 +81,7 @@ The README file should include the following information:
   - documentation status: [![Docs](https://readthedocs.org/projects/mtg/badge/?version=latest)](https://mtg.readthedocs.io/)
   - CI/CD status: [![Build Status](https://github.com/openalea/mtg/actions/workflows/conda-package-build.yml/badge.svg?branch=master)](https://github.com/openalea/mtg/actions/workflows/conda-package-build.yml?query=branch%3Amaster)
   - Compatible `Python` version: [![Python Version](https://img.shields.io/badge/python-3.8%20%7C%203.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-blue)](https://www.python.org/downloads/)
-  - License: [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+  - License: [![License](https://img.shields.io/badge/License--CeCILL-C-blue)](https://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html)
   - Version of the package on Anaconda: [![Anaconda-Server Badge](https://anaconda.org/openalea3/mtg/badges/version.svg)](https://anaconda.org/openalea3/mtg)
 - installation instructions: how to install the package using `conda` or `pip`.
 - usage instructions: how to use the package, with a brief and simple example.
@@ -90,12 +90,11 @@ The README file should include the following information:
 
 ### LICENSE
 
-This file should include the license of the project. Most common licenses used in open source projects are:
+This file should include the license of the project. The license recommended for OpenAlea package is the [CeCILL-C](https://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html) license:
 
-- the [MIT License](https://choosealicense.com/licenses/mit/) : a permissive license that is short and to the point. It lets people do anything they want with the code as long as they provide attribution back to the original author and don’t hold the author liable.
-- the [CNU GPLv3 License](https://choosealicense.com/licenses/gpl-3.0/) : a copyleft license that requires anyone who distributes the code or a derivative work to make the source available under the same terms. It is often used for libraries and applications that are intended to be shared and improved by the community.
+- the [CeCILL-C License](https://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html) : a copyleft, Free Software license that is compatible with French Law. The license is similar to the [L-GPL](https://choosealicense.com/licenses/lgpl-3.0/).
 
-Other options are available, and you can use the [Choose a License](https://choosealicense.com/) website to help you choose the right license for your project.
+If you want to choose another license, please contact the OpenAlea developer team to be sure that your license is compatible with the one of other packages.
 
 ### CONTRIBUTING.md
 
@@ -516,6 +515,6 @@ Also, the documentation should include notebook examples that illustrate the usa
 
 ## Testing
 
-All packages should include tests to ensure that the code is working as expected. The tests should be stored in the `tests` folder of the package, and should be written using the `pytest` framework.
+All packages should include tests to ensure that the code is working as expected. The tests should be stored in the `test` folder of the package, and should be written using the `pytest` framework.
 
 Also, all notebooks in the `doc/notebooks` folder should be tested using the `nbsphinx` framework and be functional.
