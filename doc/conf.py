@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'OpenAlea'
-copyright = '2007 - 2024, OpenAlea Consortium'
+copyright = '2007 - 2025, OpenAlea Consortium'
 author = 'OpenAlea Consortium'
 
 # The full version, including alpha/beta/rc tags
