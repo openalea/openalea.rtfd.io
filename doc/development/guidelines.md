@@ -356,6 +356,11 @@ build:
 
 conda:
   environment: doc/environment.yml
+
+sphinx:
+  # Path to your Sphinx configuration file.
+  configuration: doc/conf.py
+
 ```
 
 This file will tell ReadTheDocs to build the documentation using the environment describe in the `doc/environment.yml` file and to set up the environment using `mambaforge`.
