@@ -13,3 +13,4 @@ dependencies:
   - pip:
     - pydata-sphinx-theme
     - sphinx_favicon
+    - sphinx_copybutton
