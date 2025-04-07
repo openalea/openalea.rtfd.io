@@ -448,7 +448,7 @@ html_theme_options = {
   "sidebarwidth": 200,
   "sticky_navigation": "false",
   "collapse_navigation": "false",
-  "display_version": "true"
+  "display_version": "true",
   "icon_links": [
     {
         "name": "GitHub",
