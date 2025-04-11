@@ -50,15 +50,15 @@ pkg_name
 ├── CHANGELOG.md               ┐
 ├── CODE_OF_CONDUCT.md         │
 ├── CONTRIBUTING.md            │
-├── README.md                  |
-├── doc                        │ Package documentation
-│   └── index.md               │
-│   └── ...                    ┘
-│   └── examples               ┐
-│   └──── notebook1.ipynb      │ Package examples
-│   └──── ...                  ┘
-├── LICENSE                    ┐ Package metadata and build configuration
+├── README.md                  │ Package metadata and build configuration
+├── LICENSE                    │
 ├── pyproject.toml             ┘ 
+├── doc                        ┐
+│   └── index.md               │
+│   └── ...                    │  Package documentation
+│   └── examples               │
+│   └──── notebook1.ipynb      │ 
+│   └──── ...                  ┘
 ├── src                        ┐
 │   └── openalea/pkg_name      │
 │       ├── __init__.py        │ Package source code
@@ -108,26 +108,53 @@ This document will help building a community around your package. It sets what y
 
 This file should be a resource for developers anf users to know what has changed in the project over time. It should include a list of changes for each version of the project.
 
+## versioning
+- We recommend delegating the versioning of your package to the version control system (eg git), by using semantic versionning tags starting with `v`.
+[Semantic vernioning tags](https://semver.org/) are of the form : Major.minor.patch. Using CI, every time a new tag is created and merged in the master branch, 
+a new conda package will be uploaded on conda-forge using that tag as version number.
+- This tag can also be retrieved automaticaly by your build system (declared in pyproject) to correctly fill your package metadata and provide user or tools a way to access the version using importlib
+- Optionally (but still recommended), for convenience, you can expose the version to user/tools by setting the __version__ attribute of your package in its src/openalea/my_pkg/__ini__.py file:
+
+```python
+from importlib.metadata import version, PackageNotFoundError
+
+try:
+    __version__ = version("openalea.my_pkg")
+except PackageNotFoundError:
+    # package is not installed
+    pass
+```
+- To avoid confusion all other manual reference to version (version.py files,...) should be removed from your source tree
+
 ## pyproject.toml
 
 OpenAlea projects should use the `pyproject.toml` file to define the build configuration and the metadata of the project.
 This file should contain the following sections:
 
-- Use [`setuptools` as the build system](https://setuptools.pypa.io/en/latest/). `setuptools` is the most widely used build system for Python packages. It is used to define the metadata of the package, the dependencies, and the entry points.
-
+- In most cases you can use [`setuptools` as the build system](https://setuptools.pypa.io/en/latest/). `setuptools` is the most widely used build system for Python packages. It is used to define the metadata of the package, the dependencies, and the entry points.
+We also recommend using setuptools_scm as a companion tool to handle automatically set the version metadata of your package based on git tags.
 ```toml
 [build-system]
-requires = ["setuptools>=61", "setuptools_scm[toml]>=7"]
+requires = [
+    "setuptools", 
+    "setuptools_scm",
+]
 build-backend = "setuptools.build_meta"
 
+# allow openalea to be a namespace package
+[tool.setuptools.packages.find]
+where = ["src"]
+
+# enable dynamic versioning based on git tags
 [tool.setuptools_scm]
-write_to = "src/openalea/pkg_name/_version.py"
 ```
 
 If your package needs an extension module, you should check the [dedicated `setuptools` documentation](https://setuptools.pypa.io/en/latest/userguide/ext_modules.html#building-extension-modules)
 
 - Define the metadata of the project in the `[project]` section.
-This metadata should include the name of the project, the authors, the description, the README file, the license file, the Python version required, the classifiers, the dynamic metadata, and the dependencies.
+This metadata should include the name of the project, the authors, the description, the README file, the license file, 
+the Python version required, the classifiers, the dynamic metadata, and the dependencies that can be found on pypi.
+For dependency that are distributed via conda only (like all openalea package), please use a separate section to keep your pyproject fully functionnal with pip
 
 ```toml
 [project]
@@ -138,8 +165,10 @@ authors = [
 ]
 description = "FSPM tools for OpenAlea"
 readme = "README.md"
-license.file = "LICENSE"
+license = "CECILL-C"
+license-files = ["LICEN[CS]E*"]
 requires-python = ">=3.10"
+dynamic = ["version"]
 classifiers = [
   "Development Status :: 1 - Planning",
   "Intended Audience :: Science/Research",
@@ -154,11 +183,21 @@ classifiers = [
   "Programming Language :: Python :: 3.12",
   "Topic :: Scientific/Engineering",
 ]
-dynamic = ["version"]
+
 dependencies = [
-    "openalea.deploy",
-    "openalea.plantgl",
     "numpy >= 1.24",
+    ...
+]
+
+# section specific to conda-only distributed package (not used by pip yet)
+[tool.conda.environment]
+channels = [
+  "openalea3",
+  "conda-forge"
+]
+dependencies = [
+    "openalea.plantgl",
+    "openalea.deploy",
     ...
 ]
 ```
@@ -176,12 +215,14 @@ dev = [
   "pytest >=6",
   "pytest-cov >=3",
 ]
-docs = [
-  "sphinx>=7.0",
-  "myst_parser>=0.13",
-  "sphinx_copybutton",
-  "sphinx_autodoc_typehints",
-  ...
+doc = [
+  "pydata-sphinx-theme",
+  "myst-parser",
+  "sphinx-favicon",
+  "ipykernel",
+  "sphinx-copybutton",
+  "ipython_genutils",
+  "nbsphinx",
 ]
 ```
 
@@ -189,12 +230,18 @@ docs = [
 
 ```toml
 [project.urls]
-Homepage = "https://github.com/openalea/pkg_name"
+Repository = "https://github.com/openalea/pkg_name"
+Homepage = "https://openalea.readthedocs.io/"
 "Bug Tracker" = "https://github.com/openalea/pkg_name/issues"
 Discussions = "https://github.com/openalea/pkg_name/discussions"
 Changelog = "https://github.com/openalea/pkg_name/releases"
 ```
+- Declare your entry point, eg the location of the directory containing the __wralea__ file:
 
+```toml
+[project.entry-points."wralea"]
+"my_pkg" = "openalea.my_pkg_wralea"
+```
 ## Data files
 
 You might want to include data files in your package, whether you need it to test your package, or allows user to run tutorials without downloading the sources via git. 
@@ -304,7 +351,68 @@ Implications are that:
 
 - all dependence should also be available from a conda channel or via `pip`.
 - package should be built and uploaded to the `openalea3` conda channel. A [dedicated CI/CD pipeline](#ci-cd) can be used for this purpose.
-- no `git clone + pip install .` should be required to install the package. However, it is still possible to install the package from the source code and use the `pip` develop mode with the `pip install -e .` command.
+- use GIT_DESCRIBE_TAG conda variable to automatically set conda version to your last tag
+
+We also recommend re-using the informations declared in your pyproject.toml to source only once your list of dependencies.
+
+A minimal conda build information could be provided by adding the following generic conda/meta.yaml file at the root of your project:
+
+```yaml
+{% set pyproject = load_file_data('../pyproject.toml', from_recipe_dir=True) %}
+
+package:
+  name: {{ pyproject["project"]["name"] }}
+  version: {{ GIT_DESCRIBE_TAG }}
+
+source:
+  path: ..
+
+build:
+  noarch: python
+  preserve_egg_dir: True
+  script: {{ PYTHON }} -m pip install . -vv
+
+requirements:
+  build:
+    - python
+    {% for dep in pyproject["build-system"]["requires"] %}
+    - {{ dep.lower() }}
+    {% endfor %}
+
+  run:
+    - python {{ pyproject["project"]["requires-python"] }}
+    {% for dep in pyproject["project"]["dependencies"] %}
+    - {{ dep.lower() }}
+    {% endfor %}
+
+test:
+  requires:
+    - pytest
+  imports:
+    - {{ pyproject["project"]["name"] }}
+  source_files:
+    - test/test_*.py
+  commands:
+   - cd test
+   - pytest -v
+```
+
+- You can also provide a conda/environment.yml file that will ease a developper installing in develop mode:
+- 
+```yaml
+name: mypkg_dev
+channels:
+  - conda-forge
+  - openalea3
+dependencies:
+  - python
+  - pip
+  - pandoc
+# list here conda-only deps
+  - openalea.plantgl
+  - pip:
+      - -e ..[doc,test]
+```
 
 ## CI-CD
 
@@ -363,7 +471,7 @@ sphinx:
 
 ```
 
-This file will tell ReadTheDocs to build the documentation using the environment describe in the `doc/environment.yml` file and to set up the environment using `mambaforge`.
+This file will tell ReadTheDocs to build the documentation using the environment describe in the `doc/environment.yml` file (that can be identical to conda/environment.yml) and to set up the environment using `mambaforge`.
 
 The documentation should be written in the `doc` folder of the package and should contain the following files:
 
@@ -375,6 +483,17 @@ import sys
 import os
 
 import pydata_sphinx_theme # Pydata theme: https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html
+
+from importlib.metadata import metadata
+project='my_pkg'
+meta = metadata('openalea.' + project)
+release = meta.get("version")
+# for example take major/minor
+version = ".".join(release.split('.')[:3])
+author = meta['Author-email'].split(' <')[0]
+desc = meta['Summary']
+urls = {k:v for k,v in [item.split(',') for item in meta.get_all('Project-URL')]}
+
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -404,7 +523,7 @@ extensions = [
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 autosummary_generate = True
-exclude_patterns = ['_build', '_templates']
+exclude_patterns = ['build', '_build', '_templates']
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
 source_suffix = {
@@ -414,17 +533,7 @@ source_suffix = {
 # The master toctree document.
 master_doc = 'index'
 # General information about the project.
-project = u'pkg_name'
 copyright = u'Cecill-C INRAE / INRIA / CIRAD'
-author = u'Jane Doe et al.'
-# The version info for the project you're documenting, acts as replacement for
-# |version| and |release|, also used in various other places throughout the
-# built documents.
-#
-# The short X.Y version.
-version = u'x.x'
-# The full version, including alpha/beta/rc tags.
-release = u'x.x.x'
 # The language for content autogenerated by Sphinx. Refer to documentation
 # for a list of supported languages.
 #
@@ -452,7 +561,7 @@ html_theme_options = {
   "icon_links": [
     {
         "name": "GitHub",
-        "url": "https://github.com/openalea/openalea.rtfd.io",
+        "url": urls['Repository'],
         "icon": "fa-brands fa-github",
     },
     ],
@@ -483,7 +592,7 @@ html_show_sphinx = True
 # If true, "(C) Copyright ..." is shown in the HTML footer. Default is True.
 html_show_copyright = True
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'pkg_name_documentation'
+htmlhelp_basename = project + '_documentation'
 
 # -- Options for LaTeX output ---------------------------------------------
 latex_elements = {
@@ -497,7 +606,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'pkg_name', u'pkg_name Documentation',
+    (master_doc, project, project + ' Documentation',
      [author], 1)
 ]
 
@@ -506,8 +615,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'pkg_name', u'pkg_name Documentation',
-     author, 'pkg_name', 'One line description of project.',
+    (master_doc, project, project + ' Documentation',
+     author, project, desc,
      'Miscellaneous'),
 ]
 # Example configuration for intersphinx: refer to the Python standard library.
