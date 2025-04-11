@@ -112,7 +112,7 @@ This file should be a resource for developers anf users to know what has changed
 - We recommend delegating the versioning of your package to the version control system (eg git), by using semantic versionning tags starting with `v`.
 [Semantic vernioning tags](https://semver.org/) are of the form : Major.minor.patch. Using CI, every time a new tag is created and merged in the master branch, 
 a new conda package will be uploaded on conda-forge using that tag as version number.
-- This tag can also be retrieved automaticaly by your build system (declared in pyproject) to correctly fill your package metadata and provide user or tools a way to access the version using importlib
+- This tag can also be retrieved automatically by your build system (declared in pyproject) to correctly fill your package metadata and provide user or tools a way to access the version using importlib
 - Optionally (but still recommended), for convenience, you can expose the version to user/tools by setting the __version__ attribute of your package in its src/openalea/my_pkg/__ini__.py file:
 
 ```python
@@ -365,7 +365,7 @@ package:
   version: {{ GIT_DESCRIBE_TAG }}
 
 source:
-  path: ..
+  git_url: {{ pyproject["project"]["urls"]["Repository"] }}
 
 build:
   noarch: python
@@ -395,6 +395,15 @@ test:
   commands:
    - cd test
    - pytest -v
+```
+
+- Using git_url in source is mandatory to have GIT_DESCRIBE_TAG correctly set during conda build on CI.
+However, when testing locally the build of your package, it will use the version pushed on git. 
+To shorten the debugging cycle and directly see the effect of uncommited modifications, 'source' can be temporarilly set to (but not commited !):
+
+```yaml
+source:
+  path: ../
 ```
 
 - You can also provide a conda/environment.yml file that will ease a developper installing in develop mode:
@@ -446,7 +455,7 @@ jobs:
 
 This action will build the package on a matrix of operating systems (`[ubuntu-latest , macos-latest , windows-latest]`) and Python versions (`[3.8, 3.9, 3.10, 3.11, 3.12]`) every time a new commit is pushed to the repository.
 
-Also, it will deploy the package to the `openalea3` conda channel every time a new tag starting with `v` (typically when you tag a new version of the package, like `v.1.0.0`) is pushed to the repository. This means that the developer needs to explicitly tag the version of the package to deploy it.
+Also, it will deploy the package to the `openalea3` conda channel every time a new tag starting with `v` is pushed on your master branch, eg `v.1.0.0`.
 
 ## Documentation
 
