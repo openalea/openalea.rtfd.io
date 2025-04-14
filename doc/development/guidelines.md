@@ -461,7 +461,7 @@ Also, it will deploy the package to the `openalea3` conda channel every time a n
 
 The documentation of the package should be written using the [Sphinx](https://www.sphinx-doc.org/en/master/) documentation generator and hosted on the [ReadTheDocs](https://readthedocs.org/) platform.
 
-To set up the ReadTheDocs documentation, you need to add a `.readthedocs.yml` file to the root of your project with the following content:
+To set up the ReadTheDocs documentation, you need to create a ReadTheDocs account and add a `.readthedocs.yml` file to the root of your project with the following content:
 
 ```yaml
 version: 2
