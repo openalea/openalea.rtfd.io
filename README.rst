@@ -9,7 +9,7 @@ OpenAlea Documentation
 Institutes (Sponsors)
 ---------------------
 
-OpenAlea is developed, maintainted and mainly funded by three institutes: CIRAD, INRIA, and INRAE.
+OpenAlea is developed, maintained and mainly funded by three institutes: CIRAD, INRIA, and INRAE.
 
 License
 -------
