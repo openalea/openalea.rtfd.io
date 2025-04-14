@@ -116,6 +116,7 @@ a new conda package will be uploaded on conda-forge using that tag as version nu
 - Optionally (but still recommended), for convenience, you can expose the version to user/tools by setting the __version__ attribute of your package in its src/openalea/my_pkg/__ini__.py file:
 
 ```python
+# add this in src/openalea/my_pkg/__init__.py:
 from importlib.metadata import version, PackageNotFoundError
 
 try:
@@ -365,7 +366,7 @@ package:
   version: {{ GIT_DESCRIBE_TAG }}
 
 source:
-  git_url: {{ pyproject["project"]["urls"]["Repository"] }}
+  path: ../
 
 build:
   noarch: python
@@ -397,16 +398,7 @@ test:
    - pytest -v
 ```
 
-- Using git_url in source is mandatory to have GIT_DESCRIBE_TAG correctly set during conda build on CI.
-However, when testing locally the build of your package, it will use the version pushed on git. 
-To shorten the debugging cycle and directly see the effect of uncommited modifications, 'source' can be temporarilly set to (but not commited !):
-
-```yaml
-source:
-  path: ../
-```
-
-- You can also provide a conda/environment.yml file that will ease a developper installing in develop mode:
+- You can also provide a conda/environment.yml file that will ease a developer installing in develop mode:
 - 
 ```yaml
 name: mypkg_dev
