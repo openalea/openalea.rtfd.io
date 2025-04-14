@@ -283,18 +283,18 @@ If you are using a setup.py file, you should manually set include-package-data o
 You can then access data using importlib.resources. It is currently recommended to use `importlib_resources` backport module for Python 3.7 and above, as importlib.resources only works for python 3.10 and above. The only difference is to replace the underscore by a point in the following examples.: 
 
 ```python
-from importlib_resources import files, path
+from importlib.resources import files, as_file
 
-datadir = 'openalea/pkg_name/data'
+datadir = files('openalea.pkg_name.data')
 # return the list of files present in the data dir:
-data = list(files(datadir).iterdir())
+data = list(datadir.iterdir())
 
 # return the content of the resource named 'data_fileA.csv':
-data1 = (files(datadir) / 'data_fileA.csv').read_text()
+data1 = (datadir / 'data_fileA.csv').read_text()
 
 # read the content using pandas read_csv reader
 import pandas
-with path(datadir) / 'data_fileA.csv' as p:
+with as_file(datadir / 'data_fileA.csv') as p:
    data1 = pandas.read_csv(p)
 ```
 
@@ -396,6 +396,11 @@ test:
   commands:
    - cd test
    - pytest -v
+
+about:
+  home: {{ pyproject["project"]["urls"]["Homepage"] }}
+  license: {{ pyproject["project"]["license"] }}
+  summary: {{ pyproject["project"]["description"] }}
 ```
 
 - You can also provide a conda/environment.yml file that will ease a developer installing in develop mode:
