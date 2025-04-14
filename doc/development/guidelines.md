@@ -445,9 +445,10 @@ jobs:
       anaconda_token: ${{ secrets.ANACONDA_TOKEN }}
 ```
 
-This action will build the package on a matrix of operating systems (`[ubuntu-latest , macos-latest , windows-latest]`) and Python versions (`[3.8, 3.9, 3.10, 3.11, 3.12]`) every time a new commit is pushed to the repository.
+This action will build the package on a matrix of operating systems (`[ubuntu-latest , macos-latest , windows-latest]`) and Python versions (`[3.8, 3.9, 3.10, 3.11, 3.12]`) every time a new commit is pushed.
 
-Also, it will deploy the package to the `openalea3` conda channel every time a new tag starting with `v` is pushed on your master branch, eg `v.1.0.0`.
+To enable a new upload to openalea3 conda channel, just create a tag/release starting with `v` on your github master. 
+To summarize we recommend the following development workflow: create branches, make pull request, review them, merge into master, and create a new tag release from github web interface.If you followed the guideline above, the tag wll be propagated to the package metadata and to the conda package.
 
 ## Documentation
 
