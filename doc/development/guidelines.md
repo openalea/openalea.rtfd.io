@@ -403,19 +403,20 @@ about:
   summary: {{ pyproject["project"]["description"] }}
 ```
 
-- You can also provide a conda/environment.yml file that will ease a developer installing in develop mode:
+- You can also provide a conda/environment.yml file that will ease developers installing in develop mode, and that can be used by readthedoc):
 - 
 ```yaml
 name: mypkg_dev
 channels:
-  - conda-forge
   - openalea3
+  - conda-forge
 dependencies:
   - python
   - pip
   - pandoc
-# list here conda-only deps
+# list here manualy conda-only deps (listed in [tool.conda.environment] section of pyproject)
   - openalea.plantgl
+# let pip install the rest
   - pip:
       - -e ..[doc,test]
 ```
