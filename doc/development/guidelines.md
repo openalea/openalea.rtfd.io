@@ -352,9 +352,9 @@ Implications are that:
 
 - all dependence should also be available from a conda channel or via `pip`.
 - package should be built and uploaded to the `openalea3` conda channel. A [dedicated CI/CD pipeline](#ci-cd) can be used for this purpose.
-- use GIT_DESCRIBE_TAG conda variable to automatically set conda version to your last tag
+- use GIT_DESCRIBE_TAG conda variable to automatically set conda version to your last tag. It is important to remove the 'v' prefix, for conda to correctly infer the last version number.
 
-We also recommend re-using the informations declared in your pyproject.toml to source only once your list of dependencies.
+We also recommend re-using the information declared in your pyproject.toml to source only once your list of dependencies.
 
 A minimal conda build information could be provided by adding the following generic conda/meta.yaml file at the root of your project:
 
@@ -363,7 +363,7 @@ A minimal conda build information could be provided by adding the following gene
 
 package:
   name: {{ pyproject["project"]["name"] }}
-  version: {{ GIT_DESCRIBE_TAG }}
+  version: {{ GIT_DESCRIBE_TAG  | replace("v", "")}}
 
 source:
   path: ..
