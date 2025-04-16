@@ -377,7 +377,7 @@ A minimal conda build information could be provided by adding the following gene
 
 package:
   name: {{ pyproject["project"]["name"] }}
-  version: {{ GIT_DESCRIBE_TAG  | replace("v", "")}}
+  version: {{ GIT_DESCRIBE_TAG  | replace("v", "") }}
 
 source:
   path: ..
@@ -417,7 +417,7 @@ about:
   summary: {{ pyproject["project"]["description"] }}
 ```
 
-- You can also provide a conda/environment.yml file that will ease developers installing in develop mode, and that can be used by readthedoc):
+- You can also provide a conda/environment.yml file that will ease maintainers developing in a isolated environment, and also be used by readthedoc):
 - 
 ```yaml
 name: mypkg_dev
@@ -428,9 +428,9 @@ dependencies:
   - python
   - pip
   - pandoc
-# list here manualy conda-only deps (listed in [tool.conda.environment] section of pyproject)
+# list here manually conda-only deps (listed in [tool.conda.environment] section of pyproject)
   - openalea.plantgl
-# let pip install the rest
+# let pip install the rest using pyproject.toml (if you are okay with conda/pip mix)
   - pip:
       - -e ..[doc,test]
 ```
