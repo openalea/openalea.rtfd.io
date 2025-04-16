@@ -83,7 +83,21 @@ The README file should include the following information:
   - Compatible `Python` version: [![Python Version](https://img.shields.io/badge/python-3.8%20%7C%203.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-blue)](https://www.python.org/downloads/)
   - License: [![License](https://img.shields.io/badge/License--CeCILL-C-blue)](https://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html)
   - Version of the package on Anaconda: [![Anaconda-Server Badge](https://anaconda.org/openalea3/mtg/badges/version.svg)](https://anaconda.org/openalea3/mtg)
-- installation instructions: how to install the package using `conda` or `pip`.
+- installation instructions: how to install the package, for user (using `conda`) and for developer (using conda and `pip -e`), e.g. :
+```bash
+# for user
+mamba create -n myenv -c openalea3 -c conda-forge openalea.my_pkg openalea.plantgl
+
+# for developer, in an existing environment
+git clone 'https://github.com/openalea/my_pkg.git'
+cd my_pkg
+mamba install --only-deps -c openalea3 -c conda-forge openalea.my_pkg
+pip install -e .
+
+# (optionaly) for maintainer that need clean isolated env, or to start development (i.e. before first build)
+# (see conda section below on how to write environment.yml file)
+mamba env create -f ./conda/environment.yml
+```
 - usage instructions: how to use the package, with a brief and simple example.
 - links to the documentation, the license, the code of conduct, the contributing guidelines, and the changelog.
 - Citation information: how to cite the package in a scientific publication.
