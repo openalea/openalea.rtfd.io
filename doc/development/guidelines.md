@@ -199,6 +199,8 @@ classifiers = [
   "Topic :: Scientific/Engineering",
 ]
 
+# you can list here all dependencies taht are pip-intalable, and that have a name understood by conda (to allow reuse of this list in meta.yaml)
+# If conda name is different, please do not declare the pip name, and declare in the next section the conda name
 dependencies = [
     "numpy >= 1.24",
     ...
