@@ -495,7 +495,7 @@ sphinx:
 
 ```
 
-This file will tell ReadTheDocs to build the documentation using the environment describe in the `doc/environment.yml` file (that can be identical to conda/environment.yml) and to set up the environment using `mambaforge`.
+This file will tell ReadTheDocs to build the documentation using the environment describe in the `doc/environment.yml` file (you can also use conda/environment.yml) and to set up the environment using `mambaforge`.
 
 The documentation should be written in the `doc` folder of the package and should contain the following files:
 
