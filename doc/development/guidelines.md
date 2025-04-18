@@ -199,8 +199,8 @@ classifiers = [
   "Topic :: Scientific/Engineering",
 ]
 
-# you can list here all dependencies taht are pip-intalable, and that have a name understood by conda (to allow reuse of this list in meta.yaml)
-# If conda name is different, please do not declare the pip name, and declare in the next section the conda name
+# you can list here all dependencies that are pip-instalable, and that have a name identical to the one used by conda (to allow reuse of this list in meta.yaml)
+# If conda name is different, please do not declare the pip name, and declare conda name in the next section
 dependencies = [
     "numpy >= 1.24",
     ...
@@ -248,7 +248,7 @@ doc = [
 ```toml
 [project.urls]
 Repository = "https://github.com/openalea/pkg_name"
-Homepage = "https://openalea.readthedocs.io/"
+Homepage = "https://pkg_name.readthedocs.io/"
 "Bug Tracker" = "https://github.com/openalea/pkg_name/issues"
 Discussions = "https://github.com/openalea/pkg_name/discussions"
 Changelog = "https://github.com/openalea/pkg_name/releases"
