@@ -419,7 +419,7 @@ about:
   summary: {{ pyproject["project"]["description"] }}
 ```
 
-- You can also provide a conda/environment.yml file that will ease maintainers developing in a isolated environment, and also be used by readthedoc):
+- You can also provide a conda/environment.yml file that will ease maintainers developing in a isolated environment, and can also be used by readthedoc:
 - 
 ```yaml
 name: mypkg_dev
