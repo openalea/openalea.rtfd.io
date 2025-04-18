@@ -543,6 +543,7 @@ extensions = [
     'sphinx.ext.todo',      # support for todo items
     'sphinx.ext.napoleon',  # support for numpy and google style docstrings
     "sphinx_favicon",      # support for favicon
+    "sphinx_copybutton",      # support for copybutton in code blocks
     "nbsphinx",     # for integrating jupyter notebooks
     "myst_parser"   # for parsing .md files
 ]
@@ -583,7 +584,7 @@ html_theme_options = {
   "sidebarwidth": 200,
   "sticky_navigation": "false",
   "collapse_navigation": "false",
-  "display_version": "true"
+  "display_version": "true",
   "icon_links": [
     {
         "name": "GitHub",
