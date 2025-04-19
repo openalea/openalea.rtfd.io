@@ -661,3 +661,8 @@ Also, the documentation should include notebook examples that illustrate the usa
 All packages should include tests to ensure that the code is working as expected. The tests should be stored in the `test` folder of the package, and should be written using the `pytest` framework.
 
 Also, all notebooks in the `doc/notebooks` folder should be tested using the `nbmake` framework and be functional.
+
+```python
+pytest test
+pytest --nbmake doc/notebooks
+```
