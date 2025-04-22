@@ -11,5 +11,5 @@ dependencies:
   - sphinxcontrib-napoleon
   - myst-parser
   - pydata-sphinx-theme
-  - sphinx_favicon
-  - sphinx_copybutton
+  - sphinx-favicon
+  - sphinx-copybutton
