@@ -9,3 +9,4 @@ Development
 
     contributing.rst
     guidelines.md
+    release2025.md
