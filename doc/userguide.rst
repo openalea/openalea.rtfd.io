@@ -60,7 +60,7 @@ in a DOS windows. Under Windows, you may also use one of the following method:
 * Use Start Menu -> openalea -> python shell
 * You can use the default python interpreter GUI : IDLE (start menu -> Python 2.4 -> IDLE)
 
-You can also use more ergonomic user interface, like ipython, that provides usefull 
+You can also use more ergonomic user interface, like ipython, that provides useful
 functionalities (completion, coloration, execution of block of lines,…)
 
 

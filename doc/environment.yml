@@ -10,6 +10,6 @@ dependencies:
   - openalea.mtg
   - sphinxcontrib-napoleon
   - myst-parser
-  - pip:
-    - pydata-sphinx-theme
-    - sphinx_favicon
+  - pydata-sphinx-theme
+  - sphinx-favicon
+  - sphinx-copybutton
