@@ -30,12 +30,16 @@ Another way to contribute to the project is to report bugs ans issues you are fa
 How to contribute
 -----------------
 
-The main way to contribute is to fork the package repository you are interested in on GitHub_
+The main way to contribute is to fork the package repository you are interested in on GitHub_.
 
 .. note::
 
   Remember, the packages are found on different GitHub_ pages. The following steps describe a tutorial for an OpenAlea_ package.
   Make the good changes if you want to use OpenAlea-Incubator_ packages.
+
+.. warning::
+
+  All proposed changes must follow the ``OpenAlea development guidelines``
 
 #. `Create an account <https://github.com/join>`_ on GitHub if you do not already have one.
    You will choose your GitHub_ login <your_login>.
@@ -58,7 +62,7 @@ The main way to contribute is to fork the package repository you are interested 
        git checkout -b <branch_name>
 
    and start making changes. Always use a ``feature`` branch. It's good practice to
-   never work on the ``master`` branch!
+   never work on the ``master`` / ``main`` branch!
 
    .. note::
 
@@ -99,13 +103,29 @@ The main way to contribute is to fork the package repository you are interested 
 How to make a proper bug report
 -------------------------------
 
+The best way to intereact with the OpenAlea_ packages developers is to use the ``GitHub issue tracker``.
+You can report bugs, request features or simply ask for help. Each package has its own issue tracker on its GitHub page.
+
+To make a proper bug report, you should follow these steps:
+
+#. Describe the issue, being as precise as possible.
+
+#. Provide a minimal code example to reproduce the issue.
+
+#. Provide the version of the package you are using. Eventually, please also provide the versions of the dependancies.
+
+#. Show the Error Message you are getting.
+
+If not already available, issue templates are also a good way to provide homogeneous reports to developers. See `Github isse templates <https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository#creating-issue-templates>`_
+
+
 Documentation
 -------------
 
 You can also contribute to the documentation. If you find some parts that are not explained enough or uncleared, you can complete or
 improve the documentation.
 
-Once you have forked the package on your device, you have to install Sphinx_ to generate the HTML output
+Once you have forked the package on your device (cf. :ref:`How to contribute`), you have to install Sphinx_ to generate the HTML output
 ::
 
     pip install sphinx
@@ -125,7 +145,7 @@ In each package repository, it must be a ``docs/`` directory in which the reStru
 Once you are finished, you can add, commit and push what you have done on GitHub_ and then create
 a **pull request** (see `How to contribute`_).
 
-As we want all the documentation to look the same way, configure your Sphinx like us:
+As we want all the documentation to look the same way, your Sphinx_ configuration file ``conf.py`` should match the :ref:`Documentation`.`
 
 #. The theme we are using is the `Read the Docs Sphinx Theme <https://sphinx-rtd-theme.readthedocs.io/en/stable/>`_.
    The theme can be installed like this
