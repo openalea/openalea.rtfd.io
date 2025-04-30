@@ -387,7 +387,7 @@ source:
 build:
   noarch: python
   preserve_egg_dir: True
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
