@@ -440,6 +440,33 @@ dependencies:
       - -e ..[doc,test]
 ```
 
+### building extensions
+
+We recomend building extensions (compiled source) with conda build in CI, and to use conda-forge pinning to ensure ABI compability.
+
+You can setup a conda/conda-forge build envrironment locally to simulate the behaviour of CI using :
+
+```bash
+conda create -n buildenv -c conda-forge conda-build conda-forge-pinning mamba
+conda activate buildenv
+```
+
+Then place a copy of conda-forge build_config (but do not commit) in all packages that need pinning (link to python libs, numpy libs, shared c lib, ...).
+You can get a copy by executing, or create a 'update_build_config.sh' script containing:
+```bash
+#!/bin/sh
+
+# === Configuration ===
+FILE_URL="https://raw.githubusercontent.com/conda-forge/conda-forge-pinning-feedstock/main/recipe/conda_build_config.yaml"
+DEST_FILE="conda_build_config.yml"
+
+# === Fetch latest file ===
+echo "Fetching latest version of file..."
+curl -fsSL "$FILE_URL" -o "$DEST_FILE"
+```
+
+Then, use 'conda build' to build the first variant, or 'conda build --matrix' to build all the variants. The variant list can be obtained with 'conda render --matrix'
+
 ## CI-CD
 
 CI/CD stands for Continuous Integration / Continuous Deployment. It is a set of practices and tools that allow to automate the building, testing, and deployment of the software.
