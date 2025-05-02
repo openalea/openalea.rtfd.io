@@ -1,4 +1,4 @@
-======================
+
 OpenAlea Documentation
 ======================
 
@@ -19,14 +19,14 @@ OpenAlea is licensed under the CeCILL-C free software license agreement.
 Official documentation
 ----------------------
 
-https://readthedocs.org/projects/openalea.readthedocs.io
+http://openalea.rtfd.io
 
 Description
 ===========
 
 OpenAlea is an open source project primarily aimed at the plant research community. It is a distributed collaborative effort to develop Python libraries and tools that address the needs of current and future works in Plant Architecture modeling. OpenAlea includes modules to analyze, visualize, and model the functioning and growth of plant architecture.
 
-This repository contains all the documentation published in the `official documentation of OpenAlea <https://readthedocs.org/projects/openalea.readthedocs.io/en/latest>`_.
+This repository contains all the documentation published in the `official documentation of OpenAlea <http://openalea.rtfd.io/>`_.
 
 Information about OpenAlea can also be found in the wiki: https://github.com/openalea/openalea.rtfd.io/wiki
 
