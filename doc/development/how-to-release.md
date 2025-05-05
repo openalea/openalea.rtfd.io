@@ -1,4 +1,4 @@
-# OpenAlea 2025 release
+# How to release
 
 An OpenAlea official release is scheduled on the 4th trimester of 2025.
 
@@ -13,6 +13,7 @@ for developers.
 - go to the github project [OpenAlea Release](https://github.com/orgs/openalea/projects/9).
 - open the draft [template release 2025](https://github.com/orgs/openalea/projects/9/views/1?pane=issue&itemId=108200105),
 that will be used as a template listing the requests for releasing (see below).
+- in the repository create a branch called *release* or *release 2025* 
 - copy the content and paste it in a new issue in the repository of the package **pckg-name**, 
 call this issue **Release 2025 pckg-name**.
 - associate this issue to the project **OpenAlea Release**.
@@ -26,13 +27,13 @@ to be *in progress*, the issue must be assigned.
 When **pckg-name** is following all minimum requests the issue can be marked *done* with a final 
 pull request accepted. The package **pckg-name** is ready for the release.
 
-The requests for the release are:
-- [ ] read the [guidelines](https://openalea.readthedocs.io/en/latest/development/guidelines.html)
-- [ ] minimal README with (description, authors, installation instruction)
-- [ ] License file
-- [ ] pyproject.toml
-- [ ] meta.yaml
-- [ ] CI (.github/workflows/conda-package-build.yml)
-- [ ] tests
-- [ ] documentation
-- [ ] tutorials
+The requests for the release are:\
+\- [ ] read the [guidelines](https://openalea.readthedocs.io/en/latest/development/guidelines.html)\
+\- [ ] minimal README with (description, authors, installation instruction)\
+\- [ ] License file\
+\- [ ] pyproject.toml\
+\- [ ] meta.yaml\
+\- [ ] CI (.github/workflows/conda-package-build.yml)\
+\- [ ] tests\
+\- [ ] documentation\
+\- [ ] tutorials\
