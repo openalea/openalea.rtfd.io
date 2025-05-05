@@ -1,9 +1,7 @@
 
 # OpenAlea Documentation
 
-.. image:: https://readthedocs.org/projects/openalea/badge/?version=latest
-   :target: https://openalea.readthedocs.io/en/latest/?badge=latest
-   :alt: Documentation Status
+[![Documentation Status](https://readthedocs.org/projects/sconsx/badge/?version=latest)](https://sconsx.readthedocs.io/en/latest/?badge=latest)
 
 ## Institutes (Sponsors)
 
