@@ -10,12 +10,8 @@ To do so and to ease the process, to create the issue please follow the next ste
 
 - read the [guidelines](https://openalea.readthedocs.io/en/latest/development/guidelines.html) 
 for developers.
-- in the repository create a branch called *release* or *release 2025*. 
-- go to the github project [OpenAlea Release](https://github.com/orgs/openalea/projects/9).
-- open the draft [template release 2025](https://github.com/orgs/openalea/projects/9/views/1?pane=issue&itemId=108200105),
-that will be used as a template listing the requests for releasing (see below).
-- copy the content and paste it in a new issue in the repository of the package **pckg-name**, 
-call this issue **Release 2025 pckg-name**.
+- in the repository of the package **pckg-name** create a branch called *release* or *release 2025*. 
+- create a new issue using the template *Release 2025*, call this issue **Release 2025 pckg-name**.
 - associate this issue to the project **OpenAlea Release**.
 - In the project set the status of the issue: *ready* or *in progress*,
 to be *in progress*, the issue must be assigned.
@@ -36,4 +32,5 @@ The requests for the release are:\
 \- [ ] CI (.github/workflows/conda-package-build.yml)\
 \- [ ] tests\
 \- [ ] documentation\
-\- [ ] tutorials
+\- [ ] tutorials\
+\- [ ] Data management (share_data)
