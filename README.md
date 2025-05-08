@@ -19,7 +19,7 @@ http://openalea.rtfd.io
 
 OpenAlea is an open source project primarily aimed at the plant research community. It is a distributed collaborative effort to develop Python libraries and tools that address the needs of current and future works in Plant Architecture modeling. OpenAlea includes modules to analyze, visualize, and model the functioning and growth of plant architecture.
 
-This repository contains all the documentation published in the [official documentation of OpenAlea](http://openalea.rtfd.io/>).
+This repository contains all the documentation published in the [official documentation of OpenAlea](http://openalea.rtfd.io).
 
 Information about OpenAlea can also be found in the wiki: https://github.com/openalea/openalea.rtfd.io/wiki
 
