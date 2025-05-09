@@ -5,10 +5,12 @@
 .. image:: ./packages/images/mtg_plantframe.png
    :width: 30%
 
-.. include:: ../README.rst
+.. include:: ../README.md
+   :parser: myst_parser.sphinx_
 
 .. toctree::
    :caption: Documentation
+   :hidden:
    :maxdepth: 2
 
    quickstart
@@ -21,16 +23,9 @@
 
 
 .. toctree::
-   :caption: Mode Information
+   :caption: More Information
    :maxdepth: 2
 
    license
    help
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
