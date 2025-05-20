@@ -259,22 +259,51 @@ Changelog = "https://github.com/openalea/pkg_name/releases"
 [project.entry-points."wralea"]
 "my_pkg" = "openalea.my_pkg_wralea"
 ```
-## Data files
+## Package Resources / Data files
 
-You might want to include data files in your package, whether you need it to test your package, or allows user to run tutorials without downloading the sources via git. 
-For most cases, we recommend hosting the data directly in the pkg source directory. However, if the size of data files becomes large (e.g. for realistic images or databases) they will bloat your source directory and slow down the installation and/or CI workflow. 
-In such cases, we recommend storing you data on public spaces ([GitHub](https://github.com) or [Zenodo](https://zenodo.org/)), and provide access in a dedicated module using [Pooch](https://www.fatiando.org/pooch). Both approaches are detailed below.
+You might want to include resources/data files (i.e. any files that is not a *.py file) in your package for a number of reasons, that will determine your packaging strategy:
+- the resource is mandatory for your python source code to run (eg a dll or a template file) => include it as a package resource (see 'Distributing as a package resource' below)
+- the resource is mandatory for your python source code to run, but is too large in size for github (eg a trained deep-learning model) => refer it as an external resource in the code (see 'Distributing as an external resource' below)
+- the resource is only used in tests (and is relatively small in size) => add a test/data dir and access it with relative path (see 'Direct access using relative paths' bellow)
+- the resource is only used in notebooks (and is relatively small in size) => add a doc/examples/data dir and access it with relative path (see 'Direct access using relative paths' bellow)
+- the resource is accessed by test and notebooks (and is relatively small in size) => include it as a package resource (see 'Distributing as a package resource' below)
+- the resource is accessed by test, notebooks, and/or is usefull for other packages (eg database), and/or is composed of large file (e.g. phenotyping images) => refer it as an external resource in the code (see 'Distributing as an external resource' below)
 
-### Distributing data with the package sources
+### Direct access using relative paths
 
-This approach is detailed in [`setuptools` documentation](https://setuptools.pypa.io/en/latest/userguide/datafiles.html#accessing-data-files-at-runtime). This approach should be preferred to a direct manipulation of the package’s \_\_file\_\_ attribute, as the later can fail if your data are distributed via zip, egg or wheels. 
+This method is recommended only if you are sure that the data files will be accessed by cloning the git repository (e.g. clone/run tests locally or on CI runners, clone/build doc locally or by ReadTheDoc runner).
+It can also work for data located in source dir (e.g src/openalea/pkg_name/data), but it is not recommended, as some build tools will zip the src dir and defeat the method. In the later case prefer 'Distributing as a package resource' below)
 
-The recommended way of organising your data is to add a data folder in your package source folder, and add a generic MANIFEST.in file at the root of the package:
+This method is pretty straightforward, as you just have to add a data dir, e.g. for test:
 
 ```bash
 pkg_name
 ├── ...
-├── MANIFEST.in                  ] declaration of package data
+├── test
+│   ├── test_A.py                        
+│   ├── data
+│       ├── data_file_A.csv
+```
+
+and in test_A.py, access the data file with:
+
+```python
+from pathlib import Path
+this_dir = Path(__file__).parent if '__file__' in globals() else Path(".").resolve()
+data_dir = this_dir.parent / "data" 
+data_A_path = data_dir / "data_file_A.csv"
+```
+
+### Distributing as a package resource
+
+This approach is detailed in [`setuptools` documentation](https://setuptools.pypa.io/en/latest/userguide/datafiles.html#accessing-data-files-at-runtime). This approach should be preferred to a direct manipulation of the package’s \_\_file\_\_ attribute, as the later can fail if your data are distributed via zip, egg or wheels. 
+
+The recommended way of organising your data is to add a data folder in your package source folder, and declare the ressources in pyproject.toml:
+
+```bash
+pkg_name
+├── ...
+├── pyproject.toml               ] declaration of package data
 ├── src                          ┐
 │   └── openalea/pkg_name        │
 │       ├── __init__.py          │ Package source code
@@ -287,14 +316,15 @@ pkg_name
 |            └──data_fileC.csv      ┘
 ```
 
-MANIFEST.in should declare what files are to be included. It could be as simple and generic as :
+In pyproject.toml you will use the package-data section to specify which files are to be included. It could be as simple and generic as :
 
-```bash
-recursive-include src/openalea/pkg_name/data *
+```toml
+# pyproject.toml
+[tool.setuptools.package-data]
+"openalea.pkg_name" = ["data/**/*"]
 ```
 
-Using this layout, no further modification should be brought to your package, provided you are using a toml file.
-If you are using a setup.py file, you should manually set include-package-data option to true and use find_namespace_package to scan src.
+This method is fully compatible with the recommended 'include-package-data = false' directive, that only force explicit data declaration. 
 
 You can then access data using importlib.resources. It is currently recommended to use `importlib_resources` backport module for Python 3.7 and above, as importlib.resources only works for python 3.10 and above. The only difference is to replace the underscore by a point in the following examples.: 
 
@@ -314,44 +344,56 @@ with as_file(datadir / 'data_fileA.csv') as p:
    data1 = pandas.read_csv(p)
 ```
 
-### Openalea alternative: using openalea.deploy.shared_data approach
+### Distributing as an external resource
 
-This approach is working for openalea packages relying on a setup.py, as openalea currently warrants unzipped source code distribution in this case. However, the above method should now be preferred, as this constraint can be released in the future.
-
-In this case your layout will look like:
-
-```bash
-pkg_name
-├── ...
-|── share/data                   ┐
-|       ├── __init__.py          │ Data files
-|       ├── data_fileA.csv       |
-|       └── data_fileB.csv       ┘
-├── src                          ┐
-│   └── openalea/pkg_name        │
-│       ├── __init__.py          │ Package source code
-│       ├── moduleA.py           │
-│       └── moduleB.py           ┘
-```
-
-You can then access the data files at runtime using [`openalea.deploy`](https://github.com/openalea/deploy).:
+This strategy implies posting the raw data on a dedicated public repository (e.g. [GitHub](https://github.com) or [Zenodo](https://zenodo.org/)), and provide access to these resources using [Pooch](https://www.fatiando.org/pooch).
+Pooch will retrieve in a secured manner the remote files and store them in your local cache, so that the download time is paid only once (like cloning a data repo) and nly for the data you need (unlike cloning).
+Pooch also detect if your local cached version differs from the remote one and handle it as expected.
+An example of a package using this strategy can be found in [openalea.phenotyping_data](https://github.com/openalea/phenotyping_data). The key part of the code lies in the fetch.py module, that can refer to any url, and not only to data located in the package.
 
 ```python
-from openalea.deploy.shared_data import shared_data
-import openalea.pkg_name
+from pathlib import Path
+from importlib.resources import files, as_file
+import pooch
 
-data_dir = shared_data(openalea.pkg_name)
+REGISTRY = files('openalea.phenotyping_data') / 'registry.txt'
+BASE_URL = "https://raw.githubusercontent.com/openalea/phenotyping_data/main/data/"
+POOCH = pooch.create(
+    path=pooch.os_cache("phenotyping_data"),
+    base_url=BASE_URL,
+    version_dev="main",
+    # We'll load it from a file later
+    registry=None,
+)
+with as_file(REGISTRY) as registry_path:
+    POOCH.load_registry(registry_path)
+
+
+def fetch_data(filename):
+    return POOCH.fetch(filename)
+
+
+def list_data(prefix=""):
+    return [name for name in POOCH.registry if name.startswith(prefix)]
+
+    
+def fetch_all_data(prefix=""):
+    for filename in list_data(prefix):
+        fetch_data(filename)
+        
+    data_dir = Path(str(POOCH.abspath)) / prefix
+    
+    return data_dir
 ```
 
-and then access the data files using the `data_dir` '/' method.
+Data can then be retrieved using,e.g. 
 
-One example can be found in [`openalea.rose` package](https://github.com/openalea-incubator/rose/blob/paper/src/openalea/rose/data.py)
-
-### Large data files
-
-Large data files should not be included in the package, to keep your repository lightweight and functional. Instead, they should be stored in a separate place and be accessed via [Pooch](https://www.fatiando.org/pooch).
-
-We don't have any example in OpenAlea yet, but we plan to follow a similar strategy as the one used for [x-array data](https://github.com/pydata/xarray-data)
+```python
+from openalea.phenotyping_data.fetch import fetch_data, list_data, fetch_all_data
+list_data()
+path = fetch_data('plant_1/raw/side/0.png')
+datadir = fetch_all_data('plant_1/raw')
+```
 
 ## Building the package
 
