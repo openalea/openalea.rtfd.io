@@ -92,7 +92,7 @@ mamba create -n myenv -c openalea3 -c conda-forge openalea.my_pkg openalea.plant
 git clone 'https://github.com/openalea/my_pkg.git'
 cd my_pkg
 mamba install --only-deps -c openalea3 -c conda-forge openalea.my_pkg
-pip install -e .
+pip install -e .[options]
 
 # (optionaly) for maintainer that need clean isolated env, or to start development (i.e. before first build)
 # (see conda section below on how to write environment.yml file)
@@ -156,12 +156,18 @@ requires = [
 ]
 build-backend = "setuptools.build_meta"
 
-# allow openalea to be a namespace package
+# src is okay as openalea is a namespace package
 [tool.setuptools.packages.find]
 where = ["src"]
+# do not include test and doc in wheel
+exclude = ["test*", "doc*"]
 
 # enable dynamic versioning based on git tags
 [tool.setuptools_scm]
+# force explicit declaration of data
+# (and avoid undesired automatic 'all-git' inclusions by setuptools-scm)
+[tool.setuptools]
+include-package-data = false
 ```
 
 If your package needs an extension module, you should check the [dedicated `setuptools` documentation](https://setuptools.pypa.io/en/latest/userguide/ext_modules.html#building-extension-modules)
@@ -376,10 +382,19 @@ A minimal conda build information could be provided by adding the following gene
 
 ```yaml
 {% set pyproject = load_file_data('../pyproject.toml', from_recipe_dir=True) %}
+{% set name = pyproject.get('project').get('name') %}
+{% set description = pyproject.get('project').get('description') %}
+{% set version = GIT_DESCRIBE_TAG | replace("v", "") %}
+{% set license = pyproject.get('project').get('license') %}
+{% set home = pyproject.get('project', {}).get('urls', {}).get('Homepage', '') %}
+{% set build_deps = pyproject.get("build-system", {}).get("requires", []) %}
+{% set deps = pyproject.get('project', {}).get('dependencies', []) %}
+{% set conda_deps = pyproject.get('tool', {}).get('conda-environment', {}).get('dependencies',[]) %}
+
 
 package:
-  name: {{ pyproject["project"]["name"] }}
-  version: {{ GIT_DESCRIBE_TAG  | replace("v", "") }}
+  name: {{ name }}
+  version: {{ version }}
 
 source:
   path: ..
@@ -387,28 +402,27 @@ source:
 build:
   noarch: python
   preserve_egg_dir: True
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-build-isolation -vv
 
 requirements:
-  build:
+  host:
     - python
-    {% for dep in pyproject["build-system"]["requires"] %}
-    - {{ dep.lower() }}
-    {% endfor %}
+    {% for dep in build_deps %}
+    - {{ dep }}
+    {% endfor  %}
 
   run:
-    - python {{ pyproject["project"]["requires-python"] }}
-    {% for dep in pyproject["project"]["dependencies"] %}
-    - {{ dep.lower() }}
+    - python
+    {% for dep in deps + conda_deps %}
+    - {{ dep }}
     {% endfor %}
 
 test:
   requires:
-    {% for dep in pyproject["project"]["optional-dependencies"]["test"] %}
-    - {{ dep.lower() }}
-    {% endfor %}
+    - pytest
+    - nbmake
   imports:
-    - {{ pyproject["project"]["name"] }}
+    - {{ name }}
   source_files:
     - test/test_*.py
     - doc/notebooks/*.ipynb
@@ -417,9 +431,9 @@ test:
    - pytest --nbmake
 
 about:
-  home: {{ pyproject["project"]["urls"]["Homepage"] }}
-  license: {{ pyproject["project"]["license"] }}
-  summary: {{ pyproject["project"]["description"] }}
+  home: {{ home }}
+  license: {{ license }}
+  summary: {{ description }}
 ```
 
 - You can also provide a conda/environment.yml file that will ease maintainers developing in a isolated environment, and can also be used by readthedoc:
