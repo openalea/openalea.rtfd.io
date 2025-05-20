@@ -93,6 +93,9 @@ git clone 'https://github.com/openalea/my_pkg.git'
 cd my_pkg
 mamba install --only-deps -c openalea3 -c conda-forge openalea.my_pkg
 pip install -e .[options]
+# [options] is optional, and allows to install additional dependencies 
+# defined in the [project.optional-dependencies] section of your 
+# pyproject.toml file (usually "dev", or "doc", ...)
 
 # (optionaly) for maintainer that need clean isolated env, or to start development (i.e. before first build)
 # (see conda section below on how to write environment.yml file)
