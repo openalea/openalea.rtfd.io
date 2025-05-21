@@ -159,18 +159,15 @@ requires = [
 ]
 build-backend = "setuptools.build_meta"
 
-# src is okay as openalea is a namespace package
+# where your source lies if you followed src layout
 [tool.setuptools.packages.find]
 where = ["src"]
-# do not include test and doc in wheel
-exclude = ["test*", "doc*"]
 
-# enable dynamic versioning based on git tags
-[tool.setuptools_scm]
-# force explicit declaration of data
-# (and avoid undesired automatic 'all-git' inclusions by setuptools-scm)
 [tool.setuptools]
-include-package-data = false
+include-package-data = false # force explicit declaration of data (disable automatic inclusion)
+
+# enable dynamic version based on git tags
+[tool.setuptools_scm]
 ```
 
 If your package needs an extension module, you should check the [dedicated `setuptools` documentation](https://setuptools.pypa.io/en/latest/userguide/ext_modules.html#building-extension-modules)
