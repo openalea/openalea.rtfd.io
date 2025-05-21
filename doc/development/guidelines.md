@@ -1,7 +1,9 @@
 # OpenAlea development guidelines
+
 ```{Important}
 ___Definition___: Coding rules, or good practices, or coding conventions, aiming at  uniforming source code in a project.
 ```
+
 ## Why guidelines ?
 
 __Quality__:
@@ -22,7 +24,7 @@ __Diffusion__:
 
 ## Guidelines in OpenAlea
 
-Within OpenAlea, we have defined a set of minimal and limited guidelines that are important to improve homogeneity and quality between packages. These guidelines are **highly** recommended for all developers, and in particular, new ones.
+Within OpenAlea, we have defined a set of minimal and limited guidelines that are important to improve homogeneity and quality between packages. These guidelines are __highly__ recommended for all developers, and in particular, new ones.
 
 These guidelines are used to ensure the quality of the code and to facilitate the deployment and diffusion of the software. It also simplify global OpenAlea support and maintenance.
 Same guidelines should be applied to all OpenAlea projects and are detailed below.
@@ -43,7 +45,7 @@ from openalea.pkg_name import module_name
 ```
 
 - Also, we recommend to use the [src-layout](https://setuptools.pypa.io/en/latest/userguide/package_discovery.html#src-layout) for the source code of the project.
-  That yield the following basic layout for your package: 
+  That yield the following basic layout for your package:
 
 ```bash
 pkg_name
@@ -52,12 +54,12 @@ pkg_name
 ├── CONTRIBUTING.md            │
 ├── README.md                  │ Package metadata and build configuration
 ├── LICENSE                    │
-├── pyproject.toml             ┘ 
+├── pyproject.toml             ┘
 ├── doc                        ┐
 │   └── index.md               │
 │   └── ...                    │  Package documentation
 │   └── examples               │
-│   └──── notebook1.ipynb      │ 
+│   └──── notebook1.ipynb      │
 │   └──── ...                  ┘
 ├── src                        ┐
 │   └── openalea/pkg_name      │
@@ -83,7 +85,8 @@ The README file should include the following information:
   - Compatible `Python` version: [![Python Version](https://img.shields.io/badge/python-3.8%20%7C%203.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-blue)](https://www.python.org/downloads/)
   - License: [![License](https://img.shields.io/badge/License--CeCILL-C-blue)](https://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html)
   - Version of the package on Anaconda: [![Anaconda-Server Badge](https://anaconda.org/openalea3/mtg/badges/version.svg)](https://anaconda.org/openalea3/mtg)
-- installation instructions: how to install the package for user (using `conda` / `mamba`) and for developer (using `conda` / `mamba` and `pip -e`). For more information about how to declare package dependencies for usage and development, cf. [pyproject.toml](#pyprojecttoml) and [build the package](#building-the-package) sections. 
+- installation instructions: how to install the package for user (using `conda` / `mamba`) and for developer (using `conda` / `mamba` and `pip -e`). For more information about how to declare package dependencies for usage and development, cf. [pyproject.toml](#pyprojecttoml) and [build the package](#building-the-package) sections.
+
 ```bash
 # for user
 mamba create -n myenv -c openalea3 -c conda-forge openalea.my_pkg openalea.plantgl
@@ -98,6 +101,7 @@ pip install -e .
 # (see conda section below on how to write environment.yml file)
 mamba env create -f ./conda/environment.yml
 ```
+
 - usage instructions: how to use the package, with a brief and simple example.
 - links to the documentation, the license, the code of conduct, the contributing guidelines, and the changelog.
 - Citation information: how to cite the package in a scientific publication.
@@ -122,9 +126,10 @@ This document will help building a community around your package. It sets what y
 
 This file should be a resource for developers anf users to know what has changed in the project over time. It should include a list of changes for each version of the project.
 
-## versioning
+## Versioning
+
 - We recommend delegating the versioning of your package to the version control system (eg git), by using semantic versionning tags starting with `v`.
-[Semantic vernioning tags](https://semver.org/) are of the form : Major.minor.patch. Using CI, every time a new tag is created and merged in the master branch, 
+[Semantic vernioning tags](https://semver.org/) are of the form : Major.minor.patch. Using CI, every time a new tag is created and merged in the master branch,
 a new conda package will be uploaded on conda-forge using that tag as version number.
 - This tag can also be retrieved automatically by your build system (declared in pyproject) to correctly fill your package metadata and provide user or tools a way to access the version using importlib
 - Optionally (but still recommended), for convenience, you can expose the version to user/tools by setting the __version__ attribute of your package in its src/openalea/my_pkg/__ini__.py file:
@@ -139,6 +144,7 @@ except PackageNotFoundError:
     # package is not installed
     pass
 ```
+
 - To avoid confusion all other manual reference to version (version.py files,...) should be removed from your source tree
 
 ## pyproject.toml
@@ -148,10 +154,11 @@ This file should contain the following sections:
 
 - In most cases you can use [`setuptools` as the build system](https://setuptools.pypa.io/en/latest/). `setuptools` is the most widely used build system for Python packages. It is used to define the metadata of the package, the dependencies, and the entry points.
 We also recommend using setuptools_scm as a companion tool to handle automatically set the version metadata of your package based on git tags.
+
 ```toml
 [build-system]
 requires = [
-    "setuptools", 
+    "setuptools",
     "setuptools_scm",
 ]
 build-backend = "setuptools.build_meta"
@@ -167,7 +174,7 @@ where = ["src"]
 If your package needs an extension module, you should check the [dedicated `setuptools` documentation](https://setuptools.pypa.io/en/latest/userguide/ext_modules.html#building-extension-modules)
 
 - Define the metadata of the project in the `[project]` section.
-This metadata should include the name of the project, the authors, the description, the README file, the license file, 
+This metadata should include the name of the project, the authors, the description, the README file, the license file,
 the Python version required, the classifiers, the dynamic metadata, and the dependencies that can be found on pypi.
 For dependency that are distributed via conda only (like all openalea package), please use a separate section to keep your pyproject fully functionnal with pip
 
@@ -253,26 +260,29 @@ Homepage = "https://pkg_name.readthedocs.io/"
 Discussions = "https://github.com/openalea/pkg_name/discussions"
 Changelog = "https://github.com/openalea/pkg_name/releases"
 ```
+
 - Declare your entry point, eg the location of the directory containing the __wralea__ file:
 
 ```toml
 [project.entry-points."wralea"]
 "my_pkg" = "openalea.my_pkg_wralea"
 ```
+
 ## Package Resources / Data files
 
 You might want to include resources/data files (i.e. any files that is not a *.py file) in your package for a number of reasons, that will determine your packaging strategy:
-- the resource is mandatory for your python source code to run (eg a dll or a template file) => include it as a package resource (see 'Distributing as a package resource' below)
-- the resource is mandatory for your python source code to run, but is too large in size for github (eg a trained deep-learning model) => refer it as an external resource in the code (see 'Distributing as an external resource' below)
-- the resource is only used in tests (and is relatively small in size) => add a test/data dir and access it with relative path (see 'Direct access using relative paths' bellow)
-- the resource is only used in notebooks (and is relatively small in size) => add a doc/examples/data dir and access it with relative path (see 'Direct access using relative paths' bellow)
-- the resource is accessed by test and notebooks (and is relatively small in size) => include it as a package resource (see 'Distributing as a package resource' below)
-- the resource is accessed by test, notebooks, and/or is usefull for other packages (eg database), and/or is composed of large file (e.g. phenotyping images) => refer it as an external resource in the code (see 'Distributing as an external resource' below)
+
+- the resource is mandatory for your python source code to run (eg a dll or a template file) => include it as a package resource (see [Distributing as a package resource](#distributing-as-a-package-resource) section)
+- the resource is mandatory for your python source code to run, but is too large in size for github (eg a trained deep-learning model) => refer it as an external resource in the code (see [Distributing as an external resource](#distributing-as-an-external-resource) section)
+- the resource is only used in tests (and is relatively small in size) => add a `test/data dir` and access it with relative path (see [Direct access using relative paths](#direct-access-using-relative-paths) section)
+- the resource is only used in notebooks (and is relatively small in size) => add a `doc/examples/data` dir and access it with relative path (see [Direct access using relative paths](#direct-access-using-relative-paths) section)
+- the resource is accessed by test and notebooks (and is relatively small in size) => include it as a package resource (see [Distributing as a package resource](#distributing-as-a-package-resource) section)
+- the resource is accessed by test, notebooks, and/or is usefull for other packages (eg database), and/or is composed of large file (e.g. phenotyping images) => refer it as an external resource in the code (see [Distributing as an external resource](#distributing-as-an-external-resource) section)
 
 ### Direct access using relative paths
 
 This method is recommended only if you are sure that the data files will be accessed by cloning the git repository (e.g. clone/run tests locally or on CI runners, clone/build doc locally or by ReadTheDoc runner).
-It can also work for data located in source dir (e.g src/openalea/pkg_name/data), but it is not recommended, as some build tools will zip the src dir and defeat the method. In the later case prefer 'Distributing as a package resource' below)
+It can also work for data located in source dir (e.g src/openalea/pkg_name/data), but it is not recommended, as some build tools will zip the src dir and defeat the method. In the later case prefer [Distributing as a package resource](#distributing-as-a-package-resource).Ò
 
 This method is pretty straightforward, as you just have to add a data dir, e.g. for test:
 
@@ -280,7 +290,7 @@ This method is pretty straightforward, as you just have to add a data dir, e.g. 
 pkg_name
 ├── ...
 ├── test
-│   ├── test_A.py                        
+│   ├── test_A.py
 │   ├── data
 │       ├── data_file_A.csv
 ```
@@ -290,13 +300,13 @@ and in test_A.py, access the data file with:
 ```python
 from pathlib import Path
 this_dir = Path(__file__).parent if '__file__' in globals() else Path(".").resolve()
-data_dir = this_dir.parent / "data" 
+data_dir = this_dir.parent / "data"
 data_A_path = data_dir / "data_file_A.csv"
 ```
 
 ### Distributing as a package resource
 
-This approach is detailed in [`setuptools` documentation](https://setuptools.pypa.io/en/latest/userguide/datafiles.html#accessing-data-files-at-runtime). This approach should be preferred to a direct manipulation of the package’s \_\_file\_\_ attribute, as the later can fail if your data are distributed via zip, egg or wheels. 
+This approach is detailed in [`setuptools` documentation](https://setuptools.pypa.io/en/latest/userguide/datafiles.html#accessing-data-files-at-runtime). This approach should be preferred to a direct manipulation of the package’s \_\_file\_\_ attribute, as the later can fail if your data are distributed via zip, egg or wheels.
 
 The recommended way of organising your data is to add a data folder in your package source folder, and declare the ressources in pyproject.toml:
 
@@ -310,7 +320,7 @@ pkg_name
 │       ├── moduleA.py           │
 │       └── moduleB.py           ┘
 |       └── data                    ┐
-|          ├── data_fileA.csv       | 
+|          ├── data_fileA.csv       |
 |          └── data_fileB.csv       | Data files
 |          └── data_subdir          |
 |            └──data_fileC.csv      ┘
@@ -324,9 +334,9 @@ In pyproject.toml you will use the package-data section to specify which files a
 "openalea.pkg_name" = ["data/**/*"]
 ```
 
-This method is fully compatible with the recommended 'include-package-data = false' directive, that only force explicit data declaration. 
+This method is fully compatible with the recommended 'include-package-data = false' directive, that only force explicit data declaration.
 
-You can then access data using importlib.resources. It is currently recommended to use `importlib_resources` backport module for Python 3.7 and above, as importlib.resources only works for python 3.10 and above. The only difference is to replace the underscore by a point in the following examples.: 
+You can then access data using importlib.resources. It is currently recommended to use `importlib_resources` backport module for Python 3.7 and above, as importlib.resources only works for python 3.10 and above. The only difference is to replace the underscore by a point in the following examples.:
 
 ```python
 from importlib.resources import files, as_file
@@ -376,17 +386,17 @@ def fetch_data(filename):
 def list_data(prefix=""):
     return [name for name in POOCH.registry if name.startswith(prefix)]
 
-    
+
 def fetch_all_data(prefix=""):
     for filename in list_data(prefix):
         fetch_data(filename)
-        
+
     data_dir = Path(str(POOCH.abspath)) / prefix
-    
-    return data_dir
+
+    return data_dirÒ
 ```
 
-Data can then be retrieved using,e.g. 
+Data can then be retrieved using,e.g.
 
 ```python
 from openalea.phenotyping_data.fetch import fetch_data, list_data, fetch_all_data
@@ -465,7 +475,7 @@ about:
 ```
 
 - You can also provide a conda/environment.yml file that will ease maintainers developing in a isolated environment, and can also be used by readthedoc:
-- 
+-
 ```yaml
 name: mypkg_dev
 channels:
@@ -514,7 +524,7 @@ jobs:
 
 This action will build the package on a matrix of operating systems (`[ubuntu-latest , macos-latest , windows-latest]`) and Python versions (`[3.8, 3.9, 3.10, 3.11, 3.12]`) every time a new commit is pushed.
 
-To enable a new upload to openalea3 conda channel, just create a tag/release starting with `v` on your github master. 
+To enable a new upload to openalea3 conda channel, just create a tag/release starting with `v` on your github master.
 To summarize we recommend the following development workflow: create branches, make pull request, review them, merge into master, and create a new tag release from github web interface.If you followed the guideline above, the tag wll be propagated to the package metadata and to the conda package.
 
 ## Documentation
