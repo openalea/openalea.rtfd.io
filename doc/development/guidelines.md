@@ -487,7 +487,7 @@ on:
 
 jobs:
   build:
-    uses: openalea/github-action-conda-build/.github/workflows/conda-package-build.yml@conda_forge_pinning
+    uses: openalea/github-action-conda-build/.github/workflows/conda-package-build.yml@main
     secrets:
       anaconda_token: ${{ secrets.ANACONDA_TOKEN }}
 ```
