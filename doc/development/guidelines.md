@@ -491,8 +491,8 @@ jobs:
       anaconda_token: ${{ secrets.ANACONDA_TOKEN }}
 ```
 
-This action will fire a build of the package on for ubuntu/python 3.12 at each pull request, a build for a matrix of operating systems (`[ubuntu-latest , macos-latest , windows-latest]`) with python 12 at each merge on the master, 
-and a build on all os and a bunch of python versions (`[3.9, 3.10, 3.11, 3.12]`) at each tag or openalea release.
+This action will fire a build of the package on for ubuntu/python 3.12 at each pull request, a build for a matrix of operating systems (`[ubuntu-latest , macos-latest , macos-13, windows-latest]`) with python 12 at each merge on the master, 
+and a build on all os and all current stable python versions (cf. [python version status](https://devguide.python.org/versions/), i.e. `[3.9, 3.10, 3.11, 3.12]` as of today) at each openalea release.
 
 The upload of openalea3 channel will occur:
     - with label 'latest' at each tag starting with 'v' on master
