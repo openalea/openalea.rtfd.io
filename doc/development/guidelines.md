@@ -403,7 +403,6 @@ build:
   noarch: python
   # define string to remove trailing hash at the end of conda package name
   string: py{{ PY_VER }}
-  preserve_egg_dir: True
   # pip install options mainly ensure that dependencies are handled by conda (and not pip)
   # --no-deps ensure pip will not install deps not declared in meta.yaml (but declared in pyproject.toml)
   # --no-build-isolation ensure pip will not replace build deps declared in meta.yaml (and declared in pyproject.toml)
@@ -493,14 +492,18 @@ jobs:
 ```
 
 This action will fire a build of the package on for ubuntu/python 3.12 at each pull request, a build for a matrix of operating systems (`[ubuntu-latest , macos-latest , windows-latest]`) with python 12 at each merge on the master, 
-and a build on all os and a bunch of python versions (`[3.9, 3.10, 3.11, 3.12]`) at each openalea release.
+and a build on all os and a bunch of python versions (`[3.9, 3.10, 3.11, 3.12]`) at each tag or openalea release.
 
 The upload of openalea3 channel will occur:
-	- with label 'latest' at each merge on master or new tag starting with 'v' on master
-	- with label 'main' at each release publication (release creation on github repo).
-	
-To summarize we recommend the following development workflow: create branches (local debug), make pull request (CI on one os/one python), review them, merge into master (multi os + upload on 'latest'), create tags (multi os + upload on 'latest'). 
-Release are handled collectively : do not create release on your own if you are not involved in an openalea release process.If you follow the guidelines above, the tag wll be propagated to the package metadata and to the conda package.
+    - with label 'latest' at each tag starting with 'v' on master
+    - with label 'main' at each release publication [GitHub release](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository).
+
+To summarize we recommend the following development workflow: 
+    - create branches (local debug)
+    - make pull request (=> CI on one os/one python), ask review from another developer.
+    - merge into master (=> CI multi os)
+    - create tags (=> upload on 'latest'). If you follow the guidelines above, this tag wll be used as package version by setuptools and conda.
+Release are handled collectively : do not create release on your own if you are not involved in an openalea release process.
 
 ## Documentation
 
