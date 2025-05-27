@@ -2,4 +2,4 @@
 Help
 ====
 
-Need help ? Want to contact someone ? Contact prenon.nom@machin.fr.
+Need help ? Please Contact openalea@cirad.fr
