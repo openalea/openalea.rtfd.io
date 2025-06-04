@@ -231,7 +231,7 @@ channels = [
 ]
 dependencies = [
     "openalea.plantgl",
-    "openalea.deploy",
+    "openalea.mtg",
     ...
 ]
 ```
