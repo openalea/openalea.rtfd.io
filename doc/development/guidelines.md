@@ -331,38 +331,6 @@ with as_file(datadir / 'data_fileA.csv') as p:
    data1 = pandas.read_csv(p)
 ```
 
-### Openalea alternative: using openalea.deploy.shared_data approach
-
-This approach is working for openalea packages relying on a setup.py, as openalea currently warrants unzipped source code distribution in this case. However, the above method should now be preferred, as this constraint can be released in the future.
-
-In this case your layout will look like:
-
-```bash
-pkg_name
-├── ...
-|── share/data                   ┐
-|       ├── __init__.py          │ Data files
-|       ├── data_fileA.csv       |
-|       └── data_fileB.csv       ┘
-├── src                          ┐
-│   └── openalea/pkg_name        │
-│       ├── __init__.py          │ Package source code
-│       ├── moduleA.py           │
-│       └── moduleB.py           ┘
-```
-
-You can then access the data files at runtime using [`openalea.deploy`](https://github.com/openalea/deploy).:
-
-```python
-from openalea.deploy.shared_data import shared_data
-import openalea.pkg_name
-
-data_dir = shared_data(openalea.pkg_name)
-```
-
-and then access the data files using the `data_dir` '/' method.
-
-One example can be found in [`openalea.rose` package](https://github.com/openalea-incubator/rose/blob/paper/src/openalea/rose/data.py)
 
 ### Large data files
 
