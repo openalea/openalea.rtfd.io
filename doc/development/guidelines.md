@@ -178,6 +178,10 @@ include-package-data = false # force explicit declaration of data (disable autom
 
 # enable dynamic version based on git tags
 [tool.setuptools_scm]
+# Format version to ease alignment with conda/meta.yaml tag-based versioning
+fallback_version = "0.0.0.dev0"
+version_scheme = "guess-next-dev"
+local_scheme = "no-local-version"
 ```
 
 If your package needs an extension module, you should check the [dedicated `setuptools` documentation](https://setuptools.pypa.io/en/latest/userguide/ext_modules.html#building-extension-modules)
@@ -353,7 +357,7 @@ Implications are that:
 
 - all dependence should also be available from a conda channel or via `pip`.
 - package should be built and uploaded to the `openalea3` conda channel. A [dedicated CI/CD pipeline](#ci-cd) can be used for this purpose.
-- use GIT_DESCRIBE_TAG conda variable to automatically set conda version to your last tag. It is important to remove the 'v' prefix, for conda to correctly infer the last version number.
+- ensure that the version number match the node set in pyproject.toml (see example below for dynamic setuptools_scm version).
 
 We also recommend re-using the information declared in your pyproject.toml to source only once your list of dependencies.
 
@@ -363,13 +367,20 @@ A minimal conda build information could be provided by adding the following gene
 {% set pyproject = load_file_data('../pyproject.toml', from_recipe_dir=True) %}
 {% set name = pyproject.get('project').get('name') %}
 {% set description = pyproject.get('project').get('description') %}
-{% set version = GIT_DESCRIBE_TAG | replace("v", "") %}
 {% set license = pyproject.get('project').get('license') %}
 {% set home = pyproject.get('project', {}).get('urls', {}).get('Homepage', '') %}
 {% set build_deps = pyproject.get("build-system", {}).get("requires", []) %}
 {% set deps = pyproject.get('project', {}).get('dependencies', []) %}
 {% set conda_deps = pyproject.get('tool', {}).get('conda', {}).get('environment', {}).get('dependencies',[]) %}
 
+{# Align version with the one computed by setuptools_scm #}
+{% set base_tag = GIT_DESCRIBE_TAG | default("0.0.0.dev0") | replace("v", "") %}
+{% set distance = GIT_DESCRIBE_NUMBER | default("0") | int %}
+{% set base_parts = base_tag.split('.') %}
+{% set micro = base_parts[2] | int %}
+{% set next_version = base_parts[0] + "." + base_parts[1] + "." + (micro + 1)|string %}
+{% set scm_version = next_version + ".dev" + distance|string if distance > 0 else base_tag %}
+{% set version = environ.get('SETUPTOOLS_SCM_PRETEND_VERSION', scm_version) %}
 
 package:
   name: {{ name }}
