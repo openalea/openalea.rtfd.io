@@ -179,7 +179,7 @@ include-package-data = false # force explicit declaration of data (disable autom
 # enable dynamic version based on git tags
 [tool.setuptools_scm]
 # Format version to ease alignment with conda/meta.yaml tag-based versioning
-fallback_version = "0.0.0dev0"
+fallback_version = "0.0.0.dev0"
 version_scheme = "guess-next-dev"
 local_scheme = "no-local-version"
 ```
