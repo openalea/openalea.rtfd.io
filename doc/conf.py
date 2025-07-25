@@ -22,7 +22,7 @@ copyright = '2007 - 2025, OpenAlea Consortium'
 author = 'OpenAlea Consortium'
 
 # The full version, including alpha/beta/rc tags
-release = '1.0.0a'
+release = '1.0.0'
 
 
 # -- General configuration ---------------------------------------------------
@@ -87,6 +87,7 @@ html_theme_options = {
         "**/*": ["page-toc", "edit-this-page", "sourcelink"],
         "examples/no-sidebar": [],
     },
+    "use_edit_page_button": True,
     }
 
 # Add any paths that contain custom static files (such as style sheets) here,
@@ -96,6 +97,15 @@ html_static_path = ['_static']
 html_logo = "_static/openalea_web.svg"
 html_favicon = "_static/openalea_web.svg"
 html_show_sourcelink = True
+
+# Add infomation about github repository
+html_context = {
+    # "github_url": "https://github.com", # or your GitHub Enterprise site
+    "github_user": "openalea",
+    "github_repo": "openalea.rtfd.io",
+    "github_version": "master",
+    "doc_path": "doc",
+}
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.

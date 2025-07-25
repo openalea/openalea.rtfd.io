@@ -43,7 +43,7 @@ from openalea.pkg_name import module_name
 ```
 
 - Also, we recommend to use the [src-layout](https://setuptools.pypa.io/en/latest/userguide/package_discovery.html#src-layout) for the source code of the project.
-  That yield the following basic layout for your package: 
+  That yield the following basic layout for your package:
 
 ```bash
 pkg_name
@@ -52,12 +52,12 @@ pkg_name
 ├── CONTRIBUTING.md            │
 ├── README.md                  │ Package metadata and build configuration
 ├── LICENSE                    │
-├── pyproject.toml             ┘ 
+├── pyproject.toml             ┘
 ├── doc                        ┐
 │   └── index.md               │
 │   └── ...                    │  Package documentation
 │   └── examples               │
-│   └──── notebook1.ipynb      │ 
+│   └──── notebook1.ipynb      │
 │   └──── ...                  ┘
 ├── src                        ┐
 │   └── openalea/pkg_name      │
@@ -83,7 +83,17 @@ The README file should include the following information:
   - Compatible `Python` version: [![Python Version](https://img.shields.io/badge/python-3.8%20%7C%203.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-blue)](https://www.python.org/downloads/)
   - License: [![License](https://img.shields.io/badge/License--CeCILL-C-blue)](https://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html)
   - Version of the package on Anaconda: [![Anaconda-Server Badge](https://anaconda.org/openalea3/mtg/badges/version.svg)](https://anaconda.org/openalea3/mtg)
-- installation instructions: how to install the package for user (using `conda` / `mamba`) and for developer (using `conda` / `mamba` and `pip -e`). For more information about how to declare package dependencies for usage and development, cf. [pyproject.toml](#pyprojecttoml) and [build the package](#building-the-package) sections. 
+ 
+```md
+# Package Name
+[![Docs](https://readthedocs.org/projects/mtg/badge/?version=latest)](https://mtg.readthedocs.io/)
+[![Build Status](https://github.com/openalea/mtg/actions/workflows/conda-package-build.yml/badge.svg?branch=master)](https://github.com/openalea/mtg/actions/workflows/conda-package-build.yml?query=branch%3Amaster)
+[![Python Version](https://img.shields.io/badge/python-3.8%20%7C%203.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-blue)](https://www.python.org/downloads/)
+[![License](https://img.shields.io/badge/License--CeCILL-C-blue)](https://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html)
+[![Anaconda-Server Badge](https://anaconda.org/openalea3/mtg/badges/version.svg)](https://anaconda.org/openalea3/mtg)
+## Description
+```
+- installation instructions: how to install the package for user (using `conda` / `mamba`) and for developer (using `conda` / `mamba` and `pip -e`). For more information about how to declare package dependencies for usage and development, cf. [pyproject.toml](#pyprojecttoml) and [build the package](#building-the-package) sections.
 ```bash
 # for user
 mamba create -n myenv -c openalea3 -c conda-forge openalea.my_pkg openalea.plantgl
@@ -92,7 +102,10 @@ mamba create -n myenv -c openalea3 -c conda-forge openalea.my_pkg openalea.plant
 git clone 'https://github.com/openalea/my_pkg.git'
 cd my_pkg
 mamba install --only-deps -c openalea3 -c conda-forge openalea.my_pkg
-pip install -e .
+pip install -e .[options]
+# [options] is optional, and allows to install additional dependencies 
+# defined in the [project.optional-dependencies] section of your 
+# pyproject.toml file (usually "dev", or "doc", ...)
 
 # (optionaly) for maintainer that need clean isolated env, or to start development (i.e. before first build)
 # (see conda section below on how to write environment.yml file)
@@ -124,7 +137,7 @@ This file should be a resource for developers anf users to know what has changed
 
 ## versioning
 - We recommend delegating the versioning of your package to the version control system (eg git), by using semantic versionning tags starting with `v`.
-[Semantic vernioning tags](https://semver.org/) are of the form : Major.minor.patch. Using CI, every time a new tag is created and merged in the master branch, 
+[Semantic vernioning tags](https://semver.org/) are of the form : Major.minor.patch. Using CI, every time a new tag is created and merged in the master branch,
 a new conda package will be uploaded on conda-forge using that tag as version number.
 - This tag can also be retrieved automatically by your build system (declared in pyproject) to correctly fill your package metadata and provide user or tools a way to access the version using importlib
 - Optionally (but still recommended), for convenience, you can expose the version to user/tools by setting the __version__ attribute of your package in its src/openalea/my_pkg/__ini__.py file:
@@ -151,23 +164,26 @@ We also recommend using setuptools_scm as a companion tool to handle automatical
 ```toml
 [build-system]
 requires = [
-    "setuptools", 
+    "setuptools",
     "setuptools_scm",
 ]
 build-backend = "setuptools.build_meta"
 
-# allow openalea to be a namespace package
+# where your source lies if you followed src layout
 [tool.setuptools.packages.find]
 where = ["src"]
 
-# enable dynamic versioning based on git tags
+[tool.setuptools]
+include-package-data = false # force explicit declaration of data (disable automatic inclusion)
+
+# enable dynamic version based on git tags
 [tool.setuptools_scm]
 ```
 
 If your package needs an extension module, you should check the [dedicated `setuptools` documentation](https://setuptools.pypa.io/en/latest/userguide/ext_modules.html#building-extension-modules)
 
 - Define the metadata of the project in the `[project]` section.
-This metadata should include the name of the project, the authors, the description, the README file, the license file, 
+This metadata should include the name of the project, the authors, the description, the README file, the license file,
 the Python version required, the classifiers, the dynamic metadata, and the dependencies that can be found on pypi.
 For dependency that are distributed via conda only (like all openalea package), please use a separate section to keep your pyproject fully functionnal with pip
 
@@ -197,6 +213,7 @@ classifiers = [
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
   "Topic :: Scientific/Engineering",
+  "Framework :: OpenAlea",
 ]
 
 # you can list here all dependencies that are pip-instalable, and that have a name identical to the one used by conda (to allow reuse of this list in meta.yaml)
@@ -214,7 +231,7 @@ channels = [
 ]
 dependencies = [
     "openalea.plantgl",
-    "openalea.deploy",
+    "openalea.mtg",
     ...
 ]
 ```
@@ -224,8 +241,8 @@ dependencies = [
 ```toml
 [project.optional-dependencies]
 test = [
-  "pytest >=6",
-  "pytest-cov >=3",
+  "pytest",
+  "nbmake",
   ...
 ]
 dev = [
@@ -261,13 +278,13 @@ Changelog = "https://github.com/openalea/pkg_name/releases"
 ```
 ## Data files
 
-You might want to include data files in your package, whether you need it to test your package, or allows user to run tutorials without downloading the sources via git. 
-For most cases, we recommend hosting the data directly in the pkg source directory. However, if the size of data files becomes large (e.g. for realistic images or databases) they will bloat your source directory and slow down the installation and/or CI workflow. 
+You might want to include data files in your package, whether you need it to test your package, or allows user to run tutorials without downloading the sources via git.
+For most cases, we recommend hosting the data directly in the pkg source directory. However, if the size of data files becomes large (e.g. for realistic images or databases) they will bloat your source directory and slow down the installation and/or CI workflow.
 In such cases, we recommend storing you data on public spaces ([GitHub](https://github.com) or [Zenodo](https://zenodo.org/)), and provide access in a dedicated module using [Pooch](https://www.fatiando.org/pooch). Both approaches are detailed below.
 
 ### Distributing data with the package sources
 
-This approach is detailed in [`setuptools` documentation](https://setuptools.pypa.io/en/latest/userguide/datafiles.html#accessing-data-files-at-runtime). This approach should be preferred to a direct manipulation of the package’s \_\_file\_\_ attribute, as the later can fail if your data are distributed via zip, egg or wheels. 
+This approach is detailed in [`setuptools` documentation](https://setuptools.pypa.io/en/latest/userguide/datafiles.html#accessing-data-files-at-runtime). This approach should be preferred to a direct manipulation of the package’s \_\_file\_\_ attribute, as the later can fail if your data are distributed via zip, egg or wheels.
 
 The recommended way of organising your data is to add a data folder in your package source folder, and add a generic MANIFEST.in file at the root of the package:
 
@@ -281,7 +298,7 @@ pkg_name
 │       ├── moduleA.py           │
 │       └── moduleB.py           ┘
 |       └── data                    ┐
-|          ├── data_fileA.csv       | 
+|          ├── data_fileA.csv       |
 |          └── data_fileB.csv       | Data files
 |          └── data_subdir          |
 |            └──data_fileC.csv      ┘
@@ -296,7 +313,7 @@ recursive-include src/openalea/pkg_name/data *
 Using this layout, no further modification should be brought to your package, provided you are using a toml file.
 If you are using a setup.py file, you should manually set include-package-data option to true and use find_namespace_package to scan src.
 
-You can then access data using importlib.resources. It is currently recommended to use `importlib_resources` backport module for Python 3.7 and above, as importlib.resources only works for python 3.10 and above. The only difference is to replace the underscore by a point in the following examples.: 
+You can then access data using importlib.resources. It is currently recommended to use `importlib_resources` backport module for Python 3.7 and above, as importlib.resources only works for python 3.10 and above. The only difference is to replace the underscore by a point in the following examples.:
 
 ```python
 from importlib.resources import files, as_file
@@ -314,38 +331,6 @@ with as_file(datadir / 'data_fileA.csv') as p:
    data1 = pandas.read_csv(p)
 ```
 
-### Openalea alternative: using openalea.deploy.shared_data approach
-
-This approach is working for openalea packages relying on a setup.py, as openalea currently warrants unzipped source code distribution in this case. However, the above method should now be preferred, as this constraint can be released in the future.
-
-In this case your layout will look like:
-
-```bash
-pkg_name
-├── ...
-|── share/data                   ┐
-|       ├── __init__.py          │ Data files
-|       ├── data_fileA.csv       |
-|       └── data_fileB.csv       ┘
-├── src                          ┐
-│   └── openalea/pkg_name        │
-│       ├── __init__.py          │ Package source code
-│       ├── moduleA.py           │
-│       └── moduleB.py           ┘
-```
-
-You can then access the data files at runtime using [`openalea.deploy`](https://github.com/openalea/deploy).:
-
-```python
-from openalea.deploy.shared_data import shared_data
-import openalea.pkg_name
-
-data_dir = shared_data(openalea.pkg_name)
-```
-
-and then access the data files using the `data_dir` '/' method.
-
-One example can be found in [`openalea.rose` package](https://github.com/openalea-incubator/rose/blob/paper/src/openalea/rose/data.py)
 
 ### Large data files
 
@@ -376,10 +361,19 @@ A minimal conda build information could be provided by adding the following gene
 
 ```yaml
 {% set pyproject = load_file_data('../pyproject.toml', from_recipe_dir=True) %}
+{% set name = pyproject.get('project').get('name') %}
+{% set description = pyproject.get('project').get('description') %}
+{% set version = GIT_DESCRIBE_TAG | replace("v", "") %}
+{% set license = pyproject.get('project').get('license') %}
+{% set home = pyproject.get('project', {}).get('urls', {}).get('Homepage', '') %}
+{% set build_deps = pyproject.get("build-system", {}).get("requires", []) %}
+{% set deps = pyproject.get('project', {}).get('dependencies', []) %}
+{% set conda_deps = pyproject.get('tool', {}).get('conda', {}).get('environment', {}).get('dependencies',[]) %}
+
 
 package:
-  name: {{ pyproject["project"]["name"] }}
-  version: {{ GIT_DESCRIBE_TAG  | replace("v", "") }}
+  name: {{ name }}
+  version: {{ version }}
 
 source:
   path: ..
@@ -387,40 +381,46 @@ source:
 build:
   noarch: python
   preserve_egg_dir: True
-  script: {{ PYTHON }} -m pip install . -vv
+  # pip install options mainly ensure that dependencies are handled by conda (and not pip)
+  # --no-deps ensure pip will not install deps not declared in meta.yaml (but declared in pyproject.toml)
+  # --no-build-isolation ensure pip will not replace build deps declared in meta.yaml (and declared in pyproject.toml)
+  # --ignore-installed ensure that compiled files (accidentally present in sources or uncleaned locally) will be overwritten
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-build-isolation -vv
 
 requirements:
-  build:
+  host:
     - python
-    {% for dep in pyproject["build-system"]["requires"] %}
-    - {{ dep.lower() }}
-    {% endfor %}
+    {% for dep in build_deps %}
+    - {{ dep }}
+    {% endfor  %}
 
   run:
-    - python {{ pyproject["project"]["requires-python"] }}
-    {% for dep in pyproject["project"]["dependencies"] %}
-    - {{ dep.lower() }}
+    - python
+    {% for dep in deps + conda_deps %}
+    - {{ dep }}
     {% endfor %}
 
 test:
   requires:
     - pytest
+    - nbmake
   imports:
-    - {{ pyproject["project"]["name"] }}
+    - {{ name }}
   source_files:
     - test/test_*.py
+    - doc/notebooks/*.ipynb
   commands:
-   - cd test
    - pytest -v
+   - pytest --nbmake
 
 about:
-  home: {{ pyproject["project"]["urls"]["Homepage"] }}
-  license: {{ pyproject["project"]["license"] }}
-  summary: {{ pyproject["project"]["description"] }}
+  home: {{ home }}
+  license: {{ license }}
+  summary: {{ description }}
 ```
 
 - You can also provide a conda/environment.yml file that will ease maintainers developing in a isolated environment, and can also be used by readthedoc:
-- 
+-
 ```yaml
 name: mypkg_dev
 channels:
@@ -469,7 +469,7 @@ jobs:
 
 This action will build the package on a matrix of operating systems (`[ubuntu-latest , macos-latest , windows-latest]`) and Python versions (`[3.8, 3.9, 3.10, 3.11, 3.12]`) every time a new commit is pushed.
 
-To enable a new upload to openalea3 conda channel, just create a tag/release starting with `v` on your github master. 
+To enable a new upload to openalea3 conda channel, just create a tag/release starting with `v` on your github master.
 To summarize we recommend the following development workflow: create branches, make pull request, review them, merge into master, and create a new tag release from github web interface.If you followed the guideline above, the tag wll be propagated to the package metadata and to the conda package.
 
 ## Documentation
@@ -599,6 +599,7 @@ html_theme_options = {
         "**/*": ["page-toc", "edit-this-page", "sourcelink"],
         "examples/no-sidebar": [],
     },
+    "use_edit_page_button": True,
   }
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -620,6 +621,14 @@ html_show_sphinx = True
 html_show_copyright = True
 # Output file base name for HTML help builder.
 htmlhelp_basename = project + '_documentation'
+# Add infomation about github repository
+html_context = {
+    # "github_url": "https://github.com", # or your GitHub Enterprise site
+    "github_user": "openalea",
+    "github_repo": "my_pkg",
+    "github_version": "main",
+    "doc_path": "doc",
+}
 
 # -- Options for LaTeX output ---------------------------------------------
 latex_elements = {
@@ -658,4 +667,9 @@ Also, the documentation should include notebook examples that illustrate the usa
 
 All packages should include tests to ensure that the code is working as expected. The tests should be stored in the `test` folder of the package, and should be written using the `pytest` framework.
 
-Also, all notebooks in the `doc/notebooks` folder should be tested using the `nbsphinx` framework and be functional.
+Also, all notebooks in the `doc/notebooks` folder should be tested using the `nbmake` framework and be functional.
+
+```python
+pytest test
+pytest --nbmake doc/notebooks
+```

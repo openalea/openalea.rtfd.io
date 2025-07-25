@@ -3,6 +3,10 @@
 
 [![Documentation Status](https://readthedocs.org/projects/sconsx/badge/?version=latest)](https://sconsx.readthedocs.io/en/latest/?badge=latest)
 
+# Description
+
+OpenAlea is an open source project primarily aimed at the plant research community. It is a distributed collaborative effort to develop Python libraries and tools that address the needs of current and future works in Plant Architecture modeling. OpenAlea includes modules to analyze, visualize, and model the functioning and growth of plant architecture.
+
 ## Institutes (Sponsors)
 
 OpenAlea is developed, maintained and mainly funded by three institutes: CIRAD, INRIA, and INRAE.
@@ -15,41 +19,13 @@ OpenAlea is licensed under the CeCILL-C free software license agreement.
 
 http://openalea.rtfd.io
 
-# Description
-
-OpenAlea is an open source project primarily aimed at the plant research community. It is a distributed collaborative effort to develop Python libraries and tools that address the needs of current and future works in Plant Architecture modeling. OpenAlea includes modules to analyze, visualize, and model the functioning and growth of plant architecture.
-
-This repository contains all the documentation published in the [official documentation of OpenAlea](http://openalea.rtfd.io/>).
-
-Information about OpenAlea can also be found in the wiki: https://github.com/openalea/openalea.rtfd.io/wiki
-
 # Installation
 
-# Install Miniforge 3
-
-The simplest way to install OpenAlea and all its dependencies is to use Miniforge 3:
-
-[Install Miniforge 3](https://github.com/conda-forge/miniforge)
-
-# Create OpenAlea environment:
-
-Once you have installed Miniforge, you will have access to Miniforge Prompt (Windows) or from a terminal (Mac/Linux).
-
-**Open Miniforge Prompt (Windows) or a terminal (Mac/Linux) and type:**
-
-```bash
-   mamba create -n openalea -c openalea3 openalea.plantgl openalea.lpy openalea.visualea openalea.mtg notebook -y
-```
-
-```bash
-   mamba activate openalea
-```
-
-You should now be in your "openalea" environment! Well Done!
+Installation procedure for OpenAlea is straightforward and can be done in a few steps. Please follow the installation instructions in the installation section.
 
 # Usage
 
-Tutorials to use the different features of OpenAlea can be found in the [documentation](https://openalea.readthedocs.io/en/latest/tutorials/index.html)
+Tutorials to use the different features of OpenAlea can be found in the tutorials section.
 
 # Troubleshooting
 
@@ -103,8 +79,8 @@ To update OpenAlea and its dependencies, activate your OpenAlea environment and 
 ## Contribution
 
 ### How to Contribute to OpenAlea
-The main way to contribute is to fork the package repository you are interested in on [GitHub](https://github.com/), 
-see the [How to](https://openalea.readthedocs.io/en/latest/development/contributing.html#how-to-contribute) in the Openalea documentation
+The main way to contribute is to fork the package repository you are interested in on [GitHub](https://github.com/openalea),
+see the [How to](https://openalea.readthedocs.io/en/latest/development/contributing.html#how-to-contribute) in the Openalea documentation.
 
 
 ## Additional Resources
