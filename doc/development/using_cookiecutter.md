@@ -28,11 +28,14 @@ import pandas as pd
 from openalea.plantgl.algo.view import view
 from openalea.plantgl.all import *
 
-view(Sphere())
+def display_sphere():
+    view(Sphere())
 
-a = np.array([1,2,3])
+def list_to_array(l):
+    return np.array(l)
 
-d = pd.DataFrame(a)
+def array_to_df(a):
+    return pd.DataFrame(a)
 ```
 
 And we want to integrate it into an OpenAlea project that follows the [guidelines](./guidelines.md).
@@ -60,6 +63,11 @@ For example here the kind of output:
   [6/8] description (Project short description.): this is an example           
   [7/8] pure_python [y/n] (y): 
   [8/8] version (0.0.1):
+```
+
+Then init the git repository:
+```commandline
+git init -b main
 ```
 
 At this stage 
@@ -97,23 +105,25 @@ MyProject/
     ├── __init__.py
     └── test_myproject.py
 ```
+
+### Incorporating existing code
 Now let's incorporate our code. According to `mycode.py` there are the following dependencies **numpy**, **pandas** and
-**openalea.plantgl**. `conda/environment.yaml` and `pyproject.toml` must be updated.
+**openalea.plantgl**. `conda/environment.yaml` and `pyproject.toml` can be updated as follows:
+The dependencies are added to the section **dependencies** of `conda/environment.yaml`
+
 ```yaml
 name: myproject_dev
 channels:
   - conda-forge
   - openalea3
 dependencies:
-  - python
-  - pip
+  ...
   - numpy
   - pandas
   - openalea.plantgl
-  - pip:
-      - -e '..[test,dev,doc]'
+  ...
 ```
-In the section `[project]` of the `pyproject.toml` we add the non openalea dependencies
+In the section `[project]` of the `pyproject.toml` file we add the non openalea dependencies
 ```toml
 ...
 [project]
@@ -124,7 +134,7 @@ dependencies = [
   "pandas",
 ]
 ```
-In the section `[tool.conda.environment]` of the `pyproject.toml` we add the openalea dependencies
+In the section `[tool.conda.environment]` of the `pyproject.toml` file we add the openalea dependencies
 ```toml
 ...
 [tool.conda.environment]
