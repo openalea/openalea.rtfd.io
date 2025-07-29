@@ -43,14 +43,14 @@ And we want to integrate it into an OpenAlea project that follows the [guideline
 ### Creating "a blanc" project
 
 Not mandatory but first create a conda environment with necessary package:
-```bash
-mamba create -n myenv -c conda-forge cruft
+```commandline
+mamba create -n myenv -c conda-forge cruft python
 mamba activate myenv
 ```
 
 Then create the new project, let's say we want `myproject` to be locally created in `/home/dev`, therefore in this directory
 run the following and answer the questions:
-```bash
+```commandline
 cruft create https://github.com/openalea/cookiecutter-openalea/
 ```
 For example here the kind of output:
@@ -144,5 +144,36 @@ dependencies = [
 ]
 ```
 
+### Create test
+Cruft have created a directory `test` and a file `test_myproject.py`. Complete and modify it to test the project, for example:
+```python
+from openalea.myproject import mycode
 
+def test_functions():
+    l = [1.0, 2.0, 3.0]
+    a = mycode.list_to_array(l)
+    d = mycode.array_to_df(a)
+    assert l == a.tolist()
+```
 
+### Building and testing locally the packqge
+
+First install necessary packages:
+```commandline
+mamba install conda-build pytest
+```
+Then in the root directory of the project run:
+```commandline
+conda-build conda -c conda-forge -c openalea3
+```
+
+Once the package build and test passed localy, it is possible to push MyProject to the remote repository.
+Before that the repository must be created in `openalea` or `openalea-incubator` when it is done by one of the administrators.
+The project can be pushed as follows:
+```bash
+git status # to check the changes
+git add . # to add all files that changed
+git commit -m '1st commit' 
+git remote add origin https://github.com/openalea-incubator/MyProject.git 
+git push -u origin main
+```
