@@ -15,16 +15,28 @@ Let's consider the following code `mycode.py`:
 import numpy as np
 import pandas as pd
 
-from openalea.plantgl.algo.view import view
 from openalea.plantgl.all import *
 
 def display_sphere():
-    view(Sphere())
+    '''
+    This function display a sphere in the plantgl 3D viewer
+    '''
+    Viewer.display(Sphere())
 
 def list_to_array(l):
+    '''
+    convert a list of float to a numpy array
+    :param l:
+    :return: numpy array
+    '''
     return np.array(l)
 
 def array_to_df(a):
+    '''
+    convert a numpy array to a dataframe
+    :param a: numpy array
+    :return: DataFrame
+    '''
     return pd.DataFrame(a)
 ```
 
