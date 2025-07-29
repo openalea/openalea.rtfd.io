@@ -8,16 +8,6 @@
 follows the [OpenAlea development guidelines](./guidelines.md), and provides all necessary files and configurations to 
 develop a new package up to the continuous integration and package publication on a conda channel.
 
-## Typical workflow
-
-1. Create a new package using `cruft create https://github.com/openalea/cookiecutter-openalea/`
-2. Initiate your git repository: `git init` (needed for `setuptools_scm` to work properly)
-3. Install the package in editable mode with dev dependencies: `mamba env create -f conda/environment.yml`
-4. Activate the environment: `mamba activate my_project_dev` # Replace `my_project` with your project slug defined in `cookiecutter.json`
-5. Implement your package code in the `src/` directory, add your tests in the `tests/` directory, and documentation in the `doc/` directory.
-6. Build the documentation: `cd doc && make html`
-7. Run tests: `pytest`
-
 ## How to create a new OpenAlea package from existing code
 
 Let's consider the following code `mycode.py`:
@@ -42,18 +32,18 @@ And we want to integrate it into an OpenAlea project that follows the [guideline
 
 ### Creating "a blanc" project
 
-Not mandatory but first create a conda environment with necessary package:
+Not mandatory but recommended, first create a conda environment with `cruft` and `python` package:
 ```commandline
-mamba create -n myenv -c conda-forge cruft python
+mamba create -n myenv -c conda-forge cruft python=3.12
 mamba activate myenv
 ```
 
 Then create the new project, let's say we want `myproject` to be locally created in `/home/dev`, therefore in this directory
-run the following and answer the questions:
+run the following command and answer the questions:
 ```commandline
 cruft create https://github.com/openalea/cookiecutter-openalea/
 ```
-For example here the kind of output:
+For example, here the kind of output:
 ```
   [1/8] full_name (Jane Doe): Firstname Lastname
   [2/8] email (jane.doe@example.com): first.last@example.com
@@ -70,7 +60,7 @@ Then init the git repository:
 git init -b main
 ```
 
-At this stage 
+At this stage, the local directory looks as follows:
 ```bash
 MyProject/
 ├── AUTHORS.md
@@ -80,6 +70,8 @@ MyProject/
 │   ├── environment.yml
 │   └── meta.yaml
 ├── CONTRIBUTING.md
+├── .coveragerc
+├── .cruft.json
 ├── doc
 │   ├── api.md
 │   ├── conf.py
@@ -91,10 +83,15 @@ MyProject/
 │   ├── installation.md
 │   ├── Makefile
 │   └── usage.md
+├── .github
+│   └── workflows
+│       └── conda-package-build.yml
+├── .gitignore
 ├── LICENSE
 ├── MANIFEST.in
 ├── pyproject.toml
 ├── README.md
+├── .readthedocs.yml
 ├── src
 │   └── openalea
 │       ├── myproject
@@ -145,7 +142,7 @@ dependencies = [
 ```
 
 ### Create test
-Cruft have created a directory `test` and a file `test_myproject.py`. Complete and modify it to test the project, for example:
+Cruft has created a directory `test` and a file `test_myproject.py`. Complete and modify it to test the project, for example:
 ```python
 from openalea.myproject import mycode
 
@@ -157,8 +154,7 @@ def test_functions():
 ```
 
 ### Building and testing locally the packqge
-
-First install necessary packages:
+Now let's locally build the package. First install the necessary packages:
 ```commandline
 mamba install conda-build pytest
 ```
@@ -167,9 +163,9 @@ Then in the root directory of the project run:
 conda-build conda -c conda-forge -c openalea3
 ```
 
-Once the package build and test passed localy, it is possible to push MyProject to the remote repository.
-Before that the repository must be created in `openalea` or `openalea-incubator` when it is done by one of the administrators.
-The project can be pushed as follows:
+Once the package builds correctly with test passed, it is possible to push MyProject to a remote repository.
+Before that the remote repository must be created. Let's assume `MyProject` was created on `openalea-incubator`.
+The project can then be pushed as follows:
 ```bash
 git status # to check the changes
 git add . # to add all files that changed
@@ -177,3 +173,6 @@ git commit -m '1st commit'
 git remote add origin https://github.com/openalea-incubator/MyProject.git 
 git push -u origin main
 ```
+
+### Doc, examples, etc.
+Adapt, change doc and examples as you need.
