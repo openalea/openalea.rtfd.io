@@ -1,4 +1,4 @@
-## Cookiecutter
+# Cookiecutter
 
 "Cookiecutter is an open source library for building coding project templates" [see cookiecutter.io](https://www.cookiecutter.io/).
 
@@ -187,4 +187,4 @@ git push -u origin main
 ```
 
 ### Doc, examples, etc.
-Adapt, change doc and examples as you need.
+Documentation configuration is defined in [cookiecutter-openalea](https://github.com/openalea/cookiecutter-openalea/). Also, template files for documentation and examples are already embedded. This should ensure coherent and homogeneous websites among all openalea packages documentation. Of course, feel free to adapt and change for your needs.
