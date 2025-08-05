@@ -9,4 +9,5 @@ Development
 
     contributing.rst
     guidelines.md
+    using_cookiecutter.md
     how-to-release.md
