@@ -135,7 +135,7 @@ This document will help building a community around your package. It sets what y
 
 This file should be a resource for developers anf users to know what has changed in the project over time. It should include a list of changes for each version of the project.
 
-## versioning
+## Versioning
 - We recommend delegating the versioning of your package to the version control system (eg git), by using semantic versionning tags starting with `v`.
 [Semantic vernioning tags](https://semver.org/) are of the form : Major.minor.patch. Using CI, every time a new tag is created and merged in the master branch,
 a new conda package will be uploaded on conda-forge using that tag as version number.
