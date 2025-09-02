@@ -62,6 +62,53 @@
           </td>
 
       </tr>
+
+    <tr>
+        <td align='left'>
+          <a href="https://github.com/openalea/adel">adel</a>
+        </td>
+        <td align='left'>
+
+        </td>
+        <td align='left'>
+          <a href="https://github.com/openalea/adel/stargazers">
+            <img src="https://img.shields.io/github/stars/openalea/adel.svg?style=social&label=Stars&maxAge=2592000">
+          </a>
+        </td>
+        <td align='left'>
+          <a href="https://github.com/openalea/adel/graphs/contributors">
+            <img src="https://img.shields.io/github/contributors/openalea/adel.svg?style=social&label=Contributors&maxAge=2592000&logo=GitHub">
+          </a>
+        </td>
+
+          <td align='left'>
+            <a href="https://anaconda.org/openalea3/openalea.adel">
+              <img src="https://anaconda.org/openalea3/openalea.adel/badges/downloads.svg">
+            </a>
+          </td>
+
+
+            <td align='left'>
+              <a href="https://anaconda.org/openalea3/openalea.adel">
+                <img src="https://anaconda.org/openalea3/openalea.adel/badges/license.svg">
+              </a>
+            </td>
+
+
+          <td align='left'>
+            <a href="https://adel.readthedocs.io">
+              <img src="https://readthedocs.org/projects/adel/badge/?version=latest">
+            </a>
+          </td>
+
+
+          <td align='left'>
+            <a href="https://anaconda.org/openalea3/openalea.adel">
+              <img src="https://anaconda.org/openalea3/openalea.adel/badges/version.svg">
+            </a>
+          </td>
+
+      </tr>
       
       <tr>
         <td align='left'>
