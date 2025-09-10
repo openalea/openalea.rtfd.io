@@ -22,7 +22,7 @@ Install
 Install Visualea and Weberpenn for this tutorial
 ::
 
-    conda install -c openalea openalea.weberpenn openalea.visualea
+    conda install -c openalea3 -c conda-forge openalea.weberpenn openalea.visualea
 
 Then, execute this
 ::
