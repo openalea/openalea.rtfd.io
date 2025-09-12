@@ -123,8 +123,8 @@ There are two files to update with the package dependencies: `conda/environment.
 used for development purpose, the later is used for conda packaging.
 
 According to `mycode.py` there are the following dependencies **numpy**, **pandas** and **openalea.plantgl**.
-In the section **dependencies** of `conda/environment.yaml` only openalea dependencies are added, the non openalea dependencies 
-are managed by `pip`, as follows:
+In the section **dependencies** of `conda/environment.yaml` only openalea dependencies are added, non openalea dependencies 
+are managed by `pip`:
 
 ```yaml
 name: myproject_dev
@@ -136,7 +136,7 @@ dependencies:
   - openalea.plantgl
   ...
 ```
-In `dependencies` of the section `[project]` of the `pyproject.toml` file we add the non openalea dependencies
+In `dependencies` of the section `[project]` of the `pyproject.toml` file we add non openalea dependencies
 ```toml
 [project]
 name = "openalea.myproject"
@@ -146,7 +146,7 @@ dependencies = [
   "pandas",
 ]
 ```
-In the section `[tool.conda.environment]` of the `pyproject.toml` file we add the openalea dependencies
+In the section `[tool.conda.environment]` of the `pyproject.toml` file we add openalea dependencies
 ```toml
 [tool.conda.environment]
 ...
