@@ -69,6 +69,7 @@ For example, here the kind of output:
 
 Then init the git repository:
 ```commandline
+cd MyProject
 git init -b main
 ```
 
