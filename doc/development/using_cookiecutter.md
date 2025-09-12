@@ -176,7 +176,7 @@ You can find details of the first recommended solution in [Building the package]
 
 For the second solution, first install the necessary packages:
 ```commandline
-mamba install conda-build pytest
+mamba install conda-build
 ```
 Then in the root directory of the project run:
 ```commandline
