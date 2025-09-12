@@ -42,6 +42,15 @@ The requests for the release are:\
 We choose to rely on CI/CD to build `OpenAlea` packages. This allows us to automate the build process, ensuring that all packages are built consistently and reliably. The CI/CD pipeline is extensively documented in the [dedicated Development Guidelines](guidelines.md#ci-cd) and in the [dedicated OpenAlea github action documentation](https://github.com/openalea/action-build-publish-anaconda/blob/main/doc/workflows/openalea_ci/README.md).
 
 However, during the development phase, you may want to build and test your package locally, without the hassle to commit and push changes (sometimes multiple times) to test the building process. To do so, we recommand to use the [VS-Code GitHub Local Actions extension](https://marketplace.visualstudio.com/items?itemName=SanjulaGanepola.github-local-actions), that allows you to run the GitHub Actions locally inside your IDE, without messing up your local environment (as it can be the case using directly `conda-build`).
+If you are note using VS-Code, you can directly use [act](https://github.com/nektos/act) to run locally the GitHub 
+Action locally. First install `act` under your environment:
+```commandline
+mamba install act -c conda-forge
+```
+Then under the root folder of your project, run the following:
+```commandline
+act pull_request -s ANACONDA_TOKEN=""
+```
 
 ```{note}
 One (minor) drawback with this solution is that the version number of your package may not be updated automatically, and thus probably not in sync with the version created in the CI/CD pipeline that would be uploaded to your conda channel.
