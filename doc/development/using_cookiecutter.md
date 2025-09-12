@@ -46,7 +46,7 @@ And we want to integrate it into an OpenAlea project that follows the [guideline
 
 Not mandatory but recommended, first create a conda environment with `cruft` and `python` package:
 ```commandline
-mamba create -n myenv -c conda-forge cruft python=3.12
+mamba create -n myenv -c conda-forge cruft python=3.13
 mamba activate myenv
 ```
 
@@ -165,7 +165,7 @@ def test_functions():
     assert l == a.tolist()
 ```
 
-### Building and testing locally the packqge
+### Building and testing locally the package
 Now let's locally build the package. First install the necessary packages:
 ```commandline
 mamba install conda-build pytest
