@@ -119,9 +119,12 @@ MyProject/
 ### Incorporating existing code
 First, we copy or move our code `mycode.py` to `src/openalea/myproject/`.
 
-Now let's incorporate our code. According to `mycode.py` there are the following dependencies **numpy**, **pandas** and
-**openalea.plantgl**. `conda/environment.yaml` and `pyproject.toml` can be updated as follows:
-The dependencies are added to the section **dependencies** of `conda/environment.yaml`
+There are two files to update with the package dependencies: `conda/environment.yaml` and `pyproject.toml`. The former is
+used for development purpose, the later is used for conda packaging.
+
+According to `mycode.py` there are the following dependencies **numpy**, **pandas** and **openalea.plantgl**.
+In the section **dependencies** of `conda/environment.yaml` only openalea dependencies are added, the non openalea dependencies 
+are managed by `pip`, as follows:
 
 ```yaml
 name: myproject_dev
@@ -130,14 +133,11 @@ channels:
   - openalea3
 dependencies:
   ...
-  - numpy
-  - pandas
   - openalea.plantgl
   ...
 ```
-In the section `[project]` of the `pyproject.toml` file we add the non openalea dependencies
+In `dependencies` of the section `[project]` of the `pyproject.toml` file we add the non openalea dependencies
 ```toml
-...
 [project]
 name = "openalea.myproject"
 ...
@@ -148,7 +148,6 @@ dependencies = [
 ```
 In the section `[tool.conda.environment]` of the `pyproject.toml` file we add the openalea dependencies
 ```toml
-...
 [tool.conda.environment]
 ...
 dependencies = [
