@@ -117,7 +117,7 @@ MyProject/
 ```
 
 ### Incorporating existing code
-First, we copy or move our code `mycode.py` to `src/openalea`.
+First, we copy or move our code `mycode.py` to `src/openalea/myproject/`.
 
 Now let's incorporate our code. According to `mycode.py` there are the following dependencies **numpy**, **pandas** and
 **openalea.plantgl**. `conda/environment.yaml` and `pyproject.toml` can be updated as follows:
