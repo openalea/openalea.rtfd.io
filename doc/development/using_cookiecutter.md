@@ -166,7 +166,15 @@ def test_functions():
 ```
 
 ### Building and testing locally the package
-Now let's locally build the package. First install the necessary packages:
+Now let's locally build the package. 
+
+There are two possibilities. We recommend to use a VS-Code plugin or directly [act](https://github.com/nektos/act) to 
+run the OpenAlea GitHub Action locally. Or, you can use `conda-build` to build and run tests locally. However, that can 
+messing up your local environment and that does not run the remote Openalea CI.
+
+You can find details of the first recommended solution in [Building the package](https://openalea.readthedocs.io/en/latest/development/how-to-release.html).
+
+For the second solution, first install the necessary packages:
 ```commandline
 mamba install conda-build pytest
 ```
