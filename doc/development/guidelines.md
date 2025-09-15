@@ -538,7 +538,7 @@ It is a key practice for ensuring the quality of the software and the reliabilit
 
 Within the OpenAlea community, we use a custom-made [GitHub Actions](https://github.com/openalea/action-build-publish-anaconda) to build and deploy the packages to the `openalea3` conda channel.
 
-The only thing you need to do is to add a `.github/workflows/conda-build.yml` file to your project with the following content:
+The only thing you need to do is to add a `.github/workflows/openalea_ci.yml` file to your project with the following content:
 
 ```yaml
 name: Building Package
@@ -556,12 +556,12 @@ on:
 
 jobs:
   build:
-    uses: openalea/github-action-conda-build/.github/workflows/conda-package-build.yml@main
+    uses: openalea/action-build-publish-anaconda/.github/workflows/openalea_ci.yml@main
     secrets:
       anaconda_token: ${{ secrets.ANACONDA_TOKEN }}
 ```
 
-This action will build the package on a matrix of operating systems (`[ubuntu-latest , macos-latest , windows-latest]`) and Python versions (`[3.8, 3.9, 3.10, 3.11, 3.12]`) every time a new commit is pushed.
+This action will build the package on a matrix of operating systems (`[ubuntu-latest , macos-13, macos-latest , windows-latest]`) and Python versions (auto-fetched from `conda-forge`, at the time of writing - 09-2025 : `[3.10, 3.11, 3.12, 3.13]` -) every time a new commit is pushed.
 
 To enable a new upload to openalea3 conda channel, just create a tag/release starting with `v` on your github master.
 To summarize we recommend the following development workflow: create branches, make pull request, review them, merge into master, and create a new tag release from github web interface.If you followed the guideline above, the tag wll be propagated to the package metadata and to the conda package.
