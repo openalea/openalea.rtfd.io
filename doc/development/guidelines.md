@@ -474,7 +474,8 @@ source:
 
 build:
   noarch: python
-  preserve_egg_dir: True
+  # define string to remove trailing hash at the end of conda package name
+  string: py{{ PY_VER }}
   # pip install options mainly ensure that dependencies are handled by conda (and not pip)
   # --no-deps ensure pip will not install deps not declared in meta.yaml (but declared in pyproject.toml)
   # --no-build-isolation ensure pip will not replace build deps declared in meta.yaml (and declared in pyproject.toml)
@@ -541,18 +542,20 @@ Within the OpenAlea community, we use a custom-made [GitHub Actions](https://git
 The only thing you need to do is to add a `.github/workflows/conda-build.yml` file to your project with the following content:
 
 ```yaml
-name: Building Package
+name: build_publish_anaconda
 
 on:
   push:
     branches:
-      - '**'
+      - main
+      - master
     tags:
       - 'v*'
   pull_request:
     branches:
       - '**'
-
+  release:
+    types: [published]
 
 jobs:
   build:
@@ -561,10 +564,19 @@ jobs:
       anaconda_token: ${{ secrets.ANACONDA_TOKEN }}
 ```
 
-This action will build the package on a matrix of operating systems (`[ubuntu-latest , macos-latest , windows-latest]`) and Python versions (`[3.8, 3.9, 3.10, 3.11, 3.12]`) every time a new commit is pushed.
+This action will fire a build of the package on for ubuntu/python 3.12 at each pull request, a build for a matrix of operating systems (`[ubuntu-latest , macos-latest , macos-13, windows-latest]`) with python 12 at each merge on the master, 
+and a build on all os and all current stable python versions (cf. [python version status](https://devguide.python.org/versions/), i.e. `[3.9, 3.10, 3.11, 3.12]` as of today) at each openalea release.
 
-To enable a new upload to openalea3 conda channel, just create a tag/release starting with `v` on your github master.
-To summarize we recommend the following development workflow: create branches, make pull request, review them, merge into master, and create a new tag release from github web interface.If you followed the guideline above, the tag wll be propagated to the package metadata and to the conda package.
+The upload of openalea3 channel will occur:
+    - with label 'latest' at each tag starting with 'v' on master
+    - with label 'main' at each release publication [GitHub release](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository).
+
+To summarize we recommend the following development workflow: 
+    - create branches (local debug)
+    - make pull request (=> CI on one os/one python), ask review from another developer.
+    - merge into master (=> CI multi os)
+    - create tags (=> upload on 'latest'). If you follow the guidelines above, this tag wll be used as package version by setuptools and conda.
+Release are handled collectively : do not create release on your own if you are not involved in an openalea release process.
 
 ## Documentation
 
