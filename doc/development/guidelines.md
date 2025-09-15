@@ -536,7 +536,7 @@ dependencies:
 CI/CD stands for Continuous Integration / Continuous Deployment. It is a set of practices and tools that allow to automate the building, testing, and deployment of the software.
 It is a key practice for ensuring the quality of the software and the reliability of the deployment process.
 
-Within the OpenAlea community, we use a custom-made [GitHub Actions](https://github.com/openalea/github-action-conda-build) to build and deploy the packages to the `openalea3` conda channel.
+Within the OpenAlea community, we use a custom-made [GitHub Actions](https://github.com/openalea/action-build-publish-anaconda) to build and deploy the packages to the `openalea3` conda channel.
 
 The only thing you need to do is to add a `.github/workflows/conda-build.yml` file to your project with the following content:
 
