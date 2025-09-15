@@ -85,8 +85,17 @@ The README file should include the following information:
   - Compatible `Python` version: [![Python Version](https://img.shields.io/badge/python-3.8%20%7C%203.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-blue)](https://www.python.org/downloads/)
   - License: [![License](https://img.shields.io/badge/License--CeCILL-C-blue)](https://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html)
   - Version of the package on Anaconda: [![Anaconda-Server Badge](https://anaconda.org/openalea3/mtg/badges/version.svg)](https://anaconda.org/openalea3/mtg)
+ 
+```md
+# Package Name
+[![Docs](https://readthedocs.org/projects/mtg/badge/?version=latest)](https://mtg.readthedocs.io/)
+[![Build Status](https://github.com/openalea/mtg/actions/workflows/conda-package-build.yml/badge.svg?branch=master)](https://github.com/openalea/mtg/actions/workflows/conda-package-build.yml?query=branch%3Amaster)
+[![Python Version](https://img.shields.io/badge/python-3.8%20%7C%203.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-blue)](https://www.python.org/downloads/)
+[![License](https://img.shields.io/badge/License--CeCILL-C-blue)](https://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html)
+[![Anaconda-Server Badge](https://anaconda.org/openalea3/mtg/badges/version.svg)](https://anaconda.org/openalea3/mtg)
+## Description
+```
 - installation instructions: how to install the package for user (using `conda` / `mamba`) and for developer (using `conda` / `mamba` and `pip -e`). For more information about how to declare package dependencies for usage and development, cf. [pyproject.toml](#pyprojecttoml) and [build the package](#building-the-package) sections.
-
 ```bash
 # for user
 mamba create -n myenv -c openalea3 -c conda-forge openalea.my_pkg openalea.plantgl
@@ -95,7 +104,10 @@ mamba create -n myenv -c openalea3 -c conda-forge openalea.my_pkg openalea.plant
 git clone 'https://github.com/openalea/my_pkg.git'
 cd my_pkg
 mamba install --only-deps -c openalea3 -c conda-forge openalea.my_pkg
-pip install -e .
+pip install -e .[options]
+# [options] is optional, and allows to install additional dependencies 
+# defined in the [project.optional-dependencies] section of your 
+# pyproject.toml file (usually "dev", or "doc", ...)
 
 # (optionaly) for maintainer that need clean isolated env, or to start development (i.e. before first build)
 # (see conda section below on how to write environment.yml file)
@@ -163,12 +175,19 @@ requires = [
 ]
 build-backend = "setuptools.build_meta"
 
-# allow openalea to be a namespace package
+# where your source lies if you followed src layout
 [tool.setuptools.packages.find]
 where = ["src"]
 
-# enable dynamic versioning based on git tags
+[tool.setuptools]
+include-package-data = false # force explicit declaration of data (disable automatic inclusion)
+
+# enable dynamic version based on git tags
 [tool.setuptools_scm]
+# Format version to ease alignment with conda/meta.yaml tag-based versioning
+fallback_version = "0.0.0.dev0"
+version_scheme = "guess-next-dev"
+local_scheme = "no-local-version"
 ```
 
 If your package needs an extension module, you should check the [dedicated `setuptools` documentation](https://setuptools.pypa.io/en/latest/userguide/ext_modules.html#building-extension-modules)
@@ -204,6 +223,7 @@ classifiers = [
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
   "Topic :: Scientific/Engineering",
+  "Framework :: OpenAlea",
 ]
 
 # you can list here all dependencies that are pip-instalable, and that have a name identical to the one used by conda (to allow reuse of this list in meta.yaml)
@@ -221,7 +241,7 @@ channels = [
 ]
 dependencies = [
     "openalea.plantgl",
-    "openalea.deploy",
+    "openalea.mtg",
     ...
 ]
 ```
@@ -420,7 +440,7 @@ Implications are that:
 
 - all dependence should also be available from a conda channel or via `pip`.
 - package should be built and uploaded to the `openalea3` conda channel. A [dedicated CI/CD pipeline](#ci-cd) can be used for this purpose.
-- use GIT_DESCRIBE_TAG conda variable to automatically set conda version to your last tag. It is important to remove the 'v' prefix, for conda to correctly infer the last version number.
+- ensure that the version number match the node set in pyproject.toml (see example below for dynamic setuptools_scm version).
 
 We also recommend re-using the information declared in your pyproject.toml to source only once your list of dependencies.
 
@@ -428,10 +448,26 @@ A minimal conda build information could be provided by adding the following gene
 
 ```yaml
 {% set pyproject = load_file_data('../pyproject.toml', from_recipe_dir=True) %}
+{% set name = pyproject.get('project').get('name') %}
+{% set description = pyproject.get('project').get('description') %}
+{% set license = pyproject.get('project').get('license') %}
+{% set home = pyproject.get('project', {}).get('urls', {}).get('Homepage', '') %}
+{% set build_deps = pyproject.get("build-system", {}).get("requires", []) %}
+{% set deps = pyproject.get('project', {}).get('dependencies', []) %}
+{% set conda_deps = pyproject.get('tool', {}).get('conda', {}).get('environment', {}).get('dependencies',[]) %}
+
+{# Align version with the one computed by setuptools_scm #}
+{% set base_tag = GIT_DESCRIBE_TAG | default("0.0.0.dev0") | replace("v", "") %}
+{% set distance = GIT_DESCRIBE_NUMBER | default("0") | int %}
+{% set base_parts = base_tag.split('.') %}
+{% set micro = base_parts[2] | int %}
+{% set next_version = base_parts[0] + "." + base_parts[1] + "." + (micro + 1)|string %}
+{% set scm_version = next_version + ".dev" + distance|string if distance > 0 else base_tag %}
+{% set version = environ.get('SETUPTOOLS_SCM_PRETEND_VERSION', scm_version) %}
 
 package:
-  name: {{ pyproject["project"]["name"] }}
-  version: {{ GIT_DESCRIBE_TAG  | replace("v", "") }}
+  name: {{ name }}
+  version: {{ version }}
 
 source:
   path: ..
@@ -439,28 +475,31 @@ source:
 build:
   noarch: python
   preserve_egg_dir: True
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  # pip install options mainly ensure that dependencies are handled by conda (and not pip)
+  # --no-deps ensure pip will not install deps not declared in meta.yaml (but declared in pyproject.toml)
+  # --no-build-isolation ensure pip will not replace build deps declared in meta.yaml (and declared in pyproject.toml)
+  # --ignore-installed ensure that compiled files (accidentally present in sources or uncleaned locally) will be overwritten
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-build-isolation -vv
 
 requirements:
-  build:
+  host:
     - python
-    {% for dep in pyproject["build-system"]["requires"] %}
-    - {{ dep.lower() }}
-    {% endfor %}
+    {% for dep in build_deps %}
+    - {{ dep }}
+    {% endfor  %}
 
   run:
-    - python {{ pyproject["project"]["requires-python"] }}
-    {% for dep in pyproject["project"]["dependencies"] %}
-    - {{ dep.lower() }}
+    - python
+    {% for dep in deps + conda_deps %}
+    - {{ dep }}
     {% endfor %}
 
 test:
   requires:
-    {% for dep in pyproject["project"]["optional-dependencies"]["test"] %}
-    - {{ dep.lower() }}
-    {% endfor %}
+    - pytest
+    - nbmake
   imports:
-    - {{ pyproject["project"]["name"] }}
+    - {{ name }}
   source_files:
     - test/test_*.py
     - doc/notebooks/*.ipynb
@@ -469,9 +508,9 @@ test:
    - pytest --nbmake
 
 about:
-  home: {{ pyproject["project"]["urls"]["Homepage"] }}
-  license: {{ pyproject["project"]["license"] }}
-  summary: {{ pyproject["project"]["description"] }}
+  home: {{ home }}
+  license: {{ license }}
+  summary: {{ description }}
 ```
 
 - You can also provide a conda/environment.yml file that will ease maintainers developing in a isolated environment, and can also be used by readthedoc:
@@ -654,6 +693,7 @@ html_theme_options = {
         "**/*": ["page-toc", "edit-this-page", "sourcelink"],
         "examples/no-sidebar": [],
     },
+    "use_edit_page_button": True,
   }
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -675,6 +715,14 @@ html_show_sphinx = True
 html_show_copyright = True
 # Output file base name for HTML help builder.
 htmlhelp_basename = project + '_documentation'
+# Add infomation about github repository
+html_context = {
+    # "github_url": "https://github.com", # or your GitHub Enterprise site
+    "github_user": "openalea",
+    "github_repo": "my_pkg",
+    "github_version": "main",
+    "doc_path": "doc",
+}
 
 # -- Options for LaTeX output ---------------------------------------------
 latex_elements = {
