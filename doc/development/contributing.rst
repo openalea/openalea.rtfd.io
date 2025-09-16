@@ -6,8 +6,8 @@
 .. _Clone: https://help.github.com/en/articles/cloning-a-repository
 .. _Sphinx: https://www.sphinx-doc.org/en/master/
 
-Contributing
-============
+Developing - Contributing
+=========================
 
 Introduction
 ------------
@@ -27,8 +27,8 @@ One could also create their own package, see `How to contribute`_.
 
 Another way to contribute to the project is to report bugs ans issues you are facing.
 
-How to contribute
------------------
+How to develop
+--------------
 
 The main way to contribute is to fork the package repository you are interested in on GitHub_.
 
@@ -39,7 +39,7 @@ The main way to contribute is to fork the package repository you are interested 
 
 .. warning::
 
-  All proposed changes must follow the ``OpenAlea development guidelines``
+  All proposed changes must follow the :doc:guidelines - ``OpenAlea development guidelines``
 
 #. `Create an account <https://github.com/join>`_ on GitHub if you do not already have one.
    You will choose your GitHub_ login <your_login>.
@@ -55,6 +55,11 @@ The main way to contribute is to fork the package repository you are interested 
 
        git clone https://github.com/<your_login>/<package_name>.git
        cd <package_name>
+
+#. Create a ``conda`` / ``mamba`` clean environment with dependencies needed included::
+	   
+	   mamba env create -f ./conda/environment.yml
+	   mamba activate pkgname_dev
 
 #. Create a branch <branch_name> to hold your development changes
    ::
