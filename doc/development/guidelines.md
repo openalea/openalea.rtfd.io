@@ -581,7 +581,7 @@ build:
     python: "mambaforge-22.9"
 
 conda:
-  environment: doc/environment.yml
+  environment: conda/environment.yml
 
 sphinx:
   # Path to your Sphinx configuration file.
