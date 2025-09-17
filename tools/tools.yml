@@ -1,22 +1,27 @@
 - name: Index
   packages:
 
-    - repo: openalea/core
+  #  - repo: openalea/core
+  #    conda_channel: openalea3
+  #    conda_package: openalea.core
+  #    rtd_name: openalea-core
+  #    badges: conda, rtd
+
+  #  - repo: openalea/eartrack
+  #    conda_channel: openalea
+  #    conda_package: openalea.eartrack
+  #    rtd_name: eartrack
+  #    badges: conda, rtd
+    - repo: openalea/mtg
       conda_channel: openalea3
-      conda_package: openalea.core
-      rtd_name: openalea-core
+      conda_package: openalea.mtg
+      rtd_name: mtg
       badges: conda, rtd
 
-    - repo: openalea/eartrack
-      conda_channel: openalea
-      conda_package: openalea.eartrack
-      rtd_name: eartrack
-      badges: conda, rtd
-
-    - repo: openalea/hydroshoot
+    - repo: openalea/plantgl
       conda_channel: openalea3
-      conda_package: hydroshoot
-      rtd_name: hydroshoot
+      conda_package: openalea.plantgl
+      rtd_name: plantgl
       badges: conda, rtd
 
     - repo: openalea/lpy
@@ -25,22 +30,52 @@
       rtd_name: lpy
       badges: conda, rtd
 
-    - repo: openalea/mtg
+    - repo: openalea/astk
       conda_channel: openalea3
-      conda_package: openalea.mtg
-      rtd_name: mtg
+      conda_package: openalea.astk
+      rtd_name: openalea-astk
+      badges: conda, rtd
+
+    - repo: openalea/adel
+      conda_channel: openalea3
+      conda_package: openalea.adel
+      rtd_name: adel
+      badges: conda, rtd
+
+    - repo: openalea/hydroroot
+      conda_channel: openalea3
+      conda_package: openalea.hydroroot
+      rtd_name: hydroroot
+      badges: conda, rtd
+
+    - repo: openalea/hydroshoot
+      conda_channel: openalea3
+      conda_package: hydroshoot
+      rtd_name: hydroshoot
+      badges: conda, rtd
+
+    - repo: openalea/caribu
+      conda_channel: openalea3
+      conda_package: openalea.caribu
+      rtd_name: caribu
+      badges: conda, rtd
+
+    - repo: openalea/pyratp
+      conda_channel: openalea3
+      conda_package: openalea.ratp
+      rtd_name: pyratp
+      badges: conda, rtd
+
+    - repo: openalea/wheatfspm
+      conda_channel: openalea3
+      conda_package: openalea.wheatfspm
+      rtd_name: wheatfspm
       badges: conda, rtd
 
     - repo: openalea/phenomenal
       conda_channel: openalea3
       conda_package: openalea.phenomenal
       rtd_name: phenomenal
-      badges: conda, rtd
-
-    - repo: openalea/plantgl
-      conda_channel: openalea3
-      conda_package: openalea.plantgl
-      rtd_name: plantgl-cpl
       badges: conda, rtd
 
     - repo: openalea/visualea
