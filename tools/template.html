@@ -27,12 +27,12 @@
         </td>
         <td align='left'>
           <a href="https://github.com/{{ package.repo }}/stargazers">
-            <img src="../_static/cache/{{ package.name }}_stars_badge.svg">
+            <img src="https://img.shields.io/github/stars/{{ package.repo }}.svg?style=social&label=Stars&maxAge=2592000">
           </a>
         </td>
         <td align='left'>
           <a href="https://github.com/{{ package.repo }}/graphs/contributors">
-            <img src="../_static/cache/{{ package.name }}_contributors_badge.svg">
+            <img src="https://img.shields.io/github/contributors/{{ package.repo }}.svg?style=social&label=Contributors&maxAge=2592000">
           </a>
         </td>
           {% if 'conda' in package.badges %}
