@@ -566,8 +566,8 @@
           
           
           <td align='left'>
-            <a href="https://github.com/openalea/visualea/blob/master/README.txt">
-              <img src="https://img.shields.io/website-up-down-green-red/https/github.com/openalea/visualea/blob/master/README.txt.svg">
+            <a href="https://github.com/openalea/visualea/blob/master/README.md">
+              <img src="https://img.shields.io/website-up-down-green-red/https/github.com/openalea/visualea/blob/master/README.md.svg">
             </a>
           </td>
           
@@ -613,8 +613,8 @@
           
           
           <td align='left'>
-            <a href="https://github.com/openalea/weberpenn/blob/master/README.rst">
-              <img src="https://img.shields.io/website-up-down-green-red/https/github.com/openalea/weberpenn/blob/master/README.rst.svg">
+            <a href="https://github.com/openalea/weberpenn/blob/master/README.md">
+              <img src="https://img.shields.io/website-up-down-green-red/https/github.com/openalea/weberpenn/blob/master/README.md.svg">
             </a>
           </td>
           
