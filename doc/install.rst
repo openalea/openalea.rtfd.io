@@ -24,7 +24,7 @@ In this console, to install a given openalea package <*package_name*> with its d
 
 Here is an example if you want only *PlantGL*, *lpy*, *MTG* and *Caribu*::
 
-    mamba create -n openalea -c openalea3 -c conda-forge openalea.plantgl openalea.lpy openalea.mtg alinea.caribu
+    mamba create -n openalea -c openalea3 -c conda-forge openalea.plantgl openalea.lpy openalea.mtg openalea.caribu
 
 Activate the *openalea* environment::
 
