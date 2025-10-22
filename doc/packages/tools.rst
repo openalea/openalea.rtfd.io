@@ -332,7 +332,7 @@
           
           <td align='left'>
             <a href="https://hydroshoot.readthedocs.io">
-              <img src="https://readthedocs.org/projects/openalea.hydroshoot/badge/?version=latest">
+              <img src="https://readthedocs.org/projects/hydroshoot/badge/?version=latest">
             </a>
           </td>
           
