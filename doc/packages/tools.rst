@@ -318,28 +318,28 @@
           
           <td align='left'>
             <a href="https://anaconda.org/openalea3/hydroshoot">
-              <img src="https://anaconda.org/openalea3/hydroshoot/badges/downloads.svg">
+              <img src="https://anaconda.org/openalea3/openalea.hydroshoot/badges/downloads.svg">
             </a>
           </td>
           
           
             <td align='left'>
               <a href="https://anaconda.org/openalea3/hydroshoot">
-                <img src="https://anaconda.org/openalea3/hydroshoot/badges/license.svg">
+                <img src="https://anaconda.org/openalea3/openalea.hydroshoot/badges/license.svg">
               </a>
             </td>
           
           
           <td align='left'>
             <a href="https://hydroshoot.readthedocs.io">
-              <img src="https://readthedocs.org/projects/hydroshoot/badge/?version=latest">
+              <img src="https://readthedocs.org/projects/openalea.hydroshoot/badge/?version=latest">
             </a>
           </td>
           
           
           <td align='left'>
             <a href="https://anaconda.org/openalea3/hydroshoot">
-              <img src="https://anaconda.org/openalea3/hydroshoot/badges/version.svg">
+              <img src="https://anaconda.org/openalea3/openalea.hydroshoot/badges/version.svg">
             </a>
           </td>
           
@@ -629,36 +629,48 @@
       
       <tr>
         <td align='left'>
-          <a href="http://github.com/openalea-incubator/strawberry">strawberry</a>
+          <a href="http://github.com/openalea/strawberry">strawberry</a>
         </td>
         <td align='left'>
           
         </td>
         <td align='left'>
-          <a href="https://github.com/openalea-incubator/strawberry/stargazers">
-            <img src="https://img.shields.io/github/stars/openalea-incubator/strawberry.svg?style=social&label=Stars&maxAge=2592000">
+          <a href="https://github.com/openalea/strawberry/stargazers">
+            <img src="https://img.shields.io/github/stars/openalea/strawberry.svg?style=social&label=Stars&maxAge=2592000">
           </a>
         </td>
         <td align='left'>
-          <a href="https://github.com/openalea-incubator/strawberry/graphs/contributors">
-            <img src="https://img.shields.io/github/contributors/openalea-incubator/strawberry.svg?style=social&label=Contributors&maxAge=2592000">
+          <a href="https://github.com/openalea/strawberry/graphs/contributors">
+            <img src="https://img.shields.io/github/contributors/openalea/strawberry.svg?style=social&label=Contributors&maxAge=2592000">
           </a>
         </td>
-          
-          <td align='center' class='empty-cell'>-</td>
-          
-          
-          <td align='center' class='empty-cell'>-</td>
-          
           
           <td align='left'>
-            <a href="https://github.com/openalea-incubator/strawberry/blob/master/README.md">
-              <img src="https://img.shields.io/website-up-down-green-red/https/github.com/openalea-incubator/strawberry/blob/master/README.md.svg">
+            <a href="https://anaconda.org/openalea3/openalea.strawberry">
+              <img src="https://anaconda.org/openalea3/openalea.strawberry/badges/downloads.svg">
             </a>
           </td>
           
           
-          <td align='center' class='empty-cell'>-</td>
+            <td align='left'>
+              <a href="https://anaconda.org/openalea3/openalea.strawberry">
+                <img src="https://anaconda.org/openalea3/openalea.strawberry/badges/license.svg">
+              </a>
+            </td>
+          
+          
+          <td align='left'>
+            <a href="https://strawberry.readthedocs.io">
+              <img src="https://readthedocs.org/projects/strawberry/badge/?version=latest">
+            </a>
+          </td>
+
+
+          <td align='left'>
+            <a href="https://anaconda.org/openalea3/openalea.strawberry">
+              <img src="https://anaconda.org/openalea3/openalea.strawberry/badges/version.svg">
+            </a>
+          </td>
           
       </tr>
       
