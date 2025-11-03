@@ -160,6 +160,7 @@ except PackageNotFoundError:
 ```
 
 - To avoid confusion all other manual reference to version (version.py files,...) should be removed from your source tree
+- If developers do not want to trigger the CI, github action can be temporarily disabled on the github web interface in **Settings** &rarr; **General** &rarr; **Actions permissions** &rarr; **Disable actions**
 
 ## pyproject.toml
 
