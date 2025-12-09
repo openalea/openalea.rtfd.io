@@ -62,7 +62,7 @@
           </td>
           
       </tr>
-      
+
       <tr>
         <td align='left'>
           <a href="http://github.com/openalea/plantgl">plantgl</a>
@@ -156,7 +156,54 @@
           </td>
           
       </tr>
-      
+
+      <tr>
+        <td align='left'>
+          <a href="http://github.com/openalea/oawidgets">widgets</a>
+        </td>
+        <td align='left'>
+
+        </td>
+        <td align='left'>
+          <a href="https://github.com/openalea/oawidgets/stargazers">
+            <img src="https://img.shields.io/github/stars/openalea/oawidgets.svg?style=social&label=Stars&maxAge=2592000">
+          </a>
+        </td>
+        <td align='left'>
+          <a href="https://github.com/openalea/oawidgets/graphs/contributors">
+            <img src="https://img.shields.io/github/contributors/openalea/oawidgets.svg?style=social&label=Contributors&maxAge=2592000">
+          </a>
+        </td>
+
+          <td align='left'>
+            <a href="https://anaconda.org/openalea3/openalea.widgets">
+              <img src="https://anaconda.org/openalea3/openalea.widgets/badges/downloads.svg">
+            </a>
+          </td>
+
+
+            <td align='left'>
+              <a href="https://anaconda.org/openalea3/openalea.widgets">
+                <img src="https://anaconda.org/openalea3/openalea.widgets/badges/license.svg">
+              </a>
+            </td>
+
+
+          <td align='left'>
+            <a href="https://oawidgets.readthedocs.io">
+              <img src="https://readthedocs.org/projects/oawidgets/badge/?version=latest">
+            </a>
+          </td>
+
+
+          <td align='left'>
+            <a href="https://anaconda.org/openalea3/openalea.widgets">
+              <img src="https://anaconda.org/openalea3/openalea.widgets/badges/version.svg">
+            </a>
+          </td>
+
+      </tr>
+
       <tr>
         <td align='left'>
           <a href="http://github.com/openalea/astk">astk</a>
@@ -673,7 +720,54 @@
           </td>
           
       </tr>
-      
+
+      <tr>
+        <td align='left'>
+          <a href="http://github.com/openalea/spice">spice</a>
+        </td>
+        <td align='left'>
+
+        </td>
+        <td align='left'>
+          <a href="https://github.com/openalea/spice/stargazers">
+            <img src="https://img.shields.io/github/stars/openalea/spice.svg?style=social&label=Stars&maxAge=2592000">
+          </a>
+        </td>
+        <td align='left'>
+          <a href="https://github.com/openalea/spice/graphs/contributors">
+            <img src="https://img.shields.io/github/contributors/openalea/spice.svg?style=social&label=Contributors&maxAge=2592000">
+          </a>
+        </td>
+
+          <td align='left'>
+            <a href="https://anaconda.org/openalea3/openalea.spice">
+              <img src="https://anaconda.org/openalea3/openalea.spice/badges/downloads.svg">
+            </a>
+          </td>
+
+
+            <td align='left'>
+              <a href="https://anaconda.org/openalea3/openalea.spice">
+                <img src="https://anaconda.org/openalea3/openalea.spice/badges/license.svg">
+              </a>
+            </td>
+
+
+          <td align='left'>
+            <a href="https://openalea-spice.readthedocs.io">
+              <img src="https://readthedocs.org/projects/openalea-spice/badge/?version=latest">
+            </a>
+          </td>
+
+
+          <td align='left'>
+            <a href="https://anaconda.org/openalea3/openalea.spice">
+              <img src="https://anaconda.org/openalea3/openalea.spice/badges/version.svg">
+            </a>
+          </td>
+
+      </tr>
+
     </table>
     
     </div>
