@@ -174,7 +174,7 @@ To build our tree, we must construct a PlantGL scene containing a cylinder and a
    * Add a ``plantgl.objects.sphere`` object
    * Add a ``plantgl.objects.translated`` object
    * Add a ``plantgl.objects.scene`` object
-   * Connect the 2 translated objects to a ``vplants.plantgl.objects.scene`` object
+   * Connect the 2 translated objects to a ``plantgl.objects.scene`` object
 
 #. Save this dataflow in your standbuilder package as **simple_tree**
 
@@ -210,8 +210,9 @@ Transform simple_tree to a reusable composite node
    .. image:: ./images/beginner/step4.1.PNG
       :width: 40%
 
-#. Click "OK" and the buttons will appear in the workshop
-#. Modify the graph as follow
+#. Click "OK" and the buttons will appear in the workspace
+
+#. Double click **simple_tree** and modify the graph as follow
 
    * Connect input 0 and 1 to the X and Y nodes
    * Connect input 2 and 3 to a minus node ``openalea.math.-``, and connect the result 
