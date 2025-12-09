@@ -84,7 +84,7 @@ Create a dataflow to read and view a file
       You can search for a particuliar node in the Search tab.
 
 #. In the Package Manager tab, drag the ``read`` node from the *openalea.file* package to the 
-   workshop. It should now appear on the canvas.
+   workspace. It should now appear on the canvas.
 #. In the workspace, right click on the ``read`` node and choose "Open Widget". 
    Then browse for the "stand.csv" file (no need to validate anything, 
    changes are automatically taken into account so you can simply close the window).
