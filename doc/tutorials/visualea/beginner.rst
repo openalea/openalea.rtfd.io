@@ -32,7 +32,7 @@ Here is the data :
    20, 22, 8, 23, 3.4
    0, 18, 14, 22, 2.5
 
-You may want to download the `CSV file <http://openalea.gforge.inria.fr/dokuwiki/lib/exe/fetch.php?media=documentation:tutorials:stand.csv>`_.
+You may want to download the `CSV file <https://github.com/openalea/openalea.rtfd.io/blob/master/doc/_static/stand.csv>`_.
 
 Step 1 : Create Your Own Package
 ================================
@@ -84,11 +84,11 @@ Create a dataflow to read and view a file
       You can search for a particuliar node in the Search tab.
 
 #. In the Package Manager tab, drag the ``read`` node from the *openalea.file* package to the 
-   workshop. It should now appear on the canvas.
+   workspace. It should now appear on the canvas.
 #. In the workspace, right click on the ``read`` node and choose "Open Widget". 
    Then browse for the "stand.csv" file (no need to validate anything, 
    changes are automatically taken into account so you can simply close the window).
-#. Drag the ``text`` node from the *openalea.data structure.string* folder onto the workspace.
+#. In the package manager search the ``text`` in the **search tab**, then drag the ``text`` node from the *openalea.data structure.string* folder onto the workspace.
 #. Connect the output of the ``read`` node to the input of the ``text`` node.
 
 
@@ -155,10 +155,10 @@ This simple dataflow shows how to display a scene object.
 #. First step, we create a new workspace : Select **File** -> **New Empty Workspace** (CTRL+T)
 #. Create the following dataflow by using PlantGL nodes
 
-   * ``vplants.plantgl.objects.cylinder`` creates a cylinder
-   * ``vplants.plantgl.objects.translated`` moves the input object
+   * ``plantgl.objects.cylinder`` creates a cylinder
+   * ``plantgl.objects.translated`` moves the input object
    * ``openalea.data structure.tuple.tuple3`` to set the translation vector
-   * ``vplants.plantgl.visualization.plot3d`` to view the result
+   * ``plantgl.visualization.plot3d`` to view the result
    * ``openalea.data structure.float`` to set the parameters of the tuple3 node
 
 
@@ -171,10 +171,10 @@ To build our tree, we must construct a PlantGL scene containing a cylinder and a
 
 #. Modify the previous dataflow as follow:
 
-   * Add a ``vplants.plantgl.objects.sphere`` object
-   * Add a ``vplants.plantgl.objects.translated`` object
-   * Add a ``vplants.plantgl.objects.scene`` object
-   * Connect the 2 translated objects to a ``vplants.plantgl.objects.scene`` object
+   * Add a ``plantgl.objects.sphere`` object
+   * Add a ``plantgl.objects.translated`` object
+   * Add a ``plantgl.objects.scene`` object
+   * Connect the 2 translated objects to a ``plantgl.objects.scene`` object
 
 #. Save this dataflow in your standbuilder package as **simple_tree**
 
@@ -210,8 +210,9 @@ Transform simple_tree to a reusable composite node
    .. image:: ./images/beginner/step4.1.PNG
       :width: 40%
 
-#. Click "OK" and the buttons will appear in the workshop
-#. Modify the graph as follow
+#. Click "OK" and the buttons will appear in the workspace
+
+#. Double click **simple_tree** and modify the graph as follow
 
    * Connect input 0 and 1 to the X and Y nodes
    * Connect input 2 and 3 to a minus node ``openalea.math.-``, and connect the result 

@@ -1,7 +1,7 @@
 
 # OpenAlea Documentation
 
-[![Documentation Status](https://readthedocs.org/projects/sconsx/badge/?version=latest)](https://sconsx.readthedocs.io/en/latest/?badge=latest)
+[![Documentation Status](https://readthedocs.org/projects/openalea/badge/?version=latest)](https://openalea.readthedocs.io/en/latest/?badge=latest)
 
 # Description
 
