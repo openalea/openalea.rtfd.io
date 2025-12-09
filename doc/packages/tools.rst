@@ -566,8 +566,8 @@
           
           
           <td align='left'>
-            <a href="https://github.com/openalea/visualea/blob/master/README.md">
-              <img src="https://img.shields.io/website-up-down-green-red/https/github.com/openalea/visualea/blob/master/README.md.svg">
+            <a href="https://visualea.readthedocs.io/en/latest/">
+              <img src="https://readthedocs.org/projects/phenomenal/badge/?version=latest"">
             </a>
           </td>
           
@@ -613,7 +613,7 @@
           
           
           <td align='left'>
-            <a href="https://github.com/openalea/weberpenn/blob/master/README.md">
+            <a href="https://openalea.readthedocs.io/en/latest/tutorials/visualea/weberpenn.html#">
               <img src="https://img.shields.io/website-up-down-green-red/https/github.com/openalea/weberpenn/blob/master/README.md.svg">
             </a>
           </td>
