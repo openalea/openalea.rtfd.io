@@ -534,6 +534,43 @@ dependencies:
       - -e ..[doc,test]
 ```
 
+### building extensions
+
+We recomend building extensions (compiled source) with conda build in CI, and to use conda-forge pinning to ensure ABI compability.
+
+You can setup a conda/conda-forge build envrironment (or install in base env) locally to simulate the behaviour of CI using :
+
+```bash
+mamba create -n buildenv conda-build conda-forge-pinning
+```
+
+In addition, on windows, you also need to install on your machine the compiler defined in conda-forge-pinning (see "https://raw.githubusercontent.com/conda-forge/conda-forge-pinning-feedstock/main/recipe/conda_build_config.yaml"),
+ i.e currently VisualStudio Build Tools  2019 +  SDK 10/11 + MSVC (they are freely available as part of Microsoft VisualStudio Build Tools 2022 / Desktop development with C++)
+
+
+You can then emulate the CI builds using : 
+```bash
+mamba activate buildenv
+# this will build the full python-numpy matrix (on windows replace $CONDA_PREFIX/ with %CONDA_PREFIX%\)
+conda build . -m $CONDA_PREFIX/conda_build_config.yaml
+# You can restrict to one build using : 
+conda build . -m $CONDA_PREFIX/conda_build_config.yaml --python "3.12.* *_cpython"
+# (if needed, you can use an additional conda_build_file.yml in your build dir and pass it to conda build)
+
+# to see which python are available you can inspect the yaml file or use :
+python -c "import os,yaml; cfg_path=os.path.join(os.environ['CONDA_PREFIX'], 'conda_build_config.yaml');print(yaml.safe_load(open(cfg_path))['python'])"
+```
+
+At your convenience, you can also put the explicit full path (expanding CONDA_PREFIX) to conda_build_config.yaml in your .condarc
+```yaml
+conda_build:
+  config_file: explicit/path/to/conda_build_config.yaml
+```
+then build with :
+```bash 
+conda build . --python "3.12.* *_cpython"
+```
+
 ## CI-CD
 
 CI/CD stands for Continuous Integration / Continuous Deployment. It is a set of practices and tools that allow to automate the building, testing, and deployment of the software.
