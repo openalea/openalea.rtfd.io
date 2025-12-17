@@ -1,4 +1,4 @@
-# Release change log
+# Release notes
 
 ## Openalea general change log
 
@@ -16,8 +16,6 @@
     - installation via conda is now for all packages in the release: `mamba install openalea.pkg_name -c openalea3`
 
 ## Packages change log
-
-### PyQGLViewer
 
 ### openalea.plantgl
 
