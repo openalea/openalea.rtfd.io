@@ -14,12 +14,15 @@
     - continuous integration:
       - consistent continuous integration / deployment as been set up for all packages using a [dedicated github-action workflow](github.com/openalea/action-build-publish-anaconda)
       - all packages are now automatically uploaded to [openalea3 conda channel](https://anaconda.org/openalea3/repo)
-    - installation via conda is now for all packages in the release: `mamba install openalea.pkg_name -c openalea3`
+    - installation via conda is now for all packages in the release:
+      ```bash
+      mamba install openalea.pkg_name -c openalea3
+      ```
   - all packages but `openalea.plantgl` are pip installable
       - `setup.py` is now replaced by `pyproject.toml`
       - package can be installed by running `pip install .` or in editable mode `pip install -e .` in root directory of the project
       - `openalea.ratp` is not working in editable mode
-  - all packages have API reference documentation and tutorials, this is still an ongoing work for some package
+  - all packages have API reference documentation and tutorials that are still an ongoing work for some packages
 
 ## Packages change log
 The foolowing packages are part of the release:
@@ -46,23 +49,23 @@ The foolowing packages are part of the release:
     openalea.ratp
 
 ### openalea.plantgl
-- Documentation: https://plantgl.rtfd.io
+- Documentation: [https://plantgl.rtfd.io](https://plantgl.rtfd.io)
 - OpenAlea.PlantGL provides light interception methods comparable to [openalea.caribu](https://caribu.readthedocs.io) 
 - support c++17 and numpy 2
 
 ### openalea.lpy
-- Documentation: https://lpy.readthedocs.io
+- Documentation: [https://lpy.readthedocs.io](https://lpy.readthedocs.io)
 - support c++17 and numpy 2
 
 ### openalea.core
 - OpenAlea.Core implements the components and workflows execution
 
 ### openalea.mtg
-- Documentation: https://mtg.rtfd.io
+- Documentation: [https://mtg.rtfd.io](https://mtg.rtfd.io)
 - Visualisation of MTG in the Notebook is provided by the package openalea.widgets
 
 ### openalea.widgets
-- Documentation: https://oawidgets.readthedocs.io
+- Documentation: [https://oawidgets.readthedocs.io](https://oawidgets.readthedocs.io)
 - namespace changed from `oawidgets` to `openalea.widgets`
   instead of
 ```python
@@ -76,12 +79,12 @@ from openalea.widgets import *
 ```
 
 ### openalea.scipack
-- Documentation: https://scipack.readthedocs.io
+- Documentation: [https://scipack.readthedocs.io](https://scipack.readthedocs.io)
 - `openalea.scipack` replaces the meta-package `openalea.components` a set of wrappers of standard Python packages for `openalea.visualea`
 - It regroups: `openalea.stdlib`, `openalea.pylab`, `openalea.numpy` and `openalea.image`, but calls did not change.
 
 ### openalea.grapheditor
-- Documentation: https://grapheditor.readthedocs.io
+- Documentation: [https://grapheditor.readthedocs.io](https://grapheditor.readthedocs.io)
 - OpenAlea.GraphEditor is a base package for editing graph with various graph data structures.
 - This package is used by `openalea.visualea`
 
@@ -89,7 +92,7 @@ from openalea.widgets import *
 - OpenAlea.OaLab is another end user application.
 
 ### openalea.visualea
-- Documentation: https://visualea.readthedocs.io
+- Documentation: [https://visualea.readthedocs.io](https://visualea.readthedocs.io)
 - OpenAlea.VisuAlea has been resurrected
 - All the workflows are not fully functional but the software is functional
 
@@ -98,8 +101,8 @@ from openalea.widgets import *
 - The model is available through VisuAlea
 
 ### openalea.rsml
-- Documentation: https://rsml.readthedocs.io
-- OpenAlea package managing the RootSystemML file format that represents root architectural data http://rootsystemml.github.io/
+- Documentation: [https://rsml.readthedocs.io](https://rsml.readthedocs.io)
+- OpenAlea package managing the [RootSystemML](http://rootsystemml.github.io/) file format that represents root architectural data
 - namespace changed from `rsml` to `openalea.rsml`
   instead of
 ```python
@@ -113,7 +116,7 @@ from openalea.rsml import *
 ```
 
 ### openalea.caribu
-- Documentation: https://caribu.readthedocs.io
+- Documentation: [https://caribu.readthedocs.io](https://caribu.readthedocs.io)
 - Caribu has been split in two packages: `openalea.caribu` pure python and `openalea.libcaribu` with c++ code.
 - namespace changed from `alinea.caribu` to `openalea.caribu`
   instead of
@@ -128,7 +131,7 @@ from openalea.caribu.caribu import radiosity
 ```
 
 ### openalea.astk
-- Documentation: https://openalea-astk.readthedocs.io
+- Documentation: [https://openalea-astk.readthedocs.io](https://openalea-astk.readthedocs.io)
 - namespace changed from `alinea.astk` to `openalea.astk`
   instead of
 ```python
@@ -142,7 +145,7 @@ from openalea.astk.Weather import Weather
 ```
 
 ### openalea.adel
-- Documentation: https://adel.readthedocs.io
+- Documentation: [https://adel.readthedocs.io](https://adel.readthedocs.io)
 - OpenAlea.Adel (Architectural model of DEvelopment based on L-systems) allows to simulate the 3D architectural development of the shoot of gramineaous plant.
 - namespace changed from `alinea.adel` to `openalea.adel`
   instead of
@@ -157,7 +160,7 @@ from openalea.adel import *
 ```
 
 ### openalea.ratp
-- Documentation: https://pyratp.rtfd.io
+- Documentation: [https://pyratp.rtfd.io](https://pyratp.rtfd.io)
 - namespace changed from `alinea.pyratp` to `openalea.ratp`
   instead of
 ```python
@@ -171,11 +174,11 @@ from openalea.ratp.skyvault import Skyvault
 ```
 
 ### openalea.spice
-- Documentation: https://openalea-spice.readthedocs.io
+- Documentation: [https://openalea-spice.readthedocs.io](https://openalea-spice.readthedocs.io)
 - New package that provides minimal but extensible header only implementation of photon mapping in C++
 
 ### openalea.hydroroot
-- Documentation: https://hydroroot.readthedocs.io
+- Documentation: [https://hydroroot.readthedocs.io](https://hydroroot.readthedocs.io)
 - OpenAlea.HydroRoot is a hydraulic root architecture modelling and a root architecture system generator package
 - namespace changed from `hydroroot` to `openalea.hydroroot`
   instead of
@@ -190,7 +193,7 @@ from openalea.hydroroot import *
 ```
 
 ### openalea.hydroshoot
-- Documentation: https://hydroshoot.readthedocs.io
+- Documentation: [https://hydroshoot.readthedocs.io](https://hydroshoot.readthedocs.io)
 - Hydroshoot provides a grapevine-specific module (architecture) which builds plant shoot structure for potted of trained grapevines
 - namespace changed from `hydroshoot` to `openalea.hydroshoot`
   instead of
@@ -205,7 +208,7 @@ from openalea.hydroshoot import *
 ```
 
 ### openalea.wheatfspm
-- Documentation: https://wheatfspm.readthedocs.io
+- Documentation: [https://wheatfspm.readthedocs.io](https://wheatfspm.readthedocs.io)
 - WheatFspm is a Functional Structural Plant Model (FSPM) of wheat which fully integrates shoot morphogenesis and the metabolism of carbon (C) and nitrogen (N) at organ scale within a 3D representation of plant architecture. 
 - It now regroups in one model: CN-Wheat, Elong-Wheat, fspm-wheat, Growth-Wheat, Farquhar-Wheat, Respi-Wheat, Senesc-Wheat
 - namespace changed from `fspmwheat` to `openalea.fspmwheat`, idem for cnwheat, elongwheat, farquharwheat, growthwheat, respiwheat, senescwheat
@@ -231,6 +234,6 @@ from openalea.senescwheat import *
 ```
 
 ### openalea.phenomenal
-- Documentation: https://phenomenal.readthedocs.io
+- Documentation: [https://phenomenal.readthedocs.io](https://phenomenal.readthedocs.io)
 - An automatic open source library for 3D shoot architecture reconstruction and analysis for image-based plant phenotyping
 - optional package [openalea.phenotyping_data](https://github.com/openalea/phenotyping_data) provides Data from plant phenotyping platform primarly aimed at desmonstrating/testing openalea.phenomenal, needed to run some of the tutorials
