@@ -14,3 +14,4 @@ Here is a list of all `OpenAlea` packages. You can find a brief description of e
     plants.rst
     biophysics.rst
     phenotyping.rst
+    light.rst
