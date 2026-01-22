@@ -1,11 +1,11 @@
 # Release 2025 notes
 
-## Openalea general change log
+## Openalea Improvements
 
-- All packages follow [guide lines](./development/guidelines.md)
+- New Guidelines have been published [guide lines](./development/guidelines.md) for all the OpenAlea packages
   - namespace is now consistently set to `openalea/pkg_name` (`alinea/pkg_name` is kept for compatibility but is no longer recommanded)
-  - conda:
-    - support osx-arm64 on top of osx-64 architecture
+  - conda packaging:
+    - New Mac OS X architecture (M1, ...): support osx-arm64 on top of osx-64 architecture
     - all packages have a `conda` directory with `meta.yaml` using metadata from `pyproject.toml` for conda packaging and a `environment.yml` file
     - `environment.yml` is used to build documentation and also to install locally package in development mode
       ```bash
@@ -19,7 +19,7 @@
       mamba install openalea.pkg_name -c openalea3
       ```
   - all packages but `openalea.plantgl` are locally pip installable
-      - `setup.py` is now replaced by `pyproject.toml`
+      - `setup.py` is replaced by `pyproject.toml`
       - package can be installed by running `pip install .` or in editable mode `pip install -e .` in root directory of the project
       - `openalea.ratp` is not working in editable mode
   - all packages have API reference documentation and tutorials that are still an ongoing work for some packages
