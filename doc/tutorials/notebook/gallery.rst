@@ -28,7 +28,7 @@ Gallery
 
 .. figure:: notebook/images/hydroroot.png
    :width: 30%
-   :target: https://nbviewer.jupyter.org/github/openalea/openalea.rtfd.io/blob/master/example/hydroroot.ipynb
+   :target: https://nbviewer.jupyter.org/github/openalea/hydroroot/blob/main/example/example_parameter_class.ipynb
 
    Root hydraulic modeling
 
