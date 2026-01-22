@@ -26,6 +26,12 @@ Gallery
 
    Reconstruction and Ecophysiology of Grapevine
 
+.. figure:: notebook/images/hydroroot.png
+   :width: 30%
+   :target: https://nbviewer.jupyter.org/github/openalea/openalea.rtfd.io/blob/master/example/hydroroot.ipynb
+
+   Root hydraulic modeling
+
 .. figure:: notebook/images/caribu_crops.png
    :width: 30%
    :target: https://nbviewer.jupyter.org/github/openalea/openalea.rtfd.io/blob/master/example/caribu_crops.ipynb
