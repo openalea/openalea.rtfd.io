@@ -16,6 +16,7 @@
    quickstart
    userguide
    install
+   release.md
    tutorials/index
    packages/index
    development/index
