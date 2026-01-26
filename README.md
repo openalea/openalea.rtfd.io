@@ -11,6 +11,10 @@ OpenAlea is an open source project primarily aimed at the plant research communi
 
 OpenAlea is developed, maintained and mainly funded by three institutes: CIRAD, INRIA, and INRAE.
 
+<figure>
+    <img src="doc/_static/logo-cirad.png"/>
+</figure>
+
 ## License
 
 OpenAlea is licensed under the CeCILL-C free software license agreement.
