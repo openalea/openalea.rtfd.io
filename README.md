@@ -15,6 +15,14 @@ OpenAlea is developed, maintained and mainly funded by three institutes: CIRAD, 
     <img src="doc/_static/logo_cirad.png" width="100"/>
 </figure>
 
+<figure>
+    <img src="doc/_static/logo_inria.png" width="100"/>
+</figure>
+
+<figure>
+    <img src="doc/_static/logo_inrae.png" width="100"/>
+</figure>
+
 ## License
 
 OpenAlea is licensed under the CeCILL-C free software license agreement.
