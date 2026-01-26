@@ -21,11 +21,15 @@ http://openalea.rtfd.io
 
 # Installation
 
-Installation procedure for OpenAlea is straightforward and can be done in a few steps. Please follow the installation instructions in the installation section.
+For general information about installation, please read 
+[Installation Guide](https://openalea.readthedocs.io/en/latest/install.html).
+
+If you are looking for a specific package installation, refer to the package 
+documentation in [Packages](https://openalea.readthedocs.io/en/latest/packages/index.html).
 
 # Usage
 
-Tutorials to use the different features of OpenAlea can be found in the tutorials section.
+You can find examples of what can be done with **OpenAlea** in the [Gallery](https://openalea.readthedocs.io/en/latest/tutorials/index.html#gallery) page.
 
 # Troubleshooting
 

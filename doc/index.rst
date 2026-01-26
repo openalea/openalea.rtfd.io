@@ -13,8 +13,6 @@
    :hidden:
    :maxdepth: 2
 
-   quickstart
-   userguide
    install
    release.md
    tutorials/index
