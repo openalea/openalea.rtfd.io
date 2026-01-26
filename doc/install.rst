@@ -5,10 +5,7 @@ Conda Installation
 ------------------
 
 `Conda <https://conda.io>`_ is a package manager that can be installed on Linux, Windows, and Mac.
-If you have not yet installed conda on your computer, follow these instructions : `Conda Installation <https://conda.io/miniconda.html>`_.
-
-.. warning::
-    `mamba <https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html>`_ is a fast and reliable alternative to *conda*. We highly recommend using *mamba* instead of *conda*.
+If you have not yet installed conda on your computer, we recommand to install `miniforge <https://github.com/conda-forge/miniforge>`_, you can find instructions and installers in the previous page or in `conda-forge.org <https://conda-forge.org/download/>`_.
 
 OpenAlea Installation
 ---------------------------------
@@ -17,7 +14,7 @@ The *recommended* way to install OpenAlea is to create a new conda environment.
 
 First, create an environment named *openalea*:
 
-Launch a console or a terminal (See Anaconda Prompt in Start menu on windows).
+Launch a console or a terminal (See Miniforge Prompt in Start menu on windows).
 In this console, to install a given openalea package <*package_name*> with its dependencies, execute this::
 
     mamba create -n openalea -c openalea3 -c conda-forge openalea.<*package_name*>
@@ -32,6 +29,6 @@ Activate the *openalea* environment::
 
 In this environment, you may also want to install other Scientific Python packages::
 
-    mamba install notebook matplotlib pandas
+    mamba install jupyterlab matplotlib pandas
 
 In the documentation of each package, a installation procedure is described.
