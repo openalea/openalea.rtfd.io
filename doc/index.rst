@@ -18,7 +18,6 @@
    tutorials/index
    packages/index
    development/index
-   topics/index
 
 
 .. toctree::
