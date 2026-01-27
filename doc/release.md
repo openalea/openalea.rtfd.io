@@ -259,8 +259,9 @@ from openalea.respiwheat import *
 from openalea.senescwheat import *
 ```
 
-### openalea.phenomenal 1.10.2
+### openalea.phenomenal 1.10.4
 - [https://github.com/openalea/phenomenal](https://github.com/openalea/phenomenal)
 - Documentation: [https://phenomenal.readthedocs.io](https://phenomenal.readthedocs.io)
 - An automatic open source library for 3D shoot architecture reconstruction and analysis for image-based plant phenotyping
 - optional package [openalea.phenotyping_data](https://github.com/openalea/phenotyping_data) provides Data from plant phenotyping platform primarly aimed at desmonstrating/testing openalea.phenomenal, needed to run some of the tutorials
+- Calibration has been extented to n-cameras n-calibration targets cases, and with simpler parameterisation
