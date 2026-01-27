@@ -163,7 +163,7 @@ import openalea.astk
 from openalea.astk.Weather import Weather
 ```
 
-### openalea.adel 2.1.0
+### openalea.adel 2.1.1
 - [https://github.com/openalea/adel/](https://github.com/openalea/adel/)
 - Documentation: [https://adel.readthedocs.io](https://adel.readthedocs.io)
 - OpenAlea.Adel (Architectural model of DEvelopment based on L-systems) allows to simulate the 3D architectural development of the shoot of gramineaous plant.
