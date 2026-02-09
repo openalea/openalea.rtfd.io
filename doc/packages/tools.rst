@@ -212,40 +212,40 @@
           
         </td>
         <td align='left'>
-          <a href="https://github.com/openalea/oawidgets/stargazers">
-            <img src="https://img.shields.io/github/stars/openalea/oawidgets.svg?style=social&label=Stars&maxAge=2592000">
+          <a href="https://github.com/openalea/core/stargazers">
+            <img src="https://img.shields.io/github/stars/openalea/core.svg?style=social&label=Stars&maxAge=2592000">
           </a>
         </td>
         <td align='left'>
-          <a href="https://github.com/openalea/oawidgets/graphs/contributors">
-            <img src="https://img.shields.io/github/contributors/openalea/oawidgets.svg?style=social&label=Contributors&maxAge=2592000">
+          <a href="https://github.com/openalea/core/graphs/contributors">
+            <img src="https://img.shields.io/github/contributors/openalea/core.svg?style=social&label=Contributors&maxAge=2592000">
           </a>
         </td>
           
           <td align='left'>
-            <a href="https://anaconda.org/openalea3/openalea.widgets">
-              <img src="https://anaconda.org/openalea3/openalea.widgets/badges/downloads.svg">
+            <a href="https://anaconda.org/openalea3/openalea.core">
+              <img src="https://anaconda.org/openalea3/openalea.core/badges/downloads.svg">
             </a>
           </td>
           
           
             <td align='left'>
-              <a href="https://anaconda.org/openalea3/openalea.widgets">
-                <img src="https://anaconda.org/openalea3/openalea.widgets/badges/license.svg">
+              <a href="https://anaconda.org/openalea3/openalea.core">
+                <img src="https://anaconda.org/openalea3/openalea.core/badges/license.svg">
               </a>
             </td>
           
           
           <td align='left'>
-            <a href="https://oawidgets.readthedocs.io">
-              <img src="https://readthedocs.org/projects/oawidgets/badge/?version=latest">
+            <a href="https://core.readthedocs.io">
+              <img src="https://readthedocs.org/projects/core/badge/?version=latest">
             </a>
           </td>
           
           
           <td align='left'>
-            <a href="https://anaconda.org/openalea3/openalea.widgets">
-              <img src="https://anaconda.org/openalea3/openalea.widgets/badges/version.svg">
+            <a href="https://anaconda.org/openalea3/openalea.core">
+              <img src="https://anaconda.org/openalea3/openalea.core/badges/version.svg">
             </a>
           </td>
           

@@ -29,31 +29,31 @@ Plant high-throughput phenotyping aims at capturing the genetic variability of p
 **Source Code** : `Github <https://github.com/openalea/phenomenal/>`_
 
 
-EarTrack
-========
-
-.. image:: https://readthedocs.org/projects/eartrack/badge/?version=latest
- :target: http://eartrack.readthedocs.io/en/latest/?badge=latest
- :alt: Documentation Status
-
-.. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.1002155.svg
- :target: https://doi.org/10.5281/zenodo.1002155
-
-**EarTrack is an imaging library to detect and track future position of ears on maize plants**
-
-.. image:: ./images/eartrack.png
- :width: 200px
- :target: http://eartrack.readthedocs.io/en/latest/
- :align: left
-
-**Authors** : Nicolas Brichet, Christian Fournier, Simon Artzet, Christophe Pradal,
-
-**Institutes** : INRA, Cirad
-
-**Citation** : Brichet et al., 2017, https://doi.org/10.1186/s13007-017-0246-7
-
-**Source Code** : `Github <https://github.com/openalea/eartrack>`_
-
+.. EarTrack
+.. ========
+.. 
+.. .. image:: https://readthedocs.org/projects/eartrack/badge/?version=latest
+..  :target: http://eartrack.readthedocs.io/en/latest/?badge=latest
+..  :alt: Documentation Status
+.. 
+.. .. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.1002155.svg
+..  :target: https://doi.org/10.5281/zenodo.1002155
+.. 
+.. **EarTrack is an imaging library to detect and track future position of ears on maize plants**
+.. 
+.. .. image:: ./images/eartrack.png
+..  :width: 200px
+..  :target: http://eartrack.readthedocs.io/en/latest/
+..  :align: left
+.. 
+.. **Authors** : Nicolas Brichet, Christian Fournier, Simon Artzet, Christophe Pradal,
+.. 
+.. **Institutes** : INRA, Cirad
+.. 
+.. **Citation** : Brichet et al., 2017, https://doi.org/10.1186/s13007-017-0246-7
+.. 
+.. **Source Code** : `Github <https://github.com/openalea/eartrack>`_
+.. 
 
 Strawberry
 ==========
