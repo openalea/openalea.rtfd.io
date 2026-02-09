@@ -2,16 +2,16 @@
 
 ## Openalea Improvements
 
-- New Guidelines have been published [guide lines](./development/guidelines.md) for all the OpenAlea packages
-  - namespace is now consistently set to `openalea/pkg_name` (`alinea/pkg_name` is kept for compatibility but is no longer recommanded)
-  - conda packaging:
-    - New Mac OS X architecture (M1, ...): support osx-arm64 on top of osx-64 architecture
-    - all packages have a `conda` directory with `meta.yaml` using metadata from `pyproject.toml` for conda packaging and a `environment.yml` file
+- **OpenAlea Guidelines**: [guide lines](./development/guidelines.md) for all the OpenAlea packages 
+  - **openalea namespace** is now consistent across packages: `openalea/pkg_name` replace `alinea/pkg_name` (modelers)
+  - **conda packaging**:
+    - New Mac OS X architecture (M1, ...): support osx-arm64 on top of osx-64 architecture (user)
+    - all packages have a `conda` directory with `meta.yaml` using metadata from `pyproject.toml` for conda packaging and a `environment.yml` file (developers)
     - `environment.yml` is used to build documentation and also to install locally package in development mode
       ```bash
       mamba env create -f conda/environment.yml
       ```
-    - continuous integration:
+    - continuous integration (developers):
       - consistent continuous integration / deployment as been set up for all packages using a [dedicated github-action workflow](github.com/openalea/action-build-publish-anaconda)
       - all packages are now automatically uploaded to [openalea3 conda channel](https://anaconda.org/openalea3/repo)
     - installation via conda is now for all packages in the release:
@@ -22,31 +22,39 @@
       - `setup.py` is replaced by `pyproject.toml`
       - package can be installed by running `pip install .` or in editable mode `pip install -e .` in root directory of the project
       - `openalea.ratp` is not working in editable mode
-  - all packages have API reference documentation and tutorials that are still an ongoing work for some packages
+  - all packages have documentation (user and reference)
 
-## Packages change log
+## Release Packages 
 The foolowing packages are part of the release:
 
-    openalea.plantgl 
-    openalea.lpy 
-    openalea.core 
-    openalea.mtg 
-    openalea.widgets 
-    openalea.scipack 
-    openalea.grapheditor
-    openalea.oalab 
-    openalea.visualea
-    openalea.weberpenn
-    openalea.rsml
-    openalea.caribu
-    openalea.astk
-    openalea.adel
-    openalea.spice
-    openalea.hydroroot
-    openalea.phenomenal
-    openalea.hydroshoot
-    openalea.wheatfspm
-    openalea.ratp
+### FSPM formalism and data structure
+  - openalea.plantgl: 3D Plant Geometric Library  
+  - openalea.lpy: L-System Plant Simulation Environment 
+  - openalea.mtg: Multiscale Tree Graph datastructure and algorithms 
+  - openalea.rsml: Data format for Root System, compatible with MTG
+
+### Software Platform and Scientific Workflow System 
+  - openalea.core: Main Component software formalisms and implementation
+  - openalea.visualea: Visual Programming Environment
+  - openalea.grapheditor: Generic Graph Edition, interaction and Visualisation with OpenAlea/VisuAlea
+  - openalea.scipack: Scientific Python Stack for VisuAlea 
+  - openalea.oalab: Make your application reusable!
+  - openalea.widgets: Jupyter Widgets for MTG, PlantGL, and LPy 
+
+### Light & co
+  - openalea.caribu
+  - openalea.ratp
+  - openalea.spice
+  - openalea.astk
+
+### FunctionalStructural Plant Models aka FSPM
+  - openalea.hydroroot: Simulating and phenotyping Root Hydraulic Architecture
+  - openalea.hydroshoot: Simulating Shoot Hydraulic, Temperature, Transpiration, and Photosynthesis of Grapevine.
+  -  
+### Plant simulation and 3D reconstruction 
+  - openalea.adel: 3D reconstruction of Maize and Wheat
+  - openalea.weberpenn
+
 
 Main changes, GitHub and documentation link are listed for each packages below. 
 
