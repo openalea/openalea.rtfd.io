@@ -25,36 +25,37 @@
   - all packages have documentation (user and reference)
 
 ## Release Packages 
-The foolowing packages are part of the release:
+The foolowing packages are part of the 2025 release. 
 
 ### FSPM formalism and data structure
-  - openalea.plantgl: 3D Plant Geometric Library  
+  - openalea.plantgl: 3D Plant Geometric Library 
   - openalea.lpy: L-System Plant Simulation Environment 
   - openalea.mtg: Multiscale Tree Graph datastructure and algorithms 
-  - openalea.rsml: Data format for Root System, compatible with MTG
+  - openalea.rsml: Data format for Root System, compatible with MTG 
 
 ### Software Platform and Scientific Workflow System 
-  - openalea.core: Main Component software formalisms and implementation
+  - openalea.core: Main Component software formalisms and implementation 
   - openalea.visualea: Visual Programming Environment
-  - openalea.grapheditor: Generic Graph Edition, interaction and Visualisation with OpenAlea/VisuAlea
+  - openalea.grapheditor: Generic Graph Edition, interaction and Visualisation with OpenAlea/VisuAlea 
   - openalea.scipack: Scientific Python Stack for VisuAlea 
   - openalea.oalab: Make your application reusable!
   - openalea.widgets: Jupyter Widgets for MTG, PlantGL, and LPy 
 
-### Light & co
-  - openalea.caribu
-  - openalea.ratp
-  - openalea.spice
-  - openalea.astk
+### Light Interception & Ecophysiology
+  - openalea.caribu: Light Intercetion by Plants
+  - openalea.ratp: Radiation, Absorption, Transpiration, and Photosynthesis
+  - openalea.spice: Fast Path Tracer for Light Interception
+  - openalea.astk: Sky luminance and sky sources from Weather data 
 
 ### FunctionalStructural Plant Models aka FSPM
   - openalea.hydroroot: Simulating and phenotyping Root Hydraulic Architecture
-  - openalea.hydroshoot: Simulating Shoot Hydraulic, Temperature, Transpiration, and Photosynthesis of Grapevine.
+  - openalea.hydroshoot: Simulating Shoot Hydraulic Transport, Leaf Energy budget, and Gas Exchange Fluxes. 
   -  
 ### Plant simulation and 3D reconstruction 
   - openalea.adel: 3D reconstruction of Maize and Wheat
-  - openalea.weberpenn
+  - openalea.weberpenn: 3D Generation of Trees from Parameters
 
+------------------------------------------------------
 
 Main changes, GitHub and documentation link are listed for each packages below. 
 
