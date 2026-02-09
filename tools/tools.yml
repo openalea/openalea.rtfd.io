@@ -1,17 +1,6 @@
 - name: Index
   packages:
 
-  #  - repo: openalea/core
-  #    conda_channel: openalea3
-  #    conda_package: openalea.core
-  #    rtd_name: openalea-core
-  #    badges: conda, rtd
-
-  #  - repo: openalea/eartrack
-  #    conda_channel: openalea
-  #    conda_package: openalea.eartrack
-  #    rtd_name: eartrack
-  #    badges: conda, rtd
     - repo: openalea/mtg
       conda_channel: openalea3
       conda_package: openalea.mtg
@@ -33,7 +22,7 @@
     - repo: openalea/core
       conda_channel: openalea3
       conda_package: openalea.core
-      rtd_name: core
+      rtd_name: openalea-core
       badges: conda, rtd
 
     - repo: openalea/scipack
@@ -71,10 +60,10 @@
     - repo: openalea/rsml
       conda_channel: openalea3
       conda_package: openalea.rsml
-#      rtd_name: rsml
-#      badges: conda, rtd
-      site: https://github.com/openalea/RSML/blob/master/README.md
-      badges: conda, site
+      rtd_name: rsml
+      badges: conda, rtd
+#      site: https://github.com/openalea/RSML/blob/master/README.md
+#      badges: conda, site
 
     - repo: openalea/caribu
       conda_channel: openalea3
@@ -142,8 +131,8 @@
       rtd_name: pyratp
       badges: conda, rtd
 
-    - repo: openalea-incubator/strawberry
-      conda_channel: openalea3
-      conda_package: openalea.strawberry
-      site: https://github.com/openalea-incubator/strawberry/blob/master/README.md
-      badges: site
+#    - repo: openalea-incubator/strawberry
+#      conda_channel: openalea3
+#      conda_package: openalea.strawberry
+#      site: https://github.com/openalea-incubator/strawberry/blob/master/README.md
+#      badges: site

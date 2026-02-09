@@ -20,10 +20,3 @@
    development/index
 
 
-.. toctree::
-   :caption: More Information
-   :maxdepth: 2
-
-   license
-   help
-
