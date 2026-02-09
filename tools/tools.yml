@@ -1,17 +1,6 @@
 - name: Index
   packages:
 
-  #  - repo: openalea/core
-  #    conda_channel: openalea3
-  #    conda_package: openalea.core
-  #    rtd_name: openalea-core
-  #    badges: conda, rtd
-
-  #  - repo: openalea/eartrack
-  #    conda_channel: openalea
-  #    conda_package: openalea.eartrack
-  #    rtd_name: eartrack
-  #    badges: conda, rtd
     - repo: openalea/mtg
       conda_channel: openalea3
       conda_package: openalea.mtg
@@ -33,7 +22,7 @@
     - repo: openalea/core
       conda_channel: openalea3
       conda_package: openalea.core
-      rtd_name: core
+      rtd_name: openalea-core
       badges: conda, rtd
 
     - repo: openalea/scipack
@@ -71,10 +60,10 @@
     - repo: openalea/rsml
       conda_channel: openalea3
       conda_package: openalea.rsml
-#      rtd_name: rsml
-#      badges: conda, rtd
-      site: https://github.com/openalea/RSML/blob/master/README.md
-      badges: conda, site
+      rtd_name: rsml
+      badges: conda, rtd
+#      site: https://github.com/openalea/RSML/blob/master/README.md
+#      badges: conda, site
 
     - repo: openalea/caribu
       conda_channel: openalea3
@@ -84,14 +73,38 @@
 
     - repo: openalea/astk
       conda_channel: openalea3
-      conda_package: openalea.astk
-      rtd_name: openalea-astk
+      conda_package: openalea.core
+      rtd_name: core
       badges: conda, rtd
 
-    - repo: openalea/adel
+    - repo: openalea/oawidgets
       conda_channel: openalea3
-      conda_package: openalea.adel
-      rtd_name: adel
+      conda_package: openalea.widgets
+      rtd_name: oawidgets
+      badges: conda, rtd
+
+    - repo: openalea/spice
+      conda_channel: openalea3
+      conda_package: openalea.spice
+      rtd_name: openalea-spice
+      badges: conda, rtd
+
+    - repo: openalea/hydroroot
+      conda_channel: openalea3
+      conda_package: openalea.scipack
+      rtd_name: scipack
+      badges: conda, rtd
+
+    - repo: openalea/oalab
+      conda_channel: openalea3
+      conda_package: openalea.hydroshoot
+      rtd_name: hydroshoot
+      badges: conda, rtd
+
+    - repo: openalea/phenomenal
+      conda_channel: openalea3
+      conda_package: openalea.phenomenal
+      rtd_name: phenomenal
       badges: conda, rtd
 
     - repo: openalea/spice
@@ -112,26 +125,14 @@
       rtd_name: hydroshoot
       badges: conda, rtd
 
-    - repo: openalea/phenomenal
-      conda_channel: openalea3
-      conda_package: openalea.phenomenal
-      rtd_name: phenomenal
-      badges: conda, rtd
-
-    - repo: openalea/wheatfspm
-      conda_channel: openalea3
-      conda_package: openalea.wheatfspm
-      rtd_name: wheatfspm
-      badges: conda, rtd
-
     - repo: openalea/pyratp
       conda_channel: openalea3
       conda_package: openalea.ratp
       rtd_name: pyratp
       badges: conda, rtd
 
-    - repo: openalea-incubator/strawberry
-      conda_channel: openalea3
-      conda_package: openalea.strawberry
-      site: https://github.com/openalea-incubator/strawberry/blob/master/README.md
-      badges: site
+#    - repo: openalea-incubator/strawberry
+#      conda_channel: openalea3
+#      conda_package: openalea.strawberry
+#      site: https://github.com/openalea-incubator/strawberry/blob/master/README.md
+#      badges: site

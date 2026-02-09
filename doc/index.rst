@@ -13,19 +13,10 @@
    :hidden:
    :maxdepth: 2
 
-   quickstart
-   userguide
    install
+   release.md
    tutorials/index
    packages/index
    development/index
-   topics/index
 
-
-.. toctree::
-   :caption: More Information
-   :maxdepth: 2
-
-   license
-   help
 
