@@ -7,21 +7,6 @@
 
 OpenAlea is an open source project primarily aimed at the plant research community. It is a distributed collaborative effort to develop Python libraries and tools that address the needs of current and future works in Plant Architecture modeling. OpenAlea includes modules to analyze, visualize, and model the functioning and growth of plant architecture.
 
-## Institutes (Sponsors)
-
-OpenAlea is developed, maintained and mainly funded by three institutes:
-
-<div style="display:flex; gap:20px; align-items:center;">
-  <figure>
-    <img src="doc/_static/logo_cirad.png" width="100"/>
-  </figure>
-  <figure>
-    <img src="doc/_static/logo_inria.png" width="100"/>
-  </figure>
-  <figure>
-    <img src="doc/_static/logo_inrae.png" width="80"/>
-  </figure>
-</div>
 
 ## License
 
