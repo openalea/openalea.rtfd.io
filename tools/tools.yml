@@ -54,7 +54,7 @@
     - repo: openalea/weberpenn
       conda_channel: openalea3
       conda_package: openalea.weberpenn
-      site: https://github.com/openalea/weberpenn/blob/master/README.md
+      site: https://visualea.readthedocs.io/en/latest/user/weberpenn.html
       badges: conda, site
 
     - repo: openalea/rsml
@@ -71,10 +71,16 @@
       rtd_name: caribu
       badges: conda, rtd
 
+    - repo: openalea/adel
+      conda_channel: openalea3
+      conda_package: openalea.adel
+      rtd_name: adel
+      badges: conda, rtd
+
     - repo: openalea/astk
       conda_channel: openalea3
-      conda_package: openalea.core
-      rtd_name: core
+      conda_package: openalea.astk
+      rtd_name: openalea-astk
       badges: conda, rtd
 
     - repo: openalea/oawidgets
@@ -87,18 +93,6 @@
       conda_channel: openalea3
       conda_package: openalea.spice
       rtd_name: openalea-spice
-      badges: conda, rtd
-
-    - repo: openalea/hydroroot
-      conda_channel: openalea3
-      conda_package: openalea.scipack
-      rtd_name: scipack
-      badges: conda, rtd
-
-    - repo: openalea/oalab
-      conda_channel: openalea3
-      conda_package: openalea.hydroshoot
-      rtd_name: hydroshoot
       badges: conda, rtd
 
     - repo: openalea/phenomenal
