@@ -10,6 +10,18 @@ If you have not yet installed conda on your computer, we recommand to install `m
 OpenAlea Installation
 ---------------------
 
+Installing the last OpenAlea release 3.0.0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Launch a console or a terminal (See Miniforge Prompt in Start menu on windows) and execute this::
+
+    mamba create -n openalea -c openalea3 -c conda-forge openalea=3.0.0
+
+This will create a new environment called `openalea` with all packages released in OpenAlea 3.0.0 installed, see the list of them `here <https://github.com/openalea/openalea-meta>`_ . 
+You can find the details about the release on `the release page <https://openalea.readthedocs.io/en/latest/release.html>`_ .
+
+Installing specific OpenAlea packages
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 The *recommended* way to install OpenAlea is to create a new conda environment.
 
 First, create an environment named *openalea*:
