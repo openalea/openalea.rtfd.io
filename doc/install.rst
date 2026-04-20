@@ -9,9 +9,9 @@ Conda Installation
 `Conda <https://conda.io>`_ is a package manager that can be installed on Linux, Windows, and Mac.
 If you have not yet installed conda on your computer, we recommand to install `miniforge <https://github.com/conda-forge/miniforge>`_, you can find instructions and installers in the previous page or in `conda-forge.org <https://conda-forge.org/download/>`_.
 
-.. admonition:: Windows
+.. caution:: 
 
-    Under windows, after the installation of miniforge we recommand to use **Miniforge Prompt** as terminal and to use **conda** instead of **mamba** to activate environnement.
+    Under **windows**, after the installation of miniforge we recommand to use **Miniforge Prompt** as terminal and to use **conda** instead of **mamba** to activate environnement.
 
 OpenAlea Installation
 ---------------------
