@@ -7,7 +7,7 @@ Conda Installation
 ------------------
 
 `Conda <https://conda.io>`_ is a package manager that can be installed on Linux, Windows, and Mac.
-If you have not yet installed conda on your computer, we recommand to install `miniforge <https://github.com/conda-forge/miniforge>`_, you can find instructions and installers in the previous page or in `conda-forge.org <https://conda-forge.org/download/>`_.
+If you have not yet installed miniforge-conda on your computer, you can find instructions and installers here `miniforge <https://conda-forge.org/download/>`_.
 
 .. caution:: 
 
