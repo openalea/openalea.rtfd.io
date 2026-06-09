@@ -140,7 +140,7 @@ This file should be a resource for developers anf users to know what has changed
 
 ## Versioning
 
-- We delegate the versioning of your package to the version control system (eg git), by using semantic versionning tags starting with `v`.
+- We delegate the versioning of your package to the version control system (eg git), by using semantic versioning tags starting with `v`.
 [Semantic vernioning tags](https://semver.org/) of the form : Major.minor.patch. Using CI, every time a new tag is created and merged in the master branch,
 a new conda package will be uploaded on conda-forge using that tag as version number.
 > [!WARNING]
@@ -416,7 +416,7 @@ def fetch_all_data(prefix=""):
 
     data_dir = Path(str(POOCH.abspath)) / prefix
 
-    return data_dirÒ
+    return data_dir
 ```
 
 Data can then be retrieved using,e.g.
@@ -517,7 +517,7 @@ about:
 ```
 
 - You can also provide a conda/environment.yml file that will ease maintainers developing in a isolated environment, and can also be used by readthedoc:
--
+
 ```yaml
 name: mypkg_dev
 channels:
