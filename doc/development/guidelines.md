@@ -140,7 +140,7 @@ This file should be a resource for developers anf users to know what has changed
 
 ## Versioning
 
-- We delegate the versioning of your package to the version control system (eg git), by using semantic versionning tags starting with `v`.
+- We delegate the versioning of your package to the version control system (eg git), by using semantic versioning tags starting with `v`.
 [Semantic vernioning tags](https://semver.org/) of the form : Major.minor.patch. Using CI, every time a new tag is created and merged in the master branch,
 a new conda package will be uploaded on conda-forge using that tag as version number.
 > [!WARNING]
@@ -416,7 +416,7 @@ def fetch_all_data(prefix=""):
 
     data_dir = Path(str(POOCH.abspath)) / prefix
 
-    return data_dirÒ
+    return data_dir
 ```
 
 Data can then be retrieved using,e.g.
@@ -517,7 +517,7 @@ about:
 ```
 
 - You can also provide a conda/environment.yml file that will ease maintainers developing in a isolated environment, and can also be used by readthedoc:
--
+
 ```yaml
 name: mypkg_dev
 channels:
@@ -532,6 +532,89 @@ dependencies:
 # let pip install the rest using pyproject.toml (if you are okay with conda/pip mix)
   - pip:
       - -e ..[doc,test]
+```
+
+## Code quality checks with Pre-commit Hooks
+
+Pre-commit hooks run automated checks on your code that can be run before each commit or as a job in `CI`,
+catching issues early and ensuring consistency.
+These hooks commonly focus on three aspects of your code :
+- linting: checking your source code for programmatic and stylistic errors,
+- formatting: maintaining consistent coding styles by enforcing PEP 8 standards, and
+- import sorting: optimize and categorize import statements. 
+
+### Common Tools
+
+- [**Ruff**](https://docs.astral.sh/ruff/): Fast linter and formatter, compatible with Flake8, Black, and isort. Can replace both.
+- [**Black**](https://black.readthedocs.io/en/stable/): Opinionated code formatter, ensures consistent style.
+- [**isort**](https://isort.readthedocs.io/en/latest/): Sorts imports alphabetically and by type.
+
+Ruff’s formatter is now production-ready and can replace both Black and isort, simplifying your setup.
+
+
+### Local Setup (run on every commit)
+
+1. Install: `pip install pre-commit`
+2. Add `.pre-commit-config.yaml`:
+
+```yaml
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.4.4
+    hooks:
+      - id: ruff
+        args: [--fix, --exit-non-zero-on-fix]
+      - id: ruff-format
+```
+The hooks will now run **automatically on every `git commit`**. Two ruff hooks are active:
+ 
+| Hook | What it does |
+|---|---|
+| `ruff` | Lints your code and auto-fixes safe issues (import order, unused imports, style violations, etc.) |
+| `ruff-format` | Formats your code consistently, like black would |
+
+If either hook fails or modifies files, the commit is aborted. Simply re-stage the changed files and commit again:
+ 
+```bash
+git add .
+git commit -m "your message"  # should pass now
+```
+ 
+**Tip:** Run the hooks manually on all files before opening a PR:
+
+```bash
+pre-commit run --all-files
+```
+
+### CI Enforcement (GitHub Actions)
+The same hooks run on every pull request via GitHub Actions, ensuring no non-compliant code is ever merged — even if
+someone skips local setup.
+
+The workflow lives at `.github/workflows/pre-commit.yml`:
+ 
+```yaml
+name: pre-commit
+ 
+on: [push, pull_request]
+ 
+jobs:
+  pre-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - uses: pre-commit/action@v3.0.1
+```
+ 
+Unlike the local hooks, CI runs in **check-only mode** — it does not auto-fix files. If the check fails, fix it locally:
+ 
+```bash
+pre-commit run --all-files
+git add .
+git commit -m "fix: ruff lint/format"
+git push
 ```
 
 ## CI-CD
