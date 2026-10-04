@@ -101,12 +101,6 @@
       rtd_name: phenomenal
       badges: conda, rtd
 
-    - repo: openalea/spice
-      conda_channel: openalea3
-      conda_package: openalea.spice
-      rtd_name: openalea-spice
-      badges: conda, rtd
-
     - repo: openalea/hydroroot
       conda_channel: openalea3
       conda_package: openalea.hydroroot
